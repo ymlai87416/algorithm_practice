@@ -5,6 +5,6 @@ package Graph.WeightedDijkstraHarder;
  */
 public class UVA10801 {
     public static void main(String[] args){
-        
+
     }
 }
