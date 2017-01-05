@@ -1,4 +1,4 @@
-package Facebook.Y2016;
+package Facebook.Y2016.QualificationRound;
 
 import Geometry.PointsAndLines.UVA920;
 
