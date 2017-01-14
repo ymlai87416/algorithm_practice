@@ -1,16 +1,16 @@
 package Facebook.Y2015.Round1;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.PrintStream;
-import java.util.*;
+import java.io.*;
+import java.util.Scanner;
+import java.util.TreeMap;
+import java.util.TreeSet;
 
 //start at 0:37, ac on 0:59
 
 
-public class Problem2 {
+public class Problem2FastIO {
     static String   FILENAME;
-    static Scanner  sc;
+    static BufferedReader  sc;
     static String   IN;
     static String   OUT;
     static PrintStream     out;
@@ -20,7 +20,7 @@ public class Problem2 {
             FILENAME = "C:\\Users\\Tom\\Documents\\algorithm_practice\\autocomplete (1)";
             IN = FILENAME + ".txt";
             OUT = FILENAME + ".out";
-            sc = new Scanner(new File(IN));
+            sc = new BufferedReader(new FileReader(new File(IN)));
             out      = new PrintStream(
                     new FileOutputStream(OUT, false));
         }
@@ -97,17 +97,15 @@ public class Problem2 {
 
     private void run() throws Exception {
 
-        int t = sc.nextInt();
-        sc.nextLine();
+        int t = Integer.parseInt(sc.readLine());
         for (int i = 1; i <= t; i++) {
             System.out.print("Case #" + i + ": ");
             out.print("Case #" + i + ": ");
 
-            int n = sc.nextInt();
-            sc.nextLine();
+            int n = Integer.parseInt(sc.readLine());
 
             for(int j=0; j<n; ++j){
-                test[j] = sc.nextLine();
+                test[j] = sc.readLine();
             }
 
             solve(n, test);
@@ -118,7 +116,7 @@ public class Problem2 {
 
     public static void main(String args[]) throws Exception {
         long start_time = System.currentTimeMillis();
-        new Problem2().run();
+        new Problem2FastIO().run();
         long end_time = System.currentTimeMillis();
         long execution_time = (end_time - start_time);
 

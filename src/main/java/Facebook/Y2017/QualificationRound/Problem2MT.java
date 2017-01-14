@@ -3,9 +3,12 @@ package Facebook.Y2017.QualificationRound;
 
 import java.io.*;
 import java.util.*;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 
 //start at
-public class Problem2 {
+public class Problem2MT {
     static String   FILENAME;
     static Scanner  sc;
     static String   IN;
@@ -26,9 +29,7 @@ public class Problem2 {
         }
     }
 
-    int[] w = new int[100];
-
-    private void solve(int k, int[] w) {
+    private int solve(int k, int[] w) {
         Arrays.sort(w, 0, k);
         ArrayDeque<Integer> qu = new ArrayDeque<Integer>();
         for(int i=k-1; i>=0; --i)
@@ -51,32 +52,43 @@ public class Problem2 {
             if(canPack) result++;
         }
 
-        System.out.println(result);
-        out.println(result);
+        return result;
     }
 
 
     private void run() throws Exception {
 
         int t = sc.nextInt();
-        for (int i = 1; i <= t; i++) {
-            System.out.print("Case #" + i + ": ");
-            out.print("Case #" + i + ": ");
+
+        ExecutorService executorService = Executors.newFixedThreadPool(8);
+        Future[] fs = new Future[t];
+        for(int i=0; i<t; ++i){
             int k = sc.nextInt();
+            int[] w = new int[k];
             for(int j= 0; j<k; ++j){
                 w[j] = sc.nextInt();
             }
 
-            solve(k, w);
+            fs[i] = executorService.submit(() -> solve(k, w));
+        }
+
+
+        for (int i = 1; i <= t; i++) {
+            System.out.print("Case #" + i + ": ");
+            out.print("Case #" + i + ": ");
+
+            System.out.println((int) fs[i-1].get());
+            out.println((int) fs[i-1].get());
         }
         sc.close();
         out.close();
+
+        executorService.shutdown();
     }
 
     public static void main(String args[]) throws Exception {
-
         long start_time = System.currentTimeMillis();
-        new Problem2().run();
+        new Problem2MT().run();
         long end_time = System.currentTimeMillis();
         long execution_time = (end_time - start_time);
 

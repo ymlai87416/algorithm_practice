@@ -4,11 +4,15 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
 import java.util.*;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 
 //start at 0:37, ac on 0:59
 
 
-public class Problem2 {
+
+public class Problem2MT {
     static String   FILENAME;
     static Scanner  sc;
     static String   IN;
@@ -46,7 +50,6 @@ public class Problem2 {
         }
     }
 
-
     private void addWord(Node root, String w){
         Node cur = root;
         root.cnt += 1;
@@ -75,7 +78,7 @@ public class Problem2 {
         return Math.min(i+1, w.length());
     }
 
-    private void solve(int n, String[] w) {
+    private int solve(int n, String[] w) {
         Node root = new Node(' ');
         TreeSet<String> dict = new TreeSet<>();
 
@@ -89,36 +92,48 @@ public class Problem2 {
             result += t;
         }
 
-        out.println(result);
-        System.out.println(result);
+        return result;
     }
 
-    String[] test = new String[100000];
+
 
     private void run() throws Exception {
 
         int t = sc.nextInt();
         sc.nextLine();
-        for (int i = 1; i <= t; i++) {
-            System.out.print("Case #" + i + ": ");
-            out.print("Case #" + i + ": ");
 
+        ExecutorService executorService = Executors.newFixedThreadPool(8);
+        Future<Integer>[] fs = new Future[t];
+        for(int i=0; i<t; ++i){
             int n = sc.nextInt();
             sc.nextLine();
 
+            String[] test = new String[n];
             for(int j=0; j<n; ++j){
                 test[j] = sc.nextLine();
             }
 
-            solve(n, test);
+            fs[i] = executorService.submit(() -> solve(n, test));
+        }
+
+        for (int i = 1; i <= t; i++) {
+            System.out.print("Case #" + i + ": ");
+            out.print("Case #" + i + ": ");
+
+
+            int result = fs[i-1].get();
+            out.println(result);
+            System.out.println(result);
         }
         sc.close();
         out.close();
+
+        executorService.shutdown();
     }
 
     public static void main(String args[]) throws Exception {
         long start_time = System.currentTimeMillis();
-        new Problem2().run();
+        new Problem2MT().run();
         long end_time = System.currentTimeMillis();
         long execution_time = (end_time - start_time);
 

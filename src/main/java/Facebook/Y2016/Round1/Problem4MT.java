@@ -1,19 +1,21 @@
 package Facebook.Y2016.Round1;
 
-import sun.security.pkcs.ParsingException;
+import Facebook.Y2017.QualificationRound.Problem2MT;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.TreeMap;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 
 /**
  * Created by Tom on 10/1/2017.
  * 22:25, think of survival basis, but not working. think again to use bitmask. 01:50 AC
  */
-public class Problem4 {
+public class Problem4MT {
     static String   FILENAME;
     static Scanner sc;
     static String   IN;
@@ -36,8 +38,9 @@ public class Problem4 {
 
     int[] pow2 = new int[] {1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768};
 
-    boolean[][] r = new boolean[16][65536];
-    private void solve(int k, int[][] w) {
+    private int[][] solve(int k, int[][] w) {
+
+        boolean[][] r =new boolean[16][65536];
 
         boolean[] kill = new boolean[k];
 
@@ -82,6 +85,8 @@ public class Problem4 {
             }
         }
 
+        int[][] result = new int[k][2];
+
         for(int i=0; i<k; ++i){
             int maxbcnt = 0;
             int bcnt;
@@ -99,11 +104,14 @@ public class Problem4 {
                 if(p == maxbcnt)
                     frank = rank[q];
 
-            String resultS = String.format("%d %d", frank, kill[i] ? k/2+1 : 1);
+            result[i][0] = frank;
+            result[i][1] = kill[i] ? k/2+1 : 1;
+            /*String resultS = String.format("%d %d", );
             out.println(resultS);
-            System.out.println(resultS);
+            System.out.println(resultS);*/
         }
 
+        return result;
     }
 
     ArrayList<Integer>[] seq = new ArrayList[4];
@@ -139,31 +147,46 @@ public class Problem4 {
 
     }
 
-    int[][] w = new int[16][16];
+
 
     private void run() throws Exception {
         precompute();
 
         int t = sc.nextInt();
-        for (int i = 1; i <= t; i++) {
-            System.out.print("Case #" + i + ": \n");
-            out.print("Case #" + i + ": \n");
-
+        ExecutorService executorService = Executors.newFixedThreadPool(8);
+        Future[] fs = new Future[t];
+        for(int i=0; i<t; ++i){
             int k = sc.nextInt();
+
+            int[][] w = new int[16][16];
 
             for(int p=0; p<k; ++p)
                 for(int q=0; q<k; ++q)
                     w[p][q] = sc.nextInt();
 
-            solve(k, w);
+            fs[i] = executorService.submit(() -> solve(k, w));
+        }
+
+        for (int i = 1; i <= t; i++) {
+            System.out.print("Case #" + i + ": \n");
+            out.print("Case #" + i + ": \n");
+
+            int[][] result = (int[][])fs[i-1].get();
+
+            for(int j=0; j<result.length; ++j){
+                String resultS = String.format("%d %d", result[j][0], result[j][1]);
+                out.println(resultS);
+                System.out.println(resultS);
+            }
         }
         sc.close();
         out.close();
+        executorService.shutdown();
     }
 
     public static void main(String args[]) throws Exception {
         long start_time = System.currentTimeMillis();
-        new Problem4().run();
+        new Problem4MT().run();
         long end_time = System.currentTimeMillis();
         long execution_time = (end_time - start_time);
 

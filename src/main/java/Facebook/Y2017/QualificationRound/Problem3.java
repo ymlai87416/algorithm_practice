@@ -164,6 +164,12 @@ public class Problem3 {
     }
 
     public static void main(String args[]) throws Exception {
+
+        long start_time = System.currentTimeMillis();
         new Problem3().run();
+        long end_time = System.currentTimeMillis();
+        long execution_time = (end_time - start_time);
+
+        System.out.println(String.format("Total runtime: %dms", execution_time));
     }
 }

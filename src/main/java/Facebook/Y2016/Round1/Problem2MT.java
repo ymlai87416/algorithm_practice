@@ -1,14 +1,17 @@
 package Facebook.Y2016.Round1;
 
-import Facebook.Y2016.QualificationRound.*;
-import Facebook.Y2016.QualificationRound.Problem1;
-import Geometry.PointsAndLines.UVA920;
-
-import java.io.*;
-import java.util.*;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.PrintStream;
+import java.util.PriorityQueue;
+import java.util.Scanner;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 
 //start at 20:16, AC at 20:53
-public class Problem2 {
+public class Problem2MT {
     static String   FILENAME;
     static Scanner  sc;
     static String   IN;
@@ -47,7 +50,9 @@ public class Problem2 {
         }
     }
 
-    private void solve(int l, int n, int m, int d, int[] wm, long[] wts) {
+    private long solve(int l, int n, int m, int d, int[] wm) {
+        long[] wts = new long[1000001];
+
         PriorityQueue<WashingTime> pq = new PriorityQueue<>();
 
         for(int i=0; i<n; ++i){
@@ -82,30 +87,39 @@ public class Problem2 {
             }
         }
 
-        out.println(wts[l-1]);
-        System.out.println(wts[l-1]);
+        return wts[l-1];
+
     }
 
-    int[] wm = new int[100001 ];
-    long[] wts = new long[1000001];
+
 
     private void run() throws Exception {
 
         int t = sc.nextInt();
-        for (int i = 1; i <= t; i++) {
-            System.out.print("Case #" + i + ": ");
-            out.print("Case #" + i + ": ");
+
+        ExecutorService executorService = Executors.newFixedThreadPool(8);
+        Future<Long>[] fs = new Future[t];
+        for(int i=0; i<t; ++i){
             int l = sc.nextInt();
             int n = sc.nextInt();
             int m = sc.nextInt();
             int d = sc.nextInt();
 
-
+            int[] wm = new int[100001 ];
             for(int j=0; j<n; ++j){
                 wm[j] = sc.nextInt();
             }
 
-            solve(l, n, m, d, wm, wts);
+            fs[i] = executorService.submit(() -> solve(l, n, m, d, wm));
+        }
+
+        for (int i = 1; i <= t; i++) {
+            System.out.print("Case #" + i + ": ");
+            out.print("Case #" + i + ": ");
+
+            long r = fs[i-1].get();
+            System.out.println(r);
+            out.println(r);
         }
         sc.close();
         out.close();
@@ -113,7 +127,7 @@ public class Problem2 {
 
     public static void main(String args[]) throws Exception {
         long start_time = System.currentTimeMillis();
-        new Problem2().run();
+        new Problem2MT().run();
         long end_time = System.currentTimeMillis();
         long execution_time = (end_time - start_time);
 

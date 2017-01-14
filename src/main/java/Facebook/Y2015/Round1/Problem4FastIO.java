@@ -1,19 +1,18 @@
 package Facebook.Y2015.Round1;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.PrintStream;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Stack;
+import java.util.StringTokenizer;
 
 /**
  * Created by Tom on 10/1/2017.
  * 22:47, 0:10
  */
-public class Problem4 {
+public class Problem4FastIO {
     static String   FILENAME;
-    static Scanner sc;
+    static BufferedReader sc;
     static String   IN;
     static String   OUT;
     static PrintStream out;
@@ -23,7 +22,7 @@ public class Problem4 {
             FILENAME = "C:\\Users\\Tom\\Documents\\algorithm_practice\\corporate_gifting (2)";
             IN = FILENAME + ".txt";
             OUT = FILENAME + ".out";
-            sc = new Scanner(new File(IN));
+            sc = new BufferedReader(new FileReader(new File(IN)));
             out      = new PrintStream(
                     new FileOutputStream(OUT, false));
         }
@@ -114,15 +113,17 @@ public class Problem4 {
 
     private void run() throws Exception {
 
-        int t = sc.nextInt();
+        int t = Integer.parseInt(sc.readLine());
         for (int i = 1; i <= t; i++) {
             System.out.print("Case #" + i + ": ");
             out.print("Case #" + i + ": ");
 
-            int k = sc.nextInt();
+            int k = Integer.parseInt(sc.readLine());
 
+            String line = sc.readLine();
+            StringTokenizer st = new StringTokenizer(line);
             for(int p=1; p<=k; ++p) {
-                m[p] = sc.nextInt();
+                m[p] = Integer.parseInt(st.nextToken());
             }
 
             solve(k, m);
@@ -133,7 +134,7 @@ public class Problem4 {
 
     public static void main(String args[]) throws Exception {
         long start_time = System.currentTimeMillis();
-        new Problem4().run();
+        new Problem4FastIO().run();
         long end_time = System.currentTimeMillis();
         long execution_time = (end_time - start_time);
 

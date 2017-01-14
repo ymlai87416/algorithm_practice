@@ -6,12 +6,15 @@ import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Stack;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 
 /**
  * Created by Tom on 10/1/2017.
  * 22:47, 0:10
  */
-public class Problem4 {
+public class Problem4MT {
     static String   FILENAME;
     static Scanner sc;
     static String   IN;
@@ -33,12 +36,15 @@ public class Problem4 {
     }
 
     final int MAXPRESENT = 100;  //can turn down to 50 and still correct answer
-    int[][] dp = new int[200001][MAXPRESENT];
-    ArrayList<Integer>[] adjList = new ArrayList[200001];
-    boolean[] visited = new boolean[200001];
 
 
-    private void solve(int k, int[] m) {
+    private int solve(int k, int[] m) {
+
+        int[][] dp = new int[200001][MAXPRESENT];
+        ArrayList<Integer>[] adjList = new ArrayList[200001];
+        boolean[] visited = new boolean[200001];
+
+
         for(int i=0; i<=k; ++i)
             if(adjList[i] == null)
                 adjList[i] = new ArrayList<Integer>();
@@ -106,34 +112,48 @@ public class Problem4 {
             if(smallest > dp[1][i])
                 smallest = dp[1][i];
         }
-        out.println(smallest);
-        System.out.println(smallest);
+
+        return smallest;
+
     }
 
-    int[] m = new int[200001];
+
 
     private void run() throws Exception {
 
         int t = sc.nextInt();
-        for (int i = 1; i <= t; i++) {
-            System.out.print("Case #" + i + ": ");
-            out.print("Case #" + i + ": ");
 
+        ExecutorService executorService = Executors.newFixedThreadPool(8);
+        Future<Integer>[] fs = new Future[t];
+        for(int i=0; i<t; ++i){
             int k = sc.nextInt();
+            int[] m = new int[k+1];
 
             for(int p=1; p<=k; ++p) {
                 m[p] = sc.nextInt();
             }
 
-            solve(k, m);
+            fs[i] = executorService.submit(() -> solve(k, m));
+        }
+
+        for (int i = 1; i <= t; i++) {
+            System.out.print("Case #" + i + ": ");
+            out.print("Case #" + i + ": ");
+
+            int smallest = fs[i-1].get();
+
+            out.println(smallest);
+            System.out.println(smallest);
         }
         sc.close();
         out.close();
+
+        executorService.shutdown();
     }
 
     public static void main(String args[]) throws Exception {
         long start_time = System.currentTimeMillis();
-        new Problem4().run();
+        new Problem4MT().run();
         long end_time = System.currentTimeMillis();
         long execution_time = (end_time - start_time);
 

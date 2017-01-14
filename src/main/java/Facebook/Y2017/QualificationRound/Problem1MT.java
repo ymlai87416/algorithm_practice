@@ -1,8 +1,13 @@
+package Facebook.Y2017.QualificationRound;
+
 import java.io.*;
 import java.util.*;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 
 //start at
-public class Problem1 {
+public class Problem1MT {
     static String   FILENAME;
     static Scanner  sc;
     static String   IN;
@@ -74,7 +79,7 @@ public class Problem1 {
             return false;
     }
 
-    private void solve(int p, int x, int y) {
+    private String solve(int p, int x, int y) {
         String output = null;
 
         int rx = x-50;
@@ -160,30 +165,43 @@ public class Problem1 {
             }
         }
 
-        System.out.println(output);
-        out.println(output);
+        return output;
+        //System.out.println(output);
+        //out.println(output);
     }
 
 
     private void run() throws Exception {
 
         int t = sc.nextInt();
-        for (int i = 1; i <= t; i++) {
-            System.out.print("Case #" + i + ": ");
-            out.print("Case #" + i + ": ");
+
+        ExecutorService executorService = Executors.newFixedThreadPool(12);
+        Future[] fs = new Future[t];
+        for(int i=0; i<t; ++i){
             int p = sc.nextInt();
             int x = sc.nextInt();
             int y = sc.nextInt();
 
-            solve(p, x, y);
+            fs[i] = executorService.submit(() -> solve(p, x, y));
+        }
+
+        for (int i = 1; i <= t; i++) {
+            System.out.print("Case #" + i + ": ");
+            out.print("Case #" + i + ": ");
+
+            String result = (String) fs[i-1].get();
+            System.out.println(result);
+            out.println(result);
         }
         sc.close();
         out.close();
+
+        executorService.shutdown();
     }
 
     public static void main(String args[]) throws Exception {
         long start_time = System.currentTimeMillis();
-        new Problem1().run();
+        new Problem1MT().run();
         long end_time = System.currentTimeMillis();
         long execution_time = (end_time - start_time);
 
