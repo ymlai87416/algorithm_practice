@@ -1,11 +1,10 @@
 package Facebook.Y2015.Round1;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.PrintStream;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Stack;
+import java.util.StringTokenizer;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
@@ -16,7 +15,7 @@ import java.util.concurrent.Future;
  */
 public class Problem4MT {
     static String   FILENAME;
-    static Scanner sc;
+    static BufferedReader sc;
     static String   IN;
     static String   OUT;
     static PrintStream out;
@@ -26,7 +25,7 @@ public class Problem4MT {
             FILENAME = "C:\\Users\\Tom\\Documents\\algorithm_practice\\corporate_gifting (2)";
             IN = FILENAME + ".txt";
             OUT = FILENAME + ".out";
-            sc = new Scanner(new File(IN));
+            sc = new BufferedReader(new FileReader(new File(IN)));
             out      = new PrintStream(
                     new FileOutputStream(OUT, false));
         }
@@ -40,9 +39,9 @@ public class Problem4MT {
 
     private int solve(int k, int[] m) {
 
-        int[][] dp = new int[200001][MAXPRESENT];
-        ArrayList<Integer>[] adjList = new ArrayList[200001];
-        boolean[] visited = new boolean[200001];
+        int[][] dp = new int[k+1][MAXPRESENT];
+        ArrayList<Integer>[] adjList = new ArrayList[k+1];
+        boolean[] visited = new boolean[k+1];
 
 
         for(int i=0; i<=k; ++i)
@@ -121,16 +120,18 @@ public class Problem4MT {
 
     private void run() throws Exception {
 
-        int t = sc.nextInt();
+        int t = Integer.parseInt(sc.readLine());
 
         ExecutorService executorService = Executors.newFixedThreadPool(8);
         Future<Integer>[] fs = new Future[t];
         for(int i=0; i<t; ++i){
-            int k = sc.nextInt();
+            int k = Integer.parseInt(sc.readLine());
             int[] m = new int[k+1];
 
+            String line = (sc.readLine());
+            StringTokenizer st = new StringTokenizer(line);
             for(int p=1; p<=k; ++p) {
-                m[p] = sc.nextInt();
+                m[p] = Integer.parseInt(st.nextToken());
             }
 
             fs[i] = executorService.submit(() -> solve(k, m));

@@ -135,6 +135,7 @@ public class Problem4MT {
                     for(int l=k+1; l<16; ++l)
                         seq[2].add((1 << i) + (1 << j) + (1 << k) + (1 << l));
 
+        /*
         for(int i=0; i<9; ++i)
             for(int j=i+1; j<10; ++j)
                 for(int k=j+1; k<11; ++k)
@@ -144,6 +145,7 @@ public class Problem4MT {
                                 for(int o=n+1; o<15; ++o)
                                     for(int p=o+1; p<16; ++p)
                                         seq[3].add((1 << i) + (1 << j) + (1 << k) + (1 << l) + (1 << m) + (1 << n) + (1 << o) + (1 << p));
+                                        */
 
     }
 
