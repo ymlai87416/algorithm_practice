@@ -9,6 +9,8 @@ import java.util.*;
 
 /**
  * Created by ymlai on 8/4/2017.
+ *
+ * review: so silly you cannot know this is a greedy algorithm ...
  */
 public class A {
     static String   FILENAME;
@@ -19,7 +21,7 @@ public class A {
 
     static{
         try{
-            FILENAME = "A-large";
+            FILENAME = "A-large-practice";
             IN = FILENAME + ".in";
             OUT = FILENAME + ".out";
             sc = new Scanner(new File(IN));
@@ -74,15 +76,20 @@ public class A {
             if(!S.get(idx))
                 break;
 
-        for(; idx<=SLen-K; ++idx){
+        if(idx <= SLen-K){
+            track.add(S);
+            S.flip(idx, idx+K);
+            minflip = Math.min(minflip, solveHelper(S) + 1);
+        }
+
+        /*for(; idx<=SLen-K; ++idx){
             S.flip(idx, idx+K);
             if(!track.contains(S)) {
-                track.add(S);
-                minflip = Math.min(minflip, solveHelper(S) + 1);
+
                 track.remove(S);
             }
             S.flip(idx, idx+K);
-        }
+        }*/
 
         dp.put(S, minflip);
         return minflip;
