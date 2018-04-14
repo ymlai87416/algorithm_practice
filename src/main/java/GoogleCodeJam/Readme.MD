@@ -674,6 +674,11 @@
 
 ### Round 1A
 
+| Ranking | 1567 | 
+|:-----:| :-----:| 
+| Waffle Choppers | &#x2713; (small) |
+| Bit Party | &#x2713; |
+| Edgy Baking |  |
 
 ### Round 1B
 
