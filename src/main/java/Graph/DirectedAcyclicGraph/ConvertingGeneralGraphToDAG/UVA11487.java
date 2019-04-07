@@ -7,6 +7,6 @@ import java.util.Scanner;
  * Created by ymlai on 14/4/2017.
  * Use more than 1.5 hour shit..
  */
-public class UVA10350 {
+public class UVA11487 {
 
 }
