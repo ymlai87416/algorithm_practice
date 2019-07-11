@@ -3,17 +3,69 @@ package Leetcode;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.math.RoundingMode;
+import java.util.HashMap;
 
 public class FractionToRecurringDecimal {
     public static void main(String[] args){
         Solution s = new Solution();
-        System.out.println(s.fractionToDecimal(2, 3));
+        System.out.println(s.fractionToDecimal(-1, -2147483648));
     }
 
 
     static
     class Solution {
         public String fractionToDecimal(int numerator, int denominator) {
+            String sign = ((numerator > 0 ? 1: numerator < 0 ? -1 : 0) * (denominator >= 0 ? 1 :denominator < 0 ? -1 : 0) >= 0) ? "" : "-";
+
+            long _numerator = Math.abs((long)numerator);
+            long _denominator = Math.abs((long)denominator);
+
+            long integerPart = _numerator / _denominator;
+            long remainder = _numerator % _denominator;
+
+            if(remainder == 0) return sign + String.valueOf(integerPart);
+
+            long quotient = 0;
+            HashMap<Long, Integer> pos = new HashMap<>();
+
+            int recurStart=-1, recurEnd=-1;
+            String decimal = "";
+            int curP = 0;
+            pos.put(remainder, 0);
+
+            while(true){
+                curP++;
+                long dividend = remainder*10;
+                if(dividend < _denominator){
+                    quotient = 0;
+                    remainder = dividend;
+                }
+                else {
+                    quotient = dividend / _denominator;
+                    remainder = dividend % _denominator;
+                }
+
+                decimal += quotient;
+
+                if(remainder == 0)
+                    break;
+                else if(!pos.containsKey(remainder))
+                    pos.put(remainder, curP);
+                else{
+                    recurStart = pos.get(remainder);
+                    decimal = decimal.substring(0, recurStart) + "(" + decimal.substring(recurStart) + ")";
+                    break;
+                }
+            }
+
+            return sign + integerPart + "." + decimal;
+        }
+
+
+    }
+}
+
+        /*
             if(isTerminating(denominator)){
                 BigDecimal d = BigDecimal.valueOf(numerator).divide(BigDecimal.valueOf(denominator));
                 return d.toString();
@@ -101,5 +153,4 @@ public class FractionToRecurringDecimal {
 
             return r;
         }
-    }
-}
+        */

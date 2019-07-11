@@ -7,6 +7,11 @@ public class SetMatrixZeroes {
                 {3, 4, 5, 2},
                 {1,3,1,5}};
 
+        nums = new int[][]{
+                {1, 1, 1},
+                {0, 1, 2}
+        };
+
         Solution s = new Solution();
         s.setZeroes(nums);
 
@@ -20,13 +25,17 @@ public class SetMatrixZeroes {
     static
     class Solution {
         public void setZeroes(int[][] matrix) {
-
-
+            int zeroDir = 0;
             for(int i=0; i<matrix.length; ++i){
                 for(int j=0; j<matrix[i].length; ++j){
                     if(matrix[i][j] == 0){
                         matrix[i][0] = 0;
                         matrix[0][j] = 0;  //they have been traversed.
+
+                        if(i == 0)
+                            zeroDir |= 1;
+                        if(j == 0)
+                            zeroDir |= 2;
                     }
                 }
             }
@@ -46,10 +55,12 @@ public class SetMatrixZeroes {
             }
 
             if(matrix[0][0] == 0){
-                for(int i=0; i<matrix.length; ++i)
-                    matrix[i][0] =0;
-                for(int i=0; i<matrix[0].length; ++i)
-                    matrix[0][i] =0;
+                if((zeroDir & 2) > 0)
+                    for(int i=0; i<matrix.length; ++i)
+                        matrix[i][0] =0;
+                if((zeroDir & 1) > 0)
+                    for(int i=0; i<matrix[0].length; ++i)
+                        matrix[0][i] =0;
             }
         }
     }

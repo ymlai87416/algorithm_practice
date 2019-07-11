@@ -20,7 +20,7 @@ public class BinaryTreeMaximumPathSum {
 
         public int maxPathSum(TreeNode root) {
 
-            return helper(root);
+            return helper2(root);
         }
 
         private int calcMaxPath(TreeNode root){
@@ -53,6 +53,35 @@ public class BinaryTreeMaximumPathSum {
                 rr = Math.max(rr, helperEx(root.right));
 
             return rr;
+        }
+
+        private int helper2(TreeNode root){
+            return helper2Ex(root)[0];
+        }
+
+        private int[] helper2Ex(TreeNode root){
+            if(root == null) return new int[]{0, 0};
+
+            if(root.left == null && root.right == null)
+                return new int[]{root.val,root.val};
+
+            int[] left, right, result;
+            left = null; right = null;
+            if(root.left != null)
+                left = helper2Ex(root.left);
+
+            if(root.right != null)
+                right = helper2Ex(root.right);
+
+            result = new int[2];
+            result[1] = Math.max(0, Math.max(left == null ? 0: left[1], right==null? 0: right[1])) + root.val;
+            result[0] = root.val + Math.max(0, left == null ? 0:left[1]) + Math.max(0, right == null ? 0:right[1]);
+            if(left != null && left[0] > result[0])
+                result[0] = left[0];
+            if(right != null && right[0] > result[0])
+                result[0] = right[0];
+
+            return result;
         }
 
     }
