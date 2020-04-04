@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3fd50c82-6892-4638-862e-b13ab08b4290" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/copyright/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D-small-attempt2.out.sol" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/main/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/main/GoogleCodeJam/Readme.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/main/GoogleCodeJam/Y2008/Readme.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/main/GoogleCodeJam/Y2009/Readme.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/main/GoogleCodeJam/Y2010/Readme.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/main/GoogleCodeJam/Y2011/Readme.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/main/GoogleCodeJam/Y2012/Readme.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/main/GoogleCodeJam/Y2013/Readme.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/main/GoogleCodeJam/Y2014/Readme.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/main/GoogleCodeJam/Y2015/Readme.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/main/GoogleCodeJam/Y2016/Readme.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/main/GoogleCodeJam/Y2017/QualificationRound/Readme.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/main/GoogleCodeJam/Y2017/Readme.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/main/GoogleCodeJam/Y2017/Round1A/Readme.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/main/GoogleCodeJam/Y2017/Round1B/Readme.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/main/GoogleCodeJam/Y2018/Readme.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/main/GoogleCodeJam/Y2019/Quali/D/interactive_runner.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/main/GoogleCodeJam/Y2019/Quali/D/my_binary.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/main/GoogleCodeJam/Y2019/Quali/D/testing_tool.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/main/GoogleCodeJam/Y2019/Readme.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/main/META-INF/main.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/main/Maths/Primes/df" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/DataStructure/BitManipulation/UVA10264.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/DataStructure/BitManipulation/UVA11926.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/DataStructure/BitManipulation/UVA11933.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/DataStructure/GraphDataStructure/UVA10895.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/DataStructure/GraphDataStructure/UVA11991.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/DataStructure/GraphDataStructure/UVA599.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/DataStructure/JavaPriorityQueue/UVA10954.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/DataStructure/JavaPriorityQueue/UVA11995.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/DataStructure/JavaPriorityQueue/UVA1203.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/DataStructure/JavaQueueAndDeque/UVA10901.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/DataStructure/JavaQueueAndDeque/UVA11034.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/DataStructure/JavaTreeMap/UVA10226.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/DataStructure/JavaTreeMap/UVA11286.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/DataStructure/JavaTreeMap/UVA11572.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/DataStructure/JavaTreeSet/UVA11136.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/DataStructure/JavaTreeSet/UVA11849.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/DataStructure/JavaTreeSet/UVA978.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/DataStructure/LinkedList/UVA11988.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/DataStructure/OneDArrayManipulation/UVA11340.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/DataStructure/OneDArrayManipulation/UVA12356.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/DataStructure/Stack/UVA1062.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/DataStructure/Stack/UVA732.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/DataStructure/TreeDataStructure/UVA11235.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/DataStructure/TreeDataStructure/UVA11402.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/DataStructure/TreeDataStructure/UVA12532.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/DataStructure/TwoDArrayManipulation/UVA10855.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/DataStructure/TwoDArrayManipulation/UVA10920.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/DataStructure/UnionFind/UVA11503.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Facebook/Y2015/Round1/Problem1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Facebook/Y2015/Round1/Problem2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Facebook/Y2015/Round1/Problem2FastIO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Facebook/Y2015/Round1/Problem2MT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Facebook/Y2015/Round1/Problem3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Facebook/Y2015/Round1/Problem4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Facebook/Y2015/Round1/Problem4FastIO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Facebook/Y2015/Round1/Problem4MT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Facebook/Y2016/QualificationRound/Problem1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Facebook/Y2016/QualificationRound/Problem3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Facebook/Y2016/QualificationRound/Problem4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Facebook/Y2016/Round1/Problem1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Facebook/Y2016/Round1/Problem2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Facebook/Y2016/Round1/Problem2MT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Facebook/Y2016/Round1/Problem3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Facebook/Y2016/Round1/Problem4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Facebook/Y2016/Round1/Problem4MT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Facebook/Y2017/QualificationRound/Problem1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Facebook/Y2017/QualificationRound/Problem1MT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Facebook/Y2017/QualificationRound/Problem2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Facebook/Y2017/QualificationRound/Problem2MT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Facebook/Y2017/QualificationRound/Problem3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Geometry/Circles/UVA10005.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Geometry/Circles/UVA10589.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Geometry/PointsAndLines/UVA10263.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Geometry/PointsAndLines/UVA10927.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Geometry/PointsAndLines/UVA920.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Geometry/Polygon/UVA10652.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Geometry/Polygon/UVA1111.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Geometry/Polygon/UVA11265.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Geometry/Quadrilaterals/UVA11207.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Geometry/Quadrilaterals/UVA11834.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Geometry/Quadrilaterals/UVA460.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Geometry/ThreeDObjects/UVA737.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Geometry/ThreeDObjects/UVA815.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Geometry/Triangle/UVA10577.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Geometry/Triangle/UVA11152.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Geometry/Triangle/UVA11909.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Readme.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2008/PraticeProblems/AlienNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2008/Readme.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2008/Round1A/MilkShakes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2008/Round1A/MinimumScalarProduct.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2008/Round1A/Numbers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2009/QualificationRound/AllienLanguage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2009/Readme.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2009/Round1C/AllYourBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2009/Round1C/CenterOfMass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2010/QualificationRound/ReverseWords.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2010/QualificationRound/StoreCredit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2010/Readme.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2010/Round1A/Rotate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2010/Round1B/FileFixIt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2010/Round1C/RopeIntranet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2011/Readme.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2012/Readme.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2013/Readme.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2013/Round1A/A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2013/Round1B/A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2013/Round1C/A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2014/Readme.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2014/Round1A/A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2014/Round1A/B.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2014/Round1B/A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2015/Readme.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2015/Round1A/C.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2015/Round1C/A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2015/Round1C/C.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2016/QualificationRound/CountingSheep.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2016/QualificationRound/Fractiles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2016/QualificationRound/JamCoin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2016/QualificationRound/JamCoin2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2016/QualificationRound/JamCoin3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2016/QualificationRound/RevengeOfThePancakes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2016/Readme.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2016/Round1A/A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2016/Round1B/A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2016/Round1B/B.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2017/QualificationRound/A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2017/QualificationRound/B.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2017/QualificationRound/C.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2017/QualificationRound/D.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2017/QualificationRound/Readme.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2017/Readme.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2017/Round1A/A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2017/Round1A/Readme.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2017/Round1B/A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2017/Round1B/C.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2017/Round1B/Readme.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2018/Quali/A/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2018/Quali/B/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2018/Quali/C.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2018/Quali/D/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2018/Readme.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2018/Round1A/A/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2018/Round1A/B/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2019/Quali/A/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2019/Quali/B/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2019/Quali/C/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2019/Quali/D/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2019/Quali/D/interactive_runner.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2019/Quali/D/my_binary.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2019/Quali/D/testing_tool.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2019/Readme.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2019/Round1A/A/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2019/Round1A/B/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2019/Round1A/C/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2019/Round1B/A/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2019/Round1B/B/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/GoogleCodeJam/Y2019/Round1B/C/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/AllPairShortestPathStandard/UVA11463.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/AllPairShortestPathStandard/UVA821.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/AllPairShortestPathVariants/UVA104.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/AllPairShortestPathVariants/UVA1056.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/ArticulationPoints/UVA10765.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/ArticulationPoints/UVA796.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/BipartiteGraph/UVA11138.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/BipartiteGraph/UVA11159.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/BipartiteGraphCheck/UVA11080.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/BipartiteGraphCheck/UVA11396.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/DirectedAcyclicGraph/ConvertingGeneralGraphToDAG/UVA10913.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/DirectedAcyclicGraph/ConvertingGeneralGraphToDAG/UVA11487.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/DirectedAcyclicGraph/ConvertingGeneralGraphToDAG/UVA907.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/DirectedAcyclicGraph/CoutingPathsInDAG/UVA10401.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/DirectedAcyclicGraph/CoutingPathsInDAG/UVA11957.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/DirectedAcyclicGraph/CoutingPathsInDAG/UVA988.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/DirectedAcyclicGraph/SingleSourceShortestLongestPaths/UVA10285.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/DirectedAcyclicGraph/SingleSourceShortestLongestPaths/UVA10350.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/DirectedAcyclicGraph/SingleSourceShortestLongestPaths/UVA452.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/EulerianGraph/UVA10054.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/EulerianGraph/UVA10203.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/EulerianGraph/UVA10596.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/FloodFill/UVA1103.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/FloodFill/UVA11094.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/FloodFill/UVA11953.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/GraphTraversal/UVA00118.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/GraphTraversal/UVA11831.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/GraphTraversal/UVA11902.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/GraphTraversal/UVA11906.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/GraphTraversal/UVA12442.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/MSTStandard/UVA11228.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/MSTStandard/UVA11631.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/MSTStandard/UVA11747.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/MSTVariants/UVA10369.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/MSTVariants/UVA10600.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/NegativeWeightCycleBellmanFord/UVA10449.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/NegativeWeightCycleBellmanFord/UVA10557.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/NetworkFlow/StandardMaxFlowProblem/UVA259.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/NetworkFlow/StandardMaxFlowProblem/UVA820.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/NetworkFlow/Variants/UVA11380.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/NetworkFlow/Variants/UVA11506.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/NetworkFlowStandard/UVA11167.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/StronglyConnectedComponents/CallingCircles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/StronglyConnectedComponents/Dominos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/StronglyConnectedComponents/UVA11838.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/TopologicalSort/UVA11060.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/TopologicalSort/UVA872.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/TopologicalSort/UVA872WA.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/Tree/UVA10459.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/Tree/UVA10805.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/Tree/UVA11695.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/UnweightedBFSEasier/UVA10653.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/UnweightedBFSEasier/UVA924.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/UnweightedBFSHarder/UVA11101.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/UnweightedBFSHarder/UVA12160.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/UnweightedBFSHarder/UVA314.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/WeightedDijkstraEasier/UVA10986.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/WeightedDijkstraEasier/UVA1112.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Graph/WeightedDijkstraHarder/UVA10801.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Introduction/Anagram/UVA454.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Introduction/Easy/UVA10114.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Introduction/Easy/UVA11559.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Introduction/Easy/UVA11799.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Introduction/GameCard/UVA10646.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Introduction/GameCard/UVA12247.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Introduction/GameCard/UVA462.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Introduction/GameChess/UVA278.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Introduction/GameOtherEasier/UVA11459.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Introduction/Medium/UVA10141.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Introduction/Medium/UVA11507.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Introduction/Palindrome/UVA11221.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Introduction/RealLifeProblemEasier/UVA161.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Introduction/SuperEasy/UVA11044.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Introduction/SuperEasy/UVA1124.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Introduction/SuperEasy/UVA11364.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Introduction/SuperEasy/UVA11498.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Introduction/SuperEasy/UVA11547.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Introduction/SuperEasy/UVA11727.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Introduction/SuperEasy/UVA12250.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Introduction/SuperEasy/UVA12279.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Introduction/SuperEasy/UVA12289.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Introduction/SuperEasy/UVA12372.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Introduction/SuperEasy/UVA12403.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Introduction/SuperEasy/UVA12577.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Introduction/Time/UVA11947.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Introduction/Time/UVA893.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Introduction/TimeWaster/UVA12060.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Introduction/TimeWaster/UVA12085.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Introduction/TimeWaster/UVA556.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/AddAndSearchWord_DataStructureDesign.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/BalancedBinaryTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/BasicCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/BasicCalculatorII.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/BestTimeToBuyAndSellStock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/BestTimeToBuyAndSellStockII.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/BestTimeToBuyAndSellStockIII.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/BestTimeToBuyAndSellStockWithCooldown.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/BinaryTreeInOrderTraversal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/BinaryTreeLevelOrderTraversal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/BinaryTreeMaximumPathSum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/BinaryTreeZigzagLevelOrderTraversal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/BitwiseAndOfNumberRange.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/BrustBallons.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/BullsAndCows.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/ClimbingStairs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/CloneGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/CoinChange.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/Combination.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/CombinationSum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/CombinationSum2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/CombinationSum3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/ConstructBinaryTreeFromPreorderAndInorderTraversal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/ContainsDuplicate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/ContainsDuplicateIII.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/ConvertBSTToGreaterTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/ConvertSortedArrayToBinarySearchTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/CopyListWithRandomPointer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/CountAndSay.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/CountPrimes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/CountToSmallerNumberAfterSelf.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/CountingBits.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/CourseSchedule.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/CourseScheduleII.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/DailyTemperature.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/DecodeWay.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/DeleteNodeInALinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/DiameterOfBinaryTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/DifferentWaysToAddParentheses.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/DistinctSubsequence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/DivideTwoIntegers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/EditDistance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/EvaluateReversePolishNotation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/ExcelSheetColumnNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/FactorialTrailingZeroes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/FindAllAnagramInAString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/FindAllNumberDisappearedInAnArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/FindFirstAndLastPositionOfElementInSortedArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/FindMedianFromDataStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/FindMinimumInRotatedSortedArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/FindPeekElement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/FindTheDuplicateNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/FirstMissingPositive.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/FirstUniqueCharacterInAString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/FizzBuzz.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/FlattenBinaryTreeToLinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/FlattenNestedListIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/FourSum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/FourSumII.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/FractionToRecurringDecimal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/GameOfLife.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/GasStation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/GenerateParenthese.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/GroupAnagrams.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/HIndex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/HIndexII.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/HammingDistance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/HappyNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/HouseRobber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/HouseRobberII.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/HouseRobberIII.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/ImplementStrStr.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/ImplementTrie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/IncreasingTripletSubsequence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/InsertDeleteGetRandomO1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/InsertInterval.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/IntegerToRoman.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/IntersectionOfTwoArrayII.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/IntersectionOfTwoArraysII.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/IntersectionOfTwoLinkedLists.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/InvertBinaryTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/JumpGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/JumpGameII.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/KthLargestElementInAnArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/KthSmallestElementInABst.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/KthSmallestElementInASortedMatrix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/LRUCache.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/LargestNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/LargestRectangleInHistogram.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/LinkedListCycle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/LinkedListCycleII.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/LongestCommonPrefix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/LongestConsecutiveSequence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/LongestIncreasingPathInMatrix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/LongestIncreasingSubSequence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/LongestPalindromicSubstring.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/LongestPalindromicSubstring2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/LongestSubstringWithAtLeastKRepeatingCharacters.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/LowestCommonAncestorOfABinaryTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/MajorityElement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/MaxPointsOnALine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/MaximalRectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/MaximalSquare.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/MaximumDepthOfBinaryTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/MaximumProductOfWordLength.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/MaximumProductSubarray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/MaximumSubarray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/MedianOfTwoSortedArrays.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/MergeInterval.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/MergeKSortedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/MergeSortedArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/MergeTwoBinaryTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/MinStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/MinimumDepthOfBinaryTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/MinimumPathSum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/MinimumSizeSubarraySum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/MinimumWindowSubstring.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/MissingNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/MoveZeros.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/MultiplyStrings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/NQueens.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/NumberOf1Bits.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/NumberOfIsland.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/OddEvenLinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/PalindromeLinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/PalindromePartitioning.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/PascalTriangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/PathSum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/PathSumII.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/PathSumIII.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/PerfectSquares.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/PermutationII.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/PermutationSequence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/Permutations.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/PlusOne.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/PopulatingNextRightPointersInEachNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/PopulatingNextRightPointersInEachNodeII.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/PowerOfThree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/ProductOfArrayExceptSelf.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/QueueReconstructionByHeight.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/RangeSumQueryMutable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/RegularExpressionMatching.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/RemoveNthNodeFromEndOfList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/ReverseBits.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/ReverseLinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/RotateArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/RotateImage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/SearchA2DMatrix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/SearchA2DMatrixII.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/SearchInRotatedSortedArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/SearchInRotatedSortedArrayII.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/SearchInsertPosition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/SerializeAndDeserializeBinaryTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/SetMatrixZeroes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/ShortestUnsortedContinousSubarray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/ShuffleAnArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/SimplifyPath.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/SingleNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/SingleNumberIII.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/SlidingWindowMaximum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/SortColors.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/SortList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/SpiralMatrix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/SpiralMatrixII.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/Sqrt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/StringToIntegerAtoi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/Subsets.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/SumOfTwoInteger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/SurroundedRegions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/SymmetricTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/TextJustification.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/TheSkylineProblem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/TopKFrequentElements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/TrapingRainWater.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/TwentyFourGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/UglyNumberII.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/UniqueBinarySearchTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/UniquePath.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/ValidAnagram.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/ValidNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/ValidPalindrome.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/ValidParentheses.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/ValidSudoku.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/ValidateBinarySearchTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/WiggleSortII.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/WildcardMatching.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/WordBreak.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/WordBreakII.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/WordLadder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/WordLadderII.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/WordSearch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/WordSearchII.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Leetcode/threeSum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Mathematics/BigIntegerBaseNumberConversion/UVA10551.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Mathematics/BigIntegerBasicFeature/UVA10523.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Mathematics/BigIntegerBasicFeature/UVA11879.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Mathematics/BigIntegerOthers/UVA10814.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Mathematics/BigIntegerOthers/UVA11821.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Mathematics/BigIntegerOthers/UVA1230.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Mathematics/BigIntegerPrimalityTesting/UVA10235.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Mathematics/BigIntegerPrimalityTesting/UVA11287.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Mathematics/BigIntegerPrimalityTesting/UVA1210.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Mathematics/BinomialCoefficients/UVA10541.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Mathematics/FibonacciNumber/UVA10689.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Mathematics/FibonacciNumber/UVA763.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Mathematics/FindingPrimeFactors/UVA11466.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Mathematics/FindingPrimeFactors/UVA583.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Mathematics/GCDLCM/UVA11827.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Mathematics/GameTheory/UVA10111.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Mathematics/GameTheory/UVA10368.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Mathematics/GameTheory/UVA11311.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Mathematics/GameTheory/UVA11489.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Mathematics/GameTheory/UVA847.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Mathematics/JustAdHoc/UVA11526.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Mathematics/LogExpPower/UVA10916.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Mathematics/MathSimulationEasier/UVA1225.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Mathematics/MathSimulationHarder/UVA616.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Mathematics/OtherNumberTheoryProblem/UVA756.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Mathematics/SimplerOne/UVA10773.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Mathematics/SimplerOne/UVA11723.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Mathematics/SimplerOne/UVA11875.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Maths/Primes/Primes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Maths/Primes/df" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/MoreAdvanceTopic/ChallengingBacktrackProblem/UVA11065.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/MoreAdvanceTopic/ChallengingBacktrackProblem/UVA11195.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/MoreAdvanceTopic/MeetInTheMiddle_A_IDA/UVA11211.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/MoreAdvanceTopic/MeetInTheMiddle_A_IDA/UVA1211Prerun.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/BinarySearch/UVA00697.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/BinarySearch/UVA00957.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/BinarySearch/UVA10567.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/BinarySearch/UVA12192.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/BinarySearchAnswer/UVA10341.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/CoinChange/UVA10306.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/CoinChange/UVA11517.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/GreedyClassical/UVA11264.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/GreedyClassical/UVA11389.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/GreedyClassical/UVA12405.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/GreedyNonClassical/UVA10656.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/GreedyNonClassical/UVA10718.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/GreedyNonClassical/UVA11157.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/GreedySorting/UVA11100.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/GreedySorting/UVA11292.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/GreedySorting/UVA12210.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/IterativeFancy/UVA11553.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/IterativeFancy/UVA12455.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/IterativeOneLoop/UVA10976.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/IterativeOneLoop/UVA1237.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/IterativeOneLoop/UVA927.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/IterativeThreeLoop/UVA735.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/IterativeThreeLoopHarder/UVA10660.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/IterativeThreeLoopHarder/UVA11236.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/IterativeThreeLoopHarder/UVA11565.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/IterativeTwoLoop/UVA11242.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/IterativeTwoLoop/UVA1260.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/Knapsack/UVA10616.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/Knapsack/UVA10819.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/LongestIncreasingSubsequence/UVA11456.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/LongestIncreasingSubsequence/UVA11790.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/Max1DRangeSum/UVA10755.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/Max1DRangeSum/UVA787.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/Max2DRangeSum/UVA10827.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/Max2DRangeSum/UVA11951.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/Max2DRangeSum/UVA983.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/NonClassical/UVA10337.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/NonClassical/UVA10721.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/NonClassical/UVA10943.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/TSP/UVA10496.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/ProblemSolving/UVA11450.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/RareTopic/SortingInLinearTime/UVA11462.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/RareTopic/TowerOfHanoi/UVA10017.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/StringProcessing/CipherEncodeEncryptDecodeDecryptEasier/UVA10851.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/StringProcessing/CipherEncodeEncryptDecodeDecryptEasier/UVA11278.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/StringProcessing/CipherEncodeEncryptDecodeDecryptHarder/UVA11385.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/StringProcessing/CipherEncodeEncryptDecodeDecryptHarder/UVA554.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/StringProcessing/DPClassic/UVA10635.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/StringProcessing/DPClassic/UVA526.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/StringProcessing/FrequencyCounting/UVA10252.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/StringProcessing/FrequencyCounting/UVA11203.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/StringProcessing/FrequencyCounting/UVA902.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/StringProcessing/InputParsingNonRecursive/UVA11878.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/StringProcessing/JustAdHoc/UVA941.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/StringProcessing/LongestPrefixSuffix/LongestPrefixSuffix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/StringProcessing/LongestPrefixSuffix/LongestPrefixSuffix2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/StringProcessing/RegularExpression/UVA10058.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/StringProcessing/StringMatchingStandard/UVA11475.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/StringProcessing/SuffixTreeStandard/UVA11107.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/StringProcessing/SuffixTreeStandard/UVA11512.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/StringProcessing/SuffixTreeStandard/UVA760.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/Template/CodeJamTemplate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/main.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1ZOVTNTMc6K6cFoOQ9ycIoL7ZZh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RunManager" selected="Python.Solution">
+    <configuration name="Solution (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GoogleCodeJam.Y2020.Quali.B.Solution" />
+      <module name="algorithm_practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GoogleCodeJam.Y2020.Quali.B.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GoogleCodeJam.Y2020.Quali.C.Solution" />
+      <module name="algorithm_practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GoogleCodeJam.Y2020.Quali.C.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GoogleCodeJam.Y2020.Quali.E.Solution" />
+      <module name="algorithm_practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GoogleCodeJam.Y2020.Quali.E.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GoogleCodeJam.Y2020.Quali.A.Solution" />
+      <module name="algorithm_practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GoogleCodeJam.Y2020.Quali.A.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="algorithm_practice" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/main/java/GoogleCodeJam/Y2020/Quali/D" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main/java/GoogleCodeJam/Y2020/Quali/D/Solution.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Solution" />
+        <item itemvalue="Application.Solution (3)" />
+        <item itemvalue="Application.Solution (2)" />
+        <item itemvalue="Application.Solution (1)" />
+        <item itemvalue="Application.Solution" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3fd50c82-6892-4638-862e-b13ab08b4290" name="Default Changelist" comment="" />
+      <created>1584710134265</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584710134265</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="524" y="170" key="#Inspections" timestamp="1585987004287">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="524" y="170" key="#Inspections/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585987004287" />
+    <state x="658" y="141" key="#Solution" timestamp="1585987025895">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="658" y="141" key="#Solution/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585987025895" />
+    <state x="676" y="376" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1584711256935">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="676" y="376" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584711256935" />
+    <state x="694" y="319" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585961725763">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="694" y="319" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585961725763" />
+    <state width="1342" height="328" key="GridCell.Tab.0.bottom" timestamp="1585986828217">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1342" height="328" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585986828217" />
+    <state width="1342" height="328" key="GridCell.Tab.0.center" timestamp="1585986828217">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1342" height="328" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585986828217" />
+    <state width="1342" height="328" key="GridCell.Tab.0.left" timestamp="1585986828217">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1342" height="328" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585986828217" />
+    <state width="1342" height="328" key="GridCell.Tab.0.right" timestamp="1585986828217">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1342" height="328" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585986828217" />
+    <state width="1342" height="328" key="GridCell.Tab.1.bottom" timestamp="1585986828218">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1342" height="328" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585986828218" />
+    <state width="1342" height="328" key="GridCell.Tab.1.center" timestamp="1585986828218">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1342" height="328" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585986828218" />
+    <state width="1342" height="328" key="GridCell.Tab.1.left" timestamp="1585986828218">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1342" height="328" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585986828218" />
+    <state width="1342" height="328" key="GridCell.Tab.1.right" timestamp="1585986828218">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1342" height="328" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585986828218" />
+    <state x="463" y="165" key="SettingsEditor" timestamp="1585996780100">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="463" y="165" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585996780100" />
+    <state x="668" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1585986844094">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="668" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585986844094" />
+    <state x="467" y="154" width="586" height="732" key="find.popup" timestamp="1585025218970">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="467" y="154" width="586" height="732" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585025218970" />
+    <state x="423" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1585987021854">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="423" y="239" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585987021854" />
+  </component>
+</project>
