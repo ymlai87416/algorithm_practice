@@ -1,0 +1,65 @@
+ //init a matrix
+        int[][] r = new int[n][n];
+        for(int i=0; i<n; ++i){
+            for(int j=0; j<n; ++j){
+                r[i][j] = ((j-i+n) % n) + 1;
+            }
+        }
+
+        //printMatrix(r);
+        int diff = k-n;
+
+        //swap row until everything is good, just keep swapping.
+        //the best move is abs(diff) closer to zero...
+        //terminate condition?
+        while(diff != 0){
+            //out.println("D " + diff);
+            int best_val = 0;
+            int best_from = -1;
+            int best_to = -1;
+            for(int i=0; i<n; ++i){
+                for(int j=i+1; j<n; ++j){
+                    //find the best move
+                    int temp;
+
+                    int from_row = i;
+                    int to_row = j;
+                    temp = r[from_row][from_row] + r[to_row][to_row] - r[from_row][to_row] - r[to_row][from_row];
+                    if (Math.abs(diff + best_val) > Math.abs(diff + temp)) {
+                        best_val = temp;
+                        best_from = i;
+                        best_to = j;
+                    }
+
+                    //find the best move
+                    int from_col = i;
+                    int to_col = j;
+                    temp = r[from_row][from_row] + r[to_row][to_row] - r[from_row][to_row] - r[to_row][from_row];
+                    if (Math.abs(diff + best_val) > Math.abs(diff + temp)) {
+                        best_val = temp;
+                        best_from = i;
+                        best_to = j;
+                    }
+                }
+            }
+
+            //no move is better than no moving....
+            if(best_val == 0)
+                return null;
+
+            int temp = order[best_from];
+            order[best_from] = order[best_to];
+            order[best_to] = temp;
+            diff = diff + best_val;
+        }
+
+        //out.println("DE " + diff);
+
+        for(int i=0; i<n; ++i){
+            int oi = order[i];
+            for(int j=0; j<n; ++j){
+                r[i][j] = ((oi+j) % n) + 1;
+            }
+        }
+
+        return r;

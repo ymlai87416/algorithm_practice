@@ -1,6 +1,5 @@
 package GoogleCodeJam.Y2017.QualificationRound;
 
-import Template.CodeJamTemplate;
 
 import java.io.File;
 import java.io.FileOutputStream;

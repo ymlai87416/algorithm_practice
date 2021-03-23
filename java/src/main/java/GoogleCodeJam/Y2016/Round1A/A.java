@@ -1,7 +1,5 @@
 package GoogleCodeJam.Y2016.Round1A;
 
-import Template.CodeJamTemplate;
-
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.PrintStream;

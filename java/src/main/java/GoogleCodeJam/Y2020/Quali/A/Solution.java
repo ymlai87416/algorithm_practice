@@ -24,8 +24,8 @@ public class Solution {
                     new FileOutputStream(OUT, false));
                     */
 
-            IN = "C:\\GitProjects\\algorithm_practice\\src\\main\\java\\GoogleCodeJam\\Y2020\\Quali\\A\\A-test.in";
-            //IN = null;
+            //IN = "C:\\GitProjects\\algorithm_practice\\src\\main\\java\\GoogleCodeJam\\Y2020\\Quali\\A\\A-test.in";
+            IN = null;
             if(IN == null)
                 sc = new Scanner(System.in);
             else

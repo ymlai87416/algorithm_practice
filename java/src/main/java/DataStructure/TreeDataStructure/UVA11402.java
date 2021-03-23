@@ -3,6 +3,7 @@ package DataStructure.TreeDataStructure;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.BitSet;
 import java.util.StringTokenizer;
 
@@ -15,6 +16,8 @@ public class UVA11402 {
 
     static class SegmentTree { // the segment tree is stored like a heap array
         private int[] st = new int[1024001*4];
+        private boolean[] flip = new boolean[1024001*4];
+        private Integer[] set = new Integer[1024001*4];
         private BitSet A;
         private int n;
 
@@ -38,41 +41,102 @@ public class UVA11402 {
         }
 
         public void updateRange(int i, int j, int val){
-            updateRange(1, 0, n-1, i, j, val);
+            updateRange(1, 0, n-1, i, j, val, true);
         }
 
         public void flipRange(int i, int j){
-            flipRange(1, 0, n-1, i, j);
+            flipRange(1, 0, n-1, i, j, true);
         }
 
-        private void updateRange(int p, int L, int R, int i, int j, int val){
+        private void updateRange(int p, int L, int R, int i, int j, int val, boolean lazy){
             if (L == R) // as L == R, either one is fine
                 st[p] = val;
+
             else { // recursively compute the values
-                if(L <= i && i<=(L+R)/2) updateRange(left(p), L, (L+R)/2, i, Math.min(j, (L+R)/2), val);
-                if ((L+R)/2+1 <= j && j <= R ) updateRange(right(p), (L+R)/2+1, R, Math.max(i, (L+R)/2+1), j, val);
-                int p1 = st[left(p)], p2 = st[right(p)];          //Never a node with only left or right child.
-                st[p]= p1 + p2;
+                if(L == i && R == j && lazy) {
+                    set[p] = val;
+                    flip[p] = false;
+                }
+                else {
+                    if(lazy && hasPendingChange(p))
+                        populateUpdate(p, L, R, false);
+
+                    if (L <= i && i <= (L + R) / 2)
+                        updateRange(left(p), L, (L + R) / 2, i, Math.min(j, (L + R) / 2), val, lazy);
+                    if ((L + R) / 2 + 1 <= j && j <= R)
+                        updateRange(right(p), (L + R) / 2 + 1, R, Math.max(i, (L + R) / 2 + 1), j, val, lazy);
+                    int p1 = st[left(p)], p2 = st[right(p)];          //Never a node with only left or right child.
+                    st[p] = p1 + p2;
+                }
             }
         }
 
-        private void flipRange(int p, int L, int R, int i, int j){
+        private void flipRange(int p, int L, int R, int i, int j, boolean lazy){
             if (L == R) // as L == R, either one is fine
                 st[p] = 1-st[p];
             else { // recursively compute the values
-                if(L <= i && i<=(L+R)/2) flipRange(left(p), L, (L+R)/2, i, Math.min(j, (L+R)/2));
-                if ((L+R)/2+1 <= j && j <= R ) flipRange(right(p), (L+R)/2+1, R, Math.max(i, (L+R)/2+1), j);
-                int p1 = st[left(p)], p2 = st[right(p)];          //Never a node with only left or right child.
-                st[p]= p1 + p2;
+                if(L == i && R == j && lazy) {
+                    if(set[p] == null)
+                        flip[p] = !flip[p];
+                    else {
+                        set[p] = 1 - set[p];
+                    }
+                }
+                else {
+                    if(lazy && hasPendingChange(p))
+                        populateUpdate(p, L, R, false);
+
+                    if (L <= i && i <= (L + R) / 2)
+                        flipRange(left(p), L, (L + R) / 2, i, Math.min(j, (L + R) / 2), lazy);
+                    if ((L + R) / 2 + 1 <= j && j <= R)
+                        flipRange(right(p), (L + R) / 2 + 1, R, Math.max(i, (L + R) / 2 + 1), j, lazy);
+                    int p1 = st[left(p)], p2 = st[right(p)];          //Never a node with only left or right child.
+                    st[p] = p1 + p2;
+                }
             }
         }
 
-        private int rmq(int p, int L, int R, int i, int j) { // O(log n)
+        private void populateUpdate(int p, int L, int R, boolean recursive){
+            //System.out.println("Trigger update: " + L + " " + R);
+            boolean flush = false;
+            if(set[p] != null) {
+                updateRange(p, L, R, L, R, set[p], false);
+                flush = true;
+            }
+            else if(flip[p]) {
+                flipRange(p, L, R, L, R, false);
+                flush = true;
+            }
+
+            set[p] = null;
+            flip[p] = false;
+
+            if(recursive && !flush){
+                if(L == R) return;
+                populateUpdate(left(p), L, (L + R) / 2, recursive);
+                populateUpdate(right(p), (L + R) / 2 + 1, R, recursive);
+                int p1 = st[left(p)], p2 = st[right(p)];          //Never a node with only left or right child.
+                st[p] = p1 + p2;
+            }
+        }
+
+        private boolean hasPendingChange(int p){
+            return set[p] != null || flip[p];
+        }
+
+        private int rmq(int p, int L, int R, int i, int j, boolean flushed) { // O(log n)
             if (i > R || j < L) return -1; // current segment outside query range
-            if (L >= i && R <= j) return st[p]; // inside query range
+            if(hasPendingChange(p)) {
+                populateUpdate(p, L, R, true);
+                flushed = true;
+            }
+            if (L >= i && R <= j) {
+                if(!flushed) populateUpdate(p, L, R, true);
+                return st[p]; // inside query range
+            }
             // compute the min position in the left and right part of the interval
-            int p1 = rmq(left(p), L, (L + R) / 2, i, j);
-            int p2 = rmq(right(p), (L + R) / 2 + 1, R, i, j);
+            int p1 = rmq(left(p), L, (L + R) / 2, i, j, flushed);
+            int p2 = rmq(right(p), (L + R) / 2 + 1, R, i, j, flushed);
             if (p1 == -1) return p2; // if we try to access segment outside query
             if (p2 == -1) return p1; // same as above
             return p1 + p2; // as in build routine
@@ -81,11 +145,13 @@ public class UVA11402 {
         public SegmentTree(BitSet A, int size) {
             this.A = A;
             n = size;
+            Arrays.fill(flip, false);
+            Arrays.fill(set, null);
             build(1, 0, n - 1); // recursive build
         }
 
         public int rmq(int i, int j) {
-            return rmq(1, 0, n - 1, i, j);
+            return rmq(1, 0, n - 1, i, j, false);
         }
 
         public void debugTree(int p, int L, int R){

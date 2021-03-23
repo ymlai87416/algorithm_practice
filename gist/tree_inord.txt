@@ -1,0 +1,9 @@
+public void inorder(TreeNode node, List<$class$> result){
+	if(node == null)
+		return;
+	else{
+		inorder(node.left, result);
+		result.add(node.val);
+		inorder(node.right, result);
+	}
+}

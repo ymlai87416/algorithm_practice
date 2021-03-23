@@ -108,52 +108,70 @@ public class Primes {
         }
     }
 
+    enum OutputFormat{
+        inline,     //for short line
+        file        //for long line
+    }
+
     public void run(){
         long start, end;
         double interval;
 
-/*        start = (new Date()).getTime();
-        SieveOfEratosthenes sieve2 = new SieveOfEratosthenes(15219314);
-        sieve2.eratosthenes2();
-        end = (new Date()).getTime();
-        interval = (end-start) / 1000.0;
-        System.out.println("eratosthenes-2 run at " + interval);*/
+        int N = 1000000;
 
         start = (new Date()).getTime();
-        SieveOfEratosthenes sieve1 = new SieveOfEratosthenes((1<<31)-1);
+        SieveOfEratosthenes sieve1 = new SieveOfEratosthenes(N);
         sieve1.eratosthenes1();
         end = (new Date()).getTime();
         interval = (end-start) / 1000.0;
-        System.out.println("eratosthenes-1 run at " + interval);
+        System.out.println("eratosthenes-1(" + N + ") run at " + interval);
+        System.out.println("find prime: " + sieve1.result.size());
 
-        StringBuilder sb200k = new StringBuilder();
-        StringBuilder sb64k = new StringBuilder();
-        sb200k.append("int[] p={");
-        for(int i=0; i<sieve1.result.size(); ++i){
-            sb200k.append(sieve1.result.get(i));
-            if(sb200k.length() > 200*1000) break;
-            sb200k.append(",");
+        OutputFormat fmt = OutputFormat.file;
+
+        if(fmt == OutputFormat.file){
+            try {
+                FileWriter myWriter = new FileWriter("prime_file.txt");
+                myWriter.write(String.valueOf(sieve1.result.size()) + "\n");
+                for(int i=0; i<sieve1.result.size(); ++i)
+                    myWriter.write(String.valueOf(sieve1.result.get(i)) + "\n");
+                myWriter.close();
+            } catch (IOException e) {
+                System.out.println("An error occurred.");
+                e.printStackTrace();
+            }
+
+            /*
+            //To read, use this code segment
+            try {
+                BufferedReader myReader = new BufferedReader(new FileReader( "prime_file.txt"));
+                int[] primes;
+                int n = Integer.parseInt(myReader.readLine());
+                primes = new int[n];
+                for(int i=0; i<n; ++i)
+                    primes[i] = Integer.parseInt(myReader.readLine());
+                myReader.close();
+            } catch (IOException e) {
+                System.out.println("An error occurred.");
+                e.printStackTrace();
+            }
+             */
         }
-        for(int i=0; i<sieve1.result.size(); ++i){
-            sb64k.append(sieve1.result.get(i));
-            if(sb64k.length() > 64*1000) break;
+        else {
+            try {
+                FileWriter myWriter = new FileWriter("prime_inline.txt");
+                myWriter.write("int[] p ={");
+                for(int i=0; i<sieve1.result.size(); ++i)
+                    myWriter.write(String.valueOf(sieve1.result.get(i)) + ", ");
+                myWriter.write("}");
+                myWriter.close();
+            } catch (IOException e) {
+                System.out.println("An error occurred.");
+                e.printStackTrace();
+            }
+
         }
-        sb200k.append("};");
-        sb64k.append("};");
 
-        File f64k = new File("primeArray64k.txt");
-        File f200k = new File("primeArray200k.txt");
-
-        PrintStream out = null;
-        try {
-            out = new PrintStream(new FileOutputStream(f64k));
-            PrintStream out2 = new PrintStream(new FileOutputStream(f200k));
-
-            out.println(sb64k.toString());
-            out2.println(sb200k.toString());
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
 
 /*        start = (new Date()).getTime();
         SieveOfEratosthenes sieve3 = new SieveOfEratosthenes(15219314);

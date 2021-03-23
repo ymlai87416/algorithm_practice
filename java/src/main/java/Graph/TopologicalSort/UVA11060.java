@@ -53,11 +53,15 @@ public class UVA11060 {
                 indegree[ib]++;
             }
 
-            /*ts = new ArrayList<Integer>();
+            /*
+            ts = new ArrayList<Integer>();
             for(int i=nd-1; i>=0; --i){
                 if (visited[i] == 0)
                     dfs2(i);
-            }*/
+            }
+            Collections.reverse(ts);
+            ArrayList<Integer> result =ts;
+            */
 
             ArrayList<Integer> result = Kahn(nd);
 
@@ -67,6 +71,8 @@ public class UVA11060 {
                 System.out.print(reverse[result.get(i)]);
             }
             System.out.println(".\n");
+
+
         }
     }
 

@@ -1,0 +1,36 @@
+//uva247
+
+static void tarjanSCC(int u) {
+    dfs_low[u] = dfs_num[u] = dfsNumberCounter++; // dfs_low[u] <= dfs_num[u]
+    S.push(u); // stores u in a vector based on order of visitation
+    visited[u] = true;
+    for (int j = 0; j < adjcnt[u]; j++) {
+        int v = adj[u][j];
+        if (dfs_num[v] == -1)
+            tarjanSCC(v);
+        if (visited[v]) // condition for update
+            dfs_low[u] = Math.min(dfs_low[u], dfs_low[v]);
+    }
+
+    //the output part
+    if (dfs_low[u] == dfs_num[u]) { // if this is a root (start) of an SCC
+        StringBuilder sb = new StringBuilder();
+        while (true) {
+            int v = S.pop(); visited[v] = false;
+            sb.append(reverseMap[v]); sb.append(", ");
+            if (u == v) break;
+        }
+        System.out.print(sb.substring(0, sb.length()-2).toString() + "\n");
+    }
+}
+
+
+Arrays.fill(adjcnt, 0);
+    for(int i=0; i<adj.length; ++i)
+        Arrays.fill(adj[i], 0);
+
+dfsNumberCounter = numSCC = 0;
+
+for (int i = 0; i < n; i++)
+    if (dfs_num[i] == -1)
+        tarjanSCC(i);

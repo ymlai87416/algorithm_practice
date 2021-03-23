@@ -1,0 +1,9 @@
+public class TreeNode {
+	$type$ val;
+	TreeNode left;
+	TreeNode right;
+
+	TreeNode($type$ x) {
+		val = x;
+	}
+}

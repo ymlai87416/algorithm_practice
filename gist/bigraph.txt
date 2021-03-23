@@ -1,0 +1,28 @@
+//uva11080
+boolean isBipartite = true;
+for(int i=0; i<vx; ++i){
+    //System.out.println("Enter as " + i);
+    //debugColor(nc);
+
+    if(color[i] != -1) continue; //already colored
+    Queue<Integer> q = new ArrayDeque<Integer>();
+    q.offer(i);
+
+    color[i] = 0;
+    // addition of one boolean flag, initially true
+    while (!q.isEmpty() & isBipartite) { // similar to the original BFS routine
+        int u = q.poll();
+        for (int j = 0; j < adjcnt[u]; j++) {
+            int v = adj[u][j];
+            if (color[v] == -1) { // but, instead of recording distance,
+                color[v] = 1 - color[u]; // we just record two colors {0, 1}
+                q.offer(v);
+            } else if (color[v] == color[u]) { // u & v.first has same color
+                isBipartite = false;
+                break;
+            }
+        }
+        //debugColor(nc);
+    } // we have a coloring conflict
+    if(!isBipartite) break;
+}

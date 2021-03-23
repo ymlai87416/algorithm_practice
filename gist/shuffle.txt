@@ -1,0 +1,18 @@
+//leetcode: shuffle an array
+
+Random r = new Random();
+/** Returns a random shuffling of the array. */
+public int[] shuffle() {
+    for(int i=temp.length-1; i>=1; --i){
+        int j=  r.nextInt(i+1);
+        swap(temp, i, j);
+    }
+
+    return temp;
+}
+
+private void swap(int[] a, int i, int j){
+    int temp = a[i];
+    a[i]= a[j];
+    a[j] = temp;
+}

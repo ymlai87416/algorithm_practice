@@ -81,10 +81,10 @@ public class WordLadderII {
 
             for(int i=0; i<newWordList.size(); ++i){
                 for(int j=i+1; j<newWordList.size(); ++j){
-                    int diff = wordDiff(newWordList.get(i), newWordList.get(j));
+                    boolean isConnect = wordDiff(newWordList.get(i), newWordList.get(j)) == 1;
                     //assume u v of same length
 
-                    if(diff == 1){
+                    if(isConnect){
                         adjList.get(i).add(j);
                         adjList.get(j).add(i);
                     }
@@ -99,25 +99,25 @@ public class WordLadderII {
                 int[] visited = new int[newWordList.size()];
                 for(int j=0; j<visited.length; ++j) visited[j] = -1;
                 Queue<Integer> q = new ArrayDeque<Integer>();
-                q.offer(targetIdx);
-                visited[targetIdx] = 1;
+                q.offer(beginIdx);
+                visited[beginIdx] = 1;
 
                 while(!q.isEmpty()){
                     int u = q.poll();
                     for(int v: adjList.get(u)){
                         if(visited[v] == -1){
                             visited[v] = visited[u]+1;
-                            if(v == beginIdx)
+                            if(v == targetIdx)
                                 break;
                             q.add(v);
                         }
                     }
                 }
 
-                if(visited[beginIdx] == -1) return new ArrayList<>();
+                if(visited[targetIdx] == -1) return new ArrayList<>();
                 else{
                     Stack<String> st = new Stack<>();
-                    List<List<String>> t = bfsBackTrack(newWordList, adjList, st, beginIdx, visited);
+                    List<List<String>> t = bfsBackTrack(newWordList, adjList, st, beginIdx, visited, targetIdx);
                     if(t!=null)
                         result.addAll(t);
                     }
@@ -129,9 +129,9 @@ public class WordLadderII {
 
         }
 
-        private List<List<String>> bfsBackTrack(List<String> words, List<List<Integer>> adjList, Stack<String> stack, int u, int[] visited){
+        private List<List<String>> bfsBackTrack(List<String> words, List<List<Integer>> adjList, Stack<String> stack, int u, int[] visited, int target){
             //System.out.format("%d %s %s\n", curStep, words.get(targetIdx), words.get(u));
-            if(visited[u] == 1){
+            if(u == target){
                 List<List<String>> result = new ArrayList<>();
                 stack.push(words.get(u));
                 result.add(new ArrayList<>(stack));
@@ -142,9 +142,9 @@ public class WordLadderII {
             List<List<String>> result = new ArrayList<>();
 
             for(int v : adjList.get(u)){
-                if(visited[u] == visited[v] + 1) {
+                if(visited[u]+1 == visited[v]) {
                     stack.push(words.get(u));
-                    List<List<String>> t = bfsBackTrack(words, adjList, stack, v, visited);
+                    List<List<String>> t = bfsBackTrack(words, adjList, stack, v, visited, target);
                     if (t != null)
                         result.addAll(t);
                     stack.pop();

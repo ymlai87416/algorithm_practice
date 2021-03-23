@@ -1,0 +1,23 @@
+static class Pair implements Comparable<Pair>{                 //in dfs: v is a (neighbor, weight) pair
+    public int first;
+    public int second;
+
+    public Pair(int a, int b){
+        first = a; second = b;
+    }
+
+    @Override
+    public int compareTo(Pair o) {
+        if(first < o.first)
+            return -1;
+        else if(first > o.first)
+            return 1;
+        else{
+            if(second < o.second)
+                return -1;
+            else if(second > o.second)
+                return 1;
+            else return 0;
+        }
+    }
+}
