@@ -1,11 +1,8 @@
 package GoogleCodeJam.Y2009.Round1A.B;
 
-
 /**
  * Created by Tom on 9/4/2016.
  */
-import Graph.WeightedDijkstraEasier.UVA1112;
-
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
@@ -105,17 +102,38 @@ public class Solution {
                 waitE = Si-r;
             }
             else{
-                waitS = Wi-r;
+                waitS = (Si+Wi)-r;
                 waitE = 0;
             }
-            
-            
-            if(pos[0] -1 > 0) adj.add(new Pair(1+waitS, intersection2Idx(pos[0]-1, pos[1])));
-            if(pos[0] +1 < 2*n) adj.add(new Pair(1+waitS, intersection2Idx(pos[0]+1, pos[1])));
-            if(pos[1] -1 > 0) adj.add(new Pair(1+waitE, intersection2Idx(pos[0], pos[1]-1)));
-            if(pos[1] +1 < 2*m) adj.add(new Pair(1+waitE, intersection2Idx(pos[0], pos[1]+1)));
-            
+
+
+            if(pos[0] -1 >= 0) // W
+                if(pos[0] %2== 1)
+                    adj.add(new Pair(1+waitS, intersection2Idx(pos[0]-1, pos[1])));
+                else
+                    adj.add(new Pair(2, intersection2Idx(pos[0]-1, pos[1])));
+
+            if(pos[0] +1 < 2*n) // E
+                if(pos[0] % 2 == 0)
+                    adj.add(new Pair(1+waitS, intersection2Idx(pos[0]+1, pos[1])));
+                else
+                    adj.add(new Pair(2, intersection2Idx(pos[0]+1, pos[1])));
+
+            if(pos[1] -1 >= 0)
+                if(pos[1] % 2 == 1)
+                    adj.add(new Pair(1+waitE, intersection2Idx(pos[0], pos[1]-1)));
+                else
+                    adj.add(new Pair(2, intersection2Idx(pos[0], pos[1]-1)));
+
+
+            if(pos[1] +1 < 2*m)
+                if(pos[1] % 2 == 0)
+                    adj.add(new Pair(1+waitE, intersection2Idx(pos[0], pos[1]+1)));
+                else
+                    adj.add(new Pair(2, intersection2Idx(pos[0], pos[1]+1)));
+
             //debug
+            /*
             System.out.println("-----");
             System.out.println("Cur loc: " + pos[0] + " " + pos[1]);
             System.out.println("Cur step: " + d);
@@ -125,6 +143,7 @@ public class Solution {
                 System.out.println("N loc: " + pos2[0] + " " + pos2[1] + " Wait time: " + adj.get(i).first) ;
             }
             System.out.println("-----");
+            */
 
             for (int j = 0; j < adj.size(); j++) {
                 Pair v = adj.get(j); // all outgoing edges from u
@@ -149,14 +168,14 @@ public class Solution {
             int[][] W = new int[n][m];
             int[][] T = new int[n][m];
 
-            for (int j = 0; j <n; j++) {
+            for (int j = n-1; j >=0; j--) {
                 for (int k = 0; k < m; k++) {
                     S[j][k] = sc.nextInt();
                     W[j][k] = sc.nextInt();
                     T[j][k] = sc.nextInt();
                 }
             }
-            
+
             out.print("Case #" + i + ": ");
             long r=  solve(n, m, S, W, T);
             out.println(r);
