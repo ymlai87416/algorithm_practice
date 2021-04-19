@@ -3,9 +3,16 @@ package ProblemSolving.GreedyClassical;
 import java.util.Scanner;
 
 /**
- * Created by Tom on 22/4/2016.
- * Start at 0:41 and AC at 0:58, total time spent: 17 mins.
- */
+ problem: https://onlinejudge.org/external/124/12405.pdf
+ level:
+ solution:
+
+ Start at 0:41 and AC at 0:58, total time spent: 17 mins.
+
+ #greedy
+
+ **/
+
 public class UVA12405 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);

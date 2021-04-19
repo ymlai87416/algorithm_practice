@@ -4,11 +4,13 @@ import DataStructure.JavaPriorityQueue.UVA1203;
 
 import java.util.HashMap;
 
-/*
+/**
 number: 279
 url: https://leetcode.com/problems/perfect-squares/
 level: medium
 solution: proof that maximum is 4, but can use dp to speed up
+
+ #math #dp #bfs
  */
 
 public class PerfectSquares {

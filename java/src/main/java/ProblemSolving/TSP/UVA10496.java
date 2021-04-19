@@ -4,8 +4,14 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * Created by Tom on 7/5/2016.
- */
+ problem: https://onlinejudge.org/external/104/10496.pdf
+ level:
+ solution: Thinking for day, just circumvent the TLE using difference case. instead of formula a general case... time spends: 1 day.
+
+ #dp #TSP
+
+ **/
+
 public class UVA10496 {
     static int[][] dist = new int[11][11];
     static int[] xcoord = new int[11];
@@ -69,11 +75,13 @@ public class UVA10496 {
         }
     }
 
+    // start -> ? ? ??? -> end -> start
+    //end = the last node, mask = 0 => nodes left, 1 => node set
     static int dp (int end, int mask)
     {
         int bitSet = NumberOfSetBits(mask);
         if(bitSet == point-1){
-            if((mask & 1) == 0)
+            if((mask & 1) == 0)   //mask left only starting position not set.
                 return 0;
             else
                 return Integer.MAX_VALUE;

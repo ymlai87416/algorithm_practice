@@ -6,8 +6,14 @@ import java.util.Queue;
 import java.util.Scanner;
 
 /**
- * Created by Tom on 3/5/2016.
- */
+ problem: https://onlinejudge.org/external/113/11396.pdf
+ level:
+ solution: AC
+
+ #bipartiteGraphChecking #bipartiteGraph
+
+ **/
+
 public class UVA11396 {
     static int[] adjcnt = new int[301];
     static int[][] adj = new int[301][301];

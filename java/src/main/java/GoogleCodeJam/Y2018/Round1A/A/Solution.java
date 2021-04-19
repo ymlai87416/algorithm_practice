@@ -1,7 +1,10 @@
-package GoogleCodeJam.Y2018.Round1A.A; /**
+package GoogleCodeJam.Y2018.Round1A.A;
+/**
  * Created by Tom on 9/4/2016.
  */
+import java.io.File;
 import java.io.PrintStream;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Solution {
@@ -13,10 +16,12 @@ public class Solution {
 
     static{
         try{
-            FILENAME = "Solution-large";
-            IN = FILENAME + ".in";
-            OUT = FILENAME + ".out";
-            sc = new Scanner(System.in);
+            IN = "C:\\GitProjects\\algorithm_practice\\java\\src\\main\\java\\GoogleCodeJam\\Y2018\\Round1A\\A\\A-test.in";
+            //IN = null;
+            if(IN == null)
+                sc = new Scanner(System.in);
+            else
+                sc = new Scanner(new File(IN));
             out = new PrintStream(System.out);
         }
         catch(Exception ex) {
@@ -24,108 +29,108 @@ public class Solution {
         }
     }
 
-    private void solve(int row, int col, int hcut, int vcut, String[] waffle) {
-        int ans = 0;
-        boolean debug = false;
-
-        //only 1 possible horizontal cut and 1 possible vertical cut
-        int share = (hcut+1)* (vcut+1);
-
-        int[] hpoint = new int[hcut+1];
-        int[] vpoint = new int[vcut+1];
-
-        int choco = 0;
-        for(int i=0; i<waffle.length; ++i){
-            for(int j=0; j<waffle[i].length(); ++j)
-                if(waffle[i].charAt(j) == '@')
-                    choco++;
+    boolean debugflag = false;
+    private void debug(String s){
+        if(debugflag) {
+            //System.out.println(s);
+            System.out.println("\033[0;34m" + s + "\033[0;30m");
         }
-        if(choco % share != 0){
-            out.println("IMPOSSIBLE");
-        }
-        else{
-            int choco_per_piece = choco/share;
-            int choco_per_vcut = choco/(vcut+1);
-            int choco_per_hcut = choco/(hcut+1);
 
-            int curv = 0;
-            for(int i=0; i<vcut; ++i){
-                int choco_cnt = 0;
-                while(choco_cnt < choco_per_vcut) {
-                    for(int j=0; j<row; ++j)
-                        if(waffle[j].charAt(curv) == '@')
-                            choco_cnt++;
-                    curv+=1;
-                }
-
-                if(choco_cnt != choco_per_vcut){
-                    out.println("IMPOSSIBLE");
-                    return;
-                }
-                vpoint[i] = curv;
-            }
-            vpoint[vcut] = col;
-
-            if(debug) {
-                System.out.println("debug");
-                for (int i = 0; i <= vcut; ++i)
-                    System.out.print(vpoint[i] + " ");
-            }
-
-            int curh = 0;
-            for(int i=0; i<hcut; ++i){
-                int choco_cnt = 0;
-                while(choco_cnt < choco_per_hcut) {
-                    for(int j=0; j<col; ++j)
-                        if(waffle[curh].charAt(j) == '@')
-                            choco_cnt++;
-                    curh+=1;
-                }
-                if(choco_cnt != choco_per_hcut){
-                    out.println("IMPOSSIBLE");
-                    return;
-                }
-                hpoint[i] = curh;
-            }
-
-            hpoint[hcut] = row;
-
-            if(debug) {
-                System.out.println("debug");
-                for (int i = 0; i <= hcut; ++i)
-                    System.out.print(hpoint[i] + " ");
-            }
-
-            for(int i=0; i<=hcut; ++i){
-                for(int j=0; j<=vcut; ++j){
-                    int left = i==0 ? 0: vpoint[i-1];
-                    int top = j==0? 0: hpoint[j-1];
-                    int right = vpoint[i];
-                    int bottom = hpoint[j];
-
-                    int sq_choco = checkSquareChoco(waffle, left, top, right, bottom);
-                    if(sq_choco != choco_per_piece) {
-                        out.println("IMPOSSIBLE");
-                        return;
-                    }
-                }
-            }
-
-            out.println("POSSIBLE");
-        }
     }
 
-    private int checkSquareChoco(String[] waffle, int left, int top, int right, int bottom){
-        int result = 0;
-        for(int i=top; i<bottom; ++i){
-            for(int j=left; j<right; ++j){
-                if(waffle[i].charAt(j) == '@')
-                    ++result;
+    private boolean solve(int row, int col, int hcut, int vcut, char[][] waffle) {
+
+        //just check the condition, for H cut and V cut, if anything no good, return impossible
+
+        int nChoco = 0;
+        int nChoPiece = 0;
+        int nChoHCut = 0;
+        int nChoVcut = 0;
+
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                if(waffle[i][j] == '@')
+                    nChoco++;
             }
         }
 
-        return result;
+        int[] hChoco = new int[row];
+        int[] vChoco = new int[col];
+
+        for (int i = 0; i < row; i++) {
+            hChoco[i] = 0;
+            for (int j = 0; j < col; j++) {
+                hChoco[i] += (waffle[i][j]== '@' ? 1: 0);
+            }
+        }
+
+        for (int i = 0; i < col; i++) {
+            vChoco[i] = 0;
+            for (int j = 0; j < row; j++) {
+                vChoco[i] += (waffle[j][i] == '@' ? 1: 0);
+            }
+        }
+
+        if( nChoco % ((hcut+1)*(vcut+1)) != 0) return false;
+        int nChocoPiece = nChoco / ((hcut+1)*(vcut+1));
+
+        int nChocoHcut = nChoco / (hcut+1);
+        int nChocoVcut = nChoco / (vcut+1);
+
+        int hcutC = 0;
+        int[] hCutAt = new int[hcut+2];
+        hCutAt[0] = 0; hCutAt[hcut+1] = row;
+        int ptr = 1;
+        for (int i = 0; i < row && ptr!=hcut+1; i++) {
+            hcutC += hChoco[i];
+            if(hcutC == nChocoHcut){
+                hcutC = 0;
+                debug("horizontal cut at " + i);
+                hCutAt[ptr++] = i+1;
+            }
+            else if(hcutC > nChocoHcut){
+                return false;
+            }
+        }
+
+        int vcutC = 0;
+        int[] vCutAt = new int[vcut+2];
+        ptr=1;
+        vCutAt[0] = 0; vCutAt[vcut+1] = col;
+        for (int i = 0; i < col && ptr!=vcut+1; i++) {
+            vcutC += vChoco[i];
+            if(vcutC == nChocoVcut){
+                vcutC = 0;
+                debug("vertical cut at " + i);
+                vCutAt[ptr++] = i+1;
+            }
+            else if(vcutC > nChocoVcut){
+                return false;
+            }
+        }
+
+        //finally we know where the cut is and do the final scan.
+        for (int i = 1; i <hcut+2; i++) {
+            for (int j = 1; j < vcut+2; j++) {
+                int c = numChoco(waffle, hCutAt[i-1], vCutAt[j-1], hCutAt[i], vCutAt[j]);
+                if( c!= nChocoPiece)
+                    return false;
+            }
+        }
+
+        return true;
     }
+    
+    private int numChoco(char[][] waffle, int top, int left, int bottom, int right){
+        int c = 0;
+        for (int i = top; i < bottom; i++) {
+            for (int j = left; j < right; j++) {
+                if(waffle[i][j] == '@') c++;
+            }
+        }
+        return c;
+    }
+
 
     private void run() throws Exception {
         // out = new PrintStream(new FileOutputStream(OUT));
@@ -139,12 +144,16 @@ public class Solution {
             int vcut = sc.nextInt();
             sc.nextLine();
 
-            String[] waffle = new String[row];
+            //String[] waffle = new String[row];
+            char[][] waffle = new char[row][col];
             for(int p=0; p<row; ++p){
-                waffle[p] = sc.nextLine();
+                String s = sc.nextLine();
+                for (int j = 0; j < s.length(); j++) {
+                    waffle[p][j] = s.charAt(j);
+                }
             }
 
-            solve(row, col, hcut, vcut, waffle);
+            out.println(solve(row, col, hcut, vcut, waffle) ? "POSSIBLE" : "IMPOSSIBLE");
         }
         sc.close();
         out.close();

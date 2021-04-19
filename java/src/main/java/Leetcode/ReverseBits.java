@@ -2,9 +2,12 @@ package Leetcode;
 
 /*
 number: 380
-url: https://leetcode.com/problems/climbing-stairs/
+problem: https://leetcode.com/problems/climbing-stairs/
 level: easy
 solution: bitwise op and flip
+
+#dp
+
  */
 
 public class ReverseBits {

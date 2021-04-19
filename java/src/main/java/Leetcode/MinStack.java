@@ -2,12 +2,15 @@ package Leetcode;
 
 import java.util.Stack;
 
-/*
+/**
 number: 155
 url: https://leetcode.com/problems/min-stack/
 level: easy
 solution: just 2 stack
- */
+
+#stack
+
+ **/
 
 public class MinStack {
 

@@ -4,8 +4,14 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * Created by Tom on 8/5/2016.
- */
+ problem: https://onlinejudge.org/external/121/12192.pdf
+ level:
+ solution:
+
+ #binarySearch
+
+ **/
+
 public class UVA12192 {
     static int[][] hill = new int[501][501];
     static int[][] hilld = new int[1000][501];

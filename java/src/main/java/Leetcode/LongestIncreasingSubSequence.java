@@ -2,9 +2,12 @@ package Leetcode;
 
 /*
 number: 300
-url: https://leetcode.com/problems/longest-increasing-subsequence/
+problem: https://leetcode.com/problems/longest-increasing-subsequence/
 level: medium
 solution: classic dp problem
+
+#binarySearch #dp
+
  */
 
 public class LongestIncreasingSubSequence {

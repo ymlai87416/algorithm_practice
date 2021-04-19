@@ -5,9 +5,11 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /*
-url: https://leetcode.com/problems/generate-parentheses/
+problem: https://leetcode.com/problems/generate-parentheses/
 level: medium
 solution: take a recursive strategy
+
+#string #backtracking
  */
 
 public class GenerateParenthese {

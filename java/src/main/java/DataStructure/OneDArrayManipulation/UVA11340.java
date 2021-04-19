@@ -9,6 +9,10 @@ import java.util.Scanner;
 
 /**
  * Created by Tom on 15/4/2016.
+ *
+ * problem: https://onlinejudge.org/external/113/11340.pdf
+ *
+ * #hashTable
  */
 public class UVA11340 {
 

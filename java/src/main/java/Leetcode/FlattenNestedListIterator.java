@@ -1,5 +1,14 @@
 package Leetcode;
 
+/*
+problem: https://leetcode.com/problems/flatten-nested-list-iterator/
+level: medium
+solution:
+
+#stack
+
+ */
+
 import java.util.*;
 
 public class FlattenNestedListIterator {

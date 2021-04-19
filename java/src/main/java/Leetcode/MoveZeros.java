@@ -1,12 +1,15 @@
 package Leetcode;
 
-/*
+/**
 number: 283
-url: https://leetcode.com/problems/move-zeroes/
+problem: https://leetcode.com/problems/move-zeroes/
 level: easy
 solution: 2 pointers, 1 move 1 step each time, another if i encounter a non-zero, i copy the number to this location.
             mark the rest of it zero.
- */
+
+ #array #twoPointers
+
+ **/
 
 public class MoveZeros {
     public static void main(String[] args){

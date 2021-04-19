@@ -4,10 +4,13 @@ import java.util.*;
 
 /*
 number: 45
-url: https://leetcode.com/problems/jump-game-ii/
+problem: https://leetcode.com/problems/jump-game-ii/
 level: hard
 solution: bfs with dist => 226, but can be improved by scanning range, the first range is the starting point,
     the next range is from the element following the range to the element that can be reached from the range.
+
+#greedy
+
  */
 
 public class JumpGameII {

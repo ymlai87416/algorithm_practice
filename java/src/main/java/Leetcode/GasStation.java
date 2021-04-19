@@ -1,9 +1,12 @@
 package Leetcode;
 
 /*
-url: https://leetcode.com/problems/climbing-stairs/
+problem: https://leetcode.com/problems/climbing-stairs/
 level: medium
 solution: walk the cycle
+
+#dp
+
  */
 
 public class GasStation {

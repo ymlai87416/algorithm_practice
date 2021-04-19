@@ -6,10 +6,13 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 /**
- * Created by Tom on 7/5/2016.
- *
- * Time limit exceed, but already use the best algorithm...
- */
+ problem: https://onlinejudge.org/external/9/983.pdf
+ level:
+ solution:  System.out is not buffered output.
+
+ #dp #max2DRangeSum
+
+ **/
 public class UVA983 {
 
     static int[][] input = new int[1001][1001];
@@ -63,14 +66,17 @@ public class UVA983 {
             if(first) first = false;
             else System.out.println();
 
+            StringBuilder sb = new StringBuilder();
             long val = 0;
             for(int i=n-m; i>=0; --i){
                 for(int j=0; j<n-m+1; ++j){
                     val += output[i][j];
-                    System.out.println(output[i][j]);
+                    sb.append(output[i][j] + "\n");
                 }
             }
-            System.out.println(val);
+            sb.append(val);
+            System.out.println(sb.toString());
+
 
             line = br.readLine();
             if(line == null) break;

@@ -1,9 +1,12 @@
 package Leetcode;
 
 /*
-url: https://leetcode.com/problems/implement-trie-prefix-tree/
+problem: https://leetcode.com/problems/implement-trie-prefix-tree/
 level: medium
 solution: this is just a trie implementation
+
+#trie
+
  */
 
 public class ImplementTrie {

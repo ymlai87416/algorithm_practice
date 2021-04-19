@@ -1,11 +1,14 @@
 package Leetcode;
 
-/*
+/**
 number: 104
-url: https://leetcode.com/problems/maximum-depth-of-binary-tree/
+problem: https://leetcode.com/problems/maximum-depth-of-binary-tree/
 level: easy
 solution: recursion.
- */
+
+#tree #dfs #recursion
+
+ **/
 
 public class MaximumDepthOfBinaryTree {
     public static void main(String[] args) {

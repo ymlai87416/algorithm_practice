@@ -3,11 +3,13 @@ package Leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-/*
-problem:
-level:
+/**
+problem: https://leetcode.com/problems/binary-tree-level-order-traversal/
+level: medium
 solution:
- */
+
+#tree #bfs
+ **/
 public class BinaryTreeInOrderTraversal {
     public static void main(String[] args) {
         TreeNode t = new TreeNode(1);

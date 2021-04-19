@@ -3,9 +3,11 @@ package Leetcode;
 import java.util.*;
 
 /*
-url: https://leetcode.com/problems/different-ways-to-add-parentheses/
+problem: https://leetcode.com/problems/different-ways-to-add-parentheses/
 level: medium
 solution: a tree to decide which operand is doing first.
+
+#divideAndConquer
  */
 public class DifferentWaysToAddParentheses {
 

@@ -4,9 +4,12 @@ import java.util.Arrays;
 
 /*
 number: 287
-url: https://leetcode.com/problems/find-the-duplicate-number/
+problem: https://leetcode.com/problems/find-the-duplicate-number/
 level: easy
-solution: 1. sort it, 2. this is a cycle. shit!!
+solution: 1. sort it, 2. this is a cycle.
+
+#twoPointer #binarySearch
+
  */
 
 public class FindTheDuplicateNumber {

@@ -1,11 +1,14 @@
 package Leetcode;
 
-/*
+/**
 number: 242
-url: https://leetcode.com/problems/valid-anagram/
+problem: https://leetcode.com/problems/valid-anagram/
 level: easy
 solution: just count the character
- */
+
+#hashTable #sort
+
+ **/
 
 public class ValidAnagram {
     public static void main(String[] args){

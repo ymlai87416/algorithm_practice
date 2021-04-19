@@ -2,13 +2,16 @@ package Leetcode;
 
 import java.util.Random;
 
-/*
+/**
 number: 260
-url: https://leetcode.com/problems/single-number-iii/
+problem: https://leetcode.com/problems/single-number-iii/
 level: medium
 solution: there are 2 numbers here, xor will give a ^ b.
         Now we have to seperate the number into 2 set, and xor it again.
- */
+
+ #bit
+
+ **/
 
 public class SingleNumberIII {
     public static void main(String[] args){

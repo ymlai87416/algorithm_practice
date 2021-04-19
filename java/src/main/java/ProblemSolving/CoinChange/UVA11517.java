@@ -4,8 +4,15 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * Created by Tom on 7/5/2016.
- */
+ problem: https://onlinejudge.org/external/115/11517.pdf
+ level:
+ solution:
+
+ #dp #coinChange
+
+ **/
+
+
 public class UVA11517 {
     static int[][] dp = new int[101][20001];
     static int price;

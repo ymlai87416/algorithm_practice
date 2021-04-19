@@ -1,12 +1,15 @@
 package Leetcode;
 
-/*
+/**
 number: 53
-url: https://leetcode.com/problems/maximum-subarray/
+problem: https://leetcode.com/problems/maximum-subarray/
 level: easy
 solution: sum all, then for i, j => sum(i, j) = sum(0, j) - sum(0, i-1)
            for sum(i, j) to be largest, sum(0, i-1) should be smallest.
- */
+
+ #divideAndConquer #dp
+
+ **/
 public class MaximumSubarray {
     public static void main(String[] args){
         int[] nums = new int[] {-2,1,-3,4,-1,2,1,-5,4};

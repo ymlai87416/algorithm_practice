@@ -1,10 +1,12 @@
 package Leetcode;
 
-/*
+/**
 problem: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 level: easy
 solution: do day trade because there is no transaction fee.
- */
+
+#dp
+ **/
 public class BestTimeToBuyAndSellStockII {
     public static void main(String[] args){
         int[] i = new int[]{1,2,3,4,5};

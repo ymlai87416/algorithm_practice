@@ -3,11 +3,13 @@ package Leetcode;
 import java.util.HashMap;
 
 /*
-url: https://leetcode.com/problems/4sum/
+problem: https://leetcode.com/problems/4sum-ii/
 level: medium
 solution: time complexity O(n^2)
     add the first 2 arrays, add the last 2 arrays, all put it into the map,
         loop the map in O(n) and find a pair of (a, b) which the sum is T.
+
+#hashTable #binarySearch
  */
 public class FourSumII {
     public static void main(String[] args) {

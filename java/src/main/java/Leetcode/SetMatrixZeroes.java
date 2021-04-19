@@ -1,11 +1,14 @@
 package Leetcode;
 
-/*
+/**
 number: 73
 url: https://leetcode.com/problems/set-matrix-zeroes/
 level: medium
 solution: create a array of m, and n, and then set m[i] and n[j] = 0 if I find arr[i][j] = 0
- */
+
+ #array
+
+ **/
 
 public class SetMatrixZeroes {
     public static void main(String[] args) {

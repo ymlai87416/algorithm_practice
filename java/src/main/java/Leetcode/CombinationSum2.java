@@ -10,6 +10,9 @@ level: medium
 solution: sort the array, at each recursive step, either we add or skip the current element, and advance the pointer by one.
  It is addition. you can prune the tree when the target is smaller than the current
  element.
+
+ #backtracking
+
  */
 
 public class CombinationSum2 {

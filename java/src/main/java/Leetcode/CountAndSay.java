@@ -1,5 +1,14 @@
 package Leetcode;
 
+/*
+problem: https://leetcode.com/problems/count-and-say/
+level: medium
+solution:
+
+#string
+
+ */
+
 public class CountAndSay {
     public static void main(String[] args){
         int a = 5;

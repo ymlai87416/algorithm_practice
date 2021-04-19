@@ -5,10 +5,14 @@ import java.util.Scanner;
 import java.util.StringTokenizer;
 
 /**
- * Created by Tom on 7/5/2016.
- *
- * Time limit exceed, have to use the Kadane's algorithm
- */
+ problem: https://onlinejudge.org/external/119/11951.pdf
+ level:
+ solution: dp reduce from O(n^4) to O(n^3)
+
+ #dp #max2DRangeSum
+
+ **/
+
 public class UVA11951 {
 
     static int[][] input = new int[101][101];
@@ -35,6 +39,33 @@ public class UVA11951 {
                 }
             }
 
+
+            //now do the checking
+            int minvalue = Integer.MAX_VALUE;
+            int maxarea = Integer.MIN_VALUE;
+
+            //choose x dimension from x1 => x2, and then sum it across y and then use kandane to solve it
+            for (int i = 0; i < n; i++) {
+                int[] dp = new int[m];
+                for (int j = i; j < n; j++) {
+                    for (int k = 0; k < m; k++) {
+                        dp[k] = dp[k] + input[j][k];
+                    }
+
+                    int csum = 0; int x= 0;
+                    for (int y = 0; y < m; y++) {
+                        csum += dp[y];
+                        while(csum > K) csum -= dp[x++];
+                        int area = (j-i+1)*(y-x+1);
+                        if (area > maxarea || (area == maxarea && csum < minvalue)) {
+                            maxarea = area;
+                            minvalue = csum;
+                        }
+                    }
+                }
+            }
+
+            /*
             for(int i=0; i<n; ++i){
                 for(int j=1; j<m; ++j)
                     input[i][j] += input[i][j-1];
@@ -44,10 +75,6 @@ public class UVA11951 {
                 for(int j=0; j<m; ++j)
                     input[i][j] += input[i-1][j];
             }
-
-            //now do the checking
-            int maxvalue = Integer.MAX_VALUE;
-            int maxarea = Integer.MIN_VALUE;
 
             for(int i=0; i<n; ++i){
                 for(int j=0; j<m; ++j){
@@ -69,9 +96,11 @@ public class UVA11951 {
                         }
                     }
                 }
-            }
 
-            bw.write(String.format("Case #%d: %d %d\n", ci+1, maxarea, maxvalue));
+
+            }*/
+
+            bw.write(String.format("Case #%d: %d %d\n", ci+1, maxarea, minvalue));
         }
         bw.flush();
     }

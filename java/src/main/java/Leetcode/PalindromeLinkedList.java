@@ -1,11 +1,14 @@
 package Leetcode;
 
-/*
+/**
 number: 234
-url: https://leetcode.com/problems/palindrome-linked-list/
+problem: https://leetcode.com/problems/palindrome-linked-list/
 level: easy
 solution: reverse the list (recursion is simple) and now I just compare 2 linked list
- */
+
+#linkedList #twoPointers
+
+ **/
 
 public class PalindromeLinkedList {
     public static void main(String[] args){

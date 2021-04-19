@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 /**
  * Created by Tom on 15/5/2016.
+ *
+ * problem: https://onlinejudge.org/external/109/10920.pdf
+ *
+ * #2DArray
  */
 public class UVA10920 {
     public static void main(String[] args){

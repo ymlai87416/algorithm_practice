@@ -1,11 +1,14 @@
 package Leetcode;
 
-/*
+/**
 number: 101
-url: https://leetcode.com/problems/symmetric-tree/
+problem: https://leetcode.com/problems/symmetric-tree/
 level: easy
 solution: traverse the tree, if A go left, B go right, check if they are the same.
- */
+
+ #tree #dfs #bfs
+
+ **/
 
 public class SymmetricTree {
     public static void main(String[] args){

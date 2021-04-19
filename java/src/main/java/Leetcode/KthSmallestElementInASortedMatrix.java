@@ -4,7 +4,10 @@ package Leetcode;
 number: 378
 url: https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/
 level: medium
-solution: fibonacci number
+solution:
+
+#binarySearch #heap
+
  */
 
 public class KthSmallestElementInASortedMatrix {

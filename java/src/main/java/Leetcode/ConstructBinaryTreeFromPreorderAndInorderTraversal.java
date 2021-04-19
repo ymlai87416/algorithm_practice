@@ -1,6 +1,13 @@
 package Leetcode;
 
-import DataStructure.JavaPriorityQueue.UVA1203;
+/*
+problem: https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
+level: medium
+solution: the index of the List<List<>> represent the level, just have to keep track what level curr node is.
+
+#tree #dfs
+
+ */
 
 public class ConstructBinaryTreeFromPreorderAndInorderTraversal {
     public static void main(String[] args) {

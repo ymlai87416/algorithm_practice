@@ -3,12 +3,15 @@ package Leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-/*
+/**
 number: 118
-url: https://leetcode.com/problems/pascals-triangle/
+problem: https://leetcode.com/problems/pascals-triangle/
 level: easy
 solution: just do the math
- */
+
+ #array
+
+**/
 
 public class PascalTriangle {
     public static void main(String[] args){

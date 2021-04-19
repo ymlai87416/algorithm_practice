@@ -5,6 +5,15 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
+/**
+ problem: https://onlinejudge.org/external/119/11935.pdf
+ level:
+ solution:
+
+ #binarySearch #binarySearchRealNumber
+
+ **/
+
 public class UVA11935 {
     static
     class Event{

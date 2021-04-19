@@ -1,11 +1,14 @@
 package Leetcode;
 
-/*
+/**
 number: 136
-url: https://leetcode.com/problems/single-number/
+problem: https://leetcode.com/problems/single-number/
 level: easy
 solution: just xor all the element, the duplicate element will be xor away.
- */
+
+#hashTable #bit
+
+ **/
 
 public class SingleNumber {
     public static void main(String[] args) {

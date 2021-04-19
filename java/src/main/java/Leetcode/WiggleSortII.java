@@ -3,14 +3,17 @@ package Leetcode;
 import java.util.Arrays;
 import java.util.Random;
 
-/*
+/**
 number: 324
 url: https://leetcode.com/problems/wiggle-sort-ii/
 level: medium
 solution: 1. the easy solution is to sort it and [a -> ... -> b -> c -> ... -> d ]
             now we need to use color sort algorithm....
           2. find the median, and then perform the color sort.
- */
+
+ #sort
+
+ **/
 
 public class WiggleSortII {
     public static void main(String[] args){

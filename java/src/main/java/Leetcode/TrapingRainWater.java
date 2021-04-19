@@ -2,16 +2,19 @@ package Leetcode;
 
 import java.util.Stack;
 
-/*
+/**
 number: 42
-url: https://leetcode.com/problems/trapping-rain-water/
+problem: https://leetcode.com/problems/trapping-rain-water/
 level: hard
 solution:
     1. brute force. for a point, find max left and max right.
     1. linear left max, right max. then calculate each height
     2. stack, 2 -> 0 -> 3, 2 is pushed, 0 is pushed, 3 is current, pop 0, see 2 and 3, add 2, pop 2, see 0 and 3, add 0
     3. 2 pointer approach, which require O(1) space only compare to other O(n)
- */
+
+#array #twoPointers #dp #stack
+
+ **/
 
 public class TrapingRainWater {
     public static void main(String[] args) {

@@ -1,11 +1,14 @@
 package Leetcode;
 
-/*
+/**
 problem: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
 level: hard
 solution: straight forward is dp,
     almost 2 time, which means for a time
- */
+
+#dp
+
+ **/
 
 public class BestTimeToBuyAndSellStockIII {
     public static void main(String[] args){

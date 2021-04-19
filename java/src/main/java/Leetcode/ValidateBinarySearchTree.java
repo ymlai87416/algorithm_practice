@@ -1,11 +1,14 @@
 package Leetcode;
 
-/*
+/**
 number: 98
 url: https://leetcode.com/problems/validate-binary-search-tree/
 level: medium
 solution: check the tree using recursion done
- */
+
+#tree #dfs #recursion
+
+ **/
 
 public class ValidateBinarySearchTree {
     public static void main(String[] args) {

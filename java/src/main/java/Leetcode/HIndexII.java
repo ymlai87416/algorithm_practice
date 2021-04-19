@@ -6,6 +6,9 @@ import java.util.Arrays;
 url: https://leetcode.com/problems/h-index-ii/
 level: medium
 solution: already sort, use the sorted approach, instead of allocating O(n) space.
+
+#binarySearch
+
  */
 
 public class HIndexII {

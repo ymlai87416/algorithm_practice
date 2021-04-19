@@ -8,6 +8,9 @@ import java.util.TreeMap;
 /**
  * Created by Tom on 15/4/2016.
  * Start at 0:18 and AC at 0:33
+ *
+ * problem: https://onlinejudge.org/external/114/11459.pdf
+ * #game #simulation
  */
 public class UVA11459 {
     public static void main(String[] args){

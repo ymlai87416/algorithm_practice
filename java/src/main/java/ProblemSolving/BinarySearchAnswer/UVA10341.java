@@ -3,8 +3,14 @@ package ProblemSolving.BinarySearchAnswer;
 import java.util.Scanner;
 
 /**
- * Created by Tom on 18/4/2016.
- */
+ problem: https://onlinejudge.org/external/103/10341.pdf
+ level:
+ solution:
+
+ #binarySearch #binarySearchRealNumber
+
+ **/
+
 public class UVA10341 {
     public static double formula(int p, int q, int r, int s, int t, int u, double xx){
         return p*Math.exp(-xx) + q* Math.sin(xx) + r*Math.cos(xx) + s*Math.tan(xx) + t * xx * xx + u;

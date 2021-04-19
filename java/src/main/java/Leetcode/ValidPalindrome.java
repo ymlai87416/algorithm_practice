@@ -1,11 +1,13 @@
 package Leetcode;
 
-/*
+/**
 number: 125
-url: https://leetcode.com/problems/valid-palindrome/
+problem: https://leetcode.com/problems/valid-palindrome/
 level: remove all useless char, and then reverse the string.
 solution:
- */
+
+ #twoPointer #string
+ **/
 
 public class ValidPalindrome {
     public static void main(String[] args){

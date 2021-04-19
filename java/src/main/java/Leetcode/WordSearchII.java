@@ -4,13 +4,16 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 
-/*
+/**
 number: 212
 url: https://leetcode.com/problems/word-search-ii/
 level: hard
 solution: 1. brute force apply the previous problem on a list of word,
           2. build a trie and traverse through dfs.
- */
+
+ #backtracking #trie
+
+ **/
 
 public class WordSearchII {
     public static void main(String[] args) {

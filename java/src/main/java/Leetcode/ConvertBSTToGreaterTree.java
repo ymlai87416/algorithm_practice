@@ -1,9 +1,15 @@
 package Leetcode;
 
+
 /*
 problem: https://leetcode.com/problems/convert-bst-to-greater-tree/
-level: Easy
+level: easy
+solution: the index of the List<List<>> represent the level, just have to keep track what level curr node is.
+
+#tree #dfs #bfs #recursion
+
  */
+
 
 public class ConvertBSTToGreaterTree {
     public static void main(String[] args){

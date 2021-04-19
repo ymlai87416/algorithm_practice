@@ -1,8 +1,10 @@
 package Leetcode;
 /*
-url: https://leetcode.com/problems/diameter-of-binary-tree/
+problem: https://leetcode.com/problems/diameter-of-binary-tree/
 level: easy
 solution: just recursion.
+
+#tree
  */
 public class DiameterOfBinaryTree {
     public static void main(String[] args){

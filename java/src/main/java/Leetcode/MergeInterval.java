@@ -2,12 +2,15 @@ package Leetcode;
 
 import java.util.*;
 
-/*
+/**
 number: 56
-url: https://leetcode.com/problems/merge-intervals/
+problem : https://leetcode.com/problems/merge-intervals/
 level: medium
 solution: sort the array with the beginning, and then merge.
- */
+
+#array #sort
+
+ **/
 
 public class MergeInterval {
     public static void main(String[] args){

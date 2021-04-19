@@ -3,12 +3,15 @@ package Leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-/*
+/**
 number: 51
-url: https://leetcode.com/problems/n-queens/
+problem: https://leetcode.com/problems/n-queens/
 level: hard
 solution: just recursion, mark row, col, diag1, diag2
- */
+
+#backtracking
+
+ **/
 
 public class NQueens {
     public static void main(String[] args) {

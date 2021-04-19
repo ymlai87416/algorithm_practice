@@ -2,9 +2,12 @@ package Leetcode;
 
 /*
 number: 48
-url: https://leetcode.com/problems/rotate-image/
+problem: https://leetcode.com/problems/rotate-image/
 level: medium
 solution: rotate layer by layer
+
+#array
+
  */
 
 public class RotateImage {

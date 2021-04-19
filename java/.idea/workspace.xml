@@ -47,17 +47,25 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="GoogleCodeJam.Y2019.Round1B.A" />
+      <recent name="GoogleCodeJam.Y2019.Round1C.A" />
+      <recent name="GoogleCodeJam.Y2018.Round1C.A" />
+      <recent name="GoogleCodeJam.Y2018.Round1B.A" />
+      <recent name="GoogleCodeJam.Y2017.Round1C.A" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\GitProjects\algorithm_practice\java\src\main\java\ProblemSolving\Max2DRangeSum" />
       <recent name="C:\GitProjects\algorithm_practice\java\src\main\java\GoogleCodeJam\Y2008\Round1C\A" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Solution (6)">
-    <configuration name="Solution (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GoogleCodeJam.Y2008.Round1C.C.Solution" />
+  <component name="RunManager" selected="Application.Indexing">
+    <configuration name="Indexing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Indexing.Indexing" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="GoogleCodeJam.Y2008.Round1C.C.*" />
+          <option name="PATTERN" value="Indexing.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -65,12 +73,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GoogleCodeJam.Y2009.Round1A.A.Solution" />
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GoogleCodeJam.Y2017.QualificationRound.A.Solution" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="GoogleCodeJam.Y2009.Round1A.A.*" />
+          <option name="PATTERN" value="GoogleCodeJam.Y2017.QualificationRound.A.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,12 +86,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GoogleCodeJam.Y2009.Round1A.B.Solution" />
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <output_file path="$PROJECT_DIR$/src/main/java/GoogleCodeJam/Y2015/Round1B/A/A-out.txt" is_save="true" />
+      <option name="MAIN_CLASS_NAME" value="GoogleCodeJam.Y2015.Round1B.A.Solution" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="GoogleCodeJam.Y2009.Round1A.B.*" />
+          <option name="PATTERN" value="GoogleCodeJam.Y2015.Round1B.A.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,12 +100,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GoogleCodeJam.Y2009.Round1A.C.Solution" />
+    <configuration name="UVA104" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Graph.AllPairShortestPathVariants.UVA104" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="GoogleCodeJam.Y2009.Round1A.C.*" />
+          <option name="PATTERN" value="Graph.AllPairShortestPathVariants.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,12 +113,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution (6)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GoogleCodeJam.Y2009.Round1B.A.Solution" />
+    <configuration name="UVA10827" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProblemSolving.Max2DRangeSum.UVA10827" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="GoogleCodeJam.Y2009.Round1B.A.*" />
+          <option name="PATTERN" value="ProblemSolving.Max2DRangeSum.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UVA11951" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProblemSolving.Max2DRangeSum.UVA11951" />
+      <module name="algorithm_practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ProblemSolving.Max2DRangeSum.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,19 +151,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Solution (2)" />
-      <item itemvalue="Application.Solution (3)" />
-      <item itemvalue="Application.Solution (4)" />
-      <item itemvalue="Application.Solution (5)" />
-      <item itemvalue="Application.Solution (6)" />
+      <item itemvalue="Application.UVA11951" />
+      <item itemvalue="Application.UVA10827" />
+      <item itemvalue="Application.Solution" />
+      <item itemvalue="Application.UVA104" />
+      <item itemvalue="Application.Indexing" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Solution (6)" />
-        <item itemvalue="Application.Solution (5)" />
-        <item itemvalue="Application.Solution (4)" />
-        <item itemvalue="Application.Solution (3)" />
-        <item itemvalue="Application.Solution (2)" />
+        <item itemvalue="Application.Indexing" />
+        <item itemvalue="Application.UVA104" />
+        <item itemvalue="Application.Solution" />
+        <item itemvalue="Application.UVA10827" />
+        <item itemvalue="Application.UVA11951" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +186,19 @@
       <workItem from="1616427721279" duration="4659000" />
       <workItem from="1616502284889" duration="4180000" />
       <workItem from="1616584462109" duration="9474000" />
-      <workItem from="1616631664320" duration="2803000" />
+      <workItem from="1616631664320" duration="3020000" />
+      <workItem from="1616670472858" duration="14151000" />
+      <workItem from="1616763010928" duration="24741000" />
+      <workItem from="1616839032673" duration="14945000" />
+      <workItem from="1617202439965" duration="833000" />
+      <workItem from="1617320513415" duration="530000" />
+      <workItem from="1617321298202" duration="6055000" />
+      <workItem from="1617334242589" duration="2278000" />
+      <workItem from="1617369811524" duration="30414000" />
+      <workItem from="1617938910342" duration="17626000" />
+      <workItem from="1617976409455" duration="73436000" />
+      <workItem from="1618498700034" duration="96313000" />
+      <workItem from="1618842893261" duration="8532000" />
     </task>
     <servers />
   </component>
@@ -178,58 +212,108 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state x="3040" y="512" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1616083977223">
+    <state x="2359" y="427" key="#VisualVM_Launcher" timestamp="1617974516246">
+      <screen x="0" y="0" width="5120" height="1400" />
+    </state>
+    <state x="2359" y="427" key="#VisualVM_Launcher/0.0.5120.1400@0.0.5120.1400" timestamp="1617974516246" />
+    <state x="2860" y="474" width="1092" height="671" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618755987840">
+      <screen x="0" y="0" width="5120" height="1400" />
+    </state>
+    <state x="1251" y="475" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1616690240318" />
+    <state x="2860" y="474" width="1092" height="671" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.5120.1400@0.0.5120.1400" timestamp="1618755987840" />
+    <state x="3040" y="512" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1618762494331">
       <screen x="0" y="0" width="5120" height="1400" />
     </state>
     <state x="3040" y="512" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1616083977223" />
+    <state x="3040" y="512" key="#com.intellij.fileTypes.FileTypeChooser/0.0.5120.1400@0.0.5120.1400" timestamp="1618762494331" />
+    <state x="3184" y="394" key="#com.intellij.ide.util.MemberChooser" timestamp="1618158620465">
+      <screen x="0" y="0" width="5120" height="1400" />
+    </state>
+    <state x="3184" y="394" key="#com.intellij.ide.util.MemberChooser/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1616783187966" />
+    <state x="3184" y="394" key="#com.intellij.ide.util.MemberChooser/0.0.5120.1400@0.0.5120.1400" timestamp="1618158620465" />
     <state x="2556" y="435" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1615820255935">
       <screen x="0" y="0" width="5120" height="1400" />
     </state>
     <state x="2556" y="435" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1615820255935" />
-    <state width="466" height="466" key="DebuggerActiveHint" timestamp="1616634055803">
+    <state x="3409" y="521" width="433" height="218" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1618633555359">
       <screen x="0" y="0" width="5120" height="1400" />
     </state>
-    <state width="466" height="466" key="DebuggerActiveHint/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1616634055803" />
-    <state width="2790" height="503" key="GridCell.Tab.0.bottom" timestamp="1616634481574">
+    <state x="3409" y="521" width="433" height="218" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.5120.1400@0.0.5120.1400" timestamp="1618633555359" />
+    <state x="2784" y="427" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1617956572850">
       <screen x="0" y="0" width="5120" height="1400" />
     </state>
-    <state width="2790" height="503" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1616634481574" />
-    <state width="2790" height="503" key="GridCell.Tab.0.center" timestamp="1616634481573">
+    <state x="2784" y="427" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.5120.1400@0.0.5120.1400" timestamp="1617956572850" />
+    <state width="466" height="466" key="DebuggerActiveHint" timestamp="1618681518385">
       <screen x="0" y="0" width="5120" height="1400" />
     </state>
-    <state width="2790" height="503" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1616634481573" />
-    <state width="2790" height="503" key="GridCell.Tab.0.left" timestamp="1616634481573">
+    <state width="466" height="466" key="DebuggerActiveHint/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1616848842777" />
+    <state width="466" height="466" key="DebuggerActiveHint/0.0.5120.1400@0.0.5120.1400" timestamp="1618681518385" />
+    <state x="746" y="278" key="FileChooserDialogImpl" timestamp="1618755971439">
       <screen x="0" y="0" width="5120" height="1400" />
     </state>
-    <state width="2790" height="503" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1616634481573" />
-    <state width="2790" height="503" key="GridCell.Tab.0.right" timestamp="1616634481574">
+    <state x="746" y="278" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1617320970269" />
+    <state x="746" y="278" key="FileChooserDialogImpl/0.0.5120.1400@0.0.5120.1400" timestamp="1618755971439" />
+    <state width="1134" height="455" key="GridCell.Tab.0.bottom" timestamp="1618846195003">
       <screen x="0" y="0" width="5120" height="1400" />
     </state>
-    <state width="2790" height="503" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1616634481574" />
-    <state width="2790" height="469" key="GridCell.Tab.1.bottom" timestamp="1616634237134">
+    <state width="2077" height="384" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1617418522046" />
+    <state width="1134" height="455" key="GridCell.Tab.0.bottom/0.0.5120.1400@0.0.5120.1400" timestamp="1618846195003" />
+    <state width="1134" height="455" key="GridCell.Tab.0.center" timestamp="1618846195002">
       <screen x="0" y="0" width="5120" height="1400" />
     </state>
-    <state width="2790" height="469" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1616634237134" />
-    <state width="2790" height="469" key="GridCell.Tab.1.center" timestamp="1616634237134">
+    <state width="2077" height="384" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1617418522045" />
+    <state width="1134" height="455" key="GridCell.Tab.0.center/0.0.5120.1400@0.0.5120.1400" timestamp="1618846195002" />
+    <state width="1134" height="455" key="GridCell.Tab.0.left" timestamp="1618846195002">
       <screen x="0" y="0" width="5120" height="1400" />
     </state>
-    <state width="2790" height="469" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1616634237134" />
-    <state width="2790" height="469" key="GridCell.Tab.1.left" timestamp="1616634237134">
+    <state width="2077" height="384" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1617418522045" />
+    <state width="1134" height="455" key="GridCell.Tab.0.left/0.0.5120.1400@0.0.5120.1400" timestamp="1618846195002" />
+    <state width="1134" height="455" key="GridCell.Tab.0.right" timestamp="1618846195002">
       <screen x="0" y="0" width="5120" height="1400" />
     </state>
-    <state width="2790" height="469" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1616634237134" />
-    <state width="2790" height="469" key="GridCell.Tab.1.right" timestamp="1616634237134">
+    <state width="2077" height="384" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1617418522046" />
+    <state width="1134" height="455" key="GridCell.Tab.0.right/0.0.5120.1400@0.0.5120.1400" timestamp="1618846195002" />
+    <state width="1360" height="399" key="GridCell.Tab.1.bottom" timestamp="1618845583110">
       <screen x="0" y="0" width="5120" height="1400" />
     </state>
-    <state width="2790" height="469" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1616634237134" />
+    <state width="2077" height="415" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1617417386403" />
+    <state width="1360" height="399" key="GridCell.Tab.1.bottom/0.0.5120.1400@0.0.5120.1400" timestamp="1618845583110" />
+    <state width="1360" height="399" key="GridCell.Tab.1.center" timestamp="1618845583110">
+      <screen x="0" y="0" width="5120" height="1400" />
+    </state>
+    <state width="2077" height="415" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1617417386403" />
+    <state width="1360" height="399" key="GridCell.Tab.1.center/0.0.5120.1400@0.0.5120.1400" timestamp="1618845583110" />
+    <state width="1360" height="399" key="GridCell.Tab.1.left" timestamp="1618845583110">
+      <screen x="0" y="0" width="5120" height="1400" />
+    </state>
+    <state width="2077" height="415" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1617417386403" />
+    <state width="1360" height="399" key="GridCell.Tab.1.left/0.0.5120.1400@0.0.5120.1400" timestamp="1618845583110" />
+    <state width="1360" height="399" key="GridCell.Tab.1.right" timestamp="1618845583110">
+      <screen x="0" y="0" width="5120" height="1400" />
+    </state>
+    <state width="2077" height="415" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1617417386403" />
+    <state width="1360" height="399" key="GridCell.Tab.1.right/0.0.5120.1400@0.0.5120.1400" timestamp="1618845583110" />
     <state x="3000" y="268" key="SettingsEditor" timestamp="1616226563838">
       <screen x="0" y="0" width="5120" height="1400" />
     </state>
     <state x="3000" y="268" key="SettingsEditor/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1616226563838" />
-    <state x="2539" y="320" width="672" height="678" key="search.everywhere.popup" timestamp="1616633084388">
+    <state width="987" height="667" key="XDebugger.FullValuePopup" timestamp="1616854600788">
       <screen x="0" y="0" width="5120" height="1400" />
     </state>
-    <state x="2539" y="320" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1616633084388" />
+    <state width="987" height="667" key="XDebugger.FullValuePopup/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1616854600788" />
+    <state x="2025" y="268" width="1627" height="773" key="dock-window-1" timestamp="1618689893381">
+      <screen x="0" y="0" width="5120" height="1400" />
+    </state>
+    <state x="2025" y="268" width="1627" height="773" key="dock-window-1/0.0.5120.1400@0.0.5120.1400" timestamp="1618689893381" />
+    <state x="3274" y="350" width="587" height="801" key="find.popup" timestamp="1618660640833">
+      <screen x="0" y="0" width="5120" height="1400" />
+    </state>
+    <state x="3274" y="350" width="587" height="801" key="find.popup/0.0.5120.1400@0.0.5120.1400" timestamp="1618660640833" />
+    <state x="2539" y="320" width="672" height="678" key="search.everywhere.popup" timestamp="1618742500807">
+      <screen x="0" y="0" width="5120" height="1400" />
+    </state>
+    <state x="2539" y="320" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1617390259662" />
+    <state x="2539" y="320" width="672" height="678" key="search.everywhere.popup/0.0.5120.1400@0.0.5120.1400" timestamp="1618742500807" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -271,15 +355,98 @@
           <line>109</line>
           <option name="timeStamp" value="97" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/GoogleCodeJam/Y2009/Round1B/C/Solution.java</url>
+          <line>126</line>
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/GoogleCodeJam/Y2009/Round1B/C/Solution.java</url>
+          <line>240</line>
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/GoogleCodeJam/Y2009/Round1B/C/Solution.java</url>
+          <line>193</line>
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/GoogleCodeJam/Y2021/Quali/C/Solution.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/GoogleCodeJam/Y2009/Round1C/A/Solution.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/GoogleCodeJam/Y2009/Round1C/A/Solution.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <condition expression="s==0 &amp;&amp; e==4" language="JAVA" />
+          <url>file://$PROJECT_DIR$/src/main/java/GoogleCodeJam/Y2009/Round1C/C/Solution.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="109" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <condition expression="s==0 &amp;&amp; e==2" language="JAVA" />
+          <url>file://$PROJECT_DIR$/src/main/java/GoogleCodeJam/Y2009/Round1C/C/Solution.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/GoogleCodeJam/Y2010/Round1A/C/Solution.java</url>
+          <line>123</line>
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/GoogleCodeJam/Y2010/Round1A/C/Solution.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/GoogleCodeJam/Y2015/Round1B/A/Solution.java</url>
+          <line>204</line>
+          <option name="timeStamp" value="134" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/GoogleCodeJam/Y2015/Round1B/A/Solution.java</url>
+          <line>201</line>
+          <option name="timeStamp" value="135" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <condition expression="ans==84" language="JAVA" />
+          <url>file://$PROJECT_DIR$/src/main/java/GoogleCodeJam/Y2018/Round1B/A/Solution.java</url>
+          <line>215</line>
+          <option name="timeStamp" value="150" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/GoogleCodeJam/Y2018/Round1B/A/Solution.java</url>
+          <line>150</line>
+          <option name="timeStamp" value="151" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/DataStructure/OneDArrayManipulation/UVA12356.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="155" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint enabled="true" type="java-exception" />
       </default-breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="dp" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/java$Solution.ic" NAME="Solution Coverage Results" MODIFIED="1616262139781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>GoogleCodeJam.Y2008.Round1B.C.*</FILTER>
+    <SUITE FILE_PATH="coverage/java$Solution.ic" NAME="Solution Coverage Results" MODIFIED="1618418673411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>GoogleCodeJam.Y2010.Round1C.B.*</FILTER>
     </SUITE>
   </component>
 </project>

@@ -1,10 +1,12 @@
 package Leetcode;
 
-/*
+/**
 problem: https://leetcode.com/problems/balanced-binary-tree/
 level: easy
 solution: find out the length of left and right tree, and also have to confirmed that left and right is also a balanced tree.
- */
+
+#tree #dfs
+ **/
 public class BalancedBinaryTree {
     public static void main(String[] args){
         TreeNode root = new TreeNode(3);

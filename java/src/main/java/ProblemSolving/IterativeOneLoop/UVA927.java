@@ -4,9 +4,15 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * Created by Tom on 17/4/2016.
- * Start 16:27, AC at 16:58, tottal time: 31 minutes.
- */
+ problem: https://onlinejudge.org/external/9/927.pdf
+ level:
+ solution:
+
+ Start 16:27, AC at 16:58, tottal time: 31 minutes.
+
+ #search
+
+ **/
 public class UVA927 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);

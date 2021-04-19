@@ -1,5 +1,14 @@
 package Leetcode;
 
+/**
+ problem: https://leetcode.com/problems/permutations/
+ level: medium
+ solution:
+
+ #backtracking
+
+ **/
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

@@ -2,7 +2,14 @@ package Leetcode;
 
 import java.util.*;
 
-//problem: https://leetcode.com/problems/contains-duplicate-iii/
+/*
+problem: https://leetcode.com/problems/contains-duplicate-iii/
+level: medium
+solution:
+
+#sort #map
+
+ */
 
 public class ContainsDuplicateIII {
 

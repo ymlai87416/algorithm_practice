@@ -2,12 +2,15 @@ package Leetcode;
 
 import java.util.*;
 
-/*
+/**
 number: 140
-url: https://leetcode.com/problems/word-break-ii/
+problem: https://leetcode.com/problems/word-break-ii/
 level: hard
 solution: now build a trie, and keep track of the breaking point
- */
+
+#dp #backtracking
+
+ **/
 
 public class WordBreakII {
     public static void main(String[] args) {

@@ -2,9 +2,12 @@ package Leetcode;
 
 /*
 number: 141
-url: https://leetcode.com/problems/linked-list-cycle/
+problem: https://leetcode.com/problems/linked-list-cycle/
 level: easy
 solution: use floyd's cycle detection algorithm
+
+#linkedList #twoPointer
+
  */
 
 public class LinkedListCycle {

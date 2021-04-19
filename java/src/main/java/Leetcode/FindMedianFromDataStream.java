@@ -5,9 +5,12 @@ import java.util.PriorityQueue;
 
 /*
 number: 295
-url: https://leetcode.com/problems/find-median-from-data-stream/
+problem: https://leetcode.com/problems/find-median-from-data-stream/
 level: hard
 solution: write your AVL tree or red black tree, or just use priority queue.
+
+#heap
+
  */
 
 public class FindMedianFromDataStream {

@@ -2,6 +2,15 @@ package ProblemSolving.BinarySearch;
 
 import java.util.Scanner;
 
+/**
+ problem: https://onlinejudge.org/external/9/957.pdf
+ level:
+ solution:
+
+ #binarySeach #binarySearchEndInclusive
+
+ **/
+
 public class UVA00957 {
 
     static int[] pope = new int[100001];

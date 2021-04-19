@@ -1,11 +1,14 @@
 package Leetcode;
 
-/*
+/**
 number: 19
-url: https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+problem: https://leetcode.com/problems/remove-nth-node-from-end-of-list/
 level: medium
 solution: for a list delete n node from end and without prev, just maintain 2 pointers.
- */
+
+ #linkedList #twoPointers
+
+ **/
 
 public class RemoveNthNodeFromEndOfList {
 

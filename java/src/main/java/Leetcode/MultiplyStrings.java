@@ -3,12 +3,15 @@ package Leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-/*
+/**
 number: 43
-url: https://leetcode.com/problems/multiply-strings/
+problem: https://leetcode.com/problems/multiply-strings/
 level: medium
 solution: just do the multiplication by hand.
- */
+
+#math #string
+
+ **/
 
 public class MultiplyStrings {
     public static void main(String[] args) {

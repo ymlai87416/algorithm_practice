@@ -3,9 +3,11 @@ package Leetcode;
 import DataStructure.JavaPriorityQueue.UVA1203;
 
 /*
-url: https://leetcode.com/problems/decode-ways/
+problem: https://leetcode.com/problems/decode-ways/
 level: medium
 solution: it is a dfs, speed up by dp
+
+#dp #string
  */
 
 public class DecodeWay {

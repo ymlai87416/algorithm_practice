@@ -2,9 +2,11 @@ package Leetcode;
 
 /*
 number: 153
-url: https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
+problem: https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
 level: medium
 solution: find the pivot. done.
+
+#binarySearch
  */
 
 public class FindMinimumInRotatedSortedArray {

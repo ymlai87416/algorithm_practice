@@ -1,11 +1,14 @@
 package Leetcode;
 
-/*
+/**
 number: 191
 url: https://leetcode.com/problems/number-of-1-bits/
 level: easy
 solution: convert it to binary string or use bitwise operation
- */
+
+ #bit
+
+ **/
 
 public class NumberOf1Bits {
     public static void main(String[] args){

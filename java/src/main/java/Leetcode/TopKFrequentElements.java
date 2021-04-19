@@ -2,12 +2,15 @@ package Leetcode;
 
 import java.util.*;
 
-/*
+/**
 number: 347
-url: https://leetcode.com/problems/top-k-frequent-elements/
+problem: https://leetcode.com/problems/top-k-frequent-elements/
 level: medium
 solution: simple counting using hashmap
- */
+
+ #hashTable #heap
+
+ **/
 
 public class TopKFrequentElements {
     public static void main(String[] args) {

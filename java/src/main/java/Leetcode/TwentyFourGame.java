@@ -3,7 +3,7 @@ package Leetcode;
 import java.util.*;
 import java.util.stream.Collectors;
 
-/*
+/**
 number: 679
 url: https://leetcode.com/problems/24-game/
 level: hard
@@ -11,7 +11,9 @@ solution: bracket is not important, we have to build the parse tree, set * set
             4 numbers, draw 2 and apply 4 operation. put in back, now we have 3 nums, apply 4 more, apply until we only
             got 1 number
 
- */
+ #dfs
+
+ **/
 
 public class TwentyFourGame {
     public static void main(String[] args) {

@@ -1,11 +1,14 @@
 package Leetcode;
 
-/*
+/**
 number: 79
-url: https://leetcode.com/problems/word-search/
+problem: https://leetcode.com/problems/word-search/
 level: medium
 solution: find the first letters and then loop all possible neighbour, don't choose a word 2 times
- */
+
+ #array #backtracking
+
+ **/
 
 public class WordSearch {
     public static void main(String[] args) {

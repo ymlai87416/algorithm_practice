@@ -5,6 +5,10 @@ number: 236
 url: https://leetcode.com/problems/majority-element/
 level: easy
 solution: 1.Boyer-Moore majority vote algorithm in 1ms
+time complexity: O(n)
+
+#divideAndConquer #bit #boyerMooreMajorityVote
+
  */
 
 public class MajorityElement {

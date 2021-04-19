@@ -2,9 +2,11 @@ package Leetcode;
 
 /*
 number: 114
-url: https://leetcode.com/problems/flatten-binary-tree-to-linked-list/
+problem: https://leetcode.com/problems/flatten-binary-tree-to-linked-list/
 level: medium
 solution: traverse the tree with a linked list
+
+#tree #dfs
  */
 
 public class FlattenBinaryTreeToLinkedList {

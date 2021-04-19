@@ -5,12 +5,15 @@ import java.util.Stack;
 
 /*
 number: 85
-url: https://leetcode.com/problems/maximal-rectangle/
+problem: https://leetcode.com/problems/maximal-rectangle/
 level: hard
 solution: 1. naive is O(n^4), check if i, j, i+h, j+w all have 1
             2. O(n^3) -> create a height array for each row, and use brute force to solve it (16ms)
             3. O(n^2) -> create a height array for each row, solve it with O(n) 11ms
 related problem: 84 https://leetcode.com/problems/largest-rectangle-in-histogram/
+
+#hashTable #dp #stack
+
  */
 
 public class MaximalRectangle {

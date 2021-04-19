@@ -6,8 +6,13 @@ import java.util.Scanner;
 import java.util.TreeMap;
 
 /**
- * Created by Tom on 17/4/2016.
- */
+ problem: https://onlinejudge.org/external/12/1237.pdf
+ level:
+ solution:
+
+ #search
+
+ **/
 public class UVA1237 {
 
     // Structure to represent an interval

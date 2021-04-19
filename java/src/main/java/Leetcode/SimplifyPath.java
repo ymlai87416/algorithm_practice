@@ -2,12 +2,15 @@ package Leetcode;
 
 import java.util.Stack;
 
-/*
+/**
 number: 380
-url: https://leetcode.com/problems/simplify-path/
+problem: https://leetcode.com/problems/simplify-path/
 level: medium
 solution: just code the procedure
- */
+
+ #string #stack
+
+ **/
 
 public class SimplifyPath {
     public static void main(String[] args){

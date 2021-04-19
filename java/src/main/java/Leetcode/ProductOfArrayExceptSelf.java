@@ -1,11 +1,14 @@
 package Leetcode;
 
-/*
+/**
 number: 238
-url: https://leetcode.com/problems/product-of-array-except-self/
+problem: https://leetcode.com/problems/product-of-array-except-self/
 level: medium
 solution: O(n) to find out left, O(n) to find out right, then O(n) to do left * right
- */
+
+#array
+
+ **/
 
 public class ProductOfArrayExceptSelf {
     public static void main(String[] args) {

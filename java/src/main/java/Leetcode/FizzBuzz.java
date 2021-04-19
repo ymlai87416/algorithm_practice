@@ -5,7 +5,7 @@ import java.util.List;
 
 /*
 number: 412
-url: https://leetcode.com/problems/fizz-buzz/
+problem: https://leetcode.com/problems/fizz-buzz/
 level: easy
 solution:very simple
  */

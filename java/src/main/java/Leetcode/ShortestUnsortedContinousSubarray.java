@@ -1,11 +1,14 @@
 package Leetcode;
 
-/*
+/**
 number: 581
 url: https://leetcode.com/problems/shortest-unsorted-continuous-subarray/
 level: easy
 solution: find the first index of inversion, and the last index of inversion. then [first...last] is the answer.
- */
+
+ #array
+
+ **/
 
 import java.util.Arrays;
 import java.util.Stack;

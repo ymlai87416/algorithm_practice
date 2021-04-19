@@ -2,12 +2,15 @@ package Leetcode;
 
 import java.util.Stack;
 
-/*
+/**
 number: 206
-url: https://leetcode.com/problems/reverse-linked-list/
+problem: https://leetcode.com/problems/reverse-linked-list/
 level: easy
 solution: recursive or stack
- */
+
+#linkedList
+
+ **/
 
 public class ReverseLinkedList {
     public static void main(String[] args) {

@@ -2,10 +2,14 @@ package Leetcode;
 
 /*
 number: 141
-url: https://leetcode.com/problems/linked-list-cycle-ii/
+problem: https://leetcode.com/problems/linked-list-cycle-ii/
 level: medium
 solution: use floyd's cycle detection algorithm
+
+#linkedList #twoPointers
  */
+
+
 public class LinkedListCycleII {
     public static void main(String[] args) {
         ListNode head = new ListNode(3);

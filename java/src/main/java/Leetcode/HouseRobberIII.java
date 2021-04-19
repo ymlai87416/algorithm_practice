@@ -6,6 +6,8 @@ import java.util.HashMap;
 url: https://leetcode.com/problems/house-robber-iii/
 level: medium
 solution: another dp problem, now it is not array but a tree
+
+#dp #tree #dfs
  */
 
 public class HouseRobberIII {

@@ -5,6 +5,10 @@ import java.util.Scanner;
 
 /**
  * Created by Tom on 15/5/2016.
+ *
+ * problem: https://onlinejudge.org/external/119/11926.pdf
+ *
+ * #bit
  */
 public class UVA11926 {
     public static void main(String[] args){

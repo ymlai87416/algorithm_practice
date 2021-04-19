@@ -7,6 +7,10 @@ import java.util.Scanner;
  * Created by Tom on 15/5/2016.
  *
  * Stop at 11:20, resume at 12:00
+ * problem: https://onlinejudge.org/external/102/10264.pdf
+ *
+ * #bit
+ *
  */
 public class UVA10264 {
     static int[] weight = new int[32769];

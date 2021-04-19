@@ -4,6 +4,9 @@ package Leetcode;
 url: https://leetcode.com/problems/count-primes/
 level: Easy
 solution: just a seive
+
+#hashTable #math #prime
+
  */
 public class CountPrimes {
     public static void main(String[] args){

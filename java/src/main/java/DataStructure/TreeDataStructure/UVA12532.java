@@ -6,8 +6,14 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 /**
- * Created by Tom on 16/5/2016.
- */
+ url: https://onlinejudge.org/external/125/12532.pdf
+ level:
+ solution: no need to multiply the actual value +1/-1/0 will do.
+
+ #segmentTree #rmq
+
+ **/
+
 public class UVA12532 {
     static int[] N = new int[100001];
 

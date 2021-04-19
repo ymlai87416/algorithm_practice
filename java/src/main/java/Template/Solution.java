@@ -31,6 +31,15 @@ public class Solution {
         }
     }
 
+    boolean debugflag = false;
+    private void debug(String s){
+        if(debugflag) {
+            //System.out.println(s);
+            System.out.println("\033[0;34m" + s + "\033[0;30m");
+        }
+
+    }
+
     private void solve() {
         int ans = 0;
 

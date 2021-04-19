@@ -1,11 +1,14 @@
 package Leetcode;
 
-/*
+/**
 number: 69
-url: https://leetcode.com/problems/sqrtx/
+problem: https://leetcode.com/problems/sqrtx/
 level: easy
 solution: binary search integer, so good
- */
+
+#math #binarySearch
+
+ **/
 
 public class Sqrt {
     public static void main(String[] args){

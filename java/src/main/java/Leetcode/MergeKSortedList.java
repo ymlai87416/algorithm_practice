@@ -3,12 +3,15 @@ package Leetcode;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
-/*
+/**
 number: 23
 url: https://leetcode.com/problems/merge-k-sorted-lists/
 level: hard
 solution: this solution use priority queue to add the head of the k sorted list
- */
+
+#linkedList #divideAndConquer #heap
+
+ **/
 
 public class MergeKSortedList {
     public class ListNode {

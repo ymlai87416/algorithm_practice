@@ -7,9 +7,12 @@ import java.util.concurrent.ThreadPoolExecutor;
 
 /*
 number: 128
-url: https://leetcode.com/problems/longest-consecutive-sequence/
+problem: https://leetcode.com/problems/longest-consecutive-sequence/
 level: hard
 solution: brute force is most important if you cannot find any tricks. back to square 1. ***
+
+#unionFind
+
  */
 
 public class LongestConsecutiveSequence {

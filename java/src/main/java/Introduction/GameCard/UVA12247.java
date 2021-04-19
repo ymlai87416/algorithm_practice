@@ -5,6 +5,10 @@ import java.util.Scanner;
 /**
  * Created by Tom on 14/4/2016.
  * Start at 23: 39, WA because forget the card has 52, AC at 0:08, total time 29 mins
+ *
+ * problem: https://onlinejudge.org/external/122/12247.pdf
+ *
+ * #simulation #cardGame
  */
 public class UVA12247 {
     public static void main(String[] args){

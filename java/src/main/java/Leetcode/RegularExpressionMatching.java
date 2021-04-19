@@ -3,12 +3,15 @@ package Leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-/*
+/**
 number: 10
-url: https://leetcode.com/problems/regular-expression-matching/
+problem: https://leetcode.com/problems/regular-expression-matching/
 level: hard
 solution: . match to any beside \0, * match to any beside \0 or not match at all.
- */
+
+ #string #dp #backtracking
+
+ **/
 
 public class RegularExpressionMatching {
     public static void main(String[] args){

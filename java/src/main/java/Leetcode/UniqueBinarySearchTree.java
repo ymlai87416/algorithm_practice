@@ -1,11 +1,14 @@
 package Leetcode;
 
-/*
+/**
 number: 380
 url: https://leetcode.com/problems/climbing-stairs/
 level: medium
 solution: I only needed to know how many left and how many right. then use dp
- */
+
+#dp #tree
+
+ **/
 
 public class UniqueBinarySearchTree {
     public static void main(String[] args) {

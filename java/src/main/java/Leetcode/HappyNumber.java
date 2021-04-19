@@ -3,9 +3,11 @@ package Leetcode;
 import java.util.HashSet;
 
 /*
-url: https://leetcode.com/problems/happy-number/
+problem: https://leetcode.com/problems/happy-number/
 level: easy
 solution: just follow the step
+
+#hashTable #math
  */
 
 public class HappyNumber {

@@ -1,11 +1,14 @@
 package Leetcode;
 
-/*
+/**
 number: 65
-url: https://leetcode.com/problems/valid-number/
+problem: https://leetcode.com/problems/valid-number/
 level: hard
 solution: testing bounding case.
- */
+
+#math #string
+
+ **/
 
 public class ValidNumber {
     public static void main(String[] args) {

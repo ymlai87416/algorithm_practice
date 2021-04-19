@@ -1,9 +1,11 @@
 package Leetcode;
 
 /*
-url: https://leetcode.com/problems/edit-distance/
+problem: https://leetcode.com/problems/edit-distance/
 level: medium
 solution: classic edit distance
+
+#string #dp
  */
 public class EditDistance {
     public static void main(String[] args){

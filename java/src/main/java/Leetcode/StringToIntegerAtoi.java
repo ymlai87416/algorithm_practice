@@ -1,11 +1,14 @@
 package Leetcode;
 
-/*
+/**
 number: 8
 url: https://leetcode.com/problems/string-to-integer-atoi/
 level: medium
 solution: care about . / 0 / int / decimal
- */
+
+#math #string
+
+ **/
 
 public class StringToIntegerAtoi {
     public static void main(String[] args){

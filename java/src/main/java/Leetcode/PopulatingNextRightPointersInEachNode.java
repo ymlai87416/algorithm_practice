@@ -1,14 +1,16 @@
 package Leetcode;
 
-/*
+/**
 number: 116
-url: https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
+problem: https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
 level: medium
 solution: under the same node, naive approach, store the treenode with the level, then we can link it.
             recursion, now we have a next pointer, we traverse the root, return left, which left -> right
                     then we continue to apply, find out all nodes at the next level.
                     then we continue to apply, find out all nodes at the next level.
- */
+
+#tree #dfs #bfs
+ **/
 
 public class PopulatingNextRightPointersInEachNode {
     public static void main(String[] args) {

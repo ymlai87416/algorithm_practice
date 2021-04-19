@@ -8,9 +8,12 @@ import java.util.HashMap;
 
 /*
 number: 380
-url: https://leetcode.com/problems/largest-number/
+problem: https://leetcode.com/problems/largest-number/
 level: medium
 solution: sort the array, using a special function which accept 2 string. a+b < b+a => a < b
+
+#sort
+
  */
 
 public class LargestNumber {

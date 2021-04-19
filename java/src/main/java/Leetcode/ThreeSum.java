@@ -4,14 +4,17 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/*
+/**
 number: 15
-url: https://leetcode.com/problems/3sum/
+problem: https://leetcode.com/problems/3sum/
 level: medium
 solution: 1. brute force 3 loop, O(n^3)
           2. 2 loop with lookup. O(n^2)
           3. a loop with start - end behind i pointer O(n^2)
- */
+
+#array #twoPonters
+
+ **/
 
 public class ThreeSum {
     public static void main(String[] args){

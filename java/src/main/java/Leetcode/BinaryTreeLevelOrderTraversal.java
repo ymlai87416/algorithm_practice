@@ -3,11 +3,14 @@ package Leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-/*
-url: https://leetcode.com/problems/binary-tree-level-order-traversal/
+/**
+problem: https://leetcode.com/problems/binary-tree-level-order-traversal/
 level: medium
 solution: the index of the List<List<>> represent the level, just have to keep track what level curr node is.
- */
+
+#bfs
+
+ **/
 public class BinaryTreeLevelOrderTraversal {
     public static void main(String[] args) {
         TreeNode t = new TreeNode(5);

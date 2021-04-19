@@ -1,5 +1,14 @@
 package Leetcode;
 
+/*
+problem: https://leetcode.com/problems/contains-duplicate/
+level: easy
+solution:
+
+#hashTable
+
+ */
+
 import java.util.Arrays;
 import java.util.HashSet;
 

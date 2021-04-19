@@ -4,11 +4,14 @@ import java.util.ArrayList;
 
 /*
 number: 57
-url: https://leetcode.com/problems/insert-interval/
+problem: https://leetcode.com/problems/insert-interval/
 level: hard
 solution: sort the intervals, and place the new interval in the right place, when preparing the answer.
     Merge it (merge before, merge after, merge across)
     or keep it untouched.
+
+#sort
+
  */
 
 public class InsertInterval {

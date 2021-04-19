@@ -1,5 +1,14 @@
 package Leetcode;
 
+/*
+problem: https://leetcode.com/problems/first-unique-character-in-a-string/
+level: easy
+solution:
+
+#hashTable #string
+
+ */
+
 public class FirstUniqueCharacterInAString {
     public static void main(String[] args){
         String ss = "loveleetcode";

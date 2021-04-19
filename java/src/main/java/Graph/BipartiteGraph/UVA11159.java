@@ -5,10 +5,14 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * Created by ymlai on 12/4/2017.
- *
- * Maximum bipartite matching = V - Maximum independent set. (It seems hard to believe for me, but one can delete more vertex after removing MCBM. make it not a solution.
- */
+ problem: https://onlinejudge.org/external/111/11159.pdf
+ level:
+ solution: This is to find independence set, formula: Maximum bipartite matching = V - Maximum independent set.
+
+ #MCBM #bipartiteGraph
+
+ **/
+
 public class UVA11159 {
     static List<List<Integer>> adjList;
     static int[] match;

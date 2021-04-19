@@ -1,10 +1,13 @@
 package Leetcode;
 
-/*
+/**
 number: 64
-url: https://leetcode.com/problems/minimum-path-sum/
+problem: https://leetcode.com/problems/minimum-path-sum/
 level: medium
 solution: it is a dp problem
+
+#dp
+
  */
 
 public class MinimumPathSum {

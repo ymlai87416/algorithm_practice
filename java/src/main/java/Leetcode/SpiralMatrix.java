@@ -3,12 +3,14 @@ package Leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-/*
+/**
 number: 54
-url: https://leetcode.com/problems/spiral-matrix/
+problem: https://leetcode.com/problems/spiral-matrix/
 level: medium
 solution: layer by layer
- */
+
+#array
+ **/
 
 public class SpiralMatrix {
     public static void main(String[] args) {

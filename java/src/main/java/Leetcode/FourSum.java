@@ -5,10 +5,12 @@ import java.util.*;
 //When you sort, you know the new list is already in the list or not by looking only the last entry.
 
 /*
-url: https://leetcode.com/problems/4sum/
+problem: https://leetcode.com/problems/4sum/
 level: medium
 solution: time complexity O(n^3)
     sort the array, then the result should be in ascending order
+
+#hashTable #twoPointer
  */
 
 public class FourSum {

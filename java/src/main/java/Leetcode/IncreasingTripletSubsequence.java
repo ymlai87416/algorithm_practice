@@ -3,7 +3,7 @@ package Leetcode;
 
 /*
 number: 334
-url: https://leetcode.com/problems/increasing-triplet-subsequence/
+problem: https://leetcode.com/problems/increasing-triplet-subsequence/
 level: medium
 solution: naive way is to create 2 additional array to store the min (from left) and max (from right) and find an index
             which min[i] < num[i] < max[i]

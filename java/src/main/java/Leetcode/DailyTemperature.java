@@ -3,9 +3,11 @@ package Leetcode;
 import java.util.Stack;
 
 /*
-url: https://leetcode.com/problems/daily-temperatures/
+problem: https://leetcode.com/problems/daily-temperatures/
 level: medium
-solution: fibonacci number
+solution:
+
+#hashTable #stack
  */
 
 public class DailyTemperature {

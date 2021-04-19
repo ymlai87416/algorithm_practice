@@ -4,8 +4,13 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * Created by Tom on 19/4/2016.
- */
+ problem: https://onlinejudge.org/external/106/10616.pdf
+ level:
+ solution:
+
+ #dp #knapsack
+
+ **/
 public class UVA10616 {
     static long[][][] dptable = new long[200+1][10+1][20];
     static long[] item = new long[200+1];

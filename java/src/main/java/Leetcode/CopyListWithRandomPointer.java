@@ -1,5 +1,14 @@
 package Leetcode;
 
+/*
+problem: https://leetcode.com/problems/copy-list-with-random-pointer/
+level: medium
+solution:
+
+#hashTable #linkedList
+
+ */
+
 import java.util.HashMap;
 
 public class CopyListWithRandomPointer {

@@ -1,5 +1,14 @@
 package Leetcode;
 
+/*
+problem: https://leetcode.com/problems/excel-sheet-column-number/
+level: easy
+solution:
+
+#math
+
+ */
+
 public class ExcelSheetColumnNumber {
     public static void main(String[] args){
         String input = "ZY";

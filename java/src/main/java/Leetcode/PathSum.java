@@ -1,11 +1,14 @@
 package Leetcode;
 
-/*
+/**
 number: 112
-url: https://leetcode.com/problems/path-sum/
+problem: https://leetcode.com/problems/path-sum/
 level: easy
 solution: dfs done.
- */
+
+#tree #dfs
+
+ **/
 
 public class PathSum {
     public static void main(String[] args){

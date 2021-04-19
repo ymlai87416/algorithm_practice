@@ -3,12 +3,15 @@ package Leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-/*
+/**
 number: 380
-url: https://leetcode.com/problems/text-justification/
+problem: https://leetcode.com/problems/text-justification/
 level: hard
 solution: just take care all the boundary case.
- */
+
+#string
+
+ **/
 
 public class TextJustification {
     public static void main(String[] args){

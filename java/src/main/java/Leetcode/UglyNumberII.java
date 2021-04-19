@@ -4,12 +4,15 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.TreeSet;
 
-/*
+/**
 number: 264
-url: https://leetcode.com/problems/ugly-number-ii/
+problem: https://leetcode.com/problems/ugly-number-ii/
 level: medium
 solution: 2^a*3^b*5^c.
- */
+
+#math #dp #heap
+
+ **/
 
 public class UglyNumberII {
     public static void main(String[] args){

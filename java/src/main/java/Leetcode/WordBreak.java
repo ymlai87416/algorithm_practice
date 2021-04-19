@@ -5,12 +5,15 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
-/*
+/**
 number: 139
-url: https://leetcode.com/problems/word-break/
+problem: https://leetcode.com/problems/word-break/
 level: medium
 solution: build a trie, and if I reach end, I go on, or reach the other end if there is one.
- */
+
+#dp
+
+ **/
 
 public class WordBreak {
     public static void main(String[] args) {

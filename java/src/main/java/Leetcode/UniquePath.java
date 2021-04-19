@@ -1,11 +1,14 @@
 package Leetcode;
 
-/*
+/**
 number: 62
-url: https://leetcode.com/problems/unique-paths/
+problem: https://leetcode.com/problems/unique-paths/
 level: medium
 solution: robot go n-1 left and m-1 down. => slot = (n+m-2) => how to assign n-1
- */
+
+#array #dp
+
+ **/
 
 public class UniquePath {
     public static void main(String[] args){

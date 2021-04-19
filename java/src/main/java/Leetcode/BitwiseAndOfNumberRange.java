@@ -1,5 +1,14 @@
 package Leetcode;
 
+/*
+problem: https://leetcode.com/problems/bitwise-and-of-numbers-range/
+level: medium
+solution: the index of the List<List<>> represent the level, just have to keep track what level curr node is.
+
+#bit
+
+ */
+
 public class BitwiseAndOfNumberRange {
     public static void main(String[] args){
         int m = 5;

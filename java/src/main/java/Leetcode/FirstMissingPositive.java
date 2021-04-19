@@ -1,5 +1,14 @@
 package Leetcode;
 
+/*
+problem: https://leetcode.com/problems/first-missing-positive/
+level: hard
+solution:
+
+#array
+
+ */
+
 public class FirstMissingPositive {
     public static void main(String[] args) {
         int[] nums = new int[]{7,8,9,11,12};

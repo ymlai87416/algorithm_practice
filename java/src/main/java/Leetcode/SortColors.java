@@ -1,11 +1,14 @@
 package Leetcode;
 
-/*
+/**
 number: 75
-url: https://leetcode.com/problems/sort-colors/
+problem: https://leetcode.com/problems/sort-colors/
 level: easy
 solution: just 2 ptr to in place sort 0 and 2. done
- */
+
+ #array #twoPointers #sort
+
+ **/
 
 public class SortColors {
     public static void main(String[] args){

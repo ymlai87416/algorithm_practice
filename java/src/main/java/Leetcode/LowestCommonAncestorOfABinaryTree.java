@@ -9,6 +9,9 @@ url: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
 level: medium
 solution: 1. findPath which get a list of treenode to reach p and q, find the last common element
             2. use tree approach to find both p and q under the root. many boundary case, be careful.
+
+#tree
+
  */
 
 public class LowestCommonAncestorOfABinaryTree {

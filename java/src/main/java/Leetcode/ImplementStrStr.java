@@ -3,11 +3,12 @@ package Leetcode;
 import java.util.ArrayList;
 
 /*
-url: https://leetcode.com/problems/implement-strstr/
+problem: https://leetcode.com/problems/implement-strstr/
 level: easy
 solution: kmp search O(n) 4ms, simple O(m(n-m+1)) 1ms
 kmp intro: https://www.youtube.com/watch?v=V5-7GzOfADQ
 
+#twoPointer #string
  */
 
 public class ImplementStrStr {

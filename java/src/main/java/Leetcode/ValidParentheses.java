@@ -2,12 +2,15 @@ package Leetcode;
 
 import java.util.Stack;
 
-/*
+/**
 number: 20
-url: https://leetcode.com/problems/valid-parentheses/
+problem: https://leetcode.com/problems/valid-parentheses/
 level: easy
 solution: just use stack.
- */
+
+#string #stack
+
+ **/
 
 public class ValidParentheses {
     public static void main(String[] args) {

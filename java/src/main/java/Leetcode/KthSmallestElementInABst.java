@@ -1,12 +1,13 @@
 package Leetcode;
 
-import DataStructure.JavaPriorityQueue.UVA1203;
-
 /*
 number: 230
 url: https://leetcode.com/problems/kth-smallest-element-in-a-bst/
 level: medium
-solution: fibonacci number
+solution:
+
+#binarySearch #tree
+
  */
 
 public class KthSmallestElementInABst {

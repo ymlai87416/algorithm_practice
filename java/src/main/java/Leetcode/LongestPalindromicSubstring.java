@@ -2,10 +2,13 @@ package Leetcode;
 
 /*
 number: 5
-url: https://leetcode.com/problems/longest-palindromic-substring/
+problem: https://leetcode.com/problems/longest-palindromic-substring/
 level: medium
 solution: another dp problem. if str[a...b] is a palindrom, then dp[a][b+1] = b-a+1
     time complexity = O(n^2) = 124ms
+
+#string #dp
+
  */
 
 public class LongestPalindromicSubstring {

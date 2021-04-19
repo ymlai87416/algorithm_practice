@@ -2,6 +2,15 @@ package Leetcode;
 
 import java.util.Arrays;
 
+/**
+ problem: https://leetcode.com/problems/next-permutation/
+ level: medium
+ solution:
+
+ #array
+
+ **/
+
 public class NextPermutation {
     class Solution {
         public void nextPermutation(int[] nums) {

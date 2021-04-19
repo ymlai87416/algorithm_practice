@@ -4,8 +4,13 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * Created by Tom on 6/5/2016.
- */
+ problem: https://onlinejudge.org/external/117/11790.pdf
+ level:
+ solution:
+
+ #dp #longestIncreasingSequence
+
+ **/
 public class UVA11790 {
 
     public static void main(String[] args){

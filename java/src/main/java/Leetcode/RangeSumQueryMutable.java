@@ -1,11 +1,14 @@
 package Leetcode;
 
-/*
+/**
 number: 307
-url: https://leetcode.com/problems/range-sum-query-mutable/
+problem: https://leetcode.com/problems/range-sum-query-mutable/
 level: medium
 solution: just a range sum query
- */
+
+ #binaryIndexedTree #segmentTree
+
+ **/
 
 public class RangeSumQueryMutable {
     public static void main(String[] args){

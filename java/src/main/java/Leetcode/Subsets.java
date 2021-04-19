@@ -3,12 +3,15 @@ package Leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-/*
+/**
 number: 78
 url: https://leetcode.com/problems/subsets/
 level: medium
 solution: start with seed [], loop the number, expand the seed by appending the number to each seed element.
- */
+
+#array #backtracking #bit
+
+ **/
 
 public class Subsets {
     public static void main(String[] args){

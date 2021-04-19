@@ -1,11 +1,14 @@
 package Leetcode;
 
-/*
+/**
 number: 380
-url: https://leetcode.com/problems/climbing-stairs/
-level: easy
-solution: fibonacci number
- */
+problem: https://leetcode.com/problems/sort-list/
+level: medium
+solution:
+
+#linkedList #sort
+
+ **/
 
 public class SortList {
     public static void main(String[] args) {

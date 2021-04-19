@@ -1,5 +1,6 @@
 package DataStructure.OneDArrayManipulation;
 
+import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -13,6 +14,7 @@ import java.util.StringTokenizer;
  * Created by Tom on 17/4/2016.
  *
  * TLE solution....
+ * https://www.quora.com/On-UVA-12356-Java-gets-Time-Limit-Exceeded-while-the-C++-equivalent-gets-accepted-How-do-I-optimize-the-Java-code-solved
  */
 public class UVA12356 {
 
@@ -20,17 +22,17 @@ public class UVA12356 {
     static int[] right = new int[100001];
 
     public static void main(String[] args) throws IOException {
-        BufferedReader sc = new BufferedReader( new InputStreamReader(System.in) );
+        BufferedReader sc = new BufferedReader( new InputStreamReader( new BufferedInputStream(System.in) ));
         while(true){
 
             String line = null;
 
             line = readLine(sc);
-            StringTokenizer st = new StringTokenizer(line);
-            int s = Integer.parseInt(st.nextToken());
-            int b = Integer.parseInt(st.nextToken());
+            String[] token = line.split(" ");
+            int s = Integer.parseInt(token[0]);
+            int b = Integer.parseInt(token[1]);
             if(s == 0 && b == 0) {
-                readLine(sc);
+                //readLine(sc);
                 break;
             }
 
@@ -42,9 +44,10 @@ public class UVA12356 {
 
             for(int i=0; i<b; ++i){
                 line = readLine(sc);
-                st = new StringTokenizer(line);
-                int l = Integer.parseInt(st.nextToken());
-                int r = Integer.parseInt(st.nextToken());
+                //st = new StringTokenizer(line);
+                token = line.split(" ");
+                int l = Integer.parseInt(token[0]);
+                int r = Integer.parseInt(token[1]);
                 l--; r--;
                 if(left[l] != -1)right[left[l]] = right[r];
                 if(right[r] != -1)left[right[r]] = left[l];
@@ -53,6 +56,7 @@ public class UVA12356 {
             System.out.println("-");
 
         }
+        sc.close();
     }
 
     static String readLine(BufferedReader br) throws IOException {

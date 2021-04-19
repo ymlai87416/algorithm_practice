@@ -1,5 +1,14 @@
 package Leetcode;
 
+/*
+problem: https://leetcode.com/problems/find-all-anagrams-in-a-string/
+level: medium
+solution:
+
+#hashTable
+
+ */
+
 import java.util.ArrayList;
 import java.util.List;
 

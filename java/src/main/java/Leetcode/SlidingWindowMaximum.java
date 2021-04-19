@@ -5,12 +5,15 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.PriorityQueue;
 
-/*
+/**
 number: 380
-url: https://leetcode.com/problems/climbing-stairs/
+problem: https://leetcode.com/problems/climbing-stairs/
 level: easy
 solution: fibonacci number
- */
+
+ #dp
+
+ **/
 public class SlidingWindowMaximum {
     public static void main(String[] args){
         //int[] nums  = new int[]{1,3,-1,-3,5,3,6,7};

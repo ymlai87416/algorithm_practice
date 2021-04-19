@@ -4,9 +4,12 @@ import java.util.Stack;
 
 /*
 number: 84
-url: https://leetcode.com/problems/largest-rectangle-in-histogram/
+problem: https://leetcode.com/problems/largest-rectangle-in-histogram/
 level: hard
 solution: O(n) finding left and right, and then completed
+
+#stack
+
  */
 
 public class LargestRectangleInHistogram {
@@ -146,6 +149,7 @@ public class LargestRectangleInHistogram {
             }
         }
 
+        /* no need update, comment to avoid confusion
         //can use to update individual element
         public void updateRange(int i, int j, int val){
             updateRange(1, 0, n-1, i, j, val);
@@ -161,6 +165,7 @@ public class LargestRectangleInHistogram {
                 st[p]= (A[p1] <= A[p2]) ? p1 : p2;
             }
         }
+        */
 
         private int rmq(int p, int L, int R, int i, int j) { // O(log n)
             if (i > R || j < L) return -1; // current segment outside query range

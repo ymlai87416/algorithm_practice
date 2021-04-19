@@ -2,12 +2,15 @@ package Leetcode;
 
 import java.util.Arrays;
 
-/*
+/**
 number: 33
-url: https://leetcode.com/problems/search-in-rotated-sorted-array/
+problem: https://leetcode.com/problems/search-in-rotated-sorted-array/
 level: medium
 solution: I find the inversion in O(logn), and then I can find the value in O(logn)
- */
+
+#array #binarySearch
+
+ **/
 
 public class SearchInRotatedSortedArray {
     public static void main(String[] args){

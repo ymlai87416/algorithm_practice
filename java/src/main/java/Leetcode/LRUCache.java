@@ -8,6 +8,8 @@ url: https://leetcode.com/problems/lru-cache/
 level: medium
 solution: get O(1): hash map lookup,
             put O(1): hash map set, and hash map delete, use double linked list to keep track.
+
+#lruCache
  */
 
 public class LRUCache {

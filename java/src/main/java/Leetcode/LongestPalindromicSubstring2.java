@@ -2,10 +2,13 @@ package Leetcode;
 
 /*
 number: 5
-url: https://leetcode.com/problems/longest-palindromic-substring/
+problem: https://leetcode.com/problems/longest-palindromic-substring/
 level: medium
 solution: another solution to the problem, which is expand around the center
     time complexity = O(n^2) = 36ms. with no additional space
+
+#string #dp
+
  */
 
 public class LongestPalindromicSubstring2 {

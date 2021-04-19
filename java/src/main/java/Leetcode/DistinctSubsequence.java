@@ -3,9 +3,11 @@ package Leetcode;
 import java.util.Arrays;
 
 /*
-url: https://leetcode.com/problems/distinct-subsequences/
-level: medium
+problem: https://leetcode.com/problems/distinct-subsequences/
+level: hard
 solution: dp, for each substring 1...n of T, find how many way to make it in S.
+
+#string #dp
  */
 
 public class DistinctSubsequence {

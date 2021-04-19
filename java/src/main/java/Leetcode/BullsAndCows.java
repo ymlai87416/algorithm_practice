@@ -4,6 +4,9 @@ package Leetcode;
 url: https://leetcode.com/problems/bulls-and-cows/
 level: easy
 solution: this is to give out the answer, it is not to guess
+
+#hashTable
+
  */
 public class BullsAndCows {
     public static void main(String[] args){

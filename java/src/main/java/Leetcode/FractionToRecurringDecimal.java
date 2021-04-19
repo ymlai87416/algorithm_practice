@@ -6,9 +6,11 @@ import java.math.RoundingMode;
 import java.util.HashMap;
 
 /*
-url: https://leetcode.com/problems/fraction-to-recurring-decimal/
+problem: https://leetcode.com/problems/fraction-to-recurring-decimal/
 level: medium
 solution: store the remainder and the position, if I saw the remainder again. I know there is a loop
+
+#hashTable #math
  */
 
 public class FractionToRecurringDecimal {

@@ -7,6 +7,9 @@ import java.util.List;
 url: https://leetcode.com/problems/combination-sum-iii/
 level: medium
 solution: something like combination 1
+
+#backtracking
+
  */
 
 public class CombinationSum3 {

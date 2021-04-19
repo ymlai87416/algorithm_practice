@@ -8,6 +8,8 @@ import java.util.Stack;
 url: https://leetcode.com/problems/combinations/
 level: medium
 solution: 1...k, at each recursion step, either add or not add. when the array reach n, stop it.
+
+#backtracking
  */
 
 public class Combination {

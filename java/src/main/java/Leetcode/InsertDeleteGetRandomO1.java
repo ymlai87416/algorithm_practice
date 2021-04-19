@@ -6,11 +6,13 @@ import java.util.Random;
 
 /*
 number: 380
-url: https://leetcode.com/problems/insert-delete-getrandom-o1/
+problem: https://leetcode.com/problems/insert-delete-getrandom-o1/
 level: medium
 solution: insert, delete, return random in O(1)
         Array insert O(1)
         HashMap used in delete O(1), but the ordering messed up
+
+#hashTable
  */
 
 

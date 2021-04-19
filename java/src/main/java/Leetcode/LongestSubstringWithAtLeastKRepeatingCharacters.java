@@ -9,6 +9,8 @@ url: https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-c
 level: medium
 solution: I got a string, count the freq map, and then I can break the strings into small segment or cannot (if the
     constraint are fulfilled).
+
+#divideAndConquer #slidingWindow
  */
 
 public class LongestSubstringWithAtLeastKRepeatingCharacters {

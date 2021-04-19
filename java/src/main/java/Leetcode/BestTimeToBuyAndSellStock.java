@@ -1,10 +1,12 @@
 package Leetcode;
 
-/*
+/**
 problem: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 level: easy
 solution: buy if next day is higher and sell in next day.
- */
+
+#dp
+ **/
 public class BestTimeToBuyAndSellStock {
 
     public static void main(String[] args) {

@@ -4,12 +4,15 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
-/*
+/**
 number: 149
-url: https://leetcode.com/problems/max-points-on-a-line/
+problem: https://leetcode.com/problems/max-points-on-a-line/
 level: hard
 solution: it is an O(n^2) algorithm. for each pair of point, just create a line.
- */
+
+#hashTable #math
+
+ **/
 
 public class MaxPointsOnALine {
 

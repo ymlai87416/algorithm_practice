@@ -1,11 +1,14 @@
 package Leetcode;
 
-/*
+/**
 number: 111
-url: https://leetcode.com/problems/minimum-depth-of-binary-tree/
+problem: https://leetcode.com/problems/minimum-depth-of-binary-tree/
 level: easy
 solution: just find the minimum depth by recursion
- */
+
+#tree #dfs #bfs
+
+ **/
 
 public class MinimumDepthOfBinaryTree {
     public static void main(String[] args) {

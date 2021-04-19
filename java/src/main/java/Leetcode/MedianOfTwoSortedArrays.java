@@ -2,9 +2,9 @@ package Leetcode;
 
 import java.util.Arrays;
 
-/*
+/**
 number: 4
-url: https://leetcode.com/problems/median-of-two-sorted-arrays/
+problem: https://leetcode.com/problems/median-of-two-sorted-arrays/
 level: hard
 solution: binary search for i such that. given i, j can be calculated.
         for         A[i-1],  A[i]
@@ -12,7 +12,10 @@ solution: binary search for i such that. given i, j can be calculated.
 
         s.t.        A[i-1] < B[j]
                     B[j-1] < A[i]
- */
+
+ #array #binarySearch #divideAndConquer
+
+ **/
 
 public class MedianOfTwoSortedArrays {
     public static void main(String[] args){

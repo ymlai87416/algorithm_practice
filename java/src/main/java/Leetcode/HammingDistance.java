@@ -1,9 +1,11 @@
 package Leetcode;
 
 /*
-url: https://leetcode.com/problems/hamming-distance/
+problem: https://leetcode.com/problems/hamming-distance/
 level: easy
 solution: bit operations
+
+#bit
  */
 
 public class HammingDistance {

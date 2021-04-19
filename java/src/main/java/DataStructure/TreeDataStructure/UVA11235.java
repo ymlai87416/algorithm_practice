@@ -9,6 +9,8 @@ import java.util.*;
  * Created by Tom on 9/4/2020.
  *
  * Solution to verify Segment tree
+ *
+ * #segmentTree #rmq
  */
 public class UVA11235 {
 

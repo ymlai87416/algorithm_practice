@@ -1,11 +1,14 @@
 package Leetcode;
 
-/*
+/**
 number: 326
-url: https://leetcode.com/problems/power-of-three/
+problem: https://leetcode.com/problems/power-of-three/
 level: easy
 solution: divide by 3 until we find that reminder is 0 or 1.
- */
+
+ #math
+
+ **/
 
 public class PowerOfThree {
     public static void main(String[] args){

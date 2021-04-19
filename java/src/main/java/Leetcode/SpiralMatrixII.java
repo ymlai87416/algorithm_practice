@@ -1,11 +1,14 @@
 package Leetcode;
 
-/*
+/**
 number: 59
-url: https://leetcode.com/problems/spiral-matrix-ii/
+problem: https://leetcode.com/problems/spiral-matrix-ii/
 level: medium
 solution: layer by layer
- */
+
+#array
+
+ **/
 
 public class SpiralMatrixII {
     public static void main(String[] args) {

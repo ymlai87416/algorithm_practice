@@ -6,9 +6,11 @@ import java.util.List;
 import java.util.Queue;
 
 /*
-url: https://leetcode.com/problems/course-schedule-ii/
+problem: https://leetcode.com/problems/course-schedule-ii/
 level: easy
 solution: topological sort using bfs to find the order
+
+#dfs #bfs #graph #topolocialSort
  */
 
 public class CourseScheduleII {

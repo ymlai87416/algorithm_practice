@@ -2,13 +2,16 @@ package Leetcode;
 
 import java.util.Arrays;
 
-/*
+/**
 number: 81
-url: https://leetcode.com/problems/search-in-rotated-sorted-array-ii/
+problem: https://leetcode.com/problems/search-in-rotated-sorted-array-ii/
 level: medium
 solution: now duplicate is allowed, the previous method cannot be done. because when mid = start / end, then it comes
     to linear search [start, end] to find the pivot.
- */
+
+#array #binarySearch
+
+ **/
 
 public class SearchInRotatedSortedArrayII {
     public static void main(String[] args){

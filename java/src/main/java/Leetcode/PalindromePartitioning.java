@@ -4,12 +4,15 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-/*
+/**
 number: 380
-url: https://leetcode.com/problems/palindrome-partitioning/
+problem: https://leetcode.com/problems/palindrome-partitioning/
 level: medium
 solution: because the string will be appear again and again, dp is the solution to make it fast.
- */
+
+#dp #backtracking #dfs
+
+ **/
 
 public class PalindromePartitioning {
     public static void main(String[] args){

@@ -7,10 +7,14 @@ import java.util.StringTokenizer;
 import java.util.TreeSet;
 
 /**
- * Created by Tom on 20/4/2016.
- *
- * Start at 0:30 and finished at 1:00, use 30:00 mins.
- */
+ problem: https://onlinejudge.org/external/7/787.pdf
+ level:
+ solution:
+
+ #dp #max1DRangeSum
+
+ **/
+
 public class UVA787 {
     public static void main(String[] args){
         BufferedReader buf = new BufferedReader(

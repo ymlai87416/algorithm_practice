@@ -7,9 +7,11 @@ import java.util.Queue;
 
 
 /*
-url: https://leetcode.com/problems/course-schedule/
+problem : https://leetcode.com/problems/course-schedule/
 level: medium
 solution: topological sort (bfs 4ms / dfs 7ms)
+
+#dfs #bfs #graph #topologicalSort
  */
 
 public class CourseSchedule {

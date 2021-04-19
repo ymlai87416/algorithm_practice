@@ -1,6 +1,5 @@
 package GoogleCodeJam.Y2009.Round1B.A;
 
-
 /**
  * Created by Tom on 9/4/2016.
  */
@@ -8,6 +7,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.Scanner;
 
 public class Solution {
@@ -19,8 +19,8 @@ public class Solution {
 
     static{
         try{
-            IN = "C:\\GitProjects\\algorithm_practice\\java\\src\\main\\java\\GoogleCodeJam\\Y2009\\Round1B\\A\\A-test.in";
-            //IN = null;
+            //IN = "C:\\Users\\ITDLYG\\IdeaProjects\\untitled\\B-test.in";
+            IN = null;
             if(IN == null)
                 sc = new Scanner(System.in);
             else
@@ -51,24 +51,24 @@ public class Solution {
 
             String animal = token[0];
             int nProperty = Integer.parseInt(token[1]);
-            String[] properties = new String[nProperty];
+            HashSet<String> propSet = new HashSet<>();
 
-            for (int j = 0; j < nProperty; j++) { properties[j] = token[2+j];}
+            for (int j = 0; j < nProperty; j++)
+                propSet.add(token[2+j]);
 
-            int pPtr = 0;
             while(ptr != null){
                 r = r * ptr.value;
-                String prop = (pPtr < nProperty) ? properties[pPtr] : null;
+
 
                 if(ptr.property != null){
-                    if(prop != null && ptr.property.compareTo(prop) == 0)
+                    boolean hasProp = propSet.contains(ptr.property);
+                    if(hasProp)
                         ptr = ptr.nTrue;
                     else
                         ptr = ptr.nFalse;
                 }
                 else break;
 
-                pPtr++;
             }
 
 
@@ -166,7 +166,7 @@ public class Solution {
         // out = new PrintStream(new FileOutputStream(OUT));
         int t = sc.nextInt();
         for (int i = 1; i <= t; i++) {
-            out.print("Case #" + i + ": ");
+            out.print("Case #" + i + ":");
             int L = sc.nextInt();
 
             sc.nextLine();
@@ -183,8 +183,9 @@ public class Solution {
             }
 
             double[] x = solve(a, query);
+            System.out.println();
             for (int j = 0; j < x.length; j++) {
-                System.out.println(x[j]);
+                System.out.format("%.9f\n", x[j]);
             }
         }
         sc.close();

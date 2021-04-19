@@ -1,17 +1,36 @@
 package Graph.AllPairShortestPathVariants;
 
+import java.io.FileInputStream;
 import java.util.Scanner;
 
 /**
- * Created by Tom on 13/5/2016.
- */
+ problem: https://onlinejudge.org/external/1/104.pdf
+ level:
+ solution: AC
+
+ #AllPairShortestPath
+
+ **/
+
 public class UVA104 {
 
-    static double[][][] AdjMat = new double[21][21][21];
-    static int[][] p = new int[21][21];
+    static double[][] convTable = new double[21][21];
+    //static int[][] next = new int[21][21];
+
+    static double[][] prevS = new double[21][21];
+    static double[][] curS = new double[21][21];
+    static int[][][] path = new int[21][21][21];
+    //denote the path from start to end next[start][end] = next element -> start, next, ... , end
+
 
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = null;
+        try{
+            //sc = new Scanner(System.in);
+            sc = new Scanner(new FileInputStream("C:\\GitProjects\\algorithm_practice\\java\\src\\main\\java\\Graph\\AllPairShortestPathVariants\\UVA104.in"));
+        }
+        catch(Exception ex){}
+
 
         while(true){
             if(!sc.hasNextInt()) break;
@@ -20,55 +39,96 @@ public class UVA104 {
 
             for (int i = 0; i < V; i++)
                 for (int j = 0; j < V; j++)
-                    p[i][j] = i;
-
+                    path[i][j][0] = j;
 
             for(int i=0; i<V; ++i){
                 for(int j=0; j<V; ++j){
                     if(i==j)
-                        AdjMat[i][j][1] = 1;
+                        convTable[i][j] = 1;
                     else
-                        AdjMat[i][j][1] = sc.nextDouble();
+                        convTable[i][j]= sc.nextDouble();
                 }
             }
 
-            for (int k = 0; k < V; k++) // remember that loop order is k->i->j
-                for (int i = 0; i < V; i++)
+            //https://en.wikipedia.org/wiki/Floyd%E2%80%93Warshall_algorithm#Path_reconstruction
+            //floyd can make path no longer than
+
+            for (int i = 0; i < V; i++) {
+                for (int j = 0; j < V; j++) {
+                    prevS[i][j] = convTable[i][j];
+                }
+            }
+
+            boolean found = false;
+
+            for (int i = 0; i < V&&!found; i++) {
+                for (int j = 0; j < V &&!found; j++) {
+                    //System.out.println(i + " " + j + " " + convTable[i][j] * convTable[j][i]);
+                    if(convTable[i][j] * convTable[j][i] > 1.01){
+                        //now we get the answer
+                        System.out.format("%d %d %d\n", i+1, j+1, i+1);
+                        found=true;
+                    }
+                }
+            }
+
+            for (int t = 1; t < V && !found; t++) {
+
+                for (int i = 0; i < V; i++) {
                     for (int j = 0; j < V; j++) {
-                        if (AdjMat[i][k][k-1] * AdjMat[k][j][1] > AdjMat[i][j][k-1]) {
-                            AdjMat[i][j][k] = AdjMat[i][k][k-1] * AdjMat[k][j][1];
-                            p[i][j] = p[k][j];
+                        curS[i][j] = prevS[i][j];
+
+                        for (int k = 0; k < V; k++) {
+                            double temp = prevS[i][k] * convTable[k][j];
+                            if(temp > curS[i][j] ) {
+                                curS[i][j] = temp;
+                                //now i .. j path => i....k-> j.
+                                //copy the path from i to k and then add j
+
+                                path[i][j][t]=k;
+                            }
                         }
                     }
-
-            int maxR = 1;
-            int arb = -1;
-            for(int i=0; i<V; ++i) {
-                if(maxR > p[i][i]){
-                    maxR = p[i][i];
-                    arb = i;
                 }
+
+                for (int i = 0; i < V; i++) {
+                    if(curS[i][i] > 1.01){
+                        //now we get the answer
+                        printPath(t, i, i);
+                        System.out.println();
+                        found=true;
+                        break;
+                    }
+                }
+
+                double[][] temp = curS;
+                curS = prevS;
+                prevS = temp;
+
             }
 
-            for(int i=0; i<V; ++i){
-                for(int j=0; j<V; ++j){
-                    System.out.print(AdjMat[i][j]+ " ");
-                }
-                System.out.println();
-            }
-
-            if(arb == -1)
+            if(!found)
                 System.out.println("no arbitrage sequence exists");
-            else {
-                printPath(arb, arb);
-                System.out.println();
-            }
+
+
         }
 
     }
 
-    static void printPath(int i, int j) {
-        if (i != j) printPath(i, p[i][j]);
+
+    /*
+        Here is the path logic
+        original: path[i][j][0] == i=>j
+        if I find a path which i... k -> j is bigger than i... j at step S then i assigned path[i][j][S] = k
+        so i have to print the path from 1...k for step S-1 then print j
+     */
+    static void printPath(int t, int i, int j) {
+        if(t == 0) {
+            System.out.format("%d %d", i + 1, j + 1);
+            return;
+        }
+        printPath(t-1, i, path[i][j][t]);
         System.out.format(" %d", j+1);
     }
+
 }

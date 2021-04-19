@@ -1,11 +1,14 @@
 package Leetcode;
 
-/*
+/**
 number: 44
 url: https://leetcode.com/problems/wildcard-matching/
 level: hard
 solution: the special case is *, backtrack
- */
+
+ #string #dp #backtracking #greedy
+
+ **/
 
 public class WildcardMatching {
     public static void main(String[] args) {

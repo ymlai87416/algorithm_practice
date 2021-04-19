@@ -4,9 +4,16 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * Created by Tom on 22/4/2016.
- * Start at 0:33 and finished at 0:42, total time spent: 9 mins.
- */
+ problem: https://onlinejudge.org/external/113/11389.pdf
+ level:
+ solution:
+
+ Start at 0:33 and finished at 0:42, total time spent: 9 mins.
+
+ #greedy
+
+ **/
+
 public class UVA11389 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);

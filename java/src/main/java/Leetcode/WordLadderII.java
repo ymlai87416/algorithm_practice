@@ -2,12 +2,15 @@ package Leetcode;
 
 import java.util.*;
 
-/*
+/**
 number: 126
-url: https://leetcode.com/problems/word-ladder-ii/
+problem: https://leetcode.com/problems/word-ladder-ii/
 level: hard
 solution: word ladder + backtrack
- */
+
+#array #string #backtracking #bfs
+
+ **/
 
 public class WordLadderII {
 

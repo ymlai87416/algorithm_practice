@@ -1,5 +1,14 @@
 package Leetcode;
 
+/*
+problem: https://leetcode.com/problems/count-of-smaller-numbers-after-self/
+level: hard
+solution:
+
+#binarySearch #divideAndConquer #sort #binaryIndexedTree #SegmentTree
+
+ */
+
 import java.util.*;
 import java.util.stream.Collectors;
 

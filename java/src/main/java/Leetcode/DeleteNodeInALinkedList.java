@@ -1,5 +1,14 @@
 package Leetcode;
 
+/*
+problem: https://leetcode.com/problems/delete-node-in-a-linked-list/
+level: easy
+solution:
+
+#linkedList
+
+ */
+
 public class DeleteNodeInALinkedList {
     public static void main(String[] args){
         ListNode head = new ListNode(4);

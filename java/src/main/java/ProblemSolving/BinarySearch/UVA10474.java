@@ -1,5 +1,14 @@
 package ProblemSolving.BinarySearch;
 
+/**
+ problem: https://onlinejudge.org/external/104/10474.pdf
+ level:
+ solution:
+
+ #binarySearch #binarySearchLowerBound #binarySearchUpperBound #binarySearchEndExclusive
+
+ **/
+
 import java.io.*;
 import java.util.Arrays;
 

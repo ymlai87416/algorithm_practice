@@ -1,10 +1,13 @@
 package Leetcode;
 
-/*
+/**
 url: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/
 level: medium
 solution: can only be dp
- */
+
+#dp
+
+ **/
 public class BestTimeToBuyAndSellStockWithCooldown {
     public static void main(String[] args){
         int[] prices = new int[]{1};

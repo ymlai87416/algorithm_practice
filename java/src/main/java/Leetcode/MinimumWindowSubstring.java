@@ -1,11 +1,14 @@
 package Leetcode;
 
-/*
+/**
 number: 76
-url: https://leetcode.com/problems/minimum-window-substring/
+problem: https://leetcode.com/problems/minimum-window-substring/
 level: hard
 solution: fibonacci number
- */
+
+#hashTable #twoPointers #string #slidingWindow
+
+ **/
 
 public class MinimumWindowSubstring {
     public static void main(String[] args){

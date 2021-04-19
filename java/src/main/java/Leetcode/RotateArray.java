@@ -1,11 +1,14 @@
 package Leetcode;
 
-/*
+/**
 number: 189
-url: https://leetcode.com/problems/rotate-array/
+problem: https://leetcode.com/problems/rotate-array/
 level: easy
 solution: reverse the whole array, reverse the first k, reverse the n-k elements done
- */
+
+#array
+
+ **/
 
 public class RotateArray {
     public static void main(String[] args){

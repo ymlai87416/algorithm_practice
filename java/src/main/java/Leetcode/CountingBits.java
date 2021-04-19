@@ -1,10 +1,13 @@
 package Leetcode;
 
 /*
-url: https://leetcode.com/problems/counting-bits/
+problem: https://leetcode.com/problems/counting-bits/
 level: medium
 
 keep expanding the result from 1 -> 2 -> 4 -> n
+
+#dp #bit
+
  */
 
 public class CountingBits {

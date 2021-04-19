@@ -4,9 +4,13 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * Created by Tom on 19/4/2016.
- * Thinking for day, just circumvent the TLE using difference case. instead of formula a general case... time spends: 1 day.
- */
+ problem: https://onlinejudge.org/external/108/10819.pdf
+ level:
+ solution: Thinking for day, just circumvent the TLE using difference case. instead of formula a general case... time spends: 1 day.
+
+ #dp #knapsack
+
+ **/
 public class UVA10819 {
 
     static int[][] dptable = new int[10200+1][100+1];

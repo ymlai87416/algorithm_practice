@@ -6,6 +6,9 @@ import java.util.Scanner;
  * Created by Tom on 15/4/2016.
  *
  * This suppose to be a easy question, but you not following the instruction... Started at 0:33 and end at 1:21, total time 48 mins.
+ * problem: https://onlinejudge.org/external/112/11221.pdf
+ *
+ * #palindrome
  */
 public class UVA11221 {
     public static void main(String[] args){

@@ -2,12 +2,15 @@ package Leetcode;
 
 import java.util.*;
 
-/*
+/**
 number: 127
 url: https://leetcode.com/problems/word-ladder/
 level: medium
 solution: this is a graph.
- */
+
+#bfs
+
+**/
 
 public class WordLadder {
     public static void main(String[] args) {

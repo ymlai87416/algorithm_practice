@@ -5,8 +5,16 @@ import java.util.Scanner;
 import java.util.TreeMap;
 
 /**
- * Created by Tom on 13/5/2016.
- */
+ problem: https://onlinejudge.org/external/8/821.pdf
+ level:
+ solution: O(n^3)
+
+ #AllPairShortestPath #Floyd
+
+ **/
+
+
+
 public class UVA821 {
 
     static int[][] AdjMat = new int[101][101];

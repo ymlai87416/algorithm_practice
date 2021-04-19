@@ -18,6 +18,8 @@ solution: just sort the array and do it, or store it in hashmap, the naive way i
             another algorithn
 
         What if elements of nums2 are stored on disk, and the memory is limited such that you cannot load all elements into the memory at once?
+
+#hashTable #twoPointer #binarySearch #sort
  */
 
 public class IntersectionOfTwoArraysII {

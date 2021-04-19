@@ -5,8 +5,13 @@ import java.util.Scanner;
 import java.util.TreeMap;
 
 /**
- * Created by Tom on 13/5/2016.
- */
+ problem: https://onlinejudge.org/external/10/1056.pdf
+ level:
+ solution:
+
+ #AllPairShortestPath
+
+ **/
 public class UVA1056 {
 
     static int[][] AdjMat = new int[101][101];

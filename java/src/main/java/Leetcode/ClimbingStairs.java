@@ -4,6 +4,9 @@ package Leetcode;
 url: https://leetcode.com/problems/climbing-stairs/
 level: easy
 solution: fibonacci number
+
+#dp  #fibonacciNumber
+
  */
 public class ClimbingStairs {public static void main(String[] args){
         int n=2;

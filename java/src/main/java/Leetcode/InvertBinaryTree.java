@@ -5,6 +5,9 @@ number: 226
 url: https://leetcode.com/problems/invert-binary-tree/
 level: easy
 solution: just flip
+
+#tree
+
  */
 
 public class InvertBinaryTree {

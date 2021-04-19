@@ -1,9 +1,11 @@
 package Leetcode;
 
 /*
-url: https://leetcode.com/problems/divide-two-integers/
+problem: https://leetcode.com/problems/divide-two-integers/
 level: medium
 solution: divide number, a / b => a - b*2^n / b + 2^n for some n such that a > b*2^n
+
+#math #binarySearch
  */
 
 public class DivideTwoIntegers {

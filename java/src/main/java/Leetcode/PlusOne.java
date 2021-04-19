@@ -2,12 +2,15 @@ package Leetcode;
 
 import java.util.Arrays;
 
-/*
+/**
 number: 66
-url: https://leetcode.com/problems/plus-one/
+problem: https://leetcode.com/problems/plus-one/
 level: easy
 solution: beware of carry to a new digit
- */
+
+ #array
+
+ **/
 
 public class PlusOne {
     public static void main(String[] args){

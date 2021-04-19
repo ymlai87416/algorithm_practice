@@ -2,12 +2,14 @@ package Leetcode;
 
 import java.util.Random;
 
-/*
+/**
 number: 384
-url: https://leetcode.com/problems/shuffle-an-array/
+problem: https://leetcode.com/problems/shuffle-an-array/
 level: medium
-solution: fibonacci number
- */
+solution:
+
+
+ **/
 
 public class ShuffleAnArray {
 

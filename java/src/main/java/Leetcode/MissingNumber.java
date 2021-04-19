@@ -1,11 +1,14 @@
 package Leetcode;
 
-/*
+/**
 number: 268
-url: https://leetcode.com/problems/missing-number/
+problem: https://leetcode.com/problems/missing-number/
 level: easy
 solution: just mark the number as negative.
- */
+
+ #array #math #bit
+
+ **/
 
 public class MissingNumber {
     public static void main(String[] args){

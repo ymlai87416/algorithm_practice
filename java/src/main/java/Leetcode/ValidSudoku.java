@@ -2,9 +2,12 @@ package Leetcode;
 
 /*
 number: 36
-url: https://leetcode.com/problems/valid-sudoku/
+problem: https://leetcode.com/problems/valid-sudoku/
 level: Medium
 solution: just check the number, don't need to solve it.
+
+#hashTable
+
  */
 
 public class ValidSudoku {

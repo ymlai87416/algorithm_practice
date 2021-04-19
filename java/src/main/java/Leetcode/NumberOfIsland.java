@@ -1,11 +1,14 @@
 package Leetcode;
 
-/*
+/**
 number: 200
-url: https://leetcode.com/problems/number-of-islands/
+problem: https://leetcode.com/problems/number-of-islands/
 level: medium
 solution: flood fill
- */
+
+ #dfs #bfs #unionFind
+
+ **/
 
 public class NumberOfIsland {
     public static void main(String[] args){

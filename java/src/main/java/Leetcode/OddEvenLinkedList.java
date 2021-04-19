@@ -1,11 +1,14 @@
 package Leetcode;
 
-/*
+/**
 number: 328
-url: https://leetcode.com/problems/odd-even-linked-list/
+problem: https://leetcode.com/problems/odd-even-linked-list/
 level: medium
 solution: just keep track of the pointers
- */
+
+#linkedList
+
+ **/
 
 public class OddEvenLinkedList {
     public static void main(String[] args) {

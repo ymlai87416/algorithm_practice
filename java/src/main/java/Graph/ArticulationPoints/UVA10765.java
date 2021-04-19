@@ -4,8 +4,14 @@ import java.io.FileInputStream;
 import java.util.*;
 
 /**
- * Created by ymlai on 12/4/2017.
- */
+ problem: https://onlinejudge.org/external/107/10765.pdf
+ level:
+ solution: apply algorithm and print all the bridge
+
+ #ArticulationPoints
+
+ **/
+
 public class UVA10765{
     static class Pair implements Comparable<Pair>{                 //in dfs: v is a (neighbor, weight) pair
         public int first;
@@ -64,11 +70,13 @@ public class UVA10765{
 
     static boolean[] visited;
 
+    //find the number of forest if Node S is not usable
     static int dfs(int V, int s){
         visited = new boolean[V];
         for(int i=0; i<V; ++i)
             visited[i] = false;
 
+        //set s to visited so no path goes through s.
         if(s != -1)
             visited[s] = true;
 

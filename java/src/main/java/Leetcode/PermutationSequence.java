@@ -1,11 +1,14 @@
 package Leetcode;
 
-/*
+/**
 number: 60
 url: https://leetcode.com/problems/permutation-sequence/
 level: medium
 solution: it is just a number system. there is no zero.
- */
+
+ #math #backtracking
+
+ **/
 
 public class PermutationSequence {
     public static void main(String[] args){

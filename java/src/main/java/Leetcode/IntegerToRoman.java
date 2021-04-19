@@ -4,9 +4,11 @@ import java.util.Arrays;
 
 /*
 number: 12
-url: https://leetcode.com/problems/integer-to-roman/
+problem: https://leetcode.com/problems/integer-to-roman/
 level: medium
 solution: execute the procedure.
+
+#math #string
  */
 
 public class IntegerToRoman {

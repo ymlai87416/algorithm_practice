@@ -11,6 +11,9 @@ level: medium
 solution: sort the array, at each recursive step, either we keep the pointer unchange (add), or advance
  the pointer by one (skip). because it is addition. you can purne the tree when the target is smaller than the current
  element.
+
+#backtracking
+
  */
 
 public class CombinationSum {

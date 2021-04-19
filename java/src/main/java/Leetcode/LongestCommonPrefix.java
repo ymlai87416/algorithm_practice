@@ -2,9 +2,12 @@ package Leetcode;
 
 /*
 number: 14
-url: https://leetcode.com/problems/longest-common-prefix/
+problem: https://leetcode.com/problems/longest-common-prefix/
 level: easy
 solution: just add a character if all string have it. from start-> end
+
+#string
+
  */
 
 public class LongestCommonPrefix {

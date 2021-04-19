@@ -1,11 +1,13 @@
 package Leetcode;
 
-/*
+/**
 number: 88
-url: https://leetcode.com/problems/merge-sorted-array/
+problem: https://leetcode.com/problems/merge-sorted-array/
 level: easy
 solution: it is just a merge sort.
- */
+
+#array #twoPointers
+ **/
 
 public class MergeSortedArray {
     public static void main(String[] args){

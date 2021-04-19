@@ -5,8 +5,13 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * Created by ymlai on 12/4/2017.
- */
+ problem: https://onlinejudge.org/external/111/11138.pdf
+ level:
+ solution: just a MCBM.
+
+ #MCBM #bipartiteGraph
+
+ **/
 public class UVA11138 {
 
     static List<List<Integer>> adjList;
@@ -39,11 +44,6 @@ public class UVA11138 {
             for(int p=0; p<a+b; ++p)
                 adjList.add(new ArrayList<>());
 
-            vis = new int[a+b];
-            match = new int[a+b];
-            for(int p=0; p<a+b; ++p)
-                match[p] = -1;
-
             for(int p=0; p<a; ++p){
                 for(int q=0; q<b; ++q){
                     int c = sc.nextInt();
@@ -51,6 +51,12 @@ public class UVA11138 {
                         adjList.get(p).add(a+q);
                 }
             }
+
+            //solve MCBM here
+            vis = new int[a+b];
+            match = new int[a+b];
+            for(int p=0; p<a+b; ++p)
+                match[p] = -1;
 
             for (int l = 0; l < a; l++) { // n = size of the left set
                 for(int q=0; q<a; ++q)

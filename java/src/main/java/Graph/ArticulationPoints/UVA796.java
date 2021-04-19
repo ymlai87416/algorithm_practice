@@ -4,8 +4,14 @@ import java.io.FileInputStream;
 import java.util.*;
 
 /**
- * Created by ymlai on 12/4/2017.
- */
+ problem: https://onlinejudge.org/external/7/796.pdf
+ level:
+ solution: apply algorithm and print all the bridge
+
+ #ArticulationPoints
+
+ **/
+
 
 public class UVA796 {
 
@@ -64,6 +70,37 @@ public class UVA796 {
         }
     }
 
+    private static void solve(int V /*, List<List<Pair>> AdjList*/){
+        dfsNumberCounter = 0;
+        dfs_num = new int[V];
+        dfs_low = new int[V];
+        dfs_parent = new int[V];
+        articulation_vertex = new boolean[V];
+        for(int i=0; i<V; ++i){
+            dfs_num[i] = UNVISITED;
+            dfs_low[i] = 0;
+            dfs_parent[i] = 0;
+            articulation_vertex[i] = false;
+        }
+
+        bridges = new ArrayList<Pair>();
+
+        for (int i = 0; i < V; i++)
+            if (dfs_num[i] == -1) {
+                dfsRoot = i; rootChildren = 0;
+                articulationPointAndBridge(i);
+                articulation_vertex[dfsRoot] = (rootChildren > 1) ;  // special case
+            }
+        //printf("Articulation Points:\n");
+
+        System.out.format("%d critical links\n", bridges.size());
+        Collections.sort(bridges);
+        for(int i=0; i<bridges.size(); ++i)
+            System.out.format("%d - %d\n", bridges.get(i).first, bridges.get(i).second);
+
+
+    }
+
     public static void main(String[] args){
         if(args.length >= 1)
             try {
@@ -78,21 +115,10 @@ public class UVA796 {
             String line = sc.nextLine();
             int V = Integer.parseInt(line);
 
-            dfsNumberCounter = 0;
             AdjList = new ArrayList<>();
-            dfs_num = new int[V];
-            dfs_low = new int[V];
-            dfs_parent = new int[V];
-            articulation_vertex = new boolean[V];
-            for(int i=0; i<V; ++i){
-                dfs_num[i] = UNVISITED;
-                dfs_low[i] = 0;
-                dfs_parent[i] = 0;
-                articulation_vertex[i] = false;
-                AdjList.add(new ArrayList<>());
-            }
 
             for(int j=0; j<V; ++j){
+                AdjList.add(new ArrayList<>());
                 line = sc.nextLine();
 
                 StringTokenizer st = new StringTokenizer(line);
@@ -106,24 +132,12 @@ public class UVA796 {
                 }
             }
 
-            bridges = new ArrayList<Pair>();
-
-            for (int i = 0; i < V; i++)
-                if (dfs_num[i] == -1) {
-                    dfsRoot = i; rootChildren = 0;
-                    articulationPointAndBridge(i);
-                    articulation_vertex[dfsRoot] = (rootChildren > 1) ;  // special case
-                }
-            //printf("Articulation Points:\n");
-
-            System.out.format("%d critical links\n", bridges.size());
-            Collections.sort(bridges);
-            for(int i=0; i<bridges.size(); ++i)
-                System.out.format("%d - %d\n", bridges.get(i).first, bridges.get(i).second);
+            solve(V);
 
             if(sc.hasNextLine())sc.nextLine();//skip empty
 
             System.out.println();
+
         }
     }
 }

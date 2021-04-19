@@ -2,11 +2,14 @@ package Leetcode;
 
 import java.util.Stack;
 
-/*
-url: https://leetcode.com/problems/add-and-search-word-data-structure-design/
+/**
+problem: https://leetcode.com/problems/add-and-search-word-data-structure-design/
 level: medium
 solution: a trie. can search normal and regular expression
- */
+
+#backtracking #dfs #trie
+
+ **/
 public class AddAndSearchWord_DataStructureDesign {
     public static void main(String[] args){
         WordDictionary dict = new WordDictionary();

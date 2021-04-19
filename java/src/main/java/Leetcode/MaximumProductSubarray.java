@@ -4,15 +4,18 @@ import java.math.BigInteger;
 import java.util.Arrays;
 import java.util.TreeSet;
 
-/*
+/**
 number: 152
-url: https://leetcode.com/problems/maximum-product-subarray/
+problem: https://leetcode.com/problems/maximum-product-subarray/
 level: medium
 solution: if an array contains zero, either 0, or the subarray which is splitted by 0.
             if an array does not contains zero, then find the first/last negative number
             a. if number of negative number is even, then just multiply them all
             c. else either [first+1...j] or [i...last-1]
- */
+
+ #dp
+
+ **/
 
 public class MaximumProductSubarray {
     public static void main(String[] args) {

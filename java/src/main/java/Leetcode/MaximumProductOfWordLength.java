@@ -1,11 +1,14 @@
 package Leetcode;
 
-/*
+/**
 number: 318
-url: https://leetcode.com/problems/maximum-product-of-word-lengths/
+problem: https://leetcode.com/problems/maximum-product-of-word-lengths/
 level: medium
 solution: use bit and then loop
- */
+
+#bit
+
+ **/
 
 public class MaximumProductOfWordLength {
     public static void main(String[] args){

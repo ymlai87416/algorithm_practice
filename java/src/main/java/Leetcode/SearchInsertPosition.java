@@ -1,11 +1,14 @@
 package Leetcode;
 
-/*
+/**
 number: 35
 url: https://leetcode.com/problems/search-insert-position/
 level: easy
 solution: binary search
- */
+
+ #array #binarySearch
+
+ **/
 
 public class SearchInsertPosition {
     public static void main(String[] args){

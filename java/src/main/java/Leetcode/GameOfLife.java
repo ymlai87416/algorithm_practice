@@ -1,9 +1,12 @@
 package Leetcode;
 
 /*
-url: https://leetcode.com/problems/game-of-life/
+problem: https://leetcode.com/problems/game-of-life/
 level: medium
 solution: don't modify the board, create a new board and save the result.
+
+#array
+
  */
 
 public class GameOfLife {

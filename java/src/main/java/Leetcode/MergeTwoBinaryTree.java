@@ -1,11 +1,14 @@
 package Leetcode;
 
-/*
+/**
 number: 617
-url: https://leetcode.com/problems/merge-two-binary-trees/
+problem: https://leetcode.com/problems/merge-two-binary-trees/
 level: easy
 solution: just merge the tree
- */
+
+#tree
+
+ **/
 
 public class MergeTwoBinaryTree {
     static

@@ -1,11 +1,14 @@
 package Leetcode;
 
-/*
+/**
 number: 380
-url: https://leetcode.com/problems/climbing-stairs/
+problem : https://leetcode.com/problems/path-sum-iii/
 level: easy
-solution: fibonacci number
- */
+solution:
+
+#tree
+
+ **/
 
 public class PathSumIII {
     public static void main(String[] args) {

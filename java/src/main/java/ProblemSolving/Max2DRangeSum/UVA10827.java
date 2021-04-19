@@ -3,11 +3,17 @@ package ProblemSolving.Max2DRangeSum;
 import java.util.Scanner;
 
 /**
- * Created by Tom on 7/5/2016.
- */
+ problem: https://onlinejudge.org/external/108/10827.pdf
+ level:
+ solution: O(n^4)  Kadane does not work because when we keep adding and limit exceed the square length,
+ then we have to start substracting postive number.
+
+ #dp #Max2DRangeSum
+
+ **/
+
 public class UVA10827 {
     static int[][] input = new int[75*2+1][75*2+1];
-
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
@@ -25,6 +31,9 @@ public class UVA10827 {
                 }
             }
 
+            //now do the checking
+            int maxvalue = Integer.MIN_VALUE;
+
             for(int i=0; i<ns*2; ++i){
                 for(int j=1; j<ns*2; ++j)
                     input[i][j] += input[i][j-1];
@@ -35,9 +44,6 @@ public class UVA10827 {
                     input[i][j] += input[i-1][j];
             }
 
-
-            //now do the checking
-            int maxvalue = Integer.MIN_VALUE;
             for(int i=0; i<ns; ++i){
                 for(int j=0; j<ns; ++j){
                     for(int k=1; k<=ns; ++k){

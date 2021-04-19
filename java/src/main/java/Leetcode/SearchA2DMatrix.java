@@ -4,9 +4,12 @@ import java.util.Arrays;
 
 /*
 number: 74
-url: https://leetcode.com/problems/search-a-2d-matrix/
+problem: https://leetcode.com/problems/search-a-2d-matrix/
 level: medium
 solution: the matrix is just a linear array.
+
+#array #binarySearch
+
  */
 
 public class SearchA2DMatrix {

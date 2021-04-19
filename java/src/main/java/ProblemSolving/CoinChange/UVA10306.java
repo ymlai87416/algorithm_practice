@@ -6,8 +6,13 @@ import java.util.Scanner;
 import java.util.TreeMap;
 
 /**
- * Created by Tom on 7/5/2016.
- */
+ problem: https://onlinejudge.org/external/103/10306.pdf
+ level:
+ solution:
+
+ #dp #coinChange
+
+ **/
 public class UVA10306 {
     static int[] infoValue = new int[41];
     static int[] convValue = new int[41];

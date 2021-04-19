@@ -5,9 +5,16 @@ import java.util.Arrays;
 import java.util.Queue;
 import java.util.Scanner;
 
+
 /**
- * Created by Tom on 3/5/2016.
- */
+ problem: https://onlinejudge.org/external/110/11080.pdf
+ level:
+ solution: AC
+
+ #bipartiteGraphChecking #bipartiteGraph
+
+ **/
+
 public class UVA11080 {
 
     static int[] adjcnt = new int[201];

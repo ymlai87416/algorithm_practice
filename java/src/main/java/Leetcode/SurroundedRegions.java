@@ -3,12 +3,15 @@ package Leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-/*
+/**
 number: 130
-url: https://leetcode.com/problems/surrounded-regions/
+problem: https://leetcode.com/problems/surrounded-regions/
 level: medium
 solution: floodfill an island and find out the surrounding. O at corner and side cannot be capture. else die
- */
+
+ #dfs #bfs #unionFind
+
+ **/
 
 public class SurroundedRegions {
     public static void main(String[] args){

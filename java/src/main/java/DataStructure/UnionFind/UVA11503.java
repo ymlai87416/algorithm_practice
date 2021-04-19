@@ -6,6 +6,10 @@ import java.util.TreeMap;
 
 /**
  * Created by Tom on 11/5/2016.
+ *
+ * problem: https://onlinejudge.org/external/115/11503.pdf
+ *
+ * #unionFind
  */
 public class UVA11503 {
 
