@@ -4,8 +4,13 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * Created by ymlai on 14/4/2017.
- */
+ problem: https://onlinejudge.org/external/9/907.pdf
+ level:
+ solution: Minimize the maximum (deal to day left) walking distance per day.
+
+ #dp #convertGeneralGraphToDAG
+
+ **/
 public class UVA907 {
 
     static int[][] dp = new int[603][301];

@@ -3,8 +3,14 @@ package Graph.DirectedAcyclicGraph.CoutingPathsInDAG;
 import java.util.*;
 
 /**
- * Created by ymlai on 14/4/2017.
- */
+ problem: https://onlinejudge.org/external/104/10401.pdf
+ level:
+ solution:
+
+ #dag #countingPathsInDag
+
+ **/
+
 public class UVA10401 {
 
     static List<List<Integer>> AdjList = new ArrayList<>();
@@ -68,6 +74,7 @@ public class UVA10401 {
                 }
             }
 
+            //topological sort
             dfs_num = new int[n*n];
             ts.clear();
             Arrays.fill(dfs_num, UNVISITED);
