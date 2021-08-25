@@ -17,6 +17,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1ZOVTNTMc6K6cFoOQ9ycIoL7ZZh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -32,7 +40,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/CodeForce/R720/C" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -64,13 +72,13 @@
       <recent name="C:\GitProjects\algorithm_practice\java\src\main\java\GoogleCodeJam\Y2008\Round1C\A" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Solution (5)">
-    <configuration name="Solution (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CodeForce.R720.B.Solution" />
+  <component name="RunManager" selected="Application.A (1)">
+    <configuration name="A (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Facebook.Y2019.Quali.A" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="CodeForce.R720.B.*" />
+          <option name="PATTERN" value="Facebook.Y2019.Quali.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,12 +86,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CodeForce.Global14.E.Solution" />
+    <configuration name="A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Facebook.Y2020.Quali.A" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="CodeForce.Global14.E.*" />
+          <option name="PATTERN" value="Facebook.Y2020.Quali.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,12 +99,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CodeForce.Global14.A.Solution" />
+    <configuration name="C (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Facebook.Y2019.Quali.C" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="CodeForce.Global14.A.*" />
+          <option name="PATTERN" value="Facebook.Y2019.Quali.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Facebook.Y2020.Quali.C" />
+      <module name="algorithm_practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Facebook.Y2020.Quali.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,33 +138,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CodeForce.Global14.B.Solution" />
-      <module name="algorithm_practice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="CodeForce.Global14.B.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Solution (4)" />
-      <item itemvalue="Application.Solution" />
-      <item itemvalue="Application.Solution (3)" />
       <item itemvalue="Application.Solution (5)" />
-      <item itemvalue="Application.Solution (2)" />
+      <item itemvalue="Application.A" />
+      <item itemvalue="Application.C" />
+      <item itemvalue="Application.C (1)" />
+      <item itemvalue="Application.A (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.A (1)" />
+        <item itemvalue="Application.C (1)" />
+        <item itemvalue="Application.C" />
+        <item itemvalue="Application.A" />
         <item itemvalue="Application.Solution (5)" />
-        <item itemvalue="Application.Solution (2)" />
-        <item itemvalue="Application.Solution (3)" />
-        <item itemvalue="Application.Solution" />
-        <item itemvalue="Application.Solution (4)" />
       </list>
     </recent_temporary>
   </component>
@@ -194,6 +215,8 @@
       <workItem from="1620316084878" duration="673000" />
       <workItem from="1620395285169" duration="10843000" />
       <workItem from="1620828366971" duration="597000" />
+      <workItem from="1629724571560" duration="9730000" />
+      <workItem from="1629806572394" duration="12778000" />
     </task>
     <servers />
   </component>
@@ -205,118 +228,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="2359" y="427" key="#VisualVM_Launcher" timestamp="1617974516246">
-      <screen x="0" y="0" width="5120" height="1400" />
-    </state>
-    <state x="2359" y="427" key="#VisualVM_Launcher/0.0.5120.1400@0.0.5120.1400" timestamp="1617974516246" />
-    <state x="2860" y="474" width="1092" height="671" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618755987840">
-      <screen x="0" y="0" width="5120" height="1400" />
-    </state>
-    <state x="1251" y="475" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1616690240318" />
-    <state x="2860" y="474" width="1092" height="671" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.5120.1400@0.0.5120.1400" timestamp="1618755987840" />
-    <state x="3040" y="512" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619971464464">
-      <screen x="0" y="0" width="5120" height="1400" />
-    </state>
-    <state x="3040" y="512" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1616083977223" />
-    <state x="3040" y="512" key="#com.intellij.fileTypes.FileTypeChooser/0.0.5120.1400@0.0.5120.1400" timestamp="1619971464464" />
-    <state x="3184" y="394" key="#com.intellij.ide.util.MemberChooser" timestamp="1619757861811">
-      <screen x="0" y="0" width="5120" height="1400" />
-    </state>
-    <state x="3184" y="394" key="#com.intellij.ide.util.MemberChooser/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1616783187966" />
-    <state x="3184" y="394" key="#com.intellij.ide.util.MemberChooser/0.0.5120.1400@0.0.5120.1400" timestamp="1619757861811" />
-    <state x="2999" y="506" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1620401284729">
-      <screen x="0" y="0" width="5120" height="1400" />
-    </state>
-    <state x="2999" y="506" key="#com.intellij.ide.util.PackageChooserDialog/0.0.5120.1400@0.0.5120.1400" timestamp="1620401284729" />
-    <state x="2556" y="435" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1615820255935">
-      <screen x="0" y="0" width="5120" height="1400" />
-    </state>
-    <state x="2556" y="435" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1615820255935" />
-    <state x="3409" y="521" width="433" height="218" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1618633555359">
-      <screen x="0" y="0" width="5120" height="1400" />
-    </state>
-    <state x="3409" y="521" width="433" height="218" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.5120.1400@0.0.5120.1400" timestamp="1618633555359" />
-    <state x="2784" y="427" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1617956572850">
-      <screen x="0" y="0" width="5120" height="1400" />
-    </state>
-    <state x="2784" y="427" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.5120.1400@0.0.5120.1400" timestamp="1617956572850" />
-    <state width="466" height="466" key="DebuggerActiveHint" timestamp="1619372460435">
-      <screen x="0" y="0" width="5120" height="1400" />
-    </state>
-    <state width="466" height="466" key="DebuggerActiveHint/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1616848842777" />
-    <state width="466" height="466" key="DebuggerActiveHint/0.0.5120.1400@0.0.5120.1400" timestamp="1619372460435" />
-    <state x="746" y="278" key="FileChooserDialogImpl" timestamp="1618755971439">
-      <screen x="0" y="0" width="5120" height="1400" />
-    </state>
-    <state x="746" y="278" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1617320970269" />
-    <state x="746" y="278" key="FileChooserDialogImpl/0.0.5120.1400@0.0.5120.1400" timestamp="1618755971439" />
-    <state width="1001" height="373" key="GridCell.Tab.0.bottom" timestamp="1620406196746">
-      <screen x="0" y="0" width="5120" height="1400" />
-    </state>
-    <state width="2077" height="384" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1617418522046" />
-    <state width="1001" height="373" key="GridCell.Tab.0.bottom/0.0.5120.1400@0.0.5120.1400" timestamp="1620406196746" />
-    <state width="1001" height="373" key="GridCell.Tab.0.center" timestamp="1620406196745">
-      <screen x="0" y="0" width="5120" height="1400" />
-    </state>
-    <state width="2077" height="384" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1617418522045" />
-    <state width="1001" height="373" key="GridCell.Tab.0.center/0.0.5120.1400@0.0.5120.1400" timestamp="1620406196745" />
-    <state width="1001" height="373" key="GridCell.Tab.0.left" timestamp="1620406196745">
-      <screen x="0" y="0" width="5120" height="1400" />
-    </state>
-    <state width="2077" height="384" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1617418522045" />
-    <state width="1001" height="373" key="GridCell.Tab.0.left/0.0.5120.1400@0.0.5120.1400" timestamp="1620406196745" />
-    <state width="1001" height="373" key="GridCell.Tab.0.right" timestamp="1620406196746">
-      <screen x="0" y="0" width="5120" height="1400" />
-    </state>
-    <state width="2077" height="384" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1617418522046" />
-    <state width="1001" height="373" key="GridCell.Tab.0.right/0.0.5120.1400@0.0.5120.1400" timestamp="1620406196746" />
-    <state width="1048" height="327" key="GridCell.Tab.1.bottom" timestamp="1620405921719">
-      <screen x="0" y="0" width="5120" height="1400" />
-    </state>
-    <state width="2077" height="415" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1617417386403" />
-    <state width="1048" height="327" key="GridCell.Tab.1.bottom/0.0.5120.1400@0.0.5120.1400" timestamp="1620405921719" />
-    <state width="1048" height="327" key="GridCell.Tab.1.center" timestamp="1620405921719">
-      <screen x="0" y="0" width="5120" height="1400" />
-    </state>
-    <state width="2077" height="415" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1617417386403" />
-    <state width="1048" height="327" key="GridCell.Tab.1.center/0.0.5120.1400@0.0.5120.1400" timestamp="1620405921719" />
-    <state width="1048" height="327" key="GridCell.Tab.1.left" timestamp="1620405921719">
-      <screen x="0" y="0" width="5120" height="1400" />
-    </state>
-    <state width="2077" height="415" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1617417386403" />
-    <state width="1048" height="327" key="GridCell.Tab.1.left/0.0.5120.1400@0.0.5120.1400" timestamp="1620405921719" />
-    <state width="1048" height="327" key="GridCell.Tab.1.right" timestamp="1620405921719">
-      <screen x="0" y="0" width="5120" height="1400" />
-    </state>
-    <state width="2077" height="415" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1617417386403" />
-    <state width="1048" height="327" key="GridCell.Tab.1.right/0.0.5120.1400@0.0.5120.1400" timestamp="1620405921719" />
-    <state x="3000" y="268" key="SettingsEditor" timestamp="1616226563838">
-      <screen x="0" y="0" width="5120" height="1400" />
-    </state>
-    <state x="3000" y="268" key="SettingsEditor/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1616226563838" />
-    <state width="987" height="667" key="XDebugger.FullValuePopup" timestamp="1616854600788">
-      <screen x="0" y="0" width="5120" height="1400" />
-    </state>
-    <state width="987" height="667" key="XDebugger.FullValuePopup/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1616854600788" />
-    <state x="2025" y="268" width="1627" height="773" key="dock-window-1" timestamp="1618689893381">
-      <screen x="0" y="0" width="5120" height="1400" />
-    </state>
-    <state x="2025" y="268" width="1627" height="773" key="dock-window-1/0.0.5120.1400@0.0.5120.1400" timestamp="1618689893381" />
-    <state x="3274" y="350" width="587" height="801" key="find.popup" timestamp="1619107567253">
-      <screen x="0" y="0" width="5120" height="1400" />
-    </state>
-    <state x="3274" y="350" width="587" height="801" key="find.popup/0.0.5120.1400@0.0.5120.1400" timestamp="1619107567253" />
-    <state x="3354" y="331" key="run.anything.popup" timestamp="1620405916710">
-      <screen x="0" y="0" width="5120" height="1400" />
-    </state>
-    <state x="3354" y="331" key="run.anything.popup/0.0.5120.1400@0.0.5120.1400" timestamp="1620405916710" />
-    <state x="2539" y="320" width="672" height="678" key="search.everywhere.popup" timestamp="1620405398725">
-      <screen x="0" y="0" width="5120" height="1400" />
-    </state>
-    <state x="2539" y="320" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1040/0.0.5120.1400@0.0.5120.1400" timestamp="1617390259662" />
-    <state x="2539" y="320" width="672" height="678" key="search.everywhere.popup/0.0.5120.1400@0.0.5120.1400" timestamp="1620405398725" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -525,24 +436,22 @@
           <line>102</line>
           <option name="timeStamp" value="344" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Facebook/Y2019/Quali/C.java</url>
+          <line>288</line>
+          <option name="timeStamp" value="352" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint enabled="true" type="java-exception" />
       </default-breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="a" language="JAVA" />
-        <watch expression="1l*  a * b" language="JAVA" />
-        <watch expression="1l*  a * b / gcd_" language="JAVA" />
-        <watch expression="x" language="JAVA" />
-        <watch expression="y" language="JAVA" />
-        <watch expression="z" language="JAVA" />
-        <watch expression="b / gcd_ * i" language="JAVA" />
-        <watch expression="x+y" language="JAVA" />
-        <watch expression="z" language="JAVA" />
-      </configuration>
-    </watches-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="Facebook.Y2019.Quali.Node" memberName="right" />
+        <PinnedItemInfo parentTag="Facebook.Y2019.Quali.Node" memberName="left" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/java$Solution__1_.ic" NAME="Solution (1) Coverage Results" MODIFIED="1619714034191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
