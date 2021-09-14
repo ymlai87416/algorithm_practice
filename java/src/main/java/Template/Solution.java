@@ -10,7 +10,6 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Solution {
-    static String   FILENAME;
     static Scanner  sc;
     static String   IN;
     static String   OUT;
@@ -19,12 +18,15 @@ public class Solution {
     static{
         try{
             IN = "C:\\GitProjects\\algorithm_practice\\java\\src\\main\\java\\GoogleCodeJam\\Y2008\\Round1C\\A\\A-test.in";
+            OUT = "C:\\GitProjects\\algorithm_practice\\java\\src\\main\\java\\Facebook\\Y2021\\Quali\\consistency_chapter_2_output.txt";
             //IN = null;
             if(IN == null)
                 sc = new Scanner(System.in);
             else
                 sc = new Scanner(new File(IN));
-            out = new PrintStream(System.out);
+            if(OUT == null)
+                out = new PrintStream(System.out);
+            else out = new PrintStream(OUT);
         }
         catch(Exception ex) {
             ex.printStackTrace();

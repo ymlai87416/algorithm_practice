@@ -60,6 +60,10 @@
       <recent name="C:\GitProjects\algorithm_practice\java\src\main\java\CodeForce\R720\B" />
       <recent name="C:\GitProjects\algorithm_practice\java\src\main\java\CodeForce\R720\A" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\GitProjects\algorithm_practice\java\src\main\java\ProblemSolving\Max2DRangeSum" />
+      <recent name="C:\GitProjects\algorithm_practice\java\src\main\java\GoogleCodeJam\Y2008\Round1C\A" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="GoogleCodeJam.Y2019.Round1B.A" />
       <recent name="GoogleCodeJam.Y2019.Round1C.A" />
@@ -67,18 +71,14 @@
       <recent name="GoogleCodeJam.Y2018.Round1B.A" />
       <recent name="GoogleCodeJam.Y2017.Round1C.A" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\GitProjects\algorithm_practice\java\src\main\java\ProblemSolving\Max2DRangeSum" />
-      <recent name="C:\GitProjects\algorithm_practice\java\src\main\java\GoogleCodeJam\Y2008\Round1C\A" />
-    </key>
   </component>
-  <component name="RunManager" selected="Application.A (1)">
+  <component name="RunManager" selected="Application.C">
     <configuration name="A (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Facebook.Y2019.Quali.A" />
+      <option name="MAIN_CLASS_NAME" value="Facebook.Y2021.Round1.A" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Facebook.Y2019.Quali.*" />
+          <option name="PATTERN" value="Facebook.Y2021.Round1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -86,12 +86,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Facebook.Y2020.Quali.A" />
+    <configuration name="A2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Facebook.Y2021.Round1.A2" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Facebook.Y2020.Quali.*" />
+          <option name="PATTERN" value="Facebook.Y2021.Round1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,12 +99,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Facebook.Y2019.Quali.C" />
+    <configuration name="A3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Facebook.Y2021.Round1.A3" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Facebook.Y2019.Quali.*" />
+          <option name="PATTERN" value="Facebook.Y2021.Round1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="B (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Facebook.Y2021.Round1.B" />
+      <module name="algorithm_practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Facebook.Y2021.Round1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,24 +126,11 @@
       </method>
     </configuration>
     <configuration name="C" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Facebook.Y2020.Quali.C" />
+      <option name="MAIN_CLASS_NAME" value="Facebook.Y2021.Round1.C" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Facebook.Y2020.Quali.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Solution (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CodeForce.R720.A.Solution" />
-      <module name="algorithm_practice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="CodeForce.R720.A.*" />
+          <option name="PATTERN" value="Facebook.Y2021.Round1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -152,19 +152,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Solution (5)" />
-      <item itemvalue="Application.A" />
-      <item itemvalue="Application.C" />
-      <item itemvalue="Application.C (1)" />
+      <item itemvalue="Application.B (2)" />
       <item itemvalue="Application.A (1)" />
+      <item itemvalue="Application.A2" />
+      <item itemvalue="Application.A3" />
+      <item itemvalue="Application.C" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.A (1)" />
-        <item itemvalue="Application.C (1)" />
         <item itemvalue="Application.C" />
-        <item itemvalue="Application.A" />
-        <item itemvalue="Application.Solution (5)" />
+        <item itemvalue="Application.A3" />
+        <item itemvalue="Application.A2" />
+        <item itemvalue="Application.B (2)" />
+        <item itemvalue="Application.A (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -217,6 +217,10 @@
       <workItem from="1620828366971" duration="597000" />
       <workItem from="1629724571560" duration="9730000" />
       <workItem from="1629806572394" duration="12778000" />
+      <workItem from="1629937029229" duration="625000" />
+      <workItem from="1629981616850" duration="13911000" />
+      <workItem from="1631208277480" duration="9036000" />
+      <workItem from="1631316276936" duration="49601000" />
     </task>
     <servers />
   </component>
