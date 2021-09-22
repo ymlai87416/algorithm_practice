@@ -6,6 +6,9 @@ import java.util.Scanner;
  * Created by Tom on 21/4/2016.
  *
  * Start at 17:10 WA at 17:27 and finished at 17:29, total time: 19 minutes....
+ *
+ * problem: https://onlinejudge.org/external/108/10851.pdf
+ * #UVA #Lv3 #string
  */
 public class UVA10851 {
     public static void main(String[] args){

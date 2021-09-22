@@ -1,6 +1,6 @@
 package Leetcode;
 
-/*
+/**
 problem: https://leetcode.com/problems/counting-bits/
 level: medium
 

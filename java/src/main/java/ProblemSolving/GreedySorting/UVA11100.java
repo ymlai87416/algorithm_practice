@@ -5,6 +5,9 @@ import java.util.Scanner;
 
 /**
  * Created by Tom on 7/5/2016.
+ *
+ * problem: https://onlinejudge.org/external/111/11100.pdf
+ * #UVA #Lv3 #greedy #greedy_sorting
  */
 public class UVA11100 {
     static int[] bags = new int[10001];

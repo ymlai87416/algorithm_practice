@@ -6,6 +6,9 @@ import java.util.*;
  * Created by Tom on 17/4/2016.
  *
  * Start at 2:30 and WA at 2:40 deal to the sum is not long (shit), get AC by 3:02. total minutes: 32 minutes. Need to create a multiset implementation. or use Guva. let check it out.
+ *
+ * problem: https://onlinejudge.org/external/111/11136.pdf
+ * #Lv2 #UVA #bst #tree_map
  */
 public class UVA11136 {
     public static void main(String[] args){

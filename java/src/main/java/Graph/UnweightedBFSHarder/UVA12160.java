@@ -7,6 +7,10 @@ import java.util.Scanner;
 
 /**
  * Created by ymlai on 16/4/2017.
+ *
+ * problem: https://onlinejudge.org/external/121/12160.pdf
+ *
+ * #UVA #bfs #Lv3
  */
 public class UVA12160 {
     static int[] visited = new int[10000];

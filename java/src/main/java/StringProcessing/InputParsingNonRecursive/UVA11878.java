@@ -6,6 +6,9 @@ import java.util.regex.Pattern;
 
 /**
  * Created by Tom on 15/5/2016.
+ *
+ * problem: https://onlinejudge.org/external/118/11878.pdf
+ * #UVA #Lv3 #string #parsing
  */
 public class UVA11878 {
     public static void main(String[] args){

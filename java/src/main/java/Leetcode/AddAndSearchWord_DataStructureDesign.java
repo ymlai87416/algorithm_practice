@@ -5,7 +5,8 @@ import java.util.Stack;
 /**
 problem: https://leetcode.com/problems/add-and-search-word-data-structure-design/
 level: medium
-solution: a trie. can search normal and regular expression
+solution: a trie. can search normal and regular expression, top 30.86%
+
 
 #backtracking #dfs #trie
 

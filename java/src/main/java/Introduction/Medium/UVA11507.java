@@ -6,6 +6,9 @@ import java.util.Scanner;
 /**
  * Created by Tom on 13/4/2016.
  * Start at 15: 21, formulat  and then AC at 15:56, total time = 25 minutes.
+ *
+ * problem: https://onlinejudge.org/external/115/11507.pdf
+ * #ad_hoc #Lv2 #UVA
  */
 public class UVA11507 {
     static class Pair{

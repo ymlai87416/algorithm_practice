@@ -8,6 +8,9 @@ import java.util.Stack;
 /**
  * Created by Tom on 17/4/2016.
  * Started at 12:21 and end at 12:49 total minutes = 28 minutes.
+ *
+ * problem: https://onlinejudge.org/external/109/10901.pdf
+ * #Lv3 #queue #UVA
  */
 public class UVA10901 {
     static class Pair{

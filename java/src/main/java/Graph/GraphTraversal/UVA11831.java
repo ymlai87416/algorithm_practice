@@ -5,7 +5,11 @@ import java.util.Scanner;
 /**
  * Created by Tom on 24/4/2016.
  *
- * Begin at 23:54 and end at 00: 25, total time is 31 minutes, next time module with is x and which is y, and becareful of %, better use floor mod.
+ * Begin at 23:54 and end at 00: 25, total time is 31 minutes, next time module with is x and which is y, and careful of %, better use floor mod.
+ *
+ * problem: https://onlinejudge.org/external/118/11831.pdf
+ *
+ * #UVA #Lv2 #graph_traversal
  */
 public class UVA11831 {
     public static void main(String[] args){

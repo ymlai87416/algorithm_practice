@@ -2,12 +2,13 @@ package Leetcode;
 
 import java.util.Stack;
 
-/*
+/**
 problem: https://leetcode.com/problems/daily-temperatures/
 level: medium
-solution:
+solution: for each temp, check the stack to see if it is colder, if yes, pop and update. and push the curr temp
+ the stack can only be increasing, or else it has been pop-up
 
-#hashTable #stack
+#stack #monotonic_stack
  */
 
 public class DailyTemperature {

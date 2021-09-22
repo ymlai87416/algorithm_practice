@@ -8,6 +8,9 @@ import java.util.TreeSet;
 /**
  * Created by Tom on 17/4/2016.
  * Start at 19:29 and AC at 19:59, total time: 20 minutes, 10 minutes break.
+ *
+ * problem: https://onlinejudge.org/external/109/10954.pdf
+ * #Lv1 #UVA #priority_queue
  */
 public class UVA10954 {
     public static void main(String[] args){

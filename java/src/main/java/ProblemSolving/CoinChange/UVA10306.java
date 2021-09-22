@@ -10,7 +10,7 @@ import java.util.TreeMap;
  level:
  solution:
 
- #dp #coinChange
+ #dp #coin_change #UVA #Lv3
 
  **/
 public class UVA10306 {

@@ -4,6 +4,9 @@ import java.util.*;
 
 /**
  * Created by Tom on 14/5/2016.
+ *
+ * problem: https://onlinejudge.org/external/7/760.pdf
+ * #UVA #Lv3 #string #suffix_tree
  */
 public class UVA760 {
     static final int MAX_N = 610;

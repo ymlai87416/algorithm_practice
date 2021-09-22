@@ -7,6 +7,10 @@ import java.util.*;
  * use up 3 mins to read, next time do it. start at 3: 10 and end at 4:02, total time spend=55 minutes.
  * Should reuse the code structure instead of v1, v2, v3...
  * Miss the test case when M/N==0.
+ *
+ * problem: https://onlinejudge.org/external/119/11906.pdf
+ *
+ * #UVA #Lv3 #connected_component
  */
 public class UVA11906 {
 

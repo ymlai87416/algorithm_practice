@@ -8,8 +8,10 @@ import java.util.Scanner;
  *
  * Starrt at 13:16 and AC at 13:59. .... you should do the formula... first.. total 43 minutes, and forgot downpayment..
  *
- *
  * #simulation
+ * #problem: https://onlinejudge.org/external/101/10114.pdf
+ *
+ * #adhoc #UVA #Lv2
  */
 public class UVA10114 {
     public static void main(String[] args){

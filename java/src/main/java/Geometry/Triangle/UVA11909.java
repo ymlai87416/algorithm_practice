@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 /**
  * Created by ymlai on 25/4/2017.
+ *
+ * problem: https://onlinejudge.org/external/119/11909.pdf
+ *
+ * #Lv3 #triangles #UVA
  */
 public class UVA11909 {
 

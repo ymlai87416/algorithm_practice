@@ -1,9 +1,9 @@
 package Leetcode;
 
-/*
+/**
 problem: https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
 level: easy
-solution:
+solution: use the negative bit for storing information
 
 #array
 

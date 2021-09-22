@@ -1,7 +1,7 @@
 package Leetcode;
 
 
-/*
+/**
 number: 334
 problem: https://leetcode.com/problems/increasing-triplet-subsequence/
 level: medium
@@ -9,6 +9,8 @@ solution: naive way is to create 2 additional array to store the min (from left)
             which min[i] < num[i] < max[i]
           another way is to invent an operation which remove the element if no one before is smaller than itself, remove it.
           apply it 2 times and if there are still number left, it should be an answer.
+
+#time_O(n) #space_O(1) #eliminiate
  */
 
 public class IncreasingTripletSubsequence {

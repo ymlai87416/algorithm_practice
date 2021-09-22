@@ -9,6 +9,10 @@ import java.util.Scanner;
 
 /**
  * Created by ymlai on 26/4/2017.
+ *
+ * problem: https://onlinejudge.org/external/112/11265.pdf
+ *
+ * #UVA #polygon #Lv4
  */
 public class UVA11265 {
 

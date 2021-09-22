@@ -7,6 +7,9 @@ import java.util.*;
   *
   * You have to model a graph that all edge must be passed.
   * Build a graph on color instead of bead.
+  *
+  * #UVA #Lv3 #eulerian_graph
+  *
  */
 public class UVA10596 {
     static int[] cnt = new int[201];

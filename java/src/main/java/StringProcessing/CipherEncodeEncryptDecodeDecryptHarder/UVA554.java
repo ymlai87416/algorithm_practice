@@ -8,6 +8,9 @@ import java.util.TreeSet;
  * Created by Tom on 21/4/2016.
  * Start at 1:45 and Runtime Error for 3 time and 2:34 finally AC, total time spend 49 minutes....
  * Just because a extra while loop outside.
+ *
+ * problem: https://onlinejudge.org/external/5/554.pdf
+ * #UVA #Lv4 #string
  */
 public class UVA554 {
     static String charOrder = " ABCDEFGHIJKLMNOPQRSTUVWXYZ";

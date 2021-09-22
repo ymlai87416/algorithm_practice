@@ -1,11 +1,15 @@
 package Leetcode;
 
-/*
+/**
 problem: https://leetcode.com/problems/count-of-smaller-numbers-after-self/
 level: hard
 solution:
 
-#binarySearch #divideAndConquer #sort #binaryIndexedTree #SegmentTree
+ BIT approach: using space of 2*10^4 to store a frequency table. 26ms
+ tree approach: scan from the right. 4ms
+ merge sort approach: do a merge sort, if there is a reversion (smaller element at right). +1 to all remaining of left array. 290ms
+
+#binary_search #divide_and_conquer #sort #binary_indexed_tree #segment_tree
 
  */
 
@@ -25,7 +29,8 @@ public class CountToSmallerNumberAfterSelf {
         int[] result;
 
         public List<Integer> countSmaller(int[] nums) {
-            return treeHelper(nums);
+            //return treeHelper(nums);
+            return fenwickHelper(nums);
         }
 
         private List<Integer> treeMapHelper(int[] nums){
@@ -135,6 +140,17 @@ public class CountToSmallerNumberAfterSelf {
                 }
             }
         }
+
+        private List<Integer> fenwickHelper(int[] nums){
+            FenwickTree ft = new FenwickTree(10000+10001);
+            ArrayList<Integer> r = new ArrayList<>(nums.length);
+            for (int i = nums.length-1; i >=0 ; i--) {
+                r.add(ft.rsq(nums[i]+10000));
+                ft.adjust(nums[i]+10001, 1);
+            }
+            Collections.reverse(r);
+            return r;
+        }
     }
 
     static
@@ -144,6 +160,31 @@ public class CountToSmallerNumberAfterSelf {
         public TreeNode(int val){
             this.val = val;
             this.dup = 1;
+        }
+    }
+
+    static
+    class FenwickTree{
+        private int[] ft;
+        public FenwickTree(int n){
+            ft = new int[n+1];
+            Arrays.fill(ft, 0);
+        }
+        private int LSOne(int S){
+            return S & (-S);
+        }
+        public int rsq(int b){
+            int sum = 0;
+            for (; b!=0 ; b -=LSOne(b))
+                sum += ft[b];
+            return sum;
+        }
+        public int rsq(int a, int b){
+            return rsq(b) - (a == 1 ? 0: rsq(a-1));
+        }
+        public void adjust(int k, int v){
+            for (; k<(int) ft.length; k+=LSOne(k))
+                ft[k] +=v;
         }
     }
 }

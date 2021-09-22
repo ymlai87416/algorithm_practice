@@ -2,12 +2,12 @@ package Leetcode;
 
 import java.util.HashSet;
 
-/*
+/**
 problem: https://leetcode.com/problems/happy-number/
 level: easy
 solution: just follow the step
 
-#hashTable #math
+#hash_table #math
  */
 
 public class HappyNumber {

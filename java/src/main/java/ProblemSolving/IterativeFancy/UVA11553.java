@@ -2,6 +2,8 @@ package ProblemSolving.IterativeFancy;
 
 /**
  * Created by Tom on 21/4/2016.
+ *
+ * #skip
  */
 public class UVA11553 {
     /*class GameState{

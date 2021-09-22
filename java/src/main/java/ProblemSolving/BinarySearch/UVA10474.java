@@ -5,7 +5,7 @@ package ProblemSolving.BinarySearch;
  level:
  solution:
 
- #binarySearch #binarySearchLowerBound #binarySearchUpperBound #binarySearchEndExclusive
+ #binary_search #binary_search_lower_bound #binary_search_upper_bound #binary_search_end_exclusive #UVA #Lv1
 
  **/
 

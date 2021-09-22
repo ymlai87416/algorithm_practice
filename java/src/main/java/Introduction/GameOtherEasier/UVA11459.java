@@ -10,7 +10,7 @@ import java.util.TreeMap;
  * Start at 0:18 and AC at 0:33
  *
  * problem: https://onlinejudge.org/external/114/11459.pdf
- * #game #simulation
+ * #game #simulation #UVA #Lv3
  */
 public class UVA11459 {
     public static void main(String[] args){

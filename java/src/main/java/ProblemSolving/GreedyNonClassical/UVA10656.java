@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 /**
  * Created by Tom on 8/5/2016.
+ *
+ * problem: https://onlinejudge.org/external/106/10656.pdf
+ * #UVA #Lv2 #greedy
  */
 public class UVA10656 {
     static int[] result = new int[1001];

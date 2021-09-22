@@ -11,7 +11,7 @@ import java.util.TreeSet;
  level:
  solution:
 
- #dp #max1DRangeSum
+ #dp #max_1d_range_sum #UVA #Lv3
 
  **/
 

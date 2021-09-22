@@ -6,6 +6,9 @@ import java.util.Scanner;
  * Created by ymlai on 27/4/2017.
  *
  * Try solve this nim game in minimax, very difficult, just apply nim formula.
+ *
+ * problem: https://onlinejudge.org/external/113/11311.pdf
+ * #UVA #game_theory #Lv4
  */
 public class UVA11311{
 

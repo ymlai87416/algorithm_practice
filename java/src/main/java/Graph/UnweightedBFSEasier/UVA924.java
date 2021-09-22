@@ -6,9 +6,13 @@ import java.util.Queue;
 import java.util.Scanner;
 
 /**
- * Created by Tom on 8/5/2016.
+ * Created by Tom on 8/5/2016. the spread is like BFS traversal
  *
  * Start from 22:32 and finished at 23:01, should be shorter...
+ *
+ * problem: https://onlinejudge.org/external/9/924.pdf
+ *
+ * #UVA #Lv2 #bfs
  */
 public class UVA924 {
     static int[] adjcnt = new int[2501];

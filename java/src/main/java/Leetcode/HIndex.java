@@ -2,13 +2,13 @@ package Leetcode;
 
 import java.util.Arrays;
 
-/*
-problem: https://leetcode.com/problems/climbing-stairs/
+/**
+problem: https://leetcode.com/problems/h-index/
 level: medium
 solution: h index, just sort it in ascending order. and find out the h index
         second way, store the cumulative frequency list.
 
-#dp
+#sort #counting_sort #time_O(n)
 
  */
 

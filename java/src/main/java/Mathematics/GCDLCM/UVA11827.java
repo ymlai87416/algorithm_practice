@@ -7,6 +7,9 @@ import java.util.TreeSet;
 
 /**
  * Created by Tom on 19/4/2016.
+ *
+ * problem: https://onlinejudge.org/external/118/11827.pdf
+ * #UVA #gcd_lcm #Lv2
  */
 public class UVA11827 {
 

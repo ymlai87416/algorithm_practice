@@ -9,6 +9,10 @@ import java.util.TreeMap;
  * Created by Tom on 16/4/2016.
  *
  * Start at 23:24, and end at 23:47, and the total time is 23 minutes..
+ * problem: https://onlinejudge.org/external/102/10226.pdf
+ *
+ * #Lv1 #treeMap #bst #UVA
+ *
  */
 public class UVA10226 {
     public static void main(String[] args){

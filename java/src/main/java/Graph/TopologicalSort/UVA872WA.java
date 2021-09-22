@@ -6,6 +6,8 @@ import java.util.*;
  * Created by Tom on 1/5/2016.
  *
  * Using DFS can only give you one combination, but I need to generate all possible sort sequence.
+ *
+ * #skip
  */
 public class UVA872WA {
 

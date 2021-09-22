@@ -9,6 +9,10 @@ import java.util.Scanner;
 
 /**
  * Created by ymlai on 14/4/2017.
+ *
+ * problem: https://onlinejudge.org/external/4/452.pdf
+ *
+ * #UVA #Lv3 #dp #dag #dag_longest_path
  */
 public class UVA452 {
 

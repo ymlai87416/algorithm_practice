@@ -6,6 +6,10 @@ import java.io.InputStreamReader;
 
 /**
  * Created by ymlai on 14/4/2017.
+ *
+ * problem: https://onlinejudge.org/external/102/10203.pdf
+ *
+ * #UVA #Lv2 #eulerian_graph
  */
 public class UVA10203 {
     public static void main (String[] args)throws Exception{

@@ -8,7 +8,7 @@ import java.util.Scanner;
  *
  * problem: https://onlinejudge.org/external/122/12247.pdf
  *
- * #simulation #cardGame
+ * #simulation #card_game #UVA #Lv3
  */
 public class UVA12247 {
     public static void main(String[] args){

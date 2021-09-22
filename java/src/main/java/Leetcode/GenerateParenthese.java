@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/*
+/**
 problem: https://leetcode.com/problems/generate-parentheses/
 level: medium
 solution: take a recursive strategy
 
-#string #backtracking
+#string #back_tracking
  */
 
 public class GenerateParenthese {

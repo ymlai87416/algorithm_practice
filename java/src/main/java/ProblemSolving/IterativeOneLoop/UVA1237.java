@@ -10,7 +10,7 @@ import java.util.TreeMap;
  level:
  solution:
 
- #search
+ #UVA #Lv2 #iterative_search #linear_scan
 
  **/
 public class UVA1237 {

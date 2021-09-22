@@ -7,6 +7,10 @@ import java.util.Scanner;
 
 /**
  * Created by Tom on 12/5/2016.
+ *
+ * problem: https://onlinejudge.org/external/106/10600.pdf
+ *
+ * #UVA #Lv3 #skip #bellman_ford
  */
 public class UVA10449 {
     static int[] busy = new int[201];

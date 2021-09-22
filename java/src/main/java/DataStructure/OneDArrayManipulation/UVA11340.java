@@ -12,7 +12,7 @@ import java.util.Scanner;
  *
  * problem: https://onlinejudge.org/external/113/11340.pdf
  *
- * #hashTable
+ * #array #Lv1 #UVA
  */
 public class UVA11340 {
 

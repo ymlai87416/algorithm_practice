@@ -13,11 +13,11 @@ import java.util.StringTokenizer;
  *
  * Accept.
  *
- url: https://onlinejudge.org/external/114/11402.pdf
+ problem : https://onlinejudge.org/external/114/11402.pdf
  level:
  solution:
 
- * #segmentTree  #segmentTreeLazyUpdate
+ * #segmentTree #segmentTreeLazyUpdate #Lv3 #UVA
  */
 
 public class UVA11402 {

@@ -6,6 +6,10 @@ import java.util.*;
  * Created by Tom on 17/4/2016.
  *
  * Start at 10:13, and AC at 10:49. total time = 36 minutes.
+ *
+ * problem: https://onlinejudge.org/external/7/732.pdf
+ *
+ * #stack #Lv3 #UVA
  */
 public class UVA732 {
     public static void main(String[] args){

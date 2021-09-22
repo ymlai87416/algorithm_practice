@@ -7,6 +7,9 @@ import java.util.Scanner;
  * Created by Tom on 21/4/2016.
  *
  * Start at 2:38 and AC at 2:56, total time is 18 minutes.
+ *
+ * problem: https://onlinejudge.org/external/113/11385.pdf
+ * #UVA #Lv3 #string
  */
 public class UVA11385 {
     static int[] fibo = new int[100];

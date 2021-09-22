@@ -9,6 +9,10 @@ import java.util.Scanner;
  * Created by Tom on 8/5/2016.
  *
  *  Start at 23:06 -> 23:21, totol of 15 minutes.
+ *
+ *  problem: https://onlinejudge.org/external/106/10653.pdf
+ *
+ * #UVA #bfs #Lv2
  */
 public class UVA10653 {
 

@@ -5,6 +5,9 @@ import java.util.Scanner;
 
 /**
  * Created by Tom on 8/5/2016.
+ *
+ * problem: https://onlinejudge.org/external/107/10721.pdf
+ * #UVA #Lv2 #dp
  */
 public class UVA10721{
     static long[][][] dp = new long[51][51][51];

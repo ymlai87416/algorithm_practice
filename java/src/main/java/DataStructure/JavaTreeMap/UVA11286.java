@@ -5,8 +5,11 @@ import java.util.*;
 
 /**
  * Created by Tom on 16/4/2016.
- *
  * Start at 15:49 and AC at 16:04, total of 15 minutes.
+ *
+ * problem: https://onlinejudge.org/external/112/11286.pdf
+ *
+ * #Lv2 #hash_table #UVA
  */
 public class UVA11286 {
     public static void main(String[] args){

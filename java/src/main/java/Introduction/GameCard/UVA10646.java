@@ -6,7 +6,9 @@ import java.util.Scanner;
  * Created by Tom on 14/4/2016.
  * Read at 22:39 and finished at 23:35,  for the Yth card, please model it in the paper...... waste a lot of time for debug.
  *
- * #simulation #cardGame
+ * problem: https://onlinejudge.org/external/106/10646.pdf
+ *
+ * #simulation #card_game #UVA #Lv2
  */
 public class UVA10646 {
     public static void main(String[] args){

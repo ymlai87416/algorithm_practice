@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 /**
  * Created by Tom on 17/5/2016.
+ *
+ * problem: https://onlinejudge.org/external/102/10263.pdf
+ *
+ * #UVA #lines #Lv3
  */
 public class UVA10263 {
     static class Point {

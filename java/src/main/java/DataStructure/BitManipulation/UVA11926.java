@@ -8,7 +8,7 @@ import java.util.Scanner;
  *
  * problem: https://onlinejudge.org/external/119/11926.pdf
  *
- * #bit
+ * #bit_manipulation #UVA #Lv3
  */
 public class UVA11926 {
     public static void main(String[] args){

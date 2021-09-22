@@ -72,13 +72,13 @@
       <recent name="GoogleCodeJam.Y2017.Round1C.A" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.C">
-    <configuration name="A (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Facebook.Y2021.Round1.A" />
+  <component name="RunManager" selected="Application.Indexing">
+    <configuration name="FlattenBinaryTreeToLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Leetcode.FlattenBinaryTreeToLinkedList" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Facebook.Y2021.Round1.*" />
+          <option name="PATTERN" value="Leetcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -86,12 +86,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="A2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Facebook.Y2021.Round1.A2" />
+    <configuration name="FourSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Leetcode.FourSum" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Facebook.Y2021.Round1.*" />
+          <option name="PATTERN" value="Leetcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,12 +99,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="A3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Facebook.Y2021.Round1.A3" />
+    <configuration name="Indexing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Indexing.Indexing" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Facebook.Y2021.Round1.*" />
+          <option name="PATTERN" value="Indexing.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,12 +112,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="B (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Facebook.Y2021.Round1.B" />
+    <configuration name="ThreeSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Leetcode.ThreeSum" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Facebook.Y2021.Round1.*" />
+          <option name="PATTERN" value="Leetcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,12 +125,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Facebook.Y2021.Round1.C" />
+    <configuration name="TwoSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Leetcode.TwoSum" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Facebook.Y2021.Round1.*" />
+          <option name="PATTERN" value="Leetcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,33 +138,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.B (2)" />
-      <item itemvalue="Application.A (1)" />
-      <item itemvalue="Application.A2" />
-      <item itemvalue="Application.A3" />
-      <item itemvalue="Application.C" />
+      <item itemvalue="Application.FlattenBinaryTreeToLinkedList" />
+      <item itemvalue="Application.TwoSum" />
+      <item itemvalue="Application.ThreeSum" />
+      <item itemvalue="Application.FourSum" />
+      <item itemvalue="Application.Indexing" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.C" />
-        <item itemvalue="Application.A3" />
-        <item itemvalue="Application.A2" />
-        <item itemvalue="Application.B (2)" />
-        <item itemvalue="Application.A (1)" />
+        <item itemvalue="Application.Indexing" />
+        <item itemvalue="Application.FourSum" />
+        <item itemvalue="Application.ThreeSum" />
+        <item itemvalue="Application.TwoSum" />
+        <item itemvalue="Application.FlattenBinaryTreeToLinkedList" />
       </list>
     </recent_temporary>
   </component>
@@ -221,6 +219,11 @@
       <workItem from="1629981616850" duration="13911000" />
       <workItem from="1631208277480" duration="9036000" />
       <workItem from="1631316276936" duration="49601000" />
+      <workItem from="1631631008376" duration="13232000" />
+      <workItem from="1631722101054" duration="1293000" />
+      <workItem from="1631792177849" duration="1207000" />
+      <workItem from="1631881695707" duration="18677000" />
+      <workItem from="1632249177810" duration="41407000" />
     </task>
     <servers />
   </component>
@@ -238,17 +241,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Graph/TopologicalSort/UVA11060.java</url>
-          <line>69</line>
+          <line>72</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Indexing/Indexing.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="52" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Indexing/Indexing.java</url>
-          <line>99</line>
+          <line>96</line>
           <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -348,7 +346,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/DataStructure/OneDArrayManipulation/UVA12356.java</url>
-          <line>29</line>
+          <line>31</line>
           <option name="timeStamp" value="155" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -456,6 +454,12 @@
         <PinnedItemInfo parentTag="Facebook.Y2019.Quali.Node" memberName="left" />
       </pinned-members>
     </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="s.charAt(ditchPos)" language="JAVA" />
+        <watch expression="s.charAt(addPos)" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/java$Solution__1_.ic" NAME="Solution (1) Coverage Results" MODIFIED="1619714034191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

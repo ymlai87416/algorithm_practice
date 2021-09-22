@@ -5,11 +5,11 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
-/*
-url: https://leetcode.com/problems/combination-sum/
+/**
+problem: https://leetcode.com/problems/combination-sum/
 level: medium
-solution: sort the array, at each recursive step, either we keep the pointer unchange (add), or advance
- the pointer by one (skip). because it is addition. you can purne the tree when the target is smaller than the current
+solution: sort the array, at each recursive step, either we keep the pointer unchanged (add), or advance
+ the pointer by one (skip). because it is addition. you can purine the tree when the target is smaller than the current
  element.
 
 #backtracking

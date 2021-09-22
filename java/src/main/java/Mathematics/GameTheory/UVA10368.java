@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 /**
  * Created by ymlai on 26/4/2017.
+ *
+ * problem: https://onlinejudge.org/external/103/10368.pdf
+ * #UVA #game_theory #Lv3
  */
 public class UVA10368 {
 

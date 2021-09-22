@@ -7,6 +7,10 @@ import java.util.Stack;
 
 /**
  * Created by Tom on 11/5/2016.
+ *
+ * problem: https://onlinejudge.org/external/103/10369.pdf
+ *
+ * #UVA #Lv2 #mst
  */
 public class UVA10369 {
     static int[] x = new int[501];

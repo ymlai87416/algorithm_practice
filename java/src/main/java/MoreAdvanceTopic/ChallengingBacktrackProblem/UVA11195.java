@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 /**
  * Created by Tom on 12/3/2017.
+ *
+ * problem: https://onlinejudge.org/external/111/11195.pdf
+ * #UVA #Lv3 #backtracking
  */
 public class UVA11195 {
 

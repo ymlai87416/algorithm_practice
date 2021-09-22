@@ -4,6 +4,9 @@ import java.util.*;
 
 /**
  * Created by Tom on 14/5/2016.
+ *
+ * problem: https://onlinejudge.org/external/111/11107.pdf
+ * #UVA #Lv4 #string #suffix_tree
  */
 public class UVA11107 {
 

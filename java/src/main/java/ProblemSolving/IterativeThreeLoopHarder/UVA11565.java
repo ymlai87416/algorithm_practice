@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 /**
  * Created by Tom on 20/4/2016.
+ *
+ * problem: https://onlinejudge.org/external/115/11565.pdf
+ * #UVA #Lv3 #iterative_search #search_O(n^3)
  */
 public class UVA11565 {
     public static void main(String[] args){

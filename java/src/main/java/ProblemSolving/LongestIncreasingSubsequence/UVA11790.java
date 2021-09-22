@@ -8,7 +8,7 @@ import java.util.Scanner;
  level:
  solution:
 
- #dp #longestIncreasingSequence
+ #dp #longest_increasing_subsequence #Lv3
 
  **/
 public class UVA11790 {

@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 /**
  * Created by Tom on 7/5/2016.
+ *
+ * problem: https://onlinejudge.org/external/103/10337.pdf
+ * #UVA #Lv3 #dp
  */
 public class UVA10337 {
 

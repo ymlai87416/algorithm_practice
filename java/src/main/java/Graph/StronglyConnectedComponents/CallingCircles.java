@@ -8,6 +8,10 @@ import java.util.TreeMap;
 /**
  * Created by Tom on 9/5/2016.
  * uva 247
+ *
+ * problem: https://onlinejudge.org/external/2/247.pdf
+ *
+ * #UVA #strongly_connected_component #Lv2
  */
 public class CallingCircles {
 

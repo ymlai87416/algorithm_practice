@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/*
+/**
 number: 350
-url: https://leetcode.com/problems/intersection-of-two-arrays-ii/
+problem: https://leetcode.com/problems/intersection-of-two-arrays-ii/
 level: easy
 solution: just sort the array and do it, or store it in hashmap, the naive way is to scan both array O(mn)
 
@@ -15,11 +15,12 @@ solution: just sort the array and do it, or store it in hashmap, the naive way i
             then just use 2 ptr to match
 
         What if nums1's size is small compared to nums2's size? Which algorithm is better?
-            another algorithn
+            hash table is better?
 
         What if elements of nums2 are stored on disk, and the memory is limited such that you cannot load all elements into the memory at once?
+            then just load nums1 and do a scan on num2
 
-#hashTable #twoPointer #binarySearch #sort
+#hash_table #two_pointer #binary_search #sort
  */
 
 public class IntersectionOfTwoArraysII {

@@ -9,6 +9,10 @@ import java.util.*;
  * Created by ymlai on 14/4/2017.
  *
  * 10000 X 10000 solution too slow for 3s.
+ *
+ * problem: 10285
+ *
+ * #UVA #Lv2 #dp #dag #dag_longest_path
  */
 public class UVA10285 {
     static int[][] h = new int[100][100];

@@ -8,8 +8,12 @@ import java.util.*;
 
 /**
  * Created by Tom on 9/5/2016.
+ * UVA11504
+ * Done - TLE, change buffer reader please...
  *
- * TLE, change buffer reader please...
+ * problem: https://onlinejudge.org/external/115/11504.pdf
+ *
+ * #UVA #Lv2 #strongly_connected_components
  */
 public class Dominos {
 

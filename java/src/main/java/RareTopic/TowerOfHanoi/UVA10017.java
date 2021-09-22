@@ -7,6 +7,9 @@ import java.util.Stack;
 
 /**
  * Created by ymlai on 16/4/2017.
+ *
+ * problem: https://onlinejudge.org/external/100/10017.pdf
+ * #UVA #Lv1 #sort #radix_sort
  */
 public class UVA10017 {
     static Stack<Integer>[] stacks = new Stack[3];

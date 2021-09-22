@@ -5,6 +5,9 @@ import java.util.Scanner;
 
 /**
  * Created by Tom on 7/5/2016.
+ *
+ * problem: https://onlinejudge.org/external/112/11292.pdf
+ * #UVA #Lv1 #greedy #greedy_sorting
  */
 public class UVA11292 {
     static int[] head = new int[20001];

@@ -1,11 +1,11 @@
 package Leetcode;
 
-/*
+/**
 problem: https://leetcode.com/problems/delete-node-in-a-linked-list/
 level: easy
 solution:
 
-#linkedList
+#linked_list
 
  */
 
@@ -30,7 +30,9 @@ public class DeleteNodeInALinkedList {
     static
     class Solution {
         public void deleteNode(ListNode node) {
-
+            if(node.next == null) return;
+            node.val = node.next.val;
+            node.next = node.next.next;
         }
     }
 }

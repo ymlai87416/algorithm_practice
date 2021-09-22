@@ -1,11 +1,11 @@
 package Leetcode;
 
-/*
-url: https://leetcode.com/problems/bulls-and-cows/
+/**
+problem: https://leetcode.com/problems/bulls-and-cows/
 level: easy
 solution: this is to give out the answer, it is not to guess
 
-#hashTable
+#hash_table
 
  */
 public class BullsAndCows {

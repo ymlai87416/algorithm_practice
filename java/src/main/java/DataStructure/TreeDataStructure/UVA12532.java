@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
  level:
  solution: no need to multiply the actual value +1/-1/0 will do.
 
- #segmentTree #rmq
+ #segmentTree #rmq #Lv2 #UVA
 
  **/
 

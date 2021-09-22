@@ -8,7 +8,10 @@ import java.util.*;
 /**
  * Created by ymlai on 12/4/2017.
  *
- * Tree diameter.
+ * identify the diameter of this tree
+ * problem: https://onlinejudge.org/external/104/10459.pdf
+ *
+ * #UVA #tree #Lv4 #tree_diameter
  */
 public class UVA10459 {
 

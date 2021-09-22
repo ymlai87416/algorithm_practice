@@ -6,6 +6,9 @@ import java.util.Scanner;
 
 /**
  * Created by Tom on 12/4/2016.
+ *
+ * problem: https://onlinejudge.org/external/5/583.pdf
+ * #UVA #prime #Lv1
  */
 public class UVA583 {
     class SieveOfEratosthenes{

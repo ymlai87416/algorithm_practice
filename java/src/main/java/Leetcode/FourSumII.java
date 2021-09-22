@@ -2,14 +2,16 @@ package Leetcode;
 
 import java.util.HashMap;
 
-/*
+/**
 problem: https://leetcode.com/problems/4sum-ii/
 level: medium
 solution: time complexity O(n^2)
     add the first 2 arrays, add the last 2 arrays, all put it into the map,
         loop the map in O(n) and find a pair of (a, b) which the sum is T.
 
-#hashTable #binarySearch
+    difference is that it can allow duplicate index like (0, 0, 0, 1), while the previous only allow (1, 2, 4, 6)
+
+#hash_table #binary_search
  */
 public class FourSumII {
     public static void main(String[] args) {

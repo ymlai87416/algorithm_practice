@@ -15,6 +15,10 @@ import java.util.*;
  *   *..
  *    @.@
  *   only one can save, but if we model with edge but not vertex, cannot find the correct answer.
+ *
+ * problem: https://onlinejudge.org/external/113/11380.pdf
+ *
+ * #UVA #Lv4 #network_flow
  */
 public class UVA11380 {
     final static int sIdx = 1801;

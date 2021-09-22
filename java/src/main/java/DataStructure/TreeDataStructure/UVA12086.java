@@ -1,11 +1,11 @@
 package DataStructure.TreeDataStructure;
 
 /**
- url: https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=3238
+ problem: https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=3238
  level:
  solution: the value is update, and it is a range sum query
 
- #fenwickTree #rmq
+ #fenwickTree #rmq #UVA #Lv2
 
  **/
 

@@ -2,7 +2,13 @@ package ProblemSolving.BinarySearch;
 
 import java.util.Scanner;
 
-public class UVA00697 {
+/**
+ *
+ * problem: https://onlinejudge.org/external/6/679.pdf
+ * #UVA #Lv2 #binary_search
+ */
+
+public class UVA00679 {
 
     /* inspect the binary pattern of the number and you will know where it goes */
     public static void main(String[] args){

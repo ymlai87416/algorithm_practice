@@ -7,6 +7,10 @@ import java.util.TreeSet;
  * Created by Tom on 17/4/2016.
  *
  * Start at 2:02, TLE at 2:08 using TreeSet impl and then AC at 2:14, total time 12 minutes.
+ *
+ * problem: https://onlinejudge.org/external/118/11849.pdf
+ *
+ * #hash_table #UVA #Lv2
  */
 public class UVA11849 {
     public static void main(String[] args){

@@ -1,9 +1,9 @@
 package Leetcode;
 
-/*
+/**
 problem: https://leetcode.com/problems/flatten-nested-list-iterator/
 level: medium
-solution:
+solution: just move the list to a stack from in reverse order and pop it up is ok
 
 #stack
 

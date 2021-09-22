@@ -5,6 +5,10 @@ import java.util.*;
 /**
  * Created by ymlai on 25/4/2017.
  * the ans in graph representation: http://www.csie.ntnu.edu.tw/~u91029/FarthestPair4.png
+ *
+ * problem: https://onlinejudge.org/external/11/1111.pdf
+ *
+ * #polygon #UVA #Lv4
  */
 public class UVA1111 {
 

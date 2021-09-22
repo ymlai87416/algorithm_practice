@@ -6,7 +6,7 @@ import java.util.Stack;
 /**
 problem: https://leetcode.com/problems/basic-calculator/
 level: hard
-solution: hand coded parsing
+solution: hand coded parsing, worst runtime
 
 #math #stack
 

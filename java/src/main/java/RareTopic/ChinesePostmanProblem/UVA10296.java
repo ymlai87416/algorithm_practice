@@ -6,7 +6,7 @@ package RareTopic.ChinesePostmanProblem;
  solution: A connected graph has an Euler cycle if and only if every vertex has even degree,
  use minimum weight perfect matching to find additional edges
 
- #chinesePostmanProblem
+ #UVA #Lv4 #chinese_postman_problem
 
  **/
 

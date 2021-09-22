@@ -5,7 +5,7 @@ problem: https://leetcode.com/problems/bitwise-and-of-numbers-range/
 level: medium
 solution: the index of the List<List<>> represent the level, just have to keep track what level curr node is.
 
-#bit
+#bit #time_O(n)
 
  */
 

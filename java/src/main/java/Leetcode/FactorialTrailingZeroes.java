@@ -1,6 +1,6 @@
 package Leetcode;
 
-/*
+/**
 url: https://leetcode.com/problems/factorial-trailing-zeroes/
 level: easy
 solution: count the number of 2, 5 and 10

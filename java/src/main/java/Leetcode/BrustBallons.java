@@ -3,12 +3,12 @@ package Leetcode;
 import java.util.Arrays;
 
 /*
-url: https://leetcode.com/problems/burst-balloons/
+problem: https://leetcode.com/problems/burst-balloons/
 level: hard
 solution: a dp problem
     assume we pick a k we brust the left part, brust the right part, then when I brust k, I got k * i-1 * j+1
 
-#divideAndConquer #dp
+#divide_and_conquer #dp #time_O(n^2)
  */
 
 public class BrustBallons {

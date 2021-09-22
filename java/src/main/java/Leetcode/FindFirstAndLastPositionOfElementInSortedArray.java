@@ -1,11 +1,11 @@
 package Leetcode;
 
-/*
+/**
 problem: https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
 level: medium
 solution:
 
-#binarySearch
+#binarySearch #time_O(logn)
 
  */
 

@@ -2,13 +2,13 @@ package Leetcode;
 
 import java.util.Arrays;
 
-/*
+/**
 number: 287
 problem: https://leetcode.com/problems/find-the-duplicate-number/
 level: easy
 solution: 1. sort it, 2. this is a cycle.
 
-#twoPointer #binarySearch
+#twoPointer #binary_search
 
  */
 

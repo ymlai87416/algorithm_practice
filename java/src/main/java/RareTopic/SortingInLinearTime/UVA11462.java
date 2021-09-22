@@ -8,6 +8,9 @@ import java.util.StringTokenizer;
 /**
  * Created by Tom on 13/4/2016.
  * 20: 38 Start, 1 WA for forgetting return from 0, and then AC at 20:58
+ *
+ * problem: https://onlinejudge.org/external/114/11462.pdf
+ * #UVA #Lv1 #sort #radix_sort
  */
 public class UVA11462 {
     public static void main(String[] args){

@@ -6,6 +6,9 @@ import java.util.TreeSet;
 
 /**
  * Created by Tom on 14/5/2016.
+ *
+ * problem: https://onlinejudge.org/external/102/10252.pdf
+ * #UVA #Lv1 #string #frequency_counting
  */
 public class UVA10252 {
     static int[] bfreq = new int[26];

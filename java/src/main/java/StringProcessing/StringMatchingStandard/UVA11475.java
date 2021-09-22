@@ -6,6 +6,9 @@ import java.io.*;
  * Created by Tom on 14/5/2016.
  *
  * TLE using the KMP search.. what the fuck?
+ *
+ * problem: https://onlinejudge.org/external/114/11475.pdf
+ * #UVA #Lv2 #string #string_matching
  */
 public class UVA11475 {
     static final int MAX_N = 200020;

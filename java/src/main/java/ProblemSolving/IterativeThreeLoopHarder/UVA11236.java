@@ -3,6 +3,9 @@ package ProblemSolving.IterativeThreeLoopHarder;
 /**
  * Created by Tom on 17/4/2016.
  * Start at 14:50 and AC at 15:16, tottal time: 26 minutes.
+ *
+ * problem: https://onlinejudge.org/external/112/11236.pdf
+ * #UVA #Lv3 #iterative_search #search_O(n^3)
  */
 public class UVA11236 {
     public static void a(String b){

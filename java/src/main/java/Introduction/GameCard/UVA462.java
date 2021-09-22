@@ -10,7 +10,9 @@ import java.util.stream.Collectors;
  * Runtime error cause by sc.nextLine, WA because forget to sort.
  * From 2:19 to 3:35. total of 1 hour 16 minutes......
  *
- * #cardGame #simulation
+ * problem: https://onlinejudge.org/external/4/462.pdf
+ *
+ * #card_game #simulation #UVA #Lv3
  */
 public class UVA462 {
     public static class Card{

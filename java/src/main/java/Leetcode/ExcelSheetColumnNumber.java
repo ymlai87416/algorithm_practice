@@ -1,6 +1,6 @@
 package Leetcode;
 
-/*
+/**
 problem: https://leetcode.com/problems/excel-sheet-column-number/
 level: easy
 solution:

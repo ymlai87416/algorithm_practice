@@ -5,6 +5,9 @@ import java.util.Scanner;
 
 /**
  * Created by Tom on 18/4/2016.
+ *
+ * problem: https://onlinejudge.org/external/102/10235.pdf
+ * #UVA #big_integer #primality_testing #Lv1
  */
 public class UVA10235 {
     public static void main(String[] args){

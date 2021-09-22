@@ -1,11 +1,11 @@
 package Leetcode;
 
-/*
+/**
 problem: https://leetcode.com/problems/copy-list-with-random-pointer/
 level: medium
 solution:
 
-#hashTable #linkedList
+#hash_table #linked_list
 
  */
 

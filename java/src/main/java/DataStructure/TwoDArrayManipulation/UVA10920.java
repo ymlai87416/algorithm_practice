@@ -7,7 +7,7 @@ import java.util.Scanner;
  *
  * problem: https://onlinejudge.org/external/109/10920.pdf
  *
- * #2DArray
+ * #array_2d #Lv3 #UVA
  */
 public class UVA10920 {
     public static void main(String[] args){

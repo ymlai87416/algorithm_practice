@@ -1,10 +1,13 @@
-package ProblemSolving;
+package ProblemSolving.NonClassical;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
 /**
  * Created by Tom on 7/5/2016.
+ *
+ * problem: https://onlinejudge.org/external/112/11242.pdf
+ *  #dp #UVA #Lv2
  */
 public class UVA11450 {
 

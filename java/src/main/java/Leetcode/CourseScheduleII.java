@@ -5,12 +5,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Queue;
 
-/*
+/**
 problem: https://leetcode.com/problems/course-schedule-ii/
 level: easy
 solution: topological sort using bfs to find the order
 
-#dfs #bfs #graph #topolocialSort
+#dfs #bfs #graph #topolocial_sort
  */
 
 public class CourseScheduleII {

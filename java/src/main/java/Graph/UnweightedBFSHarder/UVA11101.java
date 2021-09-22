@@ -5,6 +5,10 @@ import java.util.*;
 /**
  * Created by Tom on 14/5/2016.
  * Start at 22:22
+ *
+ * problem: https://onlinejudge.org/external/111/11101.pdf
+ *
+ * #UVA #Lv3 #bfs
  */
 public class UVA11101 {
 

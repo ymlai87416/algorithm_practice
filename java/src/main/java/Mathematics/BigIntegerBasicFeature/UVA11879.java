@@ -6,6 +6,9 @@ import java.util.Scanner;
 /**
  * Created by Tom on 13/4/2016.
  * Start at 1:40 and finish at 1:47 total of 7 minutes
+ *
+ * problem: https://onlinejudge.org/external/118/11879.pdf
+ * #UVA #big_integer #Lv2
  */
 public class UVA11879 {
     public static void main(String[] args){

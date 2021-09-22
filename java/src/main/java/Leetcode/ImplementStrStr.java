@@ -2,7 +2,7 @@ package Leetcode;
 
 import java.util.ArrayList;
 
-/*
+/**
 problem: https://leetcode.com/problems/implement-strstr/
 level: easy
 solution: kmp search O(n) 4ms, simple O(m(n-m+1)) 1ms

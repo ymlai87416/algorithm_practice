@@ -1,11 +1,11 @@
 package Leetcode;
 
-/*
+/**
 problem: https://leetcode.com/problems/contains-duplicate/
 level: easy
 solution:
 
-#hashTable
+#hash_table
 
  */
 

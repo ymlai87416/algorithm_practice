@@ -7,6 +7,9 @@ import java.util.Scanner;
  * Created by Tom on 12/4/2016.
  * Startt at 22:48, TLE 2 times, WA: 1 times, Runtime error( forget to remove the package line), and finally got accepted at 1:23
  * Total: 2 hour 30 mins
+ *
+ * problem: https://onlinejudge.org/external/106/10689.pdf
+ * #UVA #combinatorics #fibonacci_number #Lv4
  */
 public class UVA10689 {
     public static class FibonacciGenerator{

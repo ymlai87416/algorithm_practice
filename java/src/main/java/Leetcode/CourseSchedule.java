@@ -6,12 +6,12 @@ import java.util.List;
 import java.util.Queue;
 
 
-/*
+/**
 problem : https://leetcode.com/problems/course-schedule/
 level: medium
 solution: topological sort (bfs 4ms / dfs 7ms)
 
-#dfs #bfs #graph #topologicalSort
+#dfs #bfs #graph #topological_sort
  */
 
 public class CourseSchedule {

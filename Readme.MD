@@ -1,85 +1,82 @@
 # Algorithm practice
 
+A project for practice algorithm.
 
-## Leetcode
+## Project structure
 
-## Google code jam
+* /gist: intellij type code segment
+* /index: for looking up my past code and sort them in a searchable manner
+* /interactive: for solving google code jam
+* /java: solution written in java
+* /python: solution written in python
 
-Upcoming 2021 Mar
-Focus on round 1 and round 2
+## Coding practice
 
-### Round 1
+Most of the code will be written in Java.
 
-### Round 2
+* UVA - Competitive Programming 3
+* Leetcode
+* Google code jam
+* Facebook hackercup
+* Code force
 
-### Qualification round
+## Header
 
+There is an indexer for this project at `/java/src/main/java/Indexing/Indexing.java`.
 
-## Facebook hacker cup
+This is an example of a header. Here is the minimum information needed.
+Only block comments are read.
 
-Upcoming 2021 July
+```java
+/**
+problem: https://leetcode.com/problems/add-and-search-word-data-structure-design/
+level: medium
+solution: a trie. can search normal and regular expression
 
+#back_tracking #dfs #trie #leetcode
 
-# Google code jam review progress
+ **/
+```
 
-* [Year 2008](./Y2008/Readme.MD)
-* [Year 2009](./Y2009/Readme.MD)
+As there can have multiple implementation for a solution, it is not restricted to have one header, but also have comments for each section
+Should try to group related thing together, because the indexer also link relationship between tags if they appear together.
 
-    Practice Round 1C (2/3)
-    
-* [Year 2010](./Y2010/Readme.MD)
-        
-    Practice Round 1A (1/3)
-    
-    Practice Round 1B (1/3)
-    
-    Practice Round 1C (1/3)
+```java
+/**
+You can write anything here, but the indexer only index whatever start with hashtag
 
-* [Year 2011](./Y2011/Readme.MD)
+#back_tracking #time_O(n^2) #space_O(n)
+**/
+```
 
+for the tag, underscore is automatically removed.
 
-* [Year 2012](./Y2012/Readme.MD)
+## Tag available
 
+* site
 
-* [Year 2013](./Y2013/Readme.MD)
-    
-    Practice Round 1A 
-    
-    Practice Round 1B
-    
-    Practice Round 1C
-    
-* [Year 2014](./Y2014/Readme.MD)
-    
-    Practice Round 1A 
-    
-    Practice Round 1B
+	* uva
+	* leetcode
+	
+* algorithm and data structure
 
-* [Year 2015](./Y2015/Readme.MD)
-    
-    Practice Round 1A (3/3)
-    
-    Practice Round 1C (2/3)
+	* bfs
+	* interval tree
+	
+* complexity
 
-* [Year 2016](./Y2016/Readme.MD)
+	* time_O(n)
+	* space_O(n^2)
+	
+* difficulty
 
-
-* [Year 2017](./Y2017/Readme.MD)
-   
-    Completed qualification round
-    
-    Completed Round 1A
-
-    Completed Round 1B
-    
-    Completed Round 1C
-    
-* [Year 2018](./Y2018/Readme.MD)
-    
-    Completed qualification round
-    
-    Completed Round 1A (2/3)
-
-* [Year 2019](./Y2019/Readme.MD)
-    
-    7 April - Completed qualification round
+	* easy
+	* medium
+	* 35pt
+	* 
+	
+* others
+	
+	* reference: if an implementation is good to use with ease.
+	
+* skip: if the implementation is not correct

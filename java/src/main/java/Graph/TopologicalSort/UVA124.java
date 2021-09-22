@@ -6,6 +6,14 @@ import java.io.InputStreamReader;
 import java.nio.Buffer;
 import java.util.*;
 
+/**
+ * Created by Tom on 9/5/2016.
+ *
+ * problem: https://onlinejudge.org/external/1/124.pdf
+ *
+ * #UVA #topological_sort #Lv2
+ */
+
 public class UVA124 {
 
     //uva11060

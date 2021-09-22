@@ -5,6 +5,9 @@ import java.util.Scanner;
 /**
  * Created by Tom on 12/4/2016.
  * Read at 3:36 and AC at 3:45, total minute 9
+ *
+ * problem: https://onlinejudge.org/external/12/1225.pdf
+ * #UVA #math_simulation #Lv1
  */
 public class UVA1225 {
     public static void main(String[] args){

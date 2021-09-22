@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
  level:
  solution:  System.out is not buffered output.
 
- #dp #max2DRangeSum
+ #dp #max_2d_range_sum #UVA #Lv4
 
  **/
 public class UVA983 {

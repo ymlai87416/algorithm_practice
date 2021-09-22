@@ -8,6 +8,9 @@ import java.util.TreeSet;
  * Created by Tom on 17/4/2016.
  *
  * Start at 14:20 and AC at 14:36
+ *
+ * problem: https://onlinejudge.org/external/12/1260.pdf
+ * #UVA #Lv2 #iterative_search #search_O(n^2)
  */
 public class UVA1260 {
     static class Pair implements Comparable<Pair>{

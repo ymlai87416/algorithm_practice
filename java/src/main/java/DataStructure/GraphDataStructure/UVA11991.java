@@ -6,8 +6,11 @@ import java.util.Scanner;
 
 /**
  * Created by Tom on 15/5/2016.
+ * problem: https://onlinejudge.org/external/119/11991.pdf
  *
  *   TLE, try BufferedInput and output. cannot
+ *
+ *  #Lv2 #UVA #graph #skip
  */
 public class UVA11991 {
     static ArrayList<Integer>[] input = new ArrayList[1000010];

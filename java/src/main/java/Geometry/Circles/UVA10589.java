@@ -6,6 +6,10 @@ import java.util.Scanner;
 
 /**
  * Created by ymlai on 23/4/2017.
+ *
+ * problem: https://onlinejudge.org/external/105/10589.pdf
+ *
+ * #circle #UVA #Lv3
  */
 public class UVA10589 {
     static Point[] centers = new Point[4];

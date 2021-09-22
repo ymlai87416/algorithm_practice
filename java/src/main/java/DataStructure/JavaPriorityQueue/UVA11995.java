@@ -5,6 +5,10 @@ import java.util.*;
 /**
  * Created by Tom on 17/4/2016.
  * Start at 19:50, WA at 20:07 and 20:08, AC at 20:11, total minutes 21 minutes.
+ *
+ * problem: https://onlinejudge.org/external/119/11995.pdf
+ *
+ * #Lv2 #UVA #priority_queue
  */
 public class UVA11995 {
     public static void main(String[] args){

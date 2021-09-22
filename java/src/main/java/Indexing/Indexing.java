@@ -3,10 +3,7 @@ package Indexing;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -19,7 +16,7 @@ public class Indexing {
             Pattern.compile("//.*|(\"(?:\\\\[^\"]|\\\\\"|.)*?\")|(?s)/\\*.*?\\*/");
 
     private static final String rootDirectory = "C:\\GitProjects\\algorithm_practice\\java";
-    private static final String githubRootLink = "https://github.com/ymlai87416/algorithm_practice/blob/master";
+    private static final String githubRootLink = "https://github.com/ymlai87416/algorithm_practice/blob/master/java";
     private static final String outputPath = "C:\\GitProjects\\algorithm_practice\\index";
     private static final String mySiteUrl = "https://ymlai87416.github.io/algorithm/";
     /*
@@ -28,7 +25,7 @@ public class Indexing {
      */
 
     public static void main(String[] args) throws Exception{
-        HashMap<String, List<String>> result = new HashMap<>();
+        TreeMap<String, List<String>> result = new TreeMap<>();
         File[] root = new File[1];
         root[0] =new File(rootDirectory);
         List<File> codeFiles = getAllCodeFile(root);
@@ -71,7 +68,7 @@ public class Indexing {
         generateMainIndexHtml(result);
     }
 
-    private static void generateMainIndexHtml(HashMap<String, List<String>> book) throws IOException{
+    private static void generateMainIndexHtml(Map<String, List<String>> book) throws IOException{
         Set<String> allTopic = book.keySet();
         String outputHtml = outputPath + File.separator + "index.html";
         String content = "<html><body>";
@@ -98,7 +95,7 @@ public class Indexing {
         for(String path: pathz){
             String[] token = path.split("/");
             String filename = token[token.length-1];
-            content += String.format("<a href='%s'>%s</a>", path, filename);
+            content += String.format("<a href='%s'>%s</a><br/>", path, filename);
         }
 
         content += "</body>";

@@ -5,6 +5,9 @@ import java.util.StringTokenizer;
 
 /**
  * Created by Tom on 8/5/2016.
+ *
+ * problem: https://onlinejudge.org/external/111/11157.pdf
+ * #UVA #Lv3 #greedy
  */
 public class UVA11157 {
     static int[] dist = new int[103];

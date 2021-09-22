@@ -7,6 +7,8 @@ import java.util.Scanner;
  * Created by Tom on 12/4/2016.
  *
  * Read: 20:37 one WA, and AC at 20:47
+ * problem: https://onlinejudge.org/external/7/763.pdf
+ * #UVA #combinatorics #fibonacci_number #Lv3
  */
 public class UVA763 {
     public static void main(String[] args){

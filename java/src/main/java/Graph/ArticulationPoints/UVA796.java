@@ -8,7 +8,7 @@ import java.util.*;
  level:
  solution: apply algorithm and print all the bridge
 
- #ArticulationPoints
+ #articulation_points #Lv2 #UVA
 
  **/
 

@@ -4,6 +4,9 @@ import java.util.*;
 
 /**
  * Created by Tom on 2/5/2016.
+ *
+ * problem: https://onlinejudge.org/external/110/11060.pdf
+ * #UVA #Lv2 #topological_sort
  */
 public class UVA11060 {
 

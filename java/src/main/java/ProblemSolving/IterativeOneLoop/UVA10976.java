@@ -7,6 +7,9 @@ import java.util.Scanner;
  * Created by Tom on 17/4/2016.
  *
  * Start at  21:33 and with 2 time limit exceed, and becuase I forget to use double to calculate x, I got WA 2 times, and finall y accept AC at 22:18, totalt time: 45 minutes.
+ *
+ * problem: https://onlinejudge.org/external/109/10976.pdf
+ * #UVA #Lv2 #iterative_search #linear_scan
  */
 public class UVA10976 {
     public static void main(String[] args){

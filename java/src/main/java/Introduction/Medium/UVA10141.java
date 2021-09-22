@@ -5,6 +5,9 @@ import java.util.*;
 /**
  * Created by Tom on 13/4/2016.
  * Start  at 14:29 and WA at 15:10 and AC at 15:21, total of 52 minutes..... you have  to deal with structure sortting, no fancy stable sort.
+ *
+ * problem: https://onlinejudge.org/external/101/10141.pdf
+ * #ad_hoc #Lv2 #UVA
  */
 public class UVA10141{
     static class IntPair implements Comparable<IntPair>{

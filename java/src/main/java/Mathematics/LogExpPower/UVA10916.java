@@ -6,6 +6,9 @@ import java.util.Scanner;
 /**
  * Created by Tom on 13/4/2016.
  * Start at 1:25, completed at 1:40, total time consume: 15 minutes. Sometime log can be useful than bigInt.
+ *
+ * problem: https://onlinejudge.org/external/109/10916.pdf
+ * #UVA #log #Lv3
  */
 public class UVA10916 {
     public static void main(String[] args){
@@ -18,7 +21,7 @@ public class UVA10916 {
             int year10 = a/10 - 196;
             int base = 4;
 
-            int curr = base * (int)Math.pow(2, year10);
+            int curr = base * (int)Math.pow(2, year10);  //number of bit available
 
             int cnt = 0;
             double result = 0;

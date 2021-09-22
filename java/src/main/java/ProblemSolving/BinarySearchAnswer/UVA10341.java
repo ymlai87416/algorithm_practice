@@ -7,7 +7,7 @@ import java.util.Scanner;
  level:
  solution:
 
- #binarySearch #binarySearchRealNumber
+ #UVA #binary_search #binary_search_real_number #Lv2
 
  **/
 

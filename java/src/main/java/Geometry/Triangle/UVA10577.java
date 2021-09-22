@@ -7,6 +7,10 @@ import java.util.Scanner;
 
 /**
  * Created by ymlai on 25/4/2017.
+ *
+ * problem: https://onlinejudge.org/external/105/10577.pdf
+ *
+ * #Lv4 #triangles #UVA
  */
 public class UVA10577 {
 

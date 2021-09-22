@@ -5,7 +5,7 @@ package DataStructure.TreeDataStructure;
  level: level 4
  solution: min max segment tree
 
- #segmentTree #segmentTreeLazyUpdate
+ #segmentTree #segmentTreeLazyUpdate #Lv4 #UVA
 
  **/
 

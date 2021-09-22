@@ -6,6 +6,9 @@ import java.util.Scanner;
 /**
  * Created by Tom on 21/4/2016.
  * Start at 0:34 and AC at 0:43, total time spent: 9 minutes.
+ *
+ * problem: https://onlinejudge.org/external/124/12455.pdf
+ * #UVA #Lv2 #iterative_search
  */
 public class UVA12455 {
     static int[][] len_pos = new int[1000+1][20+1];

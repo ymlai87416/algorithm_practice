@@ -8,7 +8,7 @@ import java.util.Stack;
 /**
 problem: https://leetcode.com/problems/basic-calculator-ii/
 level: medium
-solution:
+solution: worst runtime, good implementation merge token and calc together
 
 #math #stack
 

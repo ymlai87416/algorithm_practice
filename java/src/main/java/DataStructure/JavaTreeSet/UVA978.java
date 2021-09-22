@@ -5,6 +5,10 @@ import java.util.*;
 /**
  * Created by Tom on 17/4/2016.
  * Start at  17:15, got TLE at 17:36 and rewrite and get wrong answer at 17:54, finished at 18:13, total 58mins for a simple question...
+ *
+ * problem: https://onlinejudge.org/external/9/978.pdf
+ *
+ * #Lv3 #UVA #bst #tree_map
  */
 public class UVA978 {
 

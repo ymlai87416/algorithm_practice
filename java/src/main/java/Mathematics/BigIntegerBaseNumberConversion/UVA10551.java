@@ -6,6 +6,11 @@ import java.util.Scanner;
 /**
  * Created by Tom on 13/4/2016.
  * Start at 17:55, AC at 18:00, total time 5mins
+ *
+ * problem: https://onlinejudge.org/external/105/10551.pdf
+ *
+ * #UVA #Lv3 #base_number_conversion #big_integer
+ *
  */
 public class UVA10551 {
     public static void main(String[] args){

@@ -5,6 +5,9 @@ import java.util.Scanner;
 
 /**
  * Created by Tom on 14/5/2016.
+ *
+ * problem: https://onlinejudge.org/external/113/11364.pdf
+ * #UVA #Lv1 #ad_hoc
  */
 public class UVA11364 {
     static int[] shop = new int[21];

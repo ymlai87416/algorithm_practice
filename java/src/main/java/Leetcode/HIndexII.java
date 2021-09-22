@@ -2,12 +2,12 @@ package Leetcode;
 
 import java.util.Arrays;
 
-/*
-url: https://leetcode.com/problems/h-index-ii/
+/**
+problem: https://leetcode.com/problems/h-index-ii/
 level: medium
 solution: already sort, use the sorted approach, instead of allocating O(n) space.
 
-#binarySearch
+#binary_search #time_O(logn)
 
  */
 

@@ -7,6 +7,10 @@ import java.util.Scanner;
 
 /**
  * Created by Tom on 11/5/2016.
+ *
+ * problem: https://onlinejudge.org/external/106/10600.pdf
+ *
+ * #UVA #Lv2 #mst
  */
 public class UVA10600 {
     public static void main(String[] args){

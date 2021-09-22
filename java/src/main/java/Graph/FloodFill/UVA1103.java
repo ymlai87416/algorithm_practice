@@ -7,7 +7,12 @@ import java.util.TreeSet;
 
 /**
  * Created by Tom on 25/4/2016.
+ *
+ * problem: https://onlinejudge.org/external/11/1103.pdf
+ *
+ * #UVA #Lv3 #flood_fill
  */
+
 public class UVA1103 {
 
     static char[][] pic = new char[200][400];

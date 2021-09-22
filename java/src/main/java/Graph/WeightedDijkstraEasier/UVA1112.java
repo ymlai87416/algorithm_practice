@@ -7,6 +7,10 @@ import java.util.Scanner;
 
 /**
  * Created by Tom on 12/5/2016.
+ *
+ * problem: https://onlinejudge.org/external/11/1112.pdf
+ *
+ * #UVA #Lv2 #dijkstra
  */
 public class UVA1112 {
 

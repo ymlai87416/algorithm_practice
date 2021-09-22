@@ -4,6 +4,9 @@ import java.util.*;
 
 /**
  * Created by Tom on 8/5/2016.
+ *
+ * problem: https://onlinejudge.org/external/105/10567.pdf
+ * #UVA #Lv3 #binary_search
  */
 public class UVA10567 {
     static TreeSet<Integer>[] result = new TreeSet[52];

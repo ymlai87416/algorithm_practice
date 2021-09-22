@@ -9,7 +9,12 @@ import java.util.Stack;
  * Created by Tom on 25/4/2016.
  *
  * stap at 07, total time waste 4 minutes.
+ *
+ * problem: https://onlinejudge.org/external/124/12442.pdf
+ *
+ * #UVA #Lv3 #graph_traversal #skip
  */
+
 public class UVA12442 {
 
     static int[] adjcnt = new int[50001];

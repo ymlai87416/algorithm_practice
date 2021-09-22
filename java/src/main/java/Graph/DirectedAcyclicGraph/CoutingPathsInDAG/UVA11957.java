@@ -7,6 +7,11 @@ import java.util.Scanner;
 
 /**
  * Created by ymlai on 14/4/2017.
+ *
+ * problem: https://onlinejudge.org/external/119/11957.pdf
+ *
+ * #UVA #Lv4 #dp #dag #dag_count_paths
+ *
  */
 public class UVA11957 {
 

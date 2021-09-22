@@ -1,7 +1,7 @@
 package Leetcode;
 
-/*
-url: https://leetcode.com/problems/house-robber/
+/**
+problem: https://leetcode.com/problems/house-robber/
 level: easy
 solution: this is a simple dp
 

@@ -4,6 +4,11 @@ import java.util.*;
 
 /**
  * Created by ymlai on 12/4/2017.
+ * cut the worst edge along the tree diameter, link two centers
+ *
+ * problem: https://onlinejudge.org/external/116/11695.pdf
+ *
+ * #UVA #Lv4 #tree #tree_diameter
  */
 public class UVA11695 {
 

@@ -1,11 +1,11 @@
 package Leetcode;
 
-/*
-url: https://leetcode.com/problems/count-primes/
+/**
+problem: https://leetcode.com/problems/count-primes/
 level: Easy
 solution: just a seive
 
-#hashTable #math #prime
+#seive #math #prime
 
  */
 public class CountPrimes {

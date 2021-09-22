@@ -10,6 +10,10 @@ import java.util.Scanner;
  *
  * 1. Becareful of the orientation, i set the dx and dy wrong
  * 2. Becareful with the edge, the edge cannot be used
+ *
+ * problem: https://onlinejudge.org/external/3/314.pdf
+ *
+ * #UVA #Lv3 #bfs
  */
 public class UVA314 {
     static int[][] map = new int[51][51];

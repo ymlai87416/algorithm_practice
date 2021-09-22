@@ -4,6 +4,10 @@ import java.util.*;
 
 /**
  * Created by ymlai on 12/4/2017.
+ *
+ * problem: https://onlinejudge.org/external/118/11838.pdf
+ *
+ * #UVA #Lv2 #strongly_connected_components
  */
 public class UVA11838 {
 

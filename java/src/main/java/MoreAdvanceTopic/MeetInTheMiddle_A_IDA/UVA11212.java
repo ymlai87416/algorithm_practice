@@ -5,8 +5,13 @@ import java.util.*;
 
 /**
  * Created by Tom on 12/3/2017.
+ *
+ * of length of 9, running TLE show that the max dept is only 5, but 5 is TLE, so try meet in the middle of 2.
+ *
+ * problem: https://onlinejudge.org/external/112/11212.pdf
+ * #UVA #Lv4 #meet_in_the_middle
  */
-public class UVA11211 {
+public class UVA11212 {
     public static void main(String[] args){
         int size;
         int[] order, order2;

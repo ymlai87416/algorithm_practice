@@ -7,6 +7,10 @@ import java.util.Stack;
 
 /**
  * Created by Tom on 23/4/2016.
+ *
+ * problem: https://onlinejudge.org/external/119/11902.pdf
+ *
+ * #UVA #Lv3 #connected_component #skip
  */
 public class UVA11902 {
 

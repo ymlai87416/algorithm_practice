@@ -8,7 +8,8 @@ import java.util.Scanner;
  * from 10:51 to 11:03, total use 12 minutes....
  *
  * problem: https://onlinejudge.org/external/119/11933.pdf
- * #bit
+ *
+ * #bit_manipulation #UVA #Lv2
  */
 public class UVA11933 {
     public static void main(String[] args){

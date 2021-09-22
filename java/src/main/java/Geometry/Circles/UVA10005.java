@@ -4,6 +4,10 @@ import java.util.*;
 
 /**
  * Created by ymlai on 23/4/2017.
+ *
+ * problem: https://onlinejudge.org/external/100/10005.pdf
+ *
+ * #circle #UVA #Lv3
  */
 public class UVA10005 {
     static class Circle{

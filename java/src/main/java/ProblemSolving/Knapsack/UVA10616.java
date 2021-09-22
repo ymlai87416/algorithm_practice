@@ -8,7 +8,7 @@ import java.util.Scanner;
  level:
  solution:
 
- #dp #knapsack
+ #dp #01_knapsack #UVA #Lv2
 
  **/
 public class UVA10616 {

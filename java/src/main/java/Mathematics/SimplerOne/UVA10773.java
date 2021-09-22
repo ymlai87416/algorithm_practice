@@ -7,6 +7,9 @@ import java.util.Scanner;
  * Created by Tom on 12/4/2016.
  *
  * Log: Create at 2:50, formula at 2:53, WA at 3:02, AC at 3:11, totoal time 21 mins
+ *
+ * problem: https://onlinejudge.org/external/107/10773.pdf
+ * #UVA #math #ad_hoc #Lv2
  */
 public class UVA10773 {
 

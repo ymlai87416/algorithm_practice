@@ -6,6 +6,9 @@ import java.util.Scanner;
 /**
  * Created by Tom on 20/4/2016.
  * Start at 23:59 and finished at 0:31, total of 32 minutes. Having difficulties to read the problem... waste my time.
+ *
+ * problem: https://onlinejudge.org/external/106/10660.pdf
+ * #UVA #Lv3 #iterative_search #search_O(n^3)
  */
 public class UVA10660 {
     public static int minDist(int c, int[] a, int[] d){

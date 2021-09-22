@@ -15,6 +15,8 @@ import java.util.StringTokenizer;
  *
  * TLE solution....
  * https://www.quora.com/On-UVA-12356-Java-gets-Time-Limit-Exceeded-while-the-C++-equivalent-gets-accepted-How-do-I-optimize-the-Java-code-solved
+ *
+ * #skip #UVA #array #Lv2
  */
 public class UVA12356 {
 

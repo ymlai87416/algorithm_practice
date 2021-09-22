@@ -5,6 +5,9 @@ import java.util.TreeMap;
 
 /**
  * Created by Tom on 18/4/2016.
+ *
+ * problem: https://onlinejudge.org/external/9/902.pdf
+ * #UVA #Lv2 #string #frequency_counting
  */
 public class UVA902 {
     public static void main(String[] args){

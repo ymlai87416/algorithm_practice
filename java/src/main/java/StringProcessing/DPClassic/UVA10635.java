@@ -6,6 +6,9 @@ import java.util.*;
  * Created by Tom on 14/5/2016.
  *
  * Longest common substring on 62.5k, which need nlogn algorithm
+ *
+ * problem: https://onlinejudge.org/external/106/10635.pdf
+ * #UVA #Lv3 #string #longest_common_substring #dp
  */
 public class UVA10635 {
     static int[] pba = new int[62501];

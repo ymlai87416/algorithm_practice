@@ -8,7 +8,7 @@ import java.util.Scanner;
  level:
  solution: O(n^3)
 
- #AllPairShortestPath #Floyd
+ #all_pair_shortest_path #floyd #Lv2 #UVA
 
  **/
 

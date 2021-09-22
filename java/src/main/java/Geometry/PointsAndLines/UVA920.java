@@ -5,6 +5,10 @@ import java.util.Scanner;
 
 /**
  * Created by Tom on 17/5/2016.
+ *
+ * problem: https://onlinejudge.org/external/9/920.pdf
+ *
+ * #UVA #points #Lv3
  */
 public class UVA920 {
 

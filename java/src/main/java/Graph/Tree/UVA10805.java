@@ -8,6 +8,10 @@ import java.util.*;
  * iterative depth first means nothing, it just choose path beside a tree
  *
  * "In every tree there exists a point (possibly in the ‘middle’ of some edge) such that the distance of the furthest vertex from it is exactly half the diameter of the tree."
+ *
+ * problem: https://onlinejudge.org/external/108/10805.pdf
+ *
+ * #UVA #tree #Lv5 #tree_diameter
  */
 public class UVA10805 {
     static int[][] AdjMat = new int[2760][2760];

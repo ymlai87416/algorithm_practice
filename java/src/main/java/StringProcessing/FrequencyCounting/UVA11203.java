@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 /**
  * Created by Tom on 14/5/2016.
+ *
+ * problem: https://onlinejudge.org/external/112/11203.pdf
+ * #UVA #Lv4 #string #frequency_counting
  */
 public class UVA11203 {
     public static void main(String[] args){

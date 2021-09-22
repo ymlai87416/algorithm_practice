@@ -10,7 +10,8 @@ import java.util.*;
  *
  * Solution to verify Segment tree
  *
- * #segmentTree #rmq
+ * problem: https://onlinejudge.org/external/112/11235.pdf
+ * #segmentTree #rmq #Lv2 #UVA
  */
 public class UVA11235 {
 

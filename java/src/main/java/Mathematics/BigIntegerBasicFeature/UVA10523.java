@@ -6,6 +6,10 @@ import java.util.Scanner;
 /**
  * Created by Tom on 13/4/2016.
  * Start at 1:47, end at 1:54 total of 7 minutes AC.
+ *
+ * problem: https://onlinejudge.org/external/105/10523.pdf
+ *
+ * #UVA #big_integer #Lv2
  */
 public class UVA10523 {
     public static void main(String[] args){

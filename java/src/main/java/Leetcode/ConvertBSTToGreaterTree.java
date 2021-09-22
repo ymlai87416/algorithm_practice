@@ -1,7 +1,7 @@
 package Leetcode;
 
 
-/*
+/**
 problem: https://leetcode.com/problems/convert-bst-to-greater-tree/
 level: easy
 solution: the index of the List<List<>> represent the level, just have to keep track what level curr node is.

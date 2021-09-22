@@ -10,6 +10,9 @@ import java.util.TreeMap;
  * Created by Tom on 15/5/2016.
  *
  * Base on the formula, no of permuatation = n_size! / n_a! n_b ! n_c !... n_z!
+ *
+ * problem: https://onlinejudge.org/external/9/941.pdf
+ * #UVA #Lv3 #string #ad_hoc
  */
 
 public class UVA941 {

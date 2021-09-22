@@ -6,7 +6,7 @@ level: hard
 solution: straight forward is dp,
     almost 2 time, which means for a time
 
-#dp
+#dp #scan_left_right #time_O(n)
 
  **/
 

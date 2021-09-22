@@ -7,6 +7,9 @@ import java.util.Scanner;
  *
  * 19:08 first read, 20:24 AC. 2 WA.
  * Too far fetch for the formula, the coding is pretty easy...
+ *
+ * problem: https://onlinejudge.org/external/6/616.pdf
+ * #UVA #math_simulation #Lv3
  */
 public class UVA616 {
 

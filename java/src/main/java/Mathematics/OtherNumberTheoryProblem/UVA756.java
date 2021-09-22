@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 /**
  * Created by ymlai on 16/4/2017.
+ *
+ * problem: https://onlinejudge.org/external/7/756.pdf
+ * #UVA #number_theory #other #Lv3
  */
 public class UVA756 {
 

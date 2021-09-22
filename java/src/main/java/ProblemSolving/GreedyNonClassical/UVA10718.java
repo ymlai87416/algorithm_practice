@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 /**
  * Created by Tom on 8/5/2016.
+ *
+ * problem: https://onlinejudge.org/external/107/10718.pdf
+ * #UVA #Lv3 #greedy
  */
 public class UVA10718 {
     public static void main(String[] args){

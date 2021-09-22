@@ -6,6 +6,9 @@ import java.util.Scanner;
  * Created by Tom on 14/5/2016.
  *
  * Edit distance example
+ *
+ * problem: https://onlinejudge.org/external/5/526.pdf
+ * #UVA #Lv3 #string #edit_distance #dp
  */
 public class UVA526 {
     static int[][] dp = new int[85][85];

@@ -9,6 +9,10 @@ import java.util.Scanner;
 
 /**
  * Created by ymlai on 14/4/2017.
+ *
+ * problem: https://onlinejudge.org/external/100/10054.pdf
+ *
+ * #UVA #Lv2 #eulerian_graph
  */
 public class UVA10054 {
     static List<List<Pair>> AdjList = new ArrayList<>();

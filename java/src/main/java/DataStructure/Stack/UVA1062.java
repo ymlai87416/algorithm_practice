@@ -8,8 +8,11 @@ import java.util.Stack;
 /**
  * Created by Tom on 17/4/2016.
  *
- * I think this is not greedy and try to create a new row if I can put it on top on any stack, but turn out it is just greedy
+ * I think this is not greedy and try to create a new row if I can't put it on top on any stack, but turn out it is just greedy
  * Non greedy approach TLE, and greedy approach just 0.08...
+ *
+ * problem: https://onlinejudge.org/external/10/1062.pdf
+ * #stack #greedy #UVA #Lv3
  */
 public class UVA1062 {
     public static void main(String[] args){
@@ -25,6 +28,8 @@ public class UVA1062 {
         }
     }
 
+    //greedy: put the next container to the stack with head is just bigger than it.
+    //non-greedy: put the next container to every possible stack and also create a stack and check
     public static int gen(String a, int pa, List<Stack<Character>> result){
 
         if(pa == a.length()) return result.size();

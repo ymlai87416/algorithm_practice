@@ -6,6 +6,9 @@ import java.util.*;
  * Created by Tom on 2/5/2016.
  *
  * First time do a topological sort.
+ * problem: https://onlinejudge.org/external/8/872.pdf
+ *
+ * #UVA #topological_sort #Lv3
  */
 public class UVA872 {
     static int[] adjcnt;

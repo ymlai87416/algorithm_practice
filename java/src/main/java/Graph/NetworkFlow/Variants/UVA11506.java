@@ -6,6 +6,10 @@ import java.util.*;
  * Created by ymlai on 16/4/2017.
  *
  * Time 17:28
+ *
+ * problem: https://onlinejudge.org/external/115/11506.pdf
+ *
+ * #UVA #Lv3 #network_flow
  */
 public class UVA11506 {
 

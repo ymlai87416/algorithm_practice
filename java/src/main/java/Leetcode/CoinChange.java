@@ -1,7 +1,7 @@
 package Leetcode;
 
-/*
-url: https://leetcode.com/problems/coin-change/
+/**
+problem: https://leetcode.com/problems/coin-change/
 level: medium
 solution: fewest number of coin change means a classic dp
 

@@ -1,13 +1,13 @@
 package Leetcode;
 
-/*
+/**
 number: 160
-url: https://leetcode.com/problems/intersection-of-two-linked-lists/
+problem: https://leetcode.com/problems/intersection-of-two-linked-lists/
 level: easy
 solution: find out the length of linked list A and B, then start at a position in each array such that the length of
     remaining node is the same. the pointer value will be the same at some point.
 
-#linkedList
+#linked_list #two_pointers
 
  */
 

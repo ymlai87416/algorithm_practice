@@ -7,6 +7,10 @@ import java.util.*;
 
 /**
  * Created by ymlai on 16/4/2017.
+ *
+ * problem: https://onlinejudge.org/external/2/259.pdf
+ *
+ * #UVA #Lv3 #network_flow
  */
 public class UVA259 {
     final static int sIdx = 36;

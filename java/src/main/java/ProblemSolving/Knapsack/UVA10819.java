@@ -8,7 +8,7 @@ import java.util.Scanner;
  level:
  solution: Thinking for day, just circumvent the TLE using difference case. instead of formula a general case... time spends: 1 day.
 
- #dp #knapsack
+ #dp #01_knapsack #UVA #Lv2
 
  **/
 public class UVA10819 {

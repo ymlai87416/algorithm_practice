@@ -4,8 +4,8 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
-/*
-url: https://leetcode.com/problems/combination-sum/
+/**
+problem: https://leetcode.com/problems/combination-sum/
 level: medium
 solution: sort the array, at each recursive step, either we add or skip the current element, and advance the pointer by one.
  It is addition. you can prune the tree when the target is smaller than the current

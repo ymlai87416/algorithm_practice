@@ -5,6 +5,9 @@ import java.util.Scanner;
 /**
  * Created by Tom on 13/4/2016.
  *
+ * #problem: https://onlinejudge.org/external/115/11559.pdf
+ *
+ * #adhoc #UVA #Lv1
  */
 public class UVA11559 {
     public static void main(String[] args){

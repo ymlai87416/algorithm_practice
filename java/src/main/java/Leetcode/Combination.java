@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-/*
-url: https://leetcode.com/problems/combinations/
+/**
+problem: https://leetcode.com/problems/combinations/
 level: medium
 solution: 1...k, at each recursion step, either add or not add. when the array reach n, stop it.
 

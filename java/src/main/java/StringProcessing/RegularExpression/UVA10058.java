@@ -6,6 +6,9 @@ import java.util.regex.Pattern;
 
 /**
  * Created by Tom on 10/5/2016.
+ *
+ * problem: https://onlinejudge.org/external/100/10058.pdf
+ * #UVA #Lv4 #string #regular_expression
  */
 public class UVA10058 {
 

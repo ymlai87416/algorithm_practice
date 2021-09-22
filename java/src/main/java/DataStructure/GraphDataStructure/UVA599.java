@@ -7,6 +7,9 @@ import java.util.StringTokenizer;
 
 /**
  * Created by Tom on 15/5/2016.
+ * problem: https://onlinejudge.org/external/5/599.pdf
+ *
+ * #Lv2 #UVA #graph
  */
 public class UVA599 {
     //static ArrayList<Integer>[] adj = new ArrayList[26];

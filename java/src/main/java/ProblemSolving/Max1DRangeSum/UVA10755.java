@@ -7,7 +7,7 @@ import java.util.Scanner;
  level:
  solution:  AC
 
- #dp #max1DRangeSum
+ #dp #max_1d_range_sum #UVA #Lv3
 
  **/
 

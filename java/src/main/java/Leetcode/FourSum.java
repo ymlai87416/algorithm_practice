@@ -4,11 +4,12 @@ import java.util.*;
 
 //When you sort, you know the new list is already in the list or not by looking only the last entry.
 
-/*
+/**
 problem: https://leetcode.com/problems/4sum/
 level: medium
 solution: time complexity O(n^3)
-    sort the array, then the result should be in ascending order
+    sort the array, then the result should be in ascending order 73ms
+    kSum implementation is 2ms
 
 #hashTable #twoPointer
  */
@@ -24,7 +25,14 @@ public class FourSum {
 
     static
     class Solution {
+
         public List<List<Integer>> fourSum(int[] nums, int target) {
+            //return firstImpl(nums, target);
+            Arrays.sort(nums);
+            return kSum(nums, target, 0, 4);
+        }
+
+        public List<List<Integer>> firstImpl(int[] nums, int target) {
             Arrays.sort(nums);
             ArrayList<List<Integer>> r = new ArrayList<List<Integer>>();
 
@@ -54,34 +62,16 @@ public class FourSum {
                                 }
                             }
                         }
-
-
-                        /*
-                        for(int l=k+1; l<nums.length; ++l){
-                            if(nums[i]+nums[j]+nums[k]+nums[l] == target){
-                                curr = Arrays.asList(nums[i], nums[j], nums[k], nums[l]);
-                                if(prev == null || (prev != null && !repeat(prev, curr))) {
-                                    r.add(curr);
-                                    prev = curr;
-                                }
-                            }
-                        }
-                        */
                     }
                 }
             }
 
             return r;
+
         }
 
         private boolean repeat(List<Integer> a, List<Integer> b){
 
-            /*
-            System.out.print("debug: ");
-            System.out.print(a);
-            System.out.print(" ");
-            System.out.println(b);
-            */
 
             for(int i=0; i<a.size(); ++i) {
                 int ai = a.get(i);
@@ -106,6 +96,52 @@ public class FourSum {
 
             //System.out.println("T2");
             return true;   //if a == b, then it also repeat
+        }
+
+        public List<List<Integer>> kSum(int[] nums, int target, int start, int k) {
+
+            List<List<Integer>> result = new ArrayList<>();
+
+            if (start == nums.length || nums[start] * k > target || target > nums[nums.length-1] * k)
+                return result;
+
+            if(k == 2)
+                return twoSum(nums, target, start);
+
+            for (int i = start; i < nums.length; i++) {
+                if(i==start || nums[i] != nums[i-1]){
+                    List<List<Integer>> n_1 = kSum(nums, target-nums[i], i+1, k-1);
+
+                    for (int j = 0; j < n_1.size(); j++) {
+                        ArrayList<Integer> t = (ArrayList)n_1.get(j);
+                        t.add(nums[i]);
+                        result.add(t);
+                    }
+                }
+            }
+
+            return result;
+        }
+
+        private List<List<Integer>> twoSum(int[] nums, int target, int start) {
+            List<List<Integer>> result = new ArrayList<>();
+            int lo = start, hi = nums.length-1;
+
+            while(lo < hi){
+                int sum = nums[lo] + nums[hi];
+                if(sum < target  || (lo > start && nums[lo] == nums[lo - 1])) //sum smaller => move lo to right
+                    lo += 1;
+                else if(sum > target  || (hi < nums.length - 1 && nums[hi] == nums[hi + 1])) //sum bigger => move hi to left, or move lo back to left
+                    hi -= 1;
+                else {
+                    ArrayList t = new ArrayList<Integer>();
+                    t.add(nums[lo]); t.add(nums[hi]);
+                    result.add(t);
+                    ++lo;
+                }
+            }
+
+            return result;
         }
     }
 }

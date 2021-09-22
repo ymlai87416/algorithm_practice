@@ -7,6 +7,10 @@ import java.util.Scanner;
 
 /**
  * Created by Tom on 8/5/2016.
+ *
+ * problem: https://onlinejudge.org/external/109/10986.pdf
+ *
+ * #UVA #bfs #Lv2
  */
 public class UVA10986 {
     static ArrayList<Pair>[] adj = new ArrayList[20001];

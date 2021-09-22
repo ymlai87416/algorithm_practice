@@ -9,7 +9,7 @@ import java.util.Scanner;
 
  Start at 0:41 and AC at 0:58, total time spent: 17 mins.
 
- #greedy
+ #greedy #UVA #Lv2
 
  **/
 

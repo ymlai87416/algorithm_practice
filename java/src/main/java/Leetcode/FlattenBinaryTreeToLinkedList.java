@@ -1,12 +1,13 @@
 package Leetcode;
 
-/*
+/**
 number: 114
 problem: https://leetcode.com/problems/flatten-binary-tree-to-linked-list/
 level: medium
 solution: traverse the tree with a linked list
+    for O(1), we just move left to the right and right to the end of the rightmost of left tree.
 
-#tree #dfs
+#tree #dfs #constant_space
  */
 
 public class FlattenBinaryTreeToLinkedList {
@@ -38,7 +39,8 @@ public class FlattenBinaryTreeToLinkedList {
     static
     class Solution {
         public void flatten(TreeNode root) {
-            helper(root);
+            //helper(root);
+            helperO1Space(root);
         }
 
         private TreeNode helper(TreeNode root){
@@ -54,6 +56,33 @@ public class FlattenBinaryTreeToLinkedList {
             root.right = right;
 
             return result;
+        }
+
+        private TreeNode helperO1Space(TreeNode root){
+            if(root == null) return null;
+
+            TreeNode curr, temp, next;
+            curr = root;
+
+            while(curr!=null){
+                if(curr.left != null) {
+                    temp = curr.right;
+                    curr.right = curr.left;
+                    curr.left = null;
+
+                    next=curr;
+
+                    //now move the right to the right most
+                    while(next.right != null)
+                        next = next.right;
+                    next.right = temp;
+                }
+
+                //now move it to next level
+                curr = curr.right;
+            }
+
+            return root;
         }
     }
 }

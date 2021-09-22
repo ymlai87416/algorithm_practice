@@ -5,6 +5,10 @@ import java.util.*;
 /**
  * Created by Tom on 17/4/2016.
  * Start at  0:04 and AC at 0:15, new algorithm for finding the maximum length of string having no repeating characters.
+ *
+ * problem: https://onlinejudge.org/external/115/11572.pdf
+ *
+ * #Lv2 #hash_table #UVA
  */
 public class UVA11572 {
     public static void main(String[] args){

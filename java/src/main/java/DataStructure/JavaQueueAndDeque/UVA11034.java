@@ -8,6 +8,9 @@ import java.util.Stack;
 /**
  * Created by Tom on 17/4/2016.
  * 11:37, AC at 11:50, totla time 13 minutes.
+ * problem: https://onlinejudge.org/external/110/11034.pdf
+ *
+ * #Lv2 #queue #UVA
  */
 public class UVA11034 {
     public static void main(String[] args){

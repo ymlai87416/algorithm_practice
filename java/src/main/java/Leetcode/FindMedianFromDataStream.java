@@ -3,13 +3,13 @@ package Leetcode;
 import java.util.Collections;
 import java.util.PriorityQueue;
 
-/*
+/**
 number: 295
 problem: https://leetcode.com/problems/find-median-from-data-stream/
 level: hard
-solution: write your AVL tree or red black tree, or just use priority queue.
+solution: use priority queue, or use multiset in java
 
-#heap
+#heap #two_pointers
 
  */
 

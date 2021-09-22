@@ -5,6 +5,9 @@ import java.util.Scanner;
 
 /**
  * Created by Tom on 15/5/2016.
+ * problem: https://onlinejudge.org/external/108/10895.pdf
+ *
+ * #Lv3 #UVA #graph
  */
 public class UVA10895 {
     static ArrayList<Pair>[] result = new ArrayList[10001];

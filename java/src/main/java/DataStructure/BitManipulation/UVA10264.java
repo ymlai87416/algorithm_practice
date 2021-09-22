@@ -9,7 +9,7 @@ import java.util.Scanner;
  * Stop at 11:20, resume at 12:00
  * problem: https://onlinejudge.org/external/102/10264.pdf
  *
- * #bit
+ * #bit_manipulation #UVA #Lv3
  *
  */
 public class UVA10264 {

@@ -6,6 +6,9 @@ import java.util.Scanner;
  * Created by Tom on 13/3/2017.
  *
  * For long bitwise opeartion, please add 1L.. shit this.
+ *
+ * problem: https://onlinejudge.org/external/110/11065.pdf
+ * #UVA #Lv5 #backtracking
  */
 public class UVA11065 {
 

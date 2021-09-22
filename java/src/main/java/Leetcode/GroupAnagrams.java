@@ -2,7 +2,7 @@ package Leetcode;
 
 import java.util.*;
 
-/*
+/**
 problem: https://leetcode.com/problems/group-anagrams/
 level: medium
 solution: group anagrams by looking at the frequency table of words

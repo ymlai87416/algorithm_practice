@@ -8,7 +8,7 @@ import java.util.Scanner;
  * This suppose to be a easy question, but you not following the instruction... Started at 0:33 and end at 1:21, total time 48 mins.
  * problem: https://onlinejudge.org/external/112/11221.pdf
  *
- * #palindrome
+ * #UVA #palindrome #Lv2
  */
 public class UVA11221 {
     public static void main(String[] args){

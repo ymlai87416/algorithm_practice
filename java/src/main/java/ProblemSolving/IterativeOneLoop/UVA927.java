@@ -10,7 +10,7 @@ import java.util.Scanner;
 
  Start 16:27, AC at 16:58, tottal time: 31 minutes.
 
- #search
+ * #UVA #Lv3 #iterative_search #linear_scan
 
  **/
 public class UVA927 {

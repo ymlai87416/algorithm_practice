@@ -1,11 +1,12 @@
 package Leetcode;
 
-/*
-url: https://leetcode.com/problems/house-robber-iii/
+/**
+problem: https://leetcode.com/problems/house-robber-ii/
 level: medium
 solution: now the house form a circle. but it can easily break it back into a line.
+    just run 2 times
 
-#dp #tree #dfs
+#dp
  */
 
 public class HouseRobberII {

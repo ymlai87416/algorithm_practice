@@ -3,8 +3,8 @@ package Leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-/*
-url: https://leetcode.com/problems/combination-sum-iii/
+/**
+problem: https://leetcode.com/problems/combination-sum-iii/
 level: medium
 solution: something like combination 1
 

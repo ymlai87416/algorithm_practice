@@ -11,7 +11,7 @@ import java.util.Scanner;
  level:
  solution: AC
 
- #bipartiteGraphChecking #bipartiteGraph
+ #bipartite_graph_checking #bipartite_graph #Lv2 #UVA
 
  **/
 

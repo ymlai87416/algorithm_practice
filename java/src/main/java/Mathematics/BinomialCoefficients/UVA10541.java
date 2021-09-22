@@ -5,6 +5,9 @@ import java.util.Scanner;
 
 /**
  * Created by Tom on 19/4/2016.
+ *
+ * problem: https://onlinejudge.org/external/105/10541.pdf
+ * #UVA #combinatorics #Lv4 #binomail_coefficients
  */
 public class UVA10541 {
     public static void main(String[] args){

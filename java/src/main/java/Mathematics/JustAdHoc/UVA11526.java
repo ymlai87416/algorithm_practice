@@ -7,6 +7,9 @@ import java.util.TreeMap;
  * Created by Tom on 18/4/2016.
  *
  * Start at 22:02 and end at 22:20 AC and got 1 WA because of forgot to cater input < 0.
+ *
+ * problem: https://onlinejudge.org/external/115/11526.pdf
+ * #UVA #adhoc #Lv3
  */
 public class UVA11526 {
 

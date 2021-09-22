@@ -1,6 +1,6 @@
 package Leetcode;
 
-/*
+/**
 number: 162
 problem: https://leetcode.com/problems/find-peak-element/
 level: medium
@@ -8,7 +8,7 @@ solution: brute force: loop each i, and find one that num[i-1] < num[i] > num[i+
             use binary search. there is no need to worry about equal because num[i] <> num[i+1]
                 e.g. 2 ..4.. 2 ..... 2. in this case, I can go both direction and know that there must be an answer.
 
-#binarySearch
+#binary_search
 
  */
 

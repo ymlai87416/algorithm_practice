@@ -9,7 +9,7 @@ import java.util.TreeMap;
  *
  * problem: https://onlinejudge.org/external/115/11503.pdf
  *
- * #unionFind
+ * #union_find #Lv2 #UVA
  */
 public class UVA11503 {
 

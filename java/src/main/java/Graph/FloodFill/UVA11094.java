@@ -5,7 +5,12 @@ import java.util.Scanner;
 
 /**
  * Created by Tom on 1/5/2016.
+ *
+ * problem: https://onlinejudge.org/external/110/11094.pdf
+ *
+ * #UVA #Lv2 #flood_fill
  */
+
 public class UVA11094 {
     static char[][] map = new char[21][21];
     public static void main(String[] args){

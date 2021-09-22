@@ -7,6 +7,9 @@ import java.util.Scanner;
  * Created by Tom on 17/4/2016.
  *
  * Start at 14:36 and AC at 14:50, total time 14 minutes
+ *
+ * problem: https://onlinejudge.org/external/112/11242.pdf
+ * #UVA #Lv2 #iterative_search #search_O(n^2)
  */
 public class UVA11242 {
     public static void main(String[] args){

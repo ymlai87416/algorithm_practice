@@ -4,6 +4,10 @@ import java.util.*;
 
 /**
  * Created by ymlai on 14/4/2017.
+ *
+ * problem: https://onlinejudge.org/external/9/988.pdf
+ *
+ * #UVA #Lv3 #dp #dag #dag_count_paths
  */
 public class UVA988 {
 

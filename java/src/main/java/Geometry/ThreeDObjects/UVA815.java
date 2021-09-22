@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 /**
  * Created by ymlai on 24/4/2017.
+ *
+ * problem: https://onlinejudge.org/external/8/815.pdf
+ *
+ * #UVA #3d_geometry #Lv3
  */
 public class UVA815 {
     static int[][] map = new int[31][31];

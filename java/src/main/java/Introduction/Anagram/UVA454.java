@@ -8,7 +8,9 @@ import java.util.*;
  *
  * Start at 1:17:49 and end at 1:37, total of 20 minutes...
  *
- * #anagram
+ * #problem: https://onlinejudge.org/external/4/454.pdf
+ *
+ * #anagram #UVA #Lv3
  */
 public class UVA454 {
     public static void main(String[] args){

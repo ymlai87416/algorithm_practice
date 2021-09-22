@@ -6,6 +6,9 @@ import java.util.TreeSet;
 
 /**
  * Created by Tom on 17/4/2016.
+ * problem: https://onlinejudge.org/external/12/1203.pdf
+ *
+ * #Lv2 #UVA #priority_queue
  */
 public class UVA1203 {
     public static class Pair implements Comparable<Pair>{

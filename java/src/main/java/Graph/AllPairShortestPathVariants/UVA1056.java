@@ -9,7 +9,7 @@ import java.util.TreeMap;
  level:
  solution:
 
- #AllPairShortestPath
+ #all_pair_shortest_path #Lv3 #UVA
 
  **/
 public class UVA1056 {

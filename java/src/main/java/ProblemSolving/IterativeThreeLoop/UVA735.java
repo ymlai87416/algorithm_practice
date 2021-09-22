@@ -5,6 +5,9 @@ import java.util.*;
 /**
  * Created by Tom on 17/4/2016.
  * Start at 23:19, AC at 0:20, total time 61 mintues... for permutation problem.. combination, maintain a order is ok, for permutation, find tthe distinct elements..
+ *
+ * problem: https://onlinejudge.org/external/7/735.pdf
+ * #UVA #Lv3 #iterative_search #search_O(n^3)
  */
 public class UVA735 {
 

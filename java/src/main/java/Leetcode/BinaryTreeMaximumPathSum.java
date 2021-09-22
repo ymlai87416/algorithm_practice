@@ -2,13 +2,13 @@ package Leetcode;
 
 import java.util.HashMap;
 
-/*
-url: https://leetcode.com/problems/binary-tree-maximum-path-sum/
+/**
+problem: https://leetcode.com/problems/binary-tree-maximum-path-sum/
 level: hard
 solution: return 2 numbers at once, one it the max path containing the root, one is not, just within the tree.
 
 #dfs
- */
+ **/
 public class BinaryTreeMaximumPathSum {
     public static void main(String[] args) {
         TreeNode root = new TreeNode(-10);

@@ -5,6 +5,10 @@ import java.util.Scanner;
 
 /**
  * Created by Tom on 1/5/2016.
+ *
+ * problem: https://onlinejudge.org/external/110/11094.pdf
+ *
+ * #UVA #Lv2 #flood_fill
  */
 public class UVA11953 {
     static char[][] battlefield = new char[101][101];

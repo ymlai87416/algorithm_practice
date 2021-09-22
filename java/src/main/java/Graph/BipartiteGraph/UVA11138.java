@@ -9,7 +9,7 @@ import java.util.Scanner;
  level:
  solution: just a MCBM.
 
- #MCBM #bipartiteGraph
+ #MCBM #bipartiteGraph #UVA #Lv3
 
  **/
 public class UVA11138 {

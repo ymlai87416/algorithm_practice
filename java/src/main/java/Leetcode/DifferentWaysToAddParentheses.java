@@ -2,7 +2,7 @@ package Leetcode;
 
 import java.util.*;
 
-/*
+/**
 problem: https://leetcode.com/problems/different-ways-to-add-parentheses/
 level: medium
 solution: a tree to decide which operand is doing first.
@@ -59,6 +59,7 @@ public class DifferentWaysToAddParentheses {
         }
 
         //wrong, because return multiple result for the same case
+        /*
         public List<Integer> helper(String input){
             ArrayList<Integer> number = new ArrayList<Integer>();
             ArrayList<Character> op= new ArrayList<Character>();
@@ -99,6 +100,8 @@ public class DifferentWaysToAddParentheses {
 
             return result;
         }
+
+         */
 
         private Integer eval(int op1, int op2, char optr) {
             switch(optr) {

@@ -5,6 +5,10 @@ import java.util.Scanner;
 
 /**
  * Created by ymlai on 14/4/2017.
+ *
+ * problem: https://onlinejudge.org/external/109/10913.pdf
+ *
+ * #dp #dag #UVA #Lv4
  */
 public class UVA10913 {
     static int[][] m = new int[76][76];

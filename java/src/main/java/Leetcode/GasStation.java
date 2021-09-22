@@ -1,11 +1,11 @@
 package Leetcode;
 
-/*
-problem: https://leetcode.com/problems/climbing-stairs/
+/**
+problem: https://leetcode.com/problems/gas-station/
 level: medium
 solution: walk the cycle
 
-#dp
+#greedy
 
  */
 

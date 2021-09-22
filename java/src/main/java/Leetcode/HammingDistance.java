@@ -1,6 +1,6 @@
 package Leetcode;
 
-/*
+/**
 problem: https://leetcode.com/problems/hamming-distance/
 level: easy
 solution: bit operations

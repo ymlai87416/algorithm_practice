@@ -7,6 +7,9 @@ import java.util.Scanner;
  * Created by Tom on 14/5/2016.
  *
  * An example of finding longest repeating sequence using Suffix Array (longest and return result with the least lex order, not most appearing freq).
+ *
+ * problem: https://onlinejudge.org/external/115/11512.pdf
+ * #UVA #Lv3 #string #suffix_tree
  */
 public class UVA11512 {
 

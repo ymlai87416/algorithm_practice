@@ -8,6 +8,8 @@ import java.util.Scanner;
  * Created by Tom on 15/4/2016.
  *
  * Last time Wrong answer.
+ *
+ * #skip
  */
 public class UVA161 {
 

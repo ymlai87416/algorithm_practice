@@ -7,7 +7,8 @@ import java.util.Scanner;
  * Created by Tom on 15/5/2016.
  *
  * problem: https://onlinejudge.org/external/108/10855.pdf
- * #2Darray
+ *
+ * #array_2d #Lv2 #UVA
  */
 public class UVA10855 {
     static int[] result =new  int[4];

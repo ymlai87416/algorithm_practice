@@ -4,6 +4,9 @@ import java.util.*;
 
 /**
  * Created by ymlai on 26/4/2017.
+ * problem: https://onlinejudge.org/external/106/10652.pdf
+ *
+ * #polygon #UVA #Lv4
  */
 public class UVA10652 {
 

@@ -1,9 +1,13 @@
-package Geometry.Polygon;
+package Geometry.ThreeDObjects;
 
 import java.util.Scanner;
 
 /**
  * Created by ymlai on 23/4/2017.
+ *
+ * problem: https://onlinejudge.org/external/7/737.pdf
+ *
+ * #3d_geometry #UVA #Lv3
  */
 public class UVA737 {
     public static void main(String[] args){

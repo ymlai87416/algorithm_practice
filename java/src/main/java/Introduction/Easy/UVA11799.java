@@ -6,6 +6,9 @@ import java.util.StringTokenizer;
 /**
  * Created by Tom on 13/4/2016.
  * Start  at 14:22, end at 14:29, a very simple max finding
+ *
+ * problem: https://onlinejudge.org/external/117/11799.pdf
+ * #UVA #adhoc #Lv1
  */
 public class UVA11799 {
     public static void main(String[] args){

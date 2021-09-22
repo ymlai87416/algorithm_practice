@@ -5,12 +5,12 @@ import java.math.BigInteger;
 import java.math.RoundingMode;
 import java.util.HashMap;
 
-/*
+/**
 problem: https://leetcode.com/problems/fraction-to-recurring-decimal/
 level: medium
 solution: store the remainder and the position, if I saw the remainder again. I know there is a loop
 
-#hashTable #math
+#hash_table #math
  */
 
 public class FractionToRecurringDecimal {

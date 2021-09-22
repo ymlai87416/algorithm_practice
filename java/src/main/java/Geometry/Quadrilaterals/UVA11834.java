@@ -6,6 +6,10 @@ import java.util.Scanner;
  * Created by ymlai on 23/4/2017.
  *
  * important insight, the farthest distance is from one corner to another one. and also check if the boundary can contain the circle.
+ *
+ * problem: https://onlinejudge.org/external/118/11834.pdf
+ *
+ * #Lv4 #quadrilaterals #UVA
  */
 public class UVA11834 {
     public static void main(String[] args){

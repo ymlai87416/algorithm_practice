@@ -8,7 +8,7 @@ import java.util.Scanner;
  level:
  solution: Minimize the maximum (deal to day left) walking distance per day.
 
- #dp #convertGeneralGraphToDAG
+ #dp #dag #UVA #Lv4
 
  **/
 public class UVA907 {

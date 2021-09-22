@@ -3,7 +3,7 @@ package Leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-/*
+/**
 number: 412
 problem: https://leetcode.com/problems/fizz-buzz/
 level: easy

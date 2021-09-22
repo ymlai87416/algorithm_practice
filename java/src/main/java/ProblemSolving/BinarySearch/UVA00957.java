@@ -7,7 +7,7 @@ import java.util.Scanner;
  level:
  solution:
 
- #binarySeach #binarySearchEndInclusive
+ #binarySeach #binary_search_end_inclusive #UVA #Lv3
 
  **/
 

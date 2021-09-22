@@ -4,6 +4,9 @@ import java.util.*;
 
 /**
  * Created by ymlai on 16/4/2017.
+ *
+ * problem: https://onlinejudge.org/external/8/820.pdf
+ * #UVA #Lv2 #network_flow
  */
 public class UVA820 {
     final static int maxV = 101;

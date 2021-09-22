@@ -3,6 +3,13 @@ package Graph.FloodFill;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ *
+ * problem: https://onlinejudge.org/external/4/469.pdf
+ *
+ * #UVA #Lv2 #flood_fill
+ */
+
 public class UVA469 {
 
     int dr[] = {1,1,0,-1,-1,-1, 0, 1}; // trick to explore an implicit 2D grid

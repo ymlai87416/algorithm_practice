@@ -8,7 +8,7 @@ import java.util.Scanner;
  level:
  solution:
 
- #binarySearch
+ #binary_search #UVA #Lv3 #skip
 
  **/
 

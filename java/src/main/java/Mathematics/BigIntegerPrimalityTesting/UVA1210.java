@@ -9,6 +9,9 @@ import java.util.Scanner;
  * Created by Tom on 13/4/2016.
  *
  * Read at 18:00 and AC at 18:39, total time consume  39 minutes, very poor as you cannot watch the question for consecutive....
+ *
+ * problem: https://onlinejudge.org/external/12/1210.pdf
+ * #UVA #big_integer #primality_testing #Lv3
  */
 public class UVA1210 {
     static class SieveOfEratosthenes {

@@ -10,7 +10,7 @@ import java.util.ArrayList;
  level:
  solution:
 
- #binarySearch #binarySearchRealNumber
+ #binary_search #binary_search_real_number #Lv3 #UVA
 
  **/
 
