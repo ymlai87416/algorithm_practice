@@ -2,15 +2,17 @@ package Leetcode;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 
 /*
 number: 236
 url: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
 level: medium
 solution: 1. findPath which get a list of treenode to reach p and q, find the last common element
-            2. use tree approach to find both p and q under the root. many boundary case, be careful.
+            2. use tree approach to find both p and q under the root. many boundary case, be careful. O(n) for 2 nodes
+            3. iterative approach
 
-#tree
+#tree #lower_common_ancestor #time_O(n) #time_O(logn) #rmq #topological_sort
 
  */
 
@@ -37,6 +39,42 @@ public class LowestCommonAncestorOfABinaryTree {
             return helper2(root, p, q);
         }
 
+        /*
+        private TreeNode helper3Itr(TreeNode root, TreeNode p, TreeNode q){
+            //transform node value to using dfs
+
+
+            //do dfs for topological sort
+
+
+            List<TreeNode> result = new ArrayList<>();
+            if(root == null) return null;
+
+            Stack<Object[]> st = new Stack<>();
+            st.push(new Object[]{root, 0});
+
+
+
+            //pure dfs + depth info
+            while(!st.isEmpty()) {
+                Object[] currentObj  = st.pop();
+                TreeNode current = (TreeNode) currentObj[0];
+                int depth = (int) currentObj[1];
+
+                result.add(current);
+
+                if(current.right != null) st.push(new Object[]{current.right, depth+1});
+                if(current.left != null) st.push(new Object[]{current.left, depth+1});   //because we want left to process first.
+            }
+
+            //now we have find out
+
+
+            //now find the depth of each node
+
+            //now find the rmq of the range p and q
+        }
+         */
 
         private TreeNode helper2(TreeNode root, TreeNode p, TreeNode q){
             if(root == null) return null;

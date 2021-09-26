@@ -72,13 +72,13 @@
       <recent name="GoogleCodeJam.Y2017.Round1C.A" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Indexing">
-    <configuration name="FlattenBinaryTreeToLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Leetcode.FlattenBinaryTreeToLinkedList" />
+  <component name="RunManager" selected="Application.LargeTreeDFS">
+    <configuration name="A (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Facebook.Y2021.Round2.A" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Leetcode.*" />
+          <option name="PATTERN" value="Facebook.Y2021.Round2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -86,12 +86,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FourSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Leetcode.FourSum" />
+    <configuration name="B (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Facebook.Y2019.Round2.B" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Leetcode.*" />
+          <option name="PATTERN" value="Facebook.Y2019.Round2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,12 +99,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Indexing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Indexing.Indexing" />
+    <configuration name="B (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Facebook.Y2021.Round2.B" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Indexing.*" />
+          <option name="PATTERN" value="Facebook.Y2021.Round2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,12 +112,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreeSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Leetcode.ThreeSum" />
+    <configuration name="B" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Facebook.Y2020.Round2.B" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Leetcode.*" />
+          <option name="PATTERN" value="Facebook.Y2020.Round2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,12 +125,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TwoSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Leetcode.TwoSum" />
+    <configuration name="LargeTreeDFS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Facebook.LargeTreeDFS" />
       <module name="algorithm_practice" />
+      <option name="VM_PARAMETERS" value="-Xss512m " />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Leetcode.*" />
+          <option name="PATTERN" value="Facebook.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -150,19 +151,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.FlattenBinaryTreeToLinkedList" />
-      <item itemvalue="Application.TwoSum" />
-      <item itemvalue="Application.ThreeSum" />
-      <item itemvalue="Application.FourSum" />
-      <item itemvalue="Application.Indexing" />
+      <item itemvalue="Application.B" />
+      <item itemvalue="Application.B (1)" />
+      <item itemvalue="Application.A (2)" />
+      <item itemvalue="Application.B (2)" />
+      <item itemvalue="Application.LargeTreeDFS" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Indexing" />
-        <item itemvalue="Application.FourSum" />
-        <item itemvalue="Application.ThreeSum" />
-        <item itemvalue="Application.TwoSum" />
-        <item itemvalue="Application.FlattenBinaryTreeToLinkedList" />
+        <item itemvalue="Application.LargeTreeDFS" />
+        <item itemvalue="Application.A (2)" />
+        <item itemvalue="Application.B (2)" />
+        <item itemvalue="Application.B (1)" />
+        <item itemvalue="Application.B" />
       </list>
     </recent_temporary>
   </component>
@@ -223,7 +224,9 @@
       <workItem from="1631722101054" duration="1293000" />
       <workItem from="1631792177849" duration="1207000" />
       <workItem from="1631881695707" duration="18677000" />
-      <workItem from="1632249177810" duration="41407000" />
+      <workItem from="1632249177810" duration="44482000" />
+      <workItem from="1632520544369" duration="33382000" />
+      <workItem from="1632657459988" duration="8359000" />
     </task>
     <servers />
   </component>
@@ -243,11 +246,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/Graph/TopologicalSort/UVA11060.java</url>
           <line>72</line>
           <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Indexing/Indexing.java</url>
-          <line>96</line>
-          <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/GoogleCodeJam/Y2008/Round1B/B/Solution.java</url>
@@ -443,6 +441,26 @@
           <line>288</line>
           <option name="timeStamp" value="352" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Facebook/Y2021/Round2/B.java</url>
+          <line>98</line>
+          <option name="timeStamp" value="360" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Facebook/Y2021/Round2/B.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="361" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <condition disabled="true" expression="u==0" language="JAVA" />
+          <url>file://$PROJECT_DIR$/src/main/java/Facebook/Y2021/Round2/B.java</url>
+          <line>124</line>
+          <option name="timeStamp" value="364" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
+          <option name="timeStamp" value="358" />
+        </breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint enabled="true" type="java-exception" />
@@ -456,8 +474,8 @@
     </pin-to-top-manager>
     <watches-manager>
       <configuration name="Application">
-        <watch expression="s.charAt(ditchPos)" language="JAVA" />
-        <watch expression="s.charAt(addPos)" language="JAVA" />
+        <watch expression="f" language="JAVA" />
+        <watch expression="lookup" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
@@ -467,6 +485,9 @@
     </SUITE>
     <SUITE FILE_PATH="coverage/java$Solution.ic" NAME="Solution Coverage Results" MODIFIED="1619803826685" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>GoogleCodeJam.Y2013.Round1B.B.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/java$A__2_.ic" NAME="A (2) Coverage Results" MODIFIED="1632626172128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Facebook.Y2021.Round2.*</FILTER>
     </SUITE>
   </component>
 </project>
