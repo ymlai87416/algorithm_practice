@@ -301,7 +301,7 @@ void extendedEuclid(int a, int b) {
 }
 ```
 
-Refer: []()
+Refer: [UVA10633](https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Mathematics/ExtendedEuclidean/UVA10633.java)
 
 ## Modular
 

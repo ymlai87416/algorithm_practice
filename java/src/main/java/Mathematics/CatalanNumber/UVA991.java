@@ -1,13 +1,10 @@
-package Template;
+package Mathematics.CatalanNumber;
 
-/**
- * Created by Tom on 9/4/2016.
- */
 import java.io.*;
 import java.util.*;
 import java.math.*;
 
-public class Solution {
+public class UVA991 {
     static Scanner  sc;
     static String   IN;
     static String   OUT;
@@ -15,8 +12,8 @@ public class Solution {
 
     static{
         try{
-            IN = "C:\\GitProjects\\algorithm_practice\\java\\src\\main\\java\\GoogleCodeJam\\Y2008\\Round1C\\A\\A-test.in";
-            OUT = "C:\\GitProjects\\algorithm_practice\\java\\src\\main\\java\\Facebook\\Y2021\\Quali\\consistency_chapter_2_output.txt";
+            IN = "/Users/yiuminglai/GitProjects/algorithm_practice/java/src/main/java/Mathematics/CatalanNumber/in.txt";
+            OUT = "/Users/yiuminglai/GitProjects/algorithm_practice/java/src/main/java/Mathematics/CatalanNumber/out.txt";
             //IN = null;
             if(IN == null)
                 sc = new Scanner(System.in);
@@ -51,18 +48,25 @@ public class Solution {
         }
     }
 
+    long catalanNumber(int n){
+        if(n == 0|| n ==1) return 1;
+        return catalanNumber(n-1) * (2*n) * (2*n-1) / (n+1) / n;
+    }
+
     private long solve(int n) {
-        long ans = 0;
+        long ans = catalanNumber(n);
 
         return ans;
     }
 
     private void run() throws Exception {
         // out = new PrintStream(new FileOutputStream(OUT));
-        int t = sc.nextInt();
-        for (int i = 1; i <= t; i++) {
-            out.print("Case #" + i + ": ");
-            long r = solve(0);
+        boolean first = true;
+        while(sc.hasNextInt()){
+            int n = sc.nextInt();
+            long r = solve(n);
+            if(!first) out.println();
+            else first = false;
             out.println(r);
         }
         sc.close();
@@ -70,7 +74,7 @@ public class Solution {
     }
 
     public static void main(String args[]) throws Exception {
-        new Solution().run();
+        new UVA991().run();
     }
 
 }
