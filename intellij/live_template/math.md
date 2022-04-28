@@ -272,16 +272,36 @@ Refer: [API Doc](https://docs.oracle.com/javase/9/docs/api/java/math/BigInteger.
 LCM * GCD = N * M
 
 ```java
-
+static int gcd(int a,int b) {
+    if (b==0) {
+        return a;
+    }
+    int d;
+    d = gcd(b, a%b);
+    return d;
+}
 ```
 
 ### linear diophantine equation 
 
 To solve for integral root of equation e.g 25x + 18y = 839
-
+- Run euclid and find out that 25*-5 + 18 *7=1
+- Now multiply by 839/gcd(25, 18) => 25*-4195+18*5873=839
+- x = -4915+18n, y = 5873-25n
+- try to find all n that fit the requirement. e.g. both x and y > 0
+```java
+// store x, y, and d as global variables
+void extendedEuclid(int a, int b) {
+    if (b == 0) { x = 1; y = 0; d = a; return; } // base case
+    extendedEuclid(b, a % b); // similar as the original gcd
+    int x1 = y;
+    int y1 = x - (a / b) * y;
+    x = x1;
+    y = y1;
+}
 ```
 
-```
+Refer: []()
 
 ## Modular
 

@@ -3,11 +3,9 @@ package Template;
 /**
  * Created by Tom on 9/4/2016.
  */
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.PrintStream;
-import java.util.Arrays;
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
+import java.math.*;
 
 public class Solution {
     static Scanner  sc;
