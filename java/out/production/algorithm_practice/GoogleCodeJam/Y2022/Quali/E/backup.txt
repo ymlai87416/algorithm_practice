@@ -1,0 +1,26 @@
+# now distribute the passage to other
+            connect_to_unknown = 0
+            inter_connect = 0
+            for i in range(0, N):
+                if list[i] == -1: 
+                    continue
+
+                cnt = list[i]
+                for j in range(i+1, N):
+                    if cnt > 0 and got[j] < list[j]:
+                        cnt -= 1
+                        got[j] += 1
+                    else:
+                        break
+                inter_connect += list[i] - cnt
+                connect_to_unknown += cnt
+
+            usize = N-K-1
+
+            debug("DDD %d %d %d" % (inter_connect, connect_to_unknown, usize))
+
+            #the min is to check whether all room have connection
+            min_p = inter_connect + min(connect_to_unknown, usize)
+            #the max is to check whether all room have connection
+            max_p = inter_connect + connect_to_unknown + usize * (usize-1)/2
+            result = int((min_p + max_p) / 2)
