@@ -5,9 +5,9 @@ import java.io.PrintStream;
 import java.util.*;
 
 /**
- * Created by Tom on 19/4/2016.
+ * Created by Tom on 28/4/2022.
  *
- * problem: https://onlinejudge.org/external/106/105633.pdf
+ * problem: https://onlinejudge.org/external/106/10633.pdf
  * #UVA #extended_euclidean #Lv2
  */
 

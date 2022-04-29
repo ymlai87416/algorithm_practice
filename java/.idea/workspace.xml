@@ -64,39 +64,13 @@
       <recent name="C:\GitProjects\algorithm_practice\java\src\main\java\CodeForce\R720\A" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UVA991">
-    <configuration name="Solution (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GoogleCodeJam.Y2022.Round1B.B.Solution" />
+  <component name="RunManager" selected="Application.UVA1449">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test.Test" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="GoogleCodeJam.Y2022.Round1B.B.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Solution (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GoogleCodeJam.Y2022.Round1B.C.Solution" />
-      <module name="algorithm_practice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="GoogleCodeJam.Y2022.Round1B.C.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GoogleCodeJam.Y2022.Round1B.A.Solution" />
-      <module name="algorithm_practice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="GoogleCodeJam.Y2022.Round1B.A.*" />
+          <option name="PATTERN" value="Test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,6 +84,32 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Mathematics.ExtendedEuclidean.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UVA10990" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Mathematics.ModifiedSieve.UVA10990" />
+      <module name="algorithm_practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Mathematics.ModifiedSieve.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UVA1449" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StringProcessing.StringMatchingStandard.UVA1449" />
+      <module name="algorithm_practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="StringProcessing.StringMatchingStandard.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,19 +131,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Test" />
+      <item itemvalue="Application.UVA10990" />
+      <item itemvalue="Application.UVA1449" />
       <item itemvalue="Application.UVA991" />
       <item itemvalue="Application.UVA10633" />
-      <item itemvalue="Application.Solution" />
-      <item itemvalue="Application.Solution (1)" />
-      <item itemvalue="Application.Solution (2)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UVA1449" />
+        <item itemvalue="Application.UVA10990" />
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.UVA991" />
         <item itemvalue="Application.UVA10633" />
-        <item itemvalue="Application.Solution (2)" />
-        <item itemvalue="Application.Solution (1)" />
-        <item itemvalue="Application.Solution" />
       </list>
     </recent_temporary>
   </component>
@@ -229,7 +229,7 @@
       <workItem from="1651051900038" duration="693000" />
       <workItem from="1651152267320" duration="1507000" />
       <workItem from="1651161647115" duration="356000" />
-      <workItem from="1651162078197" duration="5140000" />
+      <workItem from="1651162078197" duration="17658000" />
     </task>
     <servers />
   </component>

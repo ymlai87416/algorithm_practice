@@ -55,9 +55,14 @@ Cat(N) can calculate the following:
 - way to parathesis
 - way to triangluarize convex polygon
 - monotonic path in square grid
+- number: 1, 1, 2, 5, 14, 42, 132, 429, 1430
 
 ```java
-
+//this implementation can only be at 30
+static long catalanNumber(int n){
+    if(n == 0|| n ==1) return 1;
+    return catalanNumber(n-1) * (2*n) * (2*n-1) / (n+1) / n;
+}
 ```
 
 ## Factorial
@@ -244,19 +249,179 @@ private void helper2(int n, int k, int nmax, Stack<Integer> cur, List<List<Integ
 
 Refer: [Combinations](https://leetcode.com/submissions/detail/230498519/)
 
+## Base / Radix
+
+- Read
+```java
+BigInteger p = new BigInteger(sc.next(), b);
+```
+
+- Write
+```java
+Integer.toBinaryString(N)
+Integer.toOctalString(N)
+Integer.toHexString(N)
+```
+
+- Write with fix length
+
+```java
+String.format("%8s", Integer.toBinaryString(N)).replace(' ', '0');
+```
+
+## Modular
+
+### Modular exponentiation
+
+```java
+System.out.println(x.modPow(y, n));
+```
+
+### Multiplicative inverse
+
+```java
+var num = new BigInteger("7");
+var mod = new BigInteger("20");
+BigInteger inverse = num.modInverse(mod);
+```
+
 ## Prime
     
 ### Seive
+
+```java
+long _sieve_size; // ll is defined as: typedef long long ll;
+BitSet bs = new BitSet(10_000_010); // 10^7 should be enough for most cases
+ArrayList<Integer> primes; // compact list of primes in form of vector<int>
+void sieve(int upperbound) { // create list of primes in [0..upperbound]
+    primes = new ArrayList<>();
+    _sieve_size = upperbound + 1; // add 1 to include upperbound
+    bs.set(0, (int)_sieve_size); // set all bits to 1
+    bs.clear(0);
+    bs.clear(1); // except index 0 and 1
+    for (long i = 2; i <= _sieve_size; i++)
+        if (bs.get((int) i)) {
+            // cross out multiples of i starting from i * i!
+            for (long j = i * i; j <= _sieve_size; j += i)
+                bs.clear((int)j);
+            primes.add((int) i); // add this prime to the list of primes
+        }
+} // call this method in main method
+
+boolean isPrime(long N) { // a good enough deterministic prime tester
+    if (N <= _sieve_size) return bs.get((int)N); // O(1) for small primes
+    for (int i = 0; i < primes.size(); i++)
+        if (N % primes.get(i) == 0) return false;
+    return true; // it takes longer time if N is a large prime!
+}
+```
+
+
 - check prime
 - count different prime
 
 ### Prime factor
+
+```java
+ArrayList<Long> primeFactors(long N) { 
+    ArrayList<Long> factors = new ArrayList<>();
+    int PF_idx = 0;
+    long PF = primes.get(PF_idx); // primes has been populated by sieve
+    while (PF * PF <= N) { // stop at sqrt(N); N can get smaller
+        while (N % PF == 0) { N /= PF; factors.add((long)PF); } // remove PF
+        PF = primes.get(++PF_idx); // only consider primes!
+    }
+    if (N != 1) factors.add(N); // special case if N is a prime
+    return factors; // if N does not fit in 32-bit integer and is a prime
+} // then ‘factors’ will have to be changed to vector<ll>
+// inside int main(), assuming sieve(1000000) has been called before
+```
+
 - num of prime
+
+```java
+long numPF(long N) {
+    int PF_idx = 0;
+    long PF = primes.get(PF_idx), ans = 0;
+    while (PF * PF <= N) {
+        while (N % PF == 0) { N /= PF; ans++; }
+        PF = primes.get(++PF_idx);
+    }
+    if (N != 1) ans++;
+    return ans;
+}
+```
+
 - num diff prime factor
+
+```java
+//modified seive method
+memset(numDiffPF, 0, sizeof numDiffPF);
+void sieve(int upperbound) { // create list of primes in [0..upperbound]
+    primes = new ArrayList<>();
+    _sieve_size = upperbound + 1; // add 1 to include upperbound
+    bs.set(0, (int)_sieve_size); // set all bits to 1
+    bs.clear(0);
+    bs.clear(1); // except index 0 and 1
+    for (long i = 2; i <= _sieve_size; i++)
+        if (numDiffPF[i] == 0) // i is a prime number
+            for (int j = i; j < MAX_N; j += i)
+                numDiffPF[j]++; // increase the values of multiples of i
+} // call this method in main method
+```
+
 - sum of prime factor
 - num divisor
+
+```java
+long numDiv(long N) {
+    int PF_idx = 0;
+    long PF = primes.get(PF_idx), ans = 1; // start from ans = 1
+    while (PF * PF <= N) {
+        long power = 0; // count the power
+        while (N % PF == 0) { N /= PF; power++; }
+        ans *= (power + 1); // according to the formula
+        PF = primes.get(++PF_idx);
+    }
+    if (N != 1) ans *= 2; // (last factor has pow = 1, we add 1 to it)
+    return ans;
+}
+```
 - sum of divisor
-- euler phi - num of coprime
+
+```java
+long sumDiv(long N) {
+    int PF_idx = 0;
+    long PF = primes.get(PF_idx), ans = 1; // start from ans = 1
+    while (PF * PF <= N) {
+        long power = 0;
+        while (N % PF == 0) { N /= PF; power++; }
+        ans *= ((long)Math.pow((double)PF, power + 1.0) - 1) / (PF - 1);
+        PF = primes.get(++PF_idx);
+    }
+    if (N != 1) ans *= ((long)Math.pow((double)N, 2.0) - 1) / (N - 1); // last
+    return ans;
+}
+```
+
+
+### Co-Prime
+
+euler phi - num of coprime
+
+```java
+long EulerPhi(long N) {
+    int PF_idx = 0;
+    long PF = primes.get(PF_idx), ans = N; // start from ans = N
+    while (PF * PF <= N) {
+        if (N % PF == 0) ans -= ans / PF; // only count unique factor
+        while (N % PF == 0) N /= PF;
+        PF = primes.get(++PF_idx);
+    }
+    if (N != 1) ans -= ans / N; // last factor
+    return ans;
+}
+```
 
 ### Prime testing
 
@@ -272,7 +437,7 @@ Refer: [API Doc](https://docs.oracle.com/javase/9/docs/api/java/math/BigInteger.
 LCM * GCD = N * M
 
 ```java
-static int gcd(int a,int b) {
+int gcd(int a,int b) {
     if (b==0) {
         return a;
     }
@@ -280,6 +445,12 @@ static int gcd(int a,int b) {
     d = gcd(b, a%b);
     return d;
 }
+
+int lcm(int a, int b) { return a * (b / gcd(a, b)); }
+```
+
+```java
+BigInteger gcd_pq = p.gcd(q);
 ```
 
 ### linear diophantine equation 
@@ -303,10 +474,6 @@ void extendedEuclid(int a, int b) {
 
 Refer: [UVA10633](https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Mathematics/ExtendedEuclidean/UVA10633.java)
 
-## Modular
-
-
-### Multiplicative inverse
 
 
 ## Probability
@@ -319,11 +486,49 @@ This is a library of matirx operations
 
 ## Cycle finding
 
+```java
+ListNode f(ListNode input){
+    if(input == null) return null;
+    else return input.next;
+}
+
+Pair floydCycleFinding(int x0) { // function int f(int x) is defined earlier
+    // 1st part: finding k*mu, hare’s speed is 2x tortoise’s
+    ListNode tortoise = f(x0), hare = f(f(x0)); // f(x0) is the node next to x0
+    while (tortoise != hare) { 
+        tortoise = f(tortoise); 
+        hare = f(f(hare)); 
+    }
+
+    if(tortoise == null && hare == null) return null;
+
+    // 2nd part: finding mu, hare and tortoise move at the same speed
+    int mu = 0; hare = x0;
+    while (tortoise != hare) {
+        tortoise = f(tortoise); 
+        hare = f(hare); mu++;
+    }
+    // 3rd part: finding lambda, hare moves, tortoise stays
+    int lambda = 1; hare = f(tortoise);
+    while (tortoise != hare) {
+        hare = f(hare); 
+        lambda++; 
+    }
+    return new Pair(mu, lambda);
+}
+```
+
+Refer: [Linked List Cycle](https://leetcode.com/submissions/detail/689577137/)
+
 ## Game theory
 
+TBC
+
+### Nim game
+
+TBC
 
 ## Calculator
-
 
 ### Infix to Postfix
 
@@ -363,7 +568,6 @@ while(!sop.empty())
 Refer: [Basic Calculator II](https://leetcode.com/submissions/detail/230025662)
 
 ### Postfix calculator
-
 
 
 ```java

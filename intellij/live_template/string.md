@@ -1,8 +1,6 @@
 # String
 
-## Formatting
-
-### Fix len radix
+## Regular expression
 
 ```java
 
@@ -10,9 +8,9 @@
 
 ## KMP searching
 
-Time complexity:
+Time complexity: O(m+n)
 
-```
+```java
 
 ```
 
@@ -46,3 +44,5 @@ In between
 ```java
 
 ```
+
+## String hashing
