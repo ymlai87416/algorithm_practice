@@ -73,6 +73,8 @@ Memory: O(n)
 
 ```
 
+- Lazy operation: push()
+
 Refer to: [UVA11402](https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/TreeDataStructure/UVA11402.java)
 
 ## 2D Segment tree
