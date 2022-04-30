@@ -6,8 +6,6 @@
 
 ```
 
-dedeltalphahahahototatalpha
-012345678901234567890123456789
 
 ## KMP searching
 
@@ -159,7 +157,7 @@ T[n++] = '$';
 constructSA();
 ```
 
-- string matching O(m log n) []()
+- string matching O(m log n) [UVA1254](https://github.com/ymlai87416/algorithm_practice/blob/e8b0de3670b3a19f3b5f7b98491c5e7ea0dbd31f/java/src/main/java/StringProcessing/SuffixArray/UVA1254.java)
 
 ```java
 //return (-1, -1) if not found
@@ -198,7 +196,40 @@ int strncmp(char[] str1, int startPos, String P, int num ){
 ```
 
 - longest prefix O(n)
-- longest common substring O(n) [Longest Duplicate substring](https://leetcode.com/submissions/detail/631255311/)
+```java
+int[] Phi= new int[MAX_N];
+int[] PLCP= new int[MAX_N];
+int[] LCP = new int[MAX_N];
+void computeLCP() {
+    int i, L;
+    Phi[SA[0]] = -1; // default value
+    for (i = 1; i < n; i++) // compute Phi in O(n)
+        Phi[SA[i]] = SA[i-1]; // remember which suffix is behind this suffix
+    for (i = L = 0; i < n; i++) { // compute Permuted LCP in O(n)
+        if (Phi[i] == -1) { PLCP[i] = 0; continue; } // special case
+        while (T[i + L] == T[Phi[i] + L]) L++; // L increased max n times
+        PLCP[i] = L;
+        L = Math.max(L-1, 0); // L decreased max n times
+    }
+    for (i = 0; i < n; i++) // compute LCP in O(n)
+    LCP[i] = PLCP[SA[i]]; // put the permuted LCP to the correct position
+}
+```
+
+- Longest common substring
+Time complexity: O(n)
+
+for T1= GATAGACA and T2=CATA, concat both string to become GATAGACA$CATA#.
+
+Go through the suffix array to see if 2 consecutive suffix belongs to 2 different word.
+
+
+Refer: []()
+
+- Longest repeating substring 
+Time complexity: O(n) 
+
+Refer: [Longest Duplicate substring](https://leetcode.com/submissions/detail/689901108/)
 
 
 
