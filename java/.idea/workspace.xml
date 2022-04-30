@@ -46,31 +46,44 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\GitProjects\algorithm_practice\java\src\main\java\CodeForce\R720\C" />
+      <recent name="C:\GitProjects\algorithm_practice\java\src\main\java\CodeForce\R720\B" />
+      <recent name="C:\GitProjects\algorithm_practice\java\src\main\java\CodeForce\R720\A" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/GoogleCodeJam/Y2022/Round1B/C" />
       <recent name="C:\GitProjects\algorithm_practice\java\src\main\java\ProblemSolving\Max2DRangeSum" />
       <recent name="C:\GitProjects\algorithm_practice\java\src\main\java\GoogleCodeJam\Y2008\Round1C\A" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="GoogleCodeJam.Y2022.Round1C.B" />
+      <recent name="GoogleCodeJam.Y2022.Round1C.C" />
+      <recent name="GoogleCodeJam.Y2022.Round1C.A" />
       <recent name="GoogleCodeJam.Y2022.Round1A.C" />
       <recent name="GoogleCodeJam.Y2022.Round1A.B" />
-      <recent name="GoogleCodeJam.Y2022.Round1A.A" />
-      <recent name="GoogleCodeJam.Y2019.Round1B.A" />
-      <recent name="GoogleCodeJam.Y2019.Round1C.A" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\GitProjects\algorithm_practice\java\src\main\java\CodeForce\R720\C" />
-      <recent name="C:\GitProjects\algorithm_practice\java\src\main\java\CodeForce\R720\B" />
-      <recent name="C:\GitProjects\algorithm_practice\java\src\main\java\CodeForce\R720\A" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.UVA1254">
-    <configuration name="UVA10990" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Mathematics.ModifiedSieve.UVA10990" />
+  <component name="RunManager" selected="应用程序.GoogleCodeJam.Y2022.Round1C.A.Solution">
+    <configuration name="GoogleCodeJam.Y2022.Round1C.A.Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GoogleCodeJam.Y2022.Round1C.A.Solution" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Mathematics.ModifiedSieve.*" />
+          <option name="PATTERN" value="GoogleCodeJam.Y2022.Round1C.A.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GoogleCodeJam.Y2022.Round1C.B.Solution" />
+      <module name="algorithm_practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GoogleCodeJam.Y2022.Round1C.B.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -84,19 +97,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="StringProcessing.SuffixArray.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UVA1449" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StringProcessing.StringMatchingStandard.UVA1449" />
-      <module name="algorithm_practice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="StringProcessing.StringMatchingStandard.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,14 +131,16 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="应用程序.UVA10990" />
+      <item itemvalue="应用程序.GoogleCodeJam.Y2022.Round1C.A.Solution" />
+      <item itemvalue="应用程序.Solution" />
       <item itemvalue="应用程序.UVA1254" />
-      <item itemvalue="应用程序.UVA1449" />
       <item itemvalue="应用程序.UVA1584" />
       <item itemvalue="应用程序.UVA991" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.GoogleCodeJam.Y2022.Round1C.A.Solution" />
+        <item itemvalue="应用程序.Solution" />
         <item itemvalue="应用程序.UVA1254" />
         <item itemvalue="应用程序.UVA1584" />
       </list>
@@ -228,6 +230,7 @@
       <workItem from="1651161647115" duration="356000" />
       <workItem from="1651162078197" duration="17658000" />
       <workItem from="1651245755094" duration="15560000" />
+      <workItem from="1651299970501" duration="11052000" />
     </task>
     <servers />
   </component>
@@ -564,6 +567,21 @@
           <line>49</line>
           <option name="timeStamp" value="468" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/GoogleCodeJam/Y2022/Round1C/B/Solution.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="470" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/GoogleCodeJam/Y2022/Round1C/A/Solution.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="478" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/GoogleCodeJam/Y2022/Round1C/A/Solution.java</url>
+          <line>145</line>
+          <option name="timeStamp" value="481" />
+        </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.IllegalArgumentException" package="java.lang" />
           <option name="timeStamp" value="358" />
@@ -579,14 +597,6 @@
         <PinnedItemInfo parentTag="Facebook.Y2019.Quali.Node" memberName="left" />
       </pinned-members>
     </pin-to-top-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="result" language="JAVA" />
-        <watch expression="sa.T" language="JAVA" />
-        <watch expression="sa.SA[1]" language="JAVA" />
-        <watch expression="sa.SA[2]" language="JAVA" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/java$A__2_.ic" NAME="A (2) Coverage Results" MODIFIED="1632626172128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
