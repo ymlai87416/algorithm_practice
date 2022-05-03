@@ -164,32 +164,26 @@ Refer: [Next Permutation](https://leetcode.com/submissions/detail/226319532/)
 
 ### Generate all permutation
 
-Heap algorithm
+Heap algorithm O(n!)
+Heap algorithm cannot deal with duplicate items.
 
 ```java
-private boolean shouldSwap(int[] nums, int start, int curr) {
-    for (int i = start; i < curr; ++i)
-        if (nums[i] == nums[curr])
-            return false;
-
-    return true;
-}
-
-
-private void permute(int[] nums, int left, int right, ArrayList<List<Integer>> r) {
-    if (left == right) {
-        ArrayList<Integer> t = new ArrayList<>();
-        for (int i = 0; i < nums.length; ++i) t.add(nums[i]);
+private void helper(int n, ArrayList<List<Integer>> r){
+    if(n == 1){
+        ArrayList<Integer> t  = new ArrayList<>();
+        for(int i=0; i<nums.length; ++i) t.add(nums[i]);
         r.add(t);
-    } else {
-        for (int i = left; i <= right; i++) {
-            boolean check = shouldSwap(nums, left, i);
-            if (check) {
-                swap(nums, left, i);
-                permute(nums, left + 1, right, r);
-                swap(nums, left, i);
+    }
+    else{
+        for(int i=0; i<n-1; ++i){
+            helper(n - 1, r);
+            if(n % 2 == 0) {
+                swap(nums, i, n-1);
+            } else {
+                swap(nums, 0, n-1);
             }
         }
+        helper(n - 1, r);
     }
 }
 
@@ -198,7 +192,12 @@ private void swap(int[] input, int a, int b) {
     input[a] = input[b];
     input[b] = tmp;
 }
+
+//in main
+helper(nums.length, result);
 ```
+
+Refer: [Permutations](https://leetcode.com/submissions/detail/226603025/)
 
 Refer: [Permutations II](https://leetcode.com/submissions/detail/228523597/)
 

@@ -114,3 +114,82 @@ class FenwickTree {
 ```
 
 Refer to [UVA12086](https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/TreeDataStructure/UVA12086.java)
+
+## Heap
+
+In Java, the PirorityQueue replace the heap, but there is no bubble up and bubble down operation, you have to store it in Pair (key, value) and discard any invalid result. For details, please refer to dijkstra algorithm.
+
+But here, I am going to present a max heap algorithm.
+
+It is inferor to linear scan if the scan is small.
+Refer to [Longest Repeating Character Replacement](https://leetcode.com/submissions/detail/692559183/), which linear scan perform much faster.
+
+```java
+
+```
+
+Refer: []()
+
+
+### Quick select
+
+Most Top K problem can also be solved by quick select, which have a better time complexity of O(N)
+
+```java
+int[] nums;
+public int findKthLargest(int[] nums, int k) {
+    this.nums = nums;
+    return quickSelect(0, nums.length-1, nums.length-k);
+}
+
+Random r = new Random();
+
+//k means position of desired element in sorted array.
+int quickSelect(int left, int right, int k){
+    //base case
+    if(left == right) return nums[left];
+    //choose a pivot index by random
+    int pivotIndex = r.nextInt(right-left) + left;
+    //call parititon
+    pivotIndex = partition(left, right, pivotIndex);
+    //from partition we know pivot is nth bigger
+    //if n == k return pivot
+    if(k == pivotIndex)
+        return nums[k];
+    //else if n < k => quickSelect(left, pivot-1, k)
+    else if(k < pivotIndex)
+        return quickSelect(left, pivotIndex-1, k);
+    //else if n > k => quickSelect(pivot+1, right, k) 
+    else
+        return quickSelect(pivotIndex+1, right, k);
+}
+
+//left and right are inclusive
+int partition(int left, int right, int pivotIndex){
+    //create a variable call store index
+    int storeIndex = left;
+    int pivot = nums[pivotIndex];
+    //move pivot to the rightmost
+    swap(right, pivotIndex);
+    //loop all the element and store the element smaller than pivot to left side (store index)
+    for(int i=left; i<=right; ++i){
+        if(nums[i] < pivot){
+            swap(i, storeIndex);
+            storeIndex++;
+        }
+        
+    }
+    //swap right with store index
+    swap(storeIndex, right);
+    //return store index
+    return storeIndex;
+}
+
+void swap(int a, int b){
+    int temp = nums[a];
+    nums[a] = nums[b];
+    nums[b] = temp;
+}
+```
+
+Refer: [Kth Largest Element in an Array](https://leetcode.com/submissions/detail/692620636/)

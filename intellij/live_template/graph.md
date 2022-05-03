@@ -607,7 +607,7 @@ Time complexity: O(sqrt(V) * E)
 ```
 
 ## DAG
-## topological sort
+## Topological sort
 
 Linear ordering of vertices such taht for every directed edge uv, vertex u comes before v in the ordering.
 
@@ -618,28 +618,43 @@ If any ordering will do, prefer this algorithm
 Time complexity: O(V+E)
 
 ```java
+int EXPLORED = 1;
+int VISITED = 2;
+int UNVISITED = 0;
 
 ts = new ArrayList<Integer>();
-for(int i=nd-1; i>=0; --i){
-    if (visited[i] == 0)
-        dfs2(i);
+for(int i=0; i<numCourses; ++i){
+    //do dfs if not visted
+    if(visited[i] == UNVISITED){
+        boolean hasCycle = dfs(i);
+        if(hasCycle) 
+            System.out.println("Have cycle, no topological sort");
+    }
 }
 Collections.reverse(ts);
 ArrayList<Integer> result =ts;
 
-void dfs2(int u){
-    visited[u] = 1;
-    Arrays.sort(adj[u], 0, adjcnt[u]);
-    for (int j = adjcnt[u]-1; j >=0 ; j--) {
-        int v = adj[u][j];
-        if (visited[v] == 0)
-            dfs2(v);
+boolean dfs(int u){
+    visited[u] = EXPLORED;
+    
+    for(int i=0; i<adjList[u].size(); ++i){
+        int v = adjList[u].get(i);
+        //System.out.println("" + u + "->" + v + ":" + visited[v]);
+        if(visited[v] == EXPLORED) return true;
+        if(visited[v] == VISITED) continue;
+        boolean hasCycle = dfs(v);
+        if(hasCycle) return true;
     }
-    ts.add(u);
+    order.add(u);
+    
+    visited[u] = VISITED;
+    return false;
 }
 ```
 
 Refer: [UVA11060](https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/Graph/TopologicalSort/UVA11060.java)
+
+Refer: [Course Schedule II](https://leetcode.com/submissions/detail/691062853/)
 
 ### Kahn's algorithm
 
@@ -849,6 +864,8 @@ ArrayList<Integer> void inorder(){
     }
 }
 ```
+
+Refer: [Kth Smallest Element in BST](https://leetcode.com/submissions/detail/691160478/)
 
 #### Pre
 
