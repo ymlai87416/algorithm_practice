@@ -77,6 +77,8 @@ Memory: O(n)
 
 Refer to: [UVA11402](https://github.com/ymlai87416/algorithm_practice/blob/master/java/src/main/java/DataStructure/TreeDataStructure/UVA11402.java)
 
+- Segment tree on interval instead of update range of value.
+
 ## 2D Segment tree
 
 Shortcut: ds.st2d
@@ -117,18 +119,18 @@ Refer to [UVA12086](https://github.com/ymlai87416/algorithm_practice/blob/master
 
 ## Heap
 
-In Java, the PirorityQueue replace the heap, but there is no bubble up and bubble down operation, you have to store it in Pair (key, value) and discard any invalid result. For details, please refer to dijkstra algorithm.
+Not much used, can be replaced by PriorityQueue in most setting.
 
-But here, I am going to present a max heap algorithm.
+Update element in PriorityQueue replaced by either delete O(N) and insert again O(logN)
+or being lazy and check if the element pop from PriorityQueue is the same as the latest record.
 
+Application: 
 It is inferor to linear scan if the scan is small.
 Refer to [Longest Repeating Character Replacement](https://leetcode.com/submissions/detail/692559183/), which linear scan perform much faster.
 
-```java
+TODO: There is currently no bubbleUp and bubbleDown implementation in my implementation of heap.
 
-```
-
-Refer: []()
+Refer: [Kth Largest Element in a Stream](https://leetcode.com/submissions/detail/627876806/)
 
 
 ### Quick select

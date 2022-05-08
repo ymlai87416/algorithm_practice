@@ -75,10 +75,13 @@ Stack<Tuple> EdgeList = new Stack<Tuple>(); // (weight, two vertices) of the edg
 
 ## BFS 
 
+Only iterative version, no recursive version.
+
 Time complexity: O(V + E)
 Shortcut: graph.bfs
 
 ```java
+//TODO: fix it ASAP
 int INF = 1_000_000_000
 Arrays.fill(d, INF);
 
@@ -486,16 +489,62 @@ Can also apply on bipartite grpah, result in maximum cardinality bipartite match
 
 ### Ford Fulkerson
 
-Not a good candidate for contest
+Not a good candidate for contest.
+Runtime on UVA11380: 0.950ms
 
 Time complexity: O(f* E) where f* = maximum flow
 Shortcut: graph.ff
 
 ```java
-//TODO: implement the agorithm
+int[][] res = new int[maxV][maxV];
+int mf, f, s, t; // global variables
+int[] p; // p stores the BFS spanning tree from s
+void augment(int v, int minEdge) { // traverse BFS spanning tree from s->t
+    if (v == s) { f = minEdge; return; } // record minEdge in a global var f
+    else if (p[v] != -1) {
+        augment(p[v], Math.min(minEdge, res[p[v]][v]));
+        res[p[v]][v] -= f; res[v][p[v]] += f;
+    }
+}
+
+BitSet vis;
+
+int fulkerson(int sIdx, int tIdx) {
+    s = sIdx;
+    t = tIdx;
+    // inside int main(), assume that we have both res (AdjMatrix) and AdjList
+    mf = 0;
+    while (true) { // now a true O(VE^2) Edmonds Karp’s algorithm
+        f = 0;
+        BitSet vis = new BitSet(maxV); vis.set(s); // we change vi dist to bitset!
+        p = new int[maxV]; Arrays.fill(p, -1);
+        dfs(s);
+        
+        Queue<Integer> q = new ArrayDeque<>(); q.offer(s);
+        
+        augment(t, INF);
+        if (f == 0) break;
+        mf += f;
+    }
+    
+    return mf;
+}
+
+dfs(int u){
+    for (int j = 0; j < AdjList.get(u).size(); j++) { // AdjList here!
+        int v = AdjList.get(u).get(j); // we use vector<vi> AdjList
+        if (res[u][v] > 0 && !vis.get(v)) {
+            vis.set(v);
+            p[v] = u;
+            dfs(v);
+        }
+    }
+}
 ```
 
 ### Edmond Karp
+
+Runtime on UVA11380: 0.880ms
 
 Time complexity: O(VE^2)
 Shortcut: graph.ek
@@ -512,7 +561,7 @@ void augment(int v, int minEdge) { // traverse BFS spanning tree from s->t
     }
 }
 
-void int edmondKarp(int sIdx, int tIdx) {
+int edmondKarp(int sIdx, int tIdx) {
     s = sIdx;
     t = tIdx;
     // inside int main(), assume that we have both res (AdjMatrix) and AdjList
@@ -548,11 +597,69 @@ Refer: [UVA11380](https://github.com/ymlai87416/algorithm_practice/blob/master/j
 
 ### Dinic
 
+Runtime on UVA11380: 1.170ms
+
 Time complexity: O(V^2 E)
+Shortcut: graph.dinic
 
 ```java
-//TODO: to be completed
 //new code at: https://github.com/stevenhalim/cpbook-code/blob/master/ch8/maxflow.java
+
+int[] d;
+int dinic(int sIdx, int tIdx) {
+    s = sIdx;
+    t = tIdx;
+    // inside int main(), assume that we have both res (AdjMatrix) and AdjList
+    mf = 0;
+    while (true) { // now a true O(VE^2) Edmonds Karp’s algorithm
+        f = 0;
+        vis = new BitSet(maxV); vis.set(s); // we change vi dist to bitset!
+        Queue<Integer> q = new ArrayDeque<>(); q.offer(s);
+        d = new int[maxV]; d[s] = 0;
+        p = new int[maxV]; Arrays.fill(p, -1);
+        while (!q.isEmpty()) {
+            int u = q.poll();
+            if (u == t) break;
+            for (int j = 0; j < AdjList.get(u).size(); j++) { // AdjList here!
+                int v = AdjList.get(u).get(j); // we use vector<vi> AdjList
+                if (res[u][v] > 0 && !vis.get(v)) {
+                    vis.set(v);
+                    q.offer(v);
+                    d[v] = d[u] + 1;
+                    p[v] = u;
+                }
+            }
+        }
+
+        int sf = 0;
+        while(true){
+            f = 0;
+            augment(t, INF);
+            if (f == 0) break;
+            sf += f;
+
+            vis = new BitSet(maxV); vis.set(s);
+            p = new int[maxV]; Arrays.fill(p, -1);
+            dfs2(s);
+        }
+
+        if(sf == 0) break;
+        mf += sf;
+    }
+    
+    return mf;
+}
+
+void dfs2(int u){
+    for (int j = 0; j < AdjList.get(u).size(); j++) { // AdjList here!
+        int v = AdjList.get(u).get(j); // we use vector<vi> AdjList
+        if (res[u][v] > 0 && !vis.get(v) && d[v] == d[u]+1) {
+            vis.set(v);
+            p[v] = u;
+            dfs(v);
+        }
+    }
+}
 ```
 
 ### Find min-cut nodes
@@ -605,6 +712,8 @@ Time complexity: O(sqrt(V) * E)
 ```java
 //TODO: to be implemented
 ```
+
+[Test](https://leetcode.com/problems/maximum-students-taking-exam/discuss/1734630/C%2B%2B-Two-solutions%3A-Optimized-bitmask-DP-and-Hopcroft-Karp-Bipartite-MIS) 
 
 ## DAG
 ## Topological sort
@@ -699,16 +808,33 @@ Refer: [UVA11060](https://github.com/ymlai87416/algorithm_practice/blob/master/j
 
 ### Unweighted MCBM
 
-Refer to above
+Hopcroft Karp
+Time complexity: O(E*sqrt(V))
+
+```java
+
+```
+
+
+Refer: [Maximum Number of Accepted Invitations]()
 
 ### Weighted MCBM
 
+Hungarian algorithm / Kuhn Munkres’s algorithm
+Time complexity: O(V^3)
 
+```java
 
+```
+
+Refer: [Maximum Number of Accepted Invitations]()
 
 ### Unweighted MCM
 
-Can apply Edmond algorithm or if small, apply the DP
+Edmond algorithm
+Time complexity: 
+
+if small, apply the DP is also possible.
 
 ```java
 //TOOD: to be completed

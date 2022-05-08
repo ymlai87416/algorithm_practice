@@ -1,4 +1,3 @@
-package Graph.NetworkFlow.Variants;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -20,7 +19,7 @@ import java.util.*;
  *
  * #UVA #Lv4 #network_flow
  */
-public class UVA11380 {
+public class Main {
     final static int sIdx = 1801;
     final static int tIdx = 1802;
     final static int maxV = 1803;
@@ -148,21 +147,17 @@ public class UVA11380 {
                 }
             }
 
-            int sf = 0;
-            while(true){
-                f = 0;
-                augment(t, INF);
-                if (f == 0) break;
-                sf += f;
+            if(!vis.get(t)) break;
 
+            while(true){
                 vis = new BitSet(maxV); vis.set(s);
                 p = new int[maxV]; Arrays.fill(p, -1);
                 dfs2(s);
+                f = 0;
+                augment(t, INF);
+                if (f == 0) break;
+                mf += f;
             }
-
-
-            if(sf == 0)break;
-            mf += sf;
         }
 
         return mf;

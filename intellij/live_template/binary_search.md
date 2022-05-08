@@ -76,3 +76,10 @@ private int findK(long low, long high){
 Refer: [Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/submissions/)
 
 Refer: [Search Insert Position](https://leetcode.com/problems/search-insert-position/)
+
+## Searching in sorted 2D array
+
+The top-right or left-bottom corner search approach is O(sqrt(K)) search algorithm on the linear version. 
+Time complexity: O(M+N)
+
+
