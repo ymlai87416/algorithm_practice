@@ -24,6 +24,140 @@ public class UVA820 {
         }
     }
 
+    static BitSet vis;
+    static int edmondKarp(int sIdx, int tIdx) {
+        s = sIdx;
+        t = tIdx;
+        // inside int main(), assume that we have both res (AdjMatrix) and AdjList
+        mf = 0;
+        while (true) { // now a true O(VE^2) Edmonds Karp’s algorithm
+            f = 0;
+            vis = new BitSet(maxV); vis.set(s); // we change vi dist to bitset!
+            Queue<Integer> q = new ArrayDeque<>(); q.offer(s);
+            p = new int[maxV]; Arrays.fill(p, -1);
+            while (!q.isEmpty()) {
+                int u = q.poll();
+                if (u == t) break;
+                for (int j = 0; j < AdjList.get(u).size(); j++) { // AdjList here!
+                    int v = AdjList.get(u).get(j); // we use vector<vi> AdjList
+                    if (res[u][v] > 0 && !vis.get(v)) {
+                        vis.set(v);
+                        q.offer(v);
+                        p[v] = u;
+                    }
+                }
+            }
+            augment(t, INF);
+            if (f == 0) break;
+            mf += f;
+        }
+
+        return mf;
+    }
+
+    static int fulkerson(int sIdx, int tIdx) {
+        s = sIdx;
+        t = tIdx;
+        // inside int main(), assume that we have both res (AdjMatrix) and AdjList
+        mf = 0;
+        while (true) { // now a true O(VE^2) Edmonds Karp’s algorithm
+            f = 0;
+            vis = new BitSet(maxV); vis.set(s); // we change vi dist to bitset!
+            p = new int[maxV]; Arrays.fill(p, -1);
+            dfs(s, t);
+
+            augment(t, INF);
+            if (f == 0) break;
+            mf += f;
+        }
+
+        return mf;
+    }
+
+    static void dfs(int u, int t){
+        if(u == t) return;
+        for (int j = 0; j < AdjList.get(u).size(); j++) { // AdjList here!
+            int v = AdjList.get(u).get(j); // we use vector<vi> AdjList
+            if (res[u][v] > 0 && !vis.get(v)) {
+                vis.set(v);
+                p[v] = u;
+                dfs(v, t);
+            }
+        }
+    }
+
+    static int[] d;
+    static int dinic(int sIdx, int tIdx) {
+        s = sIdx;
+        t = tIdx;
+        // inside int main(), assume that we have both res (AdjMatrix) and AdjList
+        mf = 0;
+        while (true) { // now a true O(VE^2) Edmonds Karp’s algorithm
+            f = 0;
+            vis = new BitSet(maxV); vis.set(s); // we change vi dist to bitset!
+            Queue<Integer> q = new ArrayDeque<>(); q.offer(s);
+            d = new int[maxV]; d[s] = 0;
+            p = new int[maxV]; Arrays.fill(p, -1);
+            while (!q.isEmpty()) {
+                int u = q.poll();
+                if (u == t) break;
+                for (int j = 0; j < AdjList.get(u).size(); j++) { // AdjList here!
+                    int v = AdjList.get(u).get(j); // we use vector<vi> AdjList
+                    if (res[u][v] > 0 && !vis.get(v)) {
+                        vis.set(v);
+                        q.offer(v);
+                        d[v] = d[u] + 1;
+                        p[v] = u;
+                    }
+                }
+            }
+
+            int sf = 0;
+            int count = 0;
+            /*
+            while(true){
+                f = 0;
+                augment(t, INF);
+                if (f == 0) break;
+                sf += f;
+
+                vis = new BitSet(maxV); vis.set(s);
+                p = new int[maxV]; Arrays.fill(p, -1);
+                dfs2(s, t);
+                ++count;
+            }*/
+
+            for(int v=0; v<maxV; ++v){
+                if(d[v]+1 == d[t]) {
+                    f = 0;
+                    augment(v, Math.min(INF, res[v][t]));
+                    res[v][t] -= f; res[t][v] += f;
+
+                    sf += f;
+                }
+            }
+
+            //System.out.println("TT" + count + " "+ sf);
+
+            if(sf == 0)break;
+            mf += sf;
+        }
+
+        return mf;
+    }
+
+    static void dfs2(int u, int t){
+        if(u == t) return;
+        for (int j = 0; j < AdjList.get(u).size(); j++) { // AdjList here!
+            int v = AdjList.get(u).get(j); // we use vector<vi> AdjList
+            if (res[u][v] > 0 && !vis.get(v) && d[v] == d[u]+1) {
+                vis.set(v);
+                p[v] = u;
+                dfs(v, t);
+            }
+        }
+    }
+
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
@@ -61,6 +195,7 @@ public class UVA820 {
             }
 
             // inside int main(), assume that we have both res (AdjMatrix) and AdjList
+            /*
             mf = 0;
             while (true) { // now a true O(VE^2) Edmonds Karp’s algorithm
                 f = 0;
@@ -83,6 +218,11 @@ public class UVA820 {
                 if (f == 0) break;
                 mf += f;
             }
+             */
+
+            //mf = fulkerson(s, t); //0.330
+            //mf = edmondKarp(s, t); //0.360
+            mf = dinic(s, t); //0.350
 
             System.out.format("Network %d\n", nc);
             System.out.format("The bandwidth is %d.\n", mf);

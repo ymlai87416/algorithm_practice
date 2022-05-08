@@ -484,13 +484,19 @@ Refer: [UVA10765](https://github.com/ymlai87416/algorithm_practice/blob/master/j
 ## Network flow
 
 Find the max flow of the graph, the value is also equal to the min cut.
-
 Can also apply on bipartite grpah, result in maximum cardinality bipartite matching. (each edge weight is 1)
+
+There are 3 different path augment algorithms, just different favor, and runtime more or less the same.
+
+|   | 11380	Down Went The Titanic  | 820	Internet Bandwidth  |
+|---|---|---|
+| Ford Fulkerson  |  0.75 | 0.33  |
+| Edmond Karp  |  0.88 | 0.35  |
+| Dinic  | 0.81  |  0.36 |
 
 ### Ford Fulkerson
 
-Not a good candidate for contest.
-Runtime on UVA11380: 0.950ms
+Not a good candidate for contest because f can be large.
 
 Time complexity: O(f* E) where f* = maximum flow
 Shortcut: graph.ff
@@ -544,8 +550,6 @@ dfs(int u){
 
 ### Edmond Karp
 
-Runtime on UVA11380: 0.880ms
-
 Time complexity: O(VE^2)
 Shortcut: graph.ek
 
@@ -597,7 +601,7 @@ Refer: [UVA11380](https://github.com/ymlai87416/algorithm_practice/blob/master/j
 
 ### Dinic
 
-Runtime on UVA11380: 1.170ms
+Dinic reduce to Hopcraft-Karp?
 
 Time complexity: O(V^2 E)
 Shortcut: graph.dinic
@@ -643,6 +647,19 @@ int dinic(int sIdx, int tIdx) {
             dfs2(s);
         }
 
+        /*
+        this is an optimization.
+        for(int v=0; v<maxV; ++v){
+            if(d[v]+1 == d[t]) {
+                f = 0;
+                augment(v, Math.min(INF, res[v][t]));
+                res[v][t] -= f; res[t][v] += f;
+
+                sf += f;
+            }
+        }
+        */
+
         if(sf == 0) break;
         mf += sf;
     }
@@ -653,7 +670,7 @@ int dinic(int sIdx, int tIdx) {
 void dfs2(int u){
     for (int j = 0; j < AdjList.get(u).size(); j++) { // AdjList here!
         int v = AdjList.get(u).get(j); // we use vector<vi> AdjList
-        if (res[u][v] > 0 && !vis.get(v) && d[v] == d[u]+1) {
+        if (d[v] == d[u]+1 && res[u][v] > 0 && !vis.get(v)) {
             vis.set(v);
             p[v] = u;
             dfs(v);

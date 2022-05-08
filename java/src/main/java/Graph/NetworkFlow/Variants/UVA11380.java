@@ -112,6 +112,7 @@ public class UVA11380 {
     }
 
     static void dfs(int u){
+        if(u == t) return;
         for (int j = 0; j < AdjList.get(u).size(); j++) { // AdjList here!
             int v = AdjList.get(u).get(j); // we use vector<vi> AdjList
             if (res[u][v] > 0 && !vis.get(v)) {
@@ -149,6 +150,8 @@ public class UVA11380 {
             }
 
             int sf = 0;
+            /*
+            int count = 0;
             while(true){
                 f = 0;
                 augment(t, INF);
@@ -158,8 +161,18 @@ public class UVA11380 {
                 vis = new BitSet(maxV); vis.set(s);
                 p = new int[maxV]; Arrays.fill(p, -1);
                 dfs2(s);
-            }
+                ++count;
+            }*/
 
+            for(int v=0; v<maxV; ++v){
+                if(d[v]+1 == d[t]) {
+                    f = 0;
+                    augment(v, Math.min(INF, res[v][t]));
+                    res[v][t] -= f; res[t][v] += f;
+
+                    sf += f;
+                }
+            }
 
             if(sf == 0)break;
             mf += sf;
@@ -169,6 +182,7 @@ public class UVA11380 {
     }
 
     static void dfs2(int u){
+        if(u == t) return;
         for (int j = 0; j < AdjList.get(u).size(); j++) { // AdjList here!
             int v = AdjList.get(u).get(j); // we use vector<vi> AdjList
             if (res[u][v] > 0 && !vis.get(v) && d[v] == d[u]+1) {

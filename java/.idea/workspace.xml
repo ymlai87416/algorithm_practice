@@ -119,12 +119,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UVA1584" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StringProcessing.SuffixArray.UVA1584" />
+    <configuration name="UVA820" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Graph.NetworkFlow.StandardMaxFlowProblem.UVA820" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="StringProcessing.SuffixArray.*" />
+          <option name="PATTERN" value="Graph.NetworkFlow.StandardMaxFlowProblem.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,18 +134,18 @@
     </configuration>
     <list>
       <item itemvalue="应用程序.UVA11380" />
+      <item itemvalue="应用程序.UVA820" />
       <item itemvalue="应用程序.GoogleCodeJam.Y2022.Round1C.A.Solution" />
       <item itemvalue="应用程序.Solution" />
       <item itemvalue="应用程序.UVA1254" />
-      <item itemvalue="应用程序.UVA1584" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="应用程序.UVA11380" />
+        <item itemvalue="应用程序.UVA820" />
         <item itemvalue="应用程序.GoogleCodeJam.Y2022.Round1C.A.Solution" />
         <item itemvalue="应用程序.Solution" />
         <item itemvalue="应用程序.UVA1254" />
-        <item itemvalue="应用程序.UVA1584" />
       </list>
     </recent_temporary>
   </component>
@@ -234,7 +234,7 @@
       <workItem from="1651162078197" duration="17658000" />
       <workItem from="1651245755094" duration="15560000" />
       <workItem from="1651299970501" duration="11052000" />
-      <workItem from="1651970118610" duration="3556000" />
+      <workItem from="1651970118610" duration="6828000" />
     </task>
     <servers />
   </component>
