@@ -77,10 +77,29 @@ Refer: [Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/k
 Refer: [Search Insert Position](https://leetcode.com/problems/search-insert-position/)
 
 ```java
+//This is the example of finding higest value
+int low, high, mid;
+low = 0;
+high = s.length()-1;
+int lastGoodS = -1;
 
+//low and high inclusive
+while(low < high){
+    mid = low + (high-low+1)/2;
+    
+    int spos = checkHaveDuplicate(mid);
+    
+    if(spos != -1){
+        low = mid;
+        lastGoodS = spos;
+    }
+    else{
+        high = mid-1;
+    }
+}
 ```
 
-Refer: []()
+Refer: [Longest Duplicate Substring](https://leetcode.com/submissions/detail/696974797/)
 
 
 ## Searching in sorted 2D array
