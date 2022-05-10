@@ -11,6 +11,8 @@
 
 Time complexity: O(m+n)
 
+Can use to detect longest parlindrom from the beginning
+
 ```java
 final int MAX_N = 1_000_001;
 char[] T = new char[MAX_N];
@@ -232,9 +234,23 @@ Time complexity: O(n)
 Refer: [Longest Duplicate substring](https://leetcode.com/submissions/detail/689901108/)
 
 
-
 ## Rolling hash - Rabin Karp
+
+Time complexity: O(m+n)
+Space complexity: O(n)
+
+Time complexity is same as KMP.
 
 ```java
 
 ```
+
+
+## Aho corasick
+
+It can match a dictionary to a string simultaneously.
+
+```java
+```
+
+Refer: [](https://leetcode.com/problems/stream-of-characters/)

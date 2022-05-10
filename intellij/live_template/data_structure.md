@@ -70,8 +70,90 @@ Time complexity:
 Memory: O(n)
 
 ```java
+class SegmentTree { // the segment tree is stored like a heap array
+    private int[] st = new int[100001*4];
+    private int[] A;
+    private int n;
+
+    private int left(int p) {
+        return p << 1;
+    } // same as binary heap operations
+
+    private int right(int p) {
+        return (p << 1) + 1;
+    }
+
+    private void build(int p, int L, int R) { // O(n)
+        if (L == R) // as L == R, either one is fine
+            st[p] = A[L];
+        else { // recursively compute the values
+            build(left(p), L, (L + R) / 2);
+            build(right(p), (L + R) / 2 + 1, R);
+            int p1 = st[left(p)], p2 = st[right(p)];
+            st[p]= p1 * p2;
+        }
+    }
+
+    /* This is individual update */
+    public void update(int p, int val){
+        update(1, p, val, 0, n-1);
+    }
+
+    public void update(int p, int idx, int val, int L, int R){
+        if (L == R) // as L == R, either one is fine
+            st[p] = val;
+        else { // recursively compute the values
+            if(L <= idx && idx <= (L+R)/2) update(left(p), idx, val, L, (L+R)/2);
+            else if ((L+R)/2+1 <= idx && idx<= R)update(right(p), idx, val, (L+R)/2+1, R);
+            int p1 = st[left(p)], p2 = st[right(p)];          //Never a node with only left or right child.
+            st[p]= p1 * p2;
+        }
+    }
+
+    /* Non optimized range update */
+    public void updateRange(int i, int j, int val){
+        updateRange(1, 0, n-1, i, j, val);
+    }
+
+    private void updateRange(int p, int L, int R, int i, int j, int val){
+        if (L == R) // as L == R, either one is fine
+            st[p] = val;
+        else { // recursively compute the values
+            if (L <= i && i <= (L + R) / 2)
+                updateRange(left(p), L, (L + R) / 2, i, Math.min(j, (L + R) / 2), val);
+            if ((L + R) / 2 + 1 <= j && j <= R)
+                updateRange(right(p), (L + R) / 2 + 1, R, Math.max(i, (L + R) / 2 + 1), j, val);
+            int p1 = st[left(p)], p2 = st[right(p)];          //Never a node with only left or right child.
+            st[p] = p1 + p2;
+        }
+    }
+
+    private int rmq(int p, int L, int R, int i, int j) { // O(log n)
+        if (i > R || j < L) return Integer.MIN_VALUE; // current segment outside query range
+        if (L >= i && R <= j) return st[p]; // inside query range
+        // compute the min position in the left and right part of the interval
+        int p1 = rmq(left(p), L, (L + R) / 2, i, j);
+        int p2 = rmq(right(p), (L + R) / 2 + 1, R, i, j);
+        if (p1 == Integer.MIN_VALUE) return p2; // if we try to access segment outside query
+        if (p2 == Integer.MIN_VALUE) return p1; // same as above
+        return p1 * p2; // as in build routine
+    }
+
+    public SegmentTree(int[] A, int size) {
+        this.A = A;
+        n = size;
+        //Arrays.fill(st, 0);
+        build(1, 0, n - 1); // recursive build
+    }
+
+    public int rmq(int i, int j) {
+        return rmq(1, 0, n - 1, i, j);
+    } // overloading
+}
 
 ```
+
+Refer to: []()
 
 - Lazy operation: push()
 
@@ -195,3 +277,25 @@ void swap(int a, int b){
 ```
 
 Refer: [Kth Largest Element in an Array](https://leetcode.com/submissions/detail/692620636/)
+
+
+## Monotonic stack / heap
+
+### Monotonic heap
+
+Usually used for querying max/min in sliding windows
+
+Refer: [Sliding Window Maximum](https://leetcode.com/submissions/detail/239296842/)
+Refer: [Max Value of Equation](https://leetcode.com/problems/max-value-of-equation/submissions/)
+
+### Monotonic stack
+
+Search for previous min or next min.
+
+Refer: [Largest Rectangle in Histogram](https://leetcode.com/submissions/detail/237169540/)
+
+Refer: [Maximal Rectangle](https://leetcode.com/submissions/detail/314810956/)
+
+    Make use of Largest Rectange in Histogram
+
+Refer: [Sum of Subarray Minimums](https://leetcode.com/submissions/detail/696897687/)
