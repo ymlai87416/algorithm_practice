@@ -243,8 +243,31 @@ Time complexity is same as KMP.
 
 ```java
 
+int modulo = 1_000_000_007;
+    
+private long modPow(int base, int exp){
+    if(exp == 0) return 1;
+    else if(exp == 1) return base;
+    
+    long d = modPow(base, exp/2);
+    
+    if(exp % 2 == 0)
+        return (d * d) % modulo;
+    else
+        return ((d * d) % modulo * base) % modulo;
+}
+
+//in main
+long p26 = modPow(26, len-1);
+
+//in loop
+int c = s.charAt(i) - 'a';
+int q = s.charAt(i-len) - 'a';
+rolling = (rolling - (q * p26) % modulo + modulo) % modulo;
+rolling = (rolling * 26 + c) % modulo;
 ```
 
+Refer: [Longest Duplicate Substring](https://leetcode.com/submissions/detail/696974797/)
 
 ## Aho corasick
 
