@@ -17,7 +17,7 @@ binary search: $ a=1, b=2, d=0 => a=b^d, T(n)=O(n^0 * log(n)) = O(log(n))$
 
 sorting: $ a=2, b=2, d=1 => a=b^d, T(n)=O(n * log(n))$
 
-Second case:
+Third case:
 
 binary tree traverse: $ a=2, b=2, d=0 => a>b^d, T(n)=O(n^{log_{2}2}) = O(n) $
 
