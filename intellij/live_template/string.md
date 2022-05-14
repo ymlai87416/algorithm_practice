@@ -47,6 +47,14 @@ void kmpSearch() { // this is similar as kmpPreprocess(), but on string T
 
 Refer: [UVA1449](https://github.com/ymlai87416/algorithm_practice/blob/e1081a55e42fbde08c0514e60008d96770942531/java/src/main/java/StringProcessing/StringMatchingStandard/UVA1449.java)
 
+## Wildcard matching
+
+Time complexity: O(S+P)
+Similar to KMP matching, just go back to the last star position and match again, but now star match 1 more character.
+Better than DP.
+
+Refer: [Wildcard Matching](https://leetcode.com/submissions/detail/230018120/)
+
 ## Minimum edit dista
 
 Operation include: insert, delete, replace

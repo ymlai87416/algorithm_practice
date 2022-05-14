@@ -1,5 +1,27 @@
 # maths
 
+## Master therom
+
+$
+T(n) = aT(\frac{n}{b}) + f(n^d)
+\begin{cases}
+ & \text{ if } a=b^d, T(n)=O(n^d logn)\\ 
+ & \text{ if } a<b^d, T(n)=O(n^d)\\
+ & \text{ if } a>b^d, T(n)=O(n^{log_{b}a})
+\end{cases}
+$
+
+First case: 
+
+binary search: $ a=1, b=2, d=0 => a=b^d, T(n)=O(n^0 * log(n)) = O(log(n))$
+
+sorting: $ a=2, b=2, d=1 => a=b^d, T(n)=O(n * log(n))$
+
+Second case:
+
+binary tree traverse: $ a=2, b=2, d=0 => a>b^d, T(n)=O(n^{log_{2}2}) = O(n) $
+
+
 ## Fibonacci
 
 There are close-form and also matrix form
@@ -673,3 +695,9 @@ private void process(Stack<String> st, String currOp, int number){
 ```
 
 Refer: [Basic Calculator III](https://leetcode.com/submissions/detail/637896732/)
+
+## Entrophy
+
+![image](https://latex.codecogs.com/svg.image?\sum_{1}^{k}&space;p(k)&space;log(p(k)))
+
+Refer: [Guess the Word](https://leetcode.com/submissions/detail/631362555/)
