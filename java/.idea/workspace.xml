@@ -66,13 +66,13 @@
       <recent name="GoogleCodeJam.Y2022.Round1A.B" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.UVA11380">
-    <configuration name="GoogleCodeJam.Y2022.Round1C.A.Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GoogleCodeJam.Y2022.Round1C.A.Solution" />
+  <component name="RunManager" selected="应用程序.PeaksAndValleys">
+    <configuration name="FindDuplicates" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ctci.sortsearch.FindDuplicates" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="GoogleCodeJam.Y2022.Round1C.A.*" />
+          <option name="PATTERN" value="ctci.sortsearch.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -80,12 +80,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GoogleCodeJam.Y2022.Round1C.B.Solution" />
+    <configuration name="PeaksAndValleys" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ctci.sortsearch.PeaksAndValleys" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="GoogleCodeJam.Y2022.Round1C.B.*" />
+          <option name="PATTERN" value="ctci.sortsearch.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -93,12 +93,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UVA11380" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Graph.NetworkFlow.Variants.UVA11380" />
+    <configuration name="RankFromStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ctci.sortsearch.RankFromStream" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Graph.NetworkFlow.Variants.*" />
+          <option name="PATTERN" value="ctci.sortsearch.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,12 +106,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UVA1254" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StringProcessing.SuffixArray.UVA1254" />
+    <configuration name="SortedMatrixSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ctci.sortsearch.SortedMatrixSearch" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="StringProcessing.SuffixArray.*" />
+          <option name="PATTERN" value="ctci.sortsearch.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,12 +119,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UVA820" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Graph.NetworkFlow.StandardMaxFlowProblem.UVA820" />
+    <configuration name="ctci.sortsearch.SparseSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ctci.sortsearch.SparseSearch" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Graph.NetworkFlow.StandardMaxFlowProblem.*" />
+          <option name="PATTERN" value="ctci.sortsearch.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -133,19 +133,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="应用程序.UVA11380" />
-      <item itemvalue="应用程序.UVA820" />
-      <item itemvalue="应用程序.GoogleCodeJam.Y2022.Round1C.A.Solution" />
-      <item itemvalue="应用程序.Solution" />
-      <item itemvalue="应用程序.UVA1254" />
+      <item itemvalue="应用程序.PeaksAndValleys" />
+      <item itemvalue="应用程序.RankFromStream" />
+      <item itemvalue="应用程序.FindDuplicates" />
+      <item itemvalue="应用程序.SortedMatrixSearch" />
+      <item itemvalue="应用程序.ctci.sortsearch.SparseSearch" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.UVA11380" />
-        <item itemvalue="应用程序.UVA820" />
-        <item itemvalue="应用程序.GoogleCodeJam.Y2022.Round1C.A.Solution" />
-        <item itemvalue="应用程序.Solution" />
-        <item itemvalue="应用程序.UVA1254" />
+        <item itemvalue="应用程序.PeaksAndValleys" />
+        <item itemvalue="应用程序.RankFromStream" />
+        <item itemvalue="应用程序.SortedMatrixSearch" />
+        <item itemvalue="应用程序.FindDuplicates" />
+        <item itemvalue="应用程序.ctci.sortsearch.SparseSearch" />
       </list>
     </recent_temporary>
   </component>
@@ -237,6 +237,14 @@
       <workItem from="1651970118610" duration="6828000" />
       <workItem from="1652004364848" duration="294000" />
       <workItem from="1652302991603" duration="1266000" />
+      <workItem from="1652826487545" duration="17700000" />
+      <workItem from="1653248523550" duration="4667000" />
+      <workItem from="1653255218679" duration="639000" />
+      <workItem from="1653255943449" duration="6674000" />
+      <workItem from="1653301522348" duration="15633000" />
+      <workItem from="1653331472085" duration="30809000" />
+      <workItem from="1653412412252" duration="2912000" />
+      <workItem from="1653424248346" duration="999000" />
     </task>
     <servers />
   </component>
@@ -588,6 +596,36 @@
           <line>145</line>
           <option name="timeStamp" value="481" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ctci/threadslock/ContextSwitch1.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="483" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ctci/linkedlist/LoopDetection.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="484" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ctci/bitmanipulation/BinaryToString.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="498" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ctci/moderate/LivingPeople.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="504" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ctci/recursion/MagicIndex.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="507" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ctci/sortsearch/GroupAnagrams.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="521" />
+        </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.IllegalArgumentException" package="java.lang" />
           <option name="timeStamp" value="358" />
@@ -603,6 +641,12 @@
         <PinnedItemInfo parentTag="Facebook.Y2019.Quali.Node" memberName="left" />
       </pinned-members>
     </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="memo[i][p-1][u]" language="JAVA" />
+        <watch expression="memo[p+1][j][v]" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/java$A__2_.ic" NAME="A (2) Coverage Results" MODIFIED="1632626172128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
