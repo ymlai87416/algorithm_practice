@@ -4,6 +4,8 @@ import java.util.Random;
 
 public class RandomNode {
 
+
+
     public static void main(String[] args) {
 
     }

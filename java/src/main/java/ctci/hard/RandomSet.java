@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class RandomSet {
 
-    public void randomSet(int[] arr, int m){
+    public int[] randomSet(int[] arr, int m){
         int n = arr.length;
         Random r = new Random();
 
@@ -17,6 +17,8 @@ public class RandomSet {
         for(int i=0; i<m; ++i){
             result[i] = arr[n-i-1];
         }
+
+        return result;
     }
 
     private void swap(int[] arr, int p1, int p2){
@@ -27,6 +29,14 @@ public class RandomSet {
 
 
     public static void main(String[] args) {
-
+        int[] data = new int[]{1,2,3,4,5,6,7,8,9, 10};
+        RandomSet test = new RandomSet();
+        for (int i = 0; i < 10; i++) {
+            var rr = test.randomSet(data, 6);
+            for (int j = 0; j < 6; j++) {
+                System.out.printf("%2d ", rr[j]);
+            }
+            System.out.println();
+        }
     }
 }

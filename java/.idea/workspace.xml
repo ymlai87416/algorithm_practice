@@ -66,13 +66,13 @@
       <recent name="GoogleCodeJam.Y2022.Round1A.B" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.PeaksAndValleys">
-    <configuration name="FindDuplicates" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ctci.sortsearch.FindDuplicates" />
+  <component name="RunManager" selected="应用程序.BSTSequences">
+    <configuration name="BSTSequences" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ctci.treegraph.BSTSequences" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ctci.sortsearch.*" />
+          <option name="PATTERN" value="ctci.treegraph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -80,12 +80,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PeaksAndValleys" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ctci.sortsearch.PeaksAndValleys" />
+    <configuration name="EnglishInt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ctci.moderate.EnglishInt" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ctci.sortsearch.*" />
+          <option name="PATTERN" value="ctci.moderate.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -93,12 +93,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RankFromStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ctci.sortsearch.RankFromStream" />
+    <configuration name="LRUCache" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ctci.moderate.LRUCache" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ctci.sortsearch.*" />
+          <option name="PATTERN" value="ctci.moderate.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,12 +106,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortedMatrixSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ctci.sortsearch.SortedMatrixSearch" />
+    <configuration name="MaxSubmatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ctci.hard.MaxSubmatrix" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ctci.sortsearch.*" />
+          <option name="PATTERN" value="ctci.hard.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,12 +119,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ctci.sortsearch.SparseSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ctci.sortsearch.SparseSearch" />
+    <configuration name="PathsWithSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ctci.treegraph.PathsWithSum" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ctci.sortsearch.*" />
+          <option name="PATTERN" value="ctci.treegraph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -133,19 +133,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="应用程序.PeaksAndValleys" />
-      <item itemvalue="应用程序.RankFromStream" />
-      <item itemvalue="应用程序.FindDuplicates" />
-      <item itemvalue="应用程序.SortedMatrixSearch" />
-      <item itemvalue="应用程序.ctci.sortsearch.SparseSearch" />
+      <item itemvalue="应用程序.BSTSequences" />
+      <item itemvalue="应用程序.EnglishInt" />
+      <item itemvalue="应用程序.LRUCache" />
+      <item itemvalue="应用程序.MaxSubmatrix" />
+      <item itemvalue="应用程序.PathsWithSum" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.PeaksAndValleys" />
-        <item itemvalue="应用程序.RankFromStream" />
-        <item itemvalue="应用程序.SortedMatrixSearch" />
-        <item itemvalue="应用程序.FindDuplicates" />
-        <item itemvalue="应用程序.ctci.sortsearch.SparseSearch" />
+        <item itemvalue="应用程序.BSTSequences" />
+        <item itemvalue="应用程序.EnglishInt" />
+        <item itemvalue="应用程序.LRUCache" />
+        <item itemvalue="应用程序.PathsWithSum" />
+        <item itemvalue="应用程序.MaxSubmatrix" />
       </list>
     </recent_temporary>
   </component>
@@ -244,7 +244,10 @@
       <workItem from="1653301522348" duration="15633000" />
       <workItem from="1653331472085" duration="30809000" />
       <workItem from="1653412412252" duration="2912000" />
-      <workItem from="1653424248346" duration="999000" />
+      <workItem from="1653424248346" duration="9494000" />
+      <workItem from="1653468355271" duration="8644000" />
+      <workItem from="1653479431279" duration="5550000" />
+      <workItem from="1653488056071" duration="10235000" />
     </task>
     <servers />
   </component>
@@ -626,6 +629,21 @@
           <line>22</line>
           <option name="timeStamp" value="521" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ctci/moderate/PatternMatching.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="526" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ctci/moderate/PatternMatching.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="527" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ctci/treegraph/BSTSequences.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="542" />
+        </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.IllegalArgumentException" package="java.lang" />
           <option name="timeStamp" value="358" />
@@ -645,6 +663,7 @@
       <configuration name="Application">
         <watch expression="memo[i][p-1][u]" language="JAVA" />
         <watch expression="memo[p+1][j][v]" language="JAVA" />
+        <watch expression="ptr" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
