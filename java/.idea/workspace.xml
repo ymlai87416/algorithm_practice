@@ -37,16 +37,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "nodejs_package_manager_path": "npm",
+    "show.migrate.to.gradle.popup": "false",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\GitProjects\algorithm_practice\java\src\main\java\CodeForce\R720\C" />
@@ -66,7 +67,7 @@
       <recent name="GoogleCodeJam.Y2022.Round1A.B" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.BSTSequences">
+  <component name="RunManager" selected="应用程序.RandomNode">
     <configuration name="BSTSequences" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ctci.treegraph.BSTSequences" />
       <module name="algorithm_practice" />
@@ -106,12 +107,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaxSubmatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ctci.hard.MaxSubmatrix" />
+    <configuration name="PathsWithSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ctci.treegraph.PathsWithSum" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ctci.hard.*" />
+          <option name="PATTERN" value="ctci.treegraph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,8 +120,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PathsWithSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ctci.treegraph.PathsWithSum" />
+    <configuration name="RandomNode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ctci.treegraph.RandomNode" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
@@ -136,16 +137,16 @@
       <item itemvalue="应用程序.BSTSequences" />
       <item itemvalue="应用程序.EnglishInt" />
       <item itemvalue="应用程序.LRUCache" />
-      <item itemvalue="应用程序.MaxSubmatrix" />
       <item itemvalue="应用程序.PathsWithSum" />
+      <item itemvalue="应用程序.RandomNode" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.RandomNode" />
         <item itemvalue="应用程序.BSTSequences" />
         <item itemvalue="应用程序.EnglishInt" />
         <item itemvalue="应用程序.LRUCache" />
         <item itemvalue="应用程序.PathsWithSum" />
-        <item itemvalue="应用程序.MaxSubmatrix" />
       </list>
     </recent_temporary>
   </component>
@@ -247,7 +248,7 @@
       <workItem from="1653424248346" duration="9494000" />
       <workItem from="1653468355271" duration="8644000" />
       <workItem from="1653479431279" duration="5550000" />
-      <workItem from="1653488056071" duration="10235000" />
+      <workItem from="1653488056071" duration="11673000" />
     </task>
     <servers />
   </component>
