@@ -12,10 +12,10 @@ public class ReSpace {
         this.dictionary = dictionary;
         this.s = s;
 
-        int n = s.length();
+        n = s.length();
         memo = new int[n+1][n+1];
 
-        for(int i=0; i<n; ++i){
+        for(int i=0; i<n+1; ++i){
             Arrays.fill(memo[i], -1);
         }
 
@@ -33,12 +33,12 @@ public class ReSpace {
 
         while(i < n){
             //memo[i][last] can either equal to memo[i+1][i] or memo[i+1][last];
-            if(memo[i][lastIndex] == memo[i+1][lastIndex]){
+            if(memo[i][lastIndex+1] == memo[i+1][lastIndex+1]){
                 sb.append(s.charAt(i));
             }
             else{
-                sb.append(" ");
                 sb.append(s.charAt(i));
+                sb.append(" ");
                 lastIndex = i;
             }
             i++;
@@ -54,10 +54,11 @@ public class ReSpace {
 
         int len = i - (lastIndex+1) +1 ;
         if(i == n){
-            return len;
+            memo[i][lastIndex+1] = len-1;
+            return len-1;  //!!
         }
 
-        String ss = s.substring(lastIndex+1, len);
+        String ss = s.substring(lastIndex+1, i+1);
 
         memo[i][lastIndex+1] = helper(i+1, i) + (dictionary.contains(ss) ? 0: len);
         memo[i][lastIndex+1] = Math.min(memo[i][lastIndex+1], helper(i+1, lastIndex));

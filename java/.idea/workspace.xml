@@ -67,65 +67,65 @@
       <recent name="GoogleCodeJam.Y2022.Round1A.B" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.Intersection">
-    <configuration name="BisectSquares" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ctci.moderate.BisectSquares" />
+  <component name="RunManager" selected="应用程序.SparseSimilarity">
+    <configuration name="MaxBlackSquare" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ctci.hard.MaxBlackSquare" />
+      <module name="algorithm_practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ctci.hard.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReSpace" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ctci.hard.ReSpace" />
+      <module name="algorithm_practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ctci.hard.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SparseSimilarity" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ctci.hard.SparseSimilarity" />
+      <module name="algorithm_practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ctci.hard.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StackOfBoxes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ctci.recursion.StackOfBoxes" />
+      <module name="algorithm_practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ctci.recursion.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XMLEncoding" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ctci.moderate.XMLEncoding" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ctci.moderate.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ContinuousMedian" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ctci.hard.ContinuousMedian" />
-      <module name="algorithm_practice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ctci.hard.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Intersection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ctci.moderate.Intersection" />
-      <module name="algorithm_practice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ctci.moderate.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MissingTwo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ctci.hard.MissingTwo" />
-      <module name="algorithm_practice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ctci.hard.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MultiSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ctci.hard.MultiSearch" />
-      <module name="algorithm_practice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ctci.hard.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,19 +134,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="应用程序.BisectSquares" />
-      <item itemvalue="应用程序.ContinuousMedian" />
-      <item itemvalue="应用程序.Intersection" />
-      <item itemvalue="应用程序.MissingTwo" />
-      <item itemvalue="应用程序.MultiSearch" />
+      <item itemvalue="应用程序.MaxBlackSquare" />
+      <item itemvalue="应用程序.ReSpace" />
+      <item itemvalue="应用程序.SparseSimilarity" />
+      <item itemvalue="应用程序.StackOfBoxes" />
+      <item itemvalue="应用程序.XMLEncoding" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.Intersection" />
-        <item itemvalue="应用程序.BisectSquares" />
-        <item itemvalue="应用程序.MissingTwo" />
-        <item itemvalue="应用程序.MultiSearch" />
-        <item itemvalue="应用程序.ContinuousMedian" />
+        <item itemvalue="应用程序.SparseSimilarity" />
+        <item itemvalue="应用程序.XMLEncoding" />
+        <item itemvalue="应用程序.MaxBlackSquare" />
+        <item itemvalue="应用程序.ReSpace" />
+        <item itemvalue="应用程序.StackOfBoxes" />
       </list>
     </recent_temporary>
   </component>
@@ -248,7 +248,7 @@
       <workItem from="1653424248346" duration="9494000" />
       <workItem from="1653468355271" duration="8644000" />
       <workItem from="1653479431279" duration="5550000" />
-      <workItem from="1653488056071" duration="29068000" />
+      <workItem from="1653488056071" duration="39188000" />
     </task>
     <servers />
   </component>
@@ -667,9 +667,7 @@
     </pin-to-top-manager>
     <watches-manager>
       <configuration name="Application">
-        <watch expression="memo[i][p-1][u]" language="JAVA" />
-        <watch expression="memo[p+1][j][v]" language="JAVA" />
-        <watch expression="ptr" language="JAVA" />
+        <watch expression="memo[i][lastIndex+1]" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>

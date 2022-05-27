@@ -6,13 +6,13 @@ public class MaxBlackSquare {
 
         //do a horizontal prefix sum and vertical prefix sum
         int n = matrix.length;
-        int[][] hPrefixSum = new int[n][n];
-        int[][] vPrefixSum = new int[n][n];
+        int[][] hPrefixSum = new int[n][n+1];
+        int[][] vPrefixSum = new int[n+1][n];
 
         for(int i=0; i<n; ++i){
             for(int j=0; j<n; ++j){
-                hPrefixSum[i][j] = matrix[i][j] + hPrefixSum[i][j-1];
-                vPrefixSum[i][j] = matrix[i][j] + vPrefixSum[i-1][j];
+                hPrefixSum[i][j+1] = matrix[i][j] +  hPrefixSum[i][j];
+                vPrefixSum[i+1][j] = matrix[i][j] +  vPrefixSum[i][j];
             }
         }
 
@@ -23,19 +23,15 @@ public class MaxBlackSquare {
                 for(int y=0; y+i-1 <n; ++y){
                     int top = x;
                     int left = y;
-                    int right = y+n-1;
-                    int bottom = x+n-1;
+                    int right = y+i-1;
+                    int bottom = x+i-1;
 
-                    int leftVCnt = vPrefixSum[bottom][left]
-                            - (top-1 < 0 ? 0: vPrefixSum[top-1][left]);
-                    int rightVCnt = vPrefixSum[bottom][right]
-                            - (top -1 < 0 ? 0: vPrefixSum[top-1][right]);
-                    int topHCnt = hPrefixSum[top][right]
-                            - (left -1 < 0 ? 0 : hPrefixSum[top][left-1]);
-                    int bottomHCnt = hPrefixSum[bottom][right]
-                            - (left -1 < 0 ? 0: hPrefixSum[bottom][left-1]);
+                    int leftVCnt = vPrefixSum[bottom+1][left] - vPrefixSum[top][left];
+                    int rightVCnt = vPrefixSum[bottom+1][right] - vPrefixSum[top][right];
+                    int topHCnt = hPrefixSum[top][right+1] - hPrefixSum[top][left];
+                    int bottomHCnt = hPrefixSum[bottom][right+1] - hPrefixSum[bottom][left];
 
-                    if(leftVCnt == n && rightVCnt == n && topHCnt == n && bottomHCnt == n)
+                    if(leftVCnt == i && rightVCnt == i && topHCnt == i && bottomHCnt == i)
                         return new int[]{top, left, bottom, right};
 
                 }
@@ -48,7 +44,20 @@ public class MaxBlackSquare {
     }
 
 
-    public static void main(String[] args) {
 
+
+    public static void main(String[] args) {
+        MaxBlackSquare test = new MaxBlackSquare();
+        int[][] data = new int[][]{
+                {0, 0, 0, 0, 0, 0},
+                {1, 1, 1, 1, 0, 0},
+                {1, 0, 1, 1, 1, 0},
+                {1, 0, 1, 1, 1, 0},
+                {1, 1, 1, 1, 1, 0},
+                {0, 1, 1, 1, 1, 1}
+        };
+
+        int[] r = test.maxBlackSquare(data);
+        System.out.printf("top: %d, left: %d, bottom: %d, right: %d\n", r[0], r[1], r[2], r[3]);
     }
 }
