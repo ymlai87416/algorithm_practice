@@ -12,6 +12,7 @@ public class ContinuousMedian {
         n = 0;
     }
 
+    /*
     public int median(int input){
         n+=1;
 
@@ -42,6 +43,27 @@ public class ContinuousMedian {
         }
     }
 
+     */
+
+    public double median(int input){
+        n++;
+        if(highHalf.isEmpty() || input < highHalf.peek())
+            lowHalf.offer(input);
+        else
+            highHalf.offer(input);
+
+        if(lowHalf.size() > highHalf.size()){
+            highHalf.offer(lowHalf.poll());
+        }
+        else if(highHalf.size() > lowHalf.size()+1){
+            lowHalf.offer(highHalf.poll());
+        }
+
+        if(n % 2==0)
+            return 1.0 * (lowHalf.peek() + highHalf.peek())/2;
+        else
+            return highHalf.peek();
+    }
 
     public static void main(String[] args) {
         ContinuousMedian test = new ContinuousMedian();

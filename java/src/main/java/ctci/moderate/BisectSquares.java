@@ -2,36 +2,21 @@ package ctci.moderate;
 
 public class BisectSquares {
 
-    public Line bisectSquare(double[][] squares){
-        double[][] center = new double[2][2];
+    public Line bisectSquare(Square sq1, Square sq2){
+        Point c1 = new Point( (sq1.left + sq1.right) / 2, (sq1.top + sq1.bottom)/2 );
+        Point c2 = new Point( (sq2.left + sq2.right) / 2, (sq2.top + sq2.bottom)/2 );
 
-        for(int i=0; i<2; ++i){
-            center[i][0] = (squares[i][0] + squares[i][2]) /2;
-            center[i][1] = (squares[i][1] + squares[i][3]) /2;
-        }
-
-        //how to define a line by passing 2 points?
-        double a = center[0][1] - center[1][1];
-        double b = center[1][0] - center[0][0];
-        double c = center[0][0] * (center[0][1]-center[1][1])
-                - center[0][1]* (center[0][0]-center[1][0]);
-
-        return new Line(a, b, -c);
+        return Line.createLineFromTwoPoint(c1, c2);
     }
 
 
     public static void main(String[] args) {
+        Square s1 = new Square(5, 0, 5, 0);
+        Square s2 = new Square(10, 5, 6, 9);
 
-    }
-}
+        BisectSquares test = new BisectSquares();
+        Line line = test.bisectSquare(s1, s2);
 
-class Line{
-    double a;
-    double b;
-    double c;
-    public Line(double a, double b, double c){
-        this.a = a;
-        this.b = b;
-        this.c = c;
+        System.out.printf("%.7fx + %.7fy + %.7f = 0", line.a, line.b, line.c);
     }
 }

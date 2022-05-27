@@ -63,6 +63,39 @@ public class RandomNode {
 
     void delete(int val){
         //not implemented for the time being
+
+    }
+
+    RandomTreeNode deleteHelper(RandomTreeNode root, int val){
+        if(root.val == val){
+            //zero child
+            if(root.left == null && root.right == null)
+                return null;
+            //if it has one child
+            if(root.left==null) return root.right;
+            if(root.right==null) return root.left;
+            //two child
+            int maxVal = findMaxVal(root.left);
+            root.val = maxVal;
+            root.size -= 1;
+            return deleteHelper(root.left, maxVal);
+        }
+        else{
+            if(root.val > val)
+                root.left = deleteHelper(root.left, val);
+            else
+                root.right = deleteHelper(root.right, val);
+
+            root.size -=1;
+            return root;
+        }
+    }
+
+    int findMaxVal(RandomTreeNode root){
+        if(root.right == null)
+            return root.val;
+        else
+            return findMaxVal(root.right);
     }
 
     //Hints: #42, #54, #62, #75, #89, #99, #112, #119

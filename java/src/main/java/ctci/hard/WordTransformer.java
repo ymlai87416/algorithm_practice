@@ -1,7 +1,19 @@
 package ctci.hard;
 import java.util.*;
 
-public class WordTransformer {
+class WordTransformer{
+
+    int[][] visited = new int[2][5_001];
+
+
+    public static void main(String[] args) {
+
+    }
+}
+
+
+//This is not optimized
+class WordTransformer2 {
     //This is leetcode 127. Word Ladder
 
     public List<String> wordTransform(String[] dictionary, String from, String to){

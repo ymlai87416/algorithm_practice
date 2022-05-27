@@ -18,7 +18,7 @@ public class PathsWithSum {
         int mySum = ps + root.val;
 
 //we have to contribute result
-        int diff = target - mySum;
+        int diff = mySum - target;
         result += prefixSum.getOrDefault(diff, 0);
 
         prefixSum.put(mySum, prefixSum.getOrDefault(mySum, 0) + 1);

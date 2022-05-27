@@ -29,6 +29,33 @@ public class MaxSubmatrix {
         return result;
     }
 
+    private int bf(int[][] data ) {
+        int m = data.length;
+        int n = data[0].length;
+        int rr = 0;
+        for (int i = 0; i < m; ++i){
+            for (int j = i + 1; j < m; ++j) {
+                for (int k = 0; k < n; ++k) {
+                    for (int l = k + 1; l < n; ++l) {
+                        int x = sumHelper(data, i, j, k, l);
+                        if(rr < x)
+                            rr=x;
+                    }
+                }
+            }
+        }
+        return rr;
+    }
+    private int sumHelper(int[][] data, int top, int bottom, int left, int right){
+        int d = 0;
+        for(int i=top; i<=bottom; ++i){
+            for(int j=left; j<=right; ++j){
+                d += data[i][j];
+            }
+        }
+        return d;
+    }
+
     public static void main(String[] args) {
         int[][] data = new int[][]{
                 {9, -8, 1, 3, -2},
@@ -37,6 +64,7 @@ public class MaxSubmatrix {
         };
         MaxSubmatrix test =new MaxSubmatrix();
         System.out.println(test.maxSubmatrix(data));
+        System.out.println(test.bf(data));
 
     }
 }
