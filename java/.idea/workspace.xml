@@ -37,17 +37,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "dart.analysis.tool.window.visible": "false",
-    "nodejs_package_manager_path": "npm",
-    "show.migrate.to.gradle.popup": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/yiuminglai/GitProjects/algorithm_practice/java&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\GitProjects\algorithm_practice\java\src\main\java\CodeForce\R720\C" />
@@ -67,13 +68,13 @@
       <recent name="GoogleCodeJam.Y2022.Round1A.B" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.SparseSimilarity">
-    <configuration name="MaxBlackSquare" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ctci.hard.MaxBlackSquare" />
+  <component name="RunManager" selected="应用程序.SumLists">
+    <configuration name="B" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Leetcode.Weekly297.B" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ctci.hard.*" />
+          <option name="PATTERN" value="Leetcode.Weekly297.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -81,12 +82,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReSpace" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ctci.hard.ReSpace" />
+    <configuration name="C" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Leetcode.Biweek80.C" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ctci.hard.*" />
+          <option name="PATTERN" value="Leetcode.Biweek80.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Leetcode.biweek79.Solution" />
+      <module name="algorithm_practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Leetcode.biweek79.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,25 +121,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StackOfBoxes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ctci.recursion.StackOfBoxes" />
+    <configuration name="SumLists" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ctci.linkedlist.SumLists" />
       <module name="algorithm_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ctci.recursion.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="XMLEncoding" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ctci.moderate.XMLEncoding" />
-      <module name="algorithm_practice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ctci.moderate.*" />
+          <option name="PATTERN" value="ctci.linkedlist.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,19 +135,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="应用程序.MaxBlackSquare" />
-      <item itemvalue="应用程序.ReSpace" />
+      <item itemvalue="应用程序.SumLists" />
+      <item itemvalue="应用程序.B" />
+      <item itemvalue="应用程序.C" />
+      <item itemvalue="应用程序.Solution" />
       <item itemvalue="应用程序.SparseSimilarity" />
-      <item itemvalue="应用程序.StackOfBoxes" />
-      <item itemvalue="应用程序.XMLEncoding" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.SumLists" />
+        <item itemvalue="应用程序.B" />
+        <item itemvalue="应用程序.C" />
+        <item itemvalue="应用程序.Solution" />
         <item itemvalue="应用程序.SparseSimilarity" />
-        <item itemvalue="应用程序.XMLEncoding" />
-        <item itemvalue="应用程序.MaxBlackSquare" />
-        <item itemvalue="应用程序.ReSpace" />
-        <item itemvalue="应用程序.StackOfBoxes" />
       </list>
     </recent_temporary>
   </component>
@@ -248,7 +249,16 @@
       <workItem from="1653424248346" duration="9494000" />
       <workItem from="1653468355271" duration="8644000" />
       <workItem from="1653479431279" duration="5550000" />
-      <workItem from="1653488056071" duration="39188000" />
+      <workItem from="1653488056071" duration="41809000" />
+      <workItem from="1653754441403" duration="791000" />
+      <workItem from="1654172262900" duration="801000" />
+      <workItem from="1654395778966" duration="1282000" />
+      <workItem from="1654957565896" duration="3159000" />
+      <workItem from="1655000590398" duration="1638000" />
+      <workItem from="1655324836299" duration="1483000" />
+      <workItem from="1655605563745" duration="1322000" />
+      <workItem from="1657376927419" duration="2456000" />
+      <workItem from="1657397859250" duration="1000" />
     </task>
     <servers />
   </component>
@@ -650,6 +660,26 @@
           <line>8</line>
           <option name="timeStamp" value="556" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/biweek79/Solution.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="576" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/biweek79/Solution.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="578" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Leetcode/biweek79/Solution.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="579" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ctci/hard/SmallestK.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="580" />
+        </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.IllegalArgumentException" package="java.lang" />
           <option name="timeStamp" value="358" />
@@ -668,6 +698,7 @@
     <watches-manager>
       <configuration name="Application">
         <watch expression="memo[i][lastIndex+1]" language="JAVA" />
+        <watch expression="grid[u.second+1][i]" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/algorithm_practice.iml" filepath="$PROJECT_DIR$/algorithm_practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java/algorithm_practice1.iml" filepath="$PROJECT_DIR$/java/algorithm_practice1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backup/temp/backup.iml" filepath="$PROJECT_DIR$/backup/temp/backup.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backup/gist/gist.iml" filepath="$PROJECT_DIR$/backup/gist/gist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/intellij/intellij.iml" filepath="$PROJECT_DIR$/intellij/intellij.iml" />
+    </modules>
+  </component>
+</project>
